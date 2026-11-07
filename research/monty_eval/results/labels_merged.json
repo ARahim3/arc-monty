@@ -1,0 +1,3415 @@
+{
+ "n": 228,
+ "missing": [],
+ "stray_ignored": [],
+ "by_split": {
+  "agi2-eval": {
+   "n": 116,
+   "primary": {
+    "SYMBOL": 15,
+    "GEOMETRY": 15,
+    "GOAL_SEARCH": 16,
+    "COMPOSITION": 23,
+    "COUNT_RELATION": 20,
+    "NEAR_REACH": 10,
+    "BEHAVIOUR": 16,
+    "CONTEXT": 1
+   },
+   "primary_or_secondary": {
+    "BEHAVIOUR": 32,
+    "SYMBOL": 30,
+    "GEOMETRY": 30,
+    "COUNT_RELATION": 34,
+    "GOAL_SEARCH": 19,
+    "CONTEXT": 15,
+    "COMPOSITION": 52,
+    "NEAR_REACH": 10
+   },
+   "confidence": {
+    "high": 42,
+    "medium": 55,
+    "low": 19
+   },
+   "closest_module": {
+    "none": 7,
+    "dynamics": 43,
+    "composition": 31,
+    "self-model": 7,
+    "behavior": 8,
+    "pattern": 3,
+    "association": 14,
+    "field": 3
+   },
+   "examples": {
+    "BEHAVIOUR": [
+     {
+      "task": "36a08778",
+      "rule": "Colour-6 streams flow downward from the top; when a stream hits a horizontal 2-bar it wraps the bar with a 6 outline (row above and both sides) and continues falling from both ends, recursively, until the bottom.",
+      "gap": "Rays stop or pass obstacles but cannot split and flow around them; needs a recursive water-flow behaviour with outlining and branching.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "5961cc34",
+      "rule": "A red beam shoots from the 4-tipped start marker; every blob it enters turns red and re-emits the beam (with the 3-marker's width) in the direction its green 3-marker points, chaining through blobs; untouched blobs are erased.",
+      "gap": "Needs a ray that is redirected by objects: object-specific exit direction read from a marker side, chained across hits, with unhit objects deleted.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "7b5033c1",
+      "rule": "A single multi-coloured snake path winds through the grid; trace it from its top end to its other end and output its cells' colours, one per row, as a 1-wide column (length = path length).",
+      "gap": "Needs path tracing (ordered traversal of a connected curve from an endpoint) and serialising the visited colours into a new 1-D output.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "b9e38dc0",
+      "rule": "A seed colour inside an open container floods the container's interior and pours out through its open side, spreading as a widening 45-degree cone until the grid edge; stray noise cells block nothing.",
+      "gap": "Fill-enclosed needs closure; needs flood from a seed through an opening, then cone-shaped spreading whose direction comes from the container's open side.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "e87109e9",
+      "rule": "The top legend maps each block colour to a turn (left/right, shown by where the colour bar sits in its box); the 8 seed extends as a 2-wide line that turns as the legend dictates whenever it hits a coloured block, until leaving the grid; legend is cropped away.",
+      "gap": "Needs a bouncing/turning line behaviour whose turn direction at each obstacle is looked up from a colour-to-direction legend.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "142ca369",
+      "rule": "Each L-corner object shoots a diagonal ray in the direction it points; when the ray hits another object it reflects (bounces) and continues, keeping its colour, until leaving the grid.",
+      "gap": "Rays only go in fixed directions and stop/pass; needs diagonal ray direction from shape orientation plus reflection off obstacles (bounce trajectory).",
+      "conf": "medium",
+      "closest": "dynamics"
+     }
+    ],
+    "COMPOSITION": [
+     {
+      "task": "38007db0",
+      "rule": "The grid is a lattice of framed panels; in each row of panels exactly one panel differs from the others, and the output stacks these odd-one-out panels (one per panel row) into a single framed column.",
+      "gap": "Has odd-one-out selection globally, but not applied per row-group of panels with the selected panels re-assembled into a stacked output.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "58f5dbd5",
+      "rule": "Crop the region of solid 5x5 coloured blocks; inside each block, carve the 3x3 glyph of the same colour (found loose elsewhere in the grid) as background-coloured holes in the block's interior; glyphs with no matching block are dropped.",
+      "gap": "Needs colour-keyed binding of a free glyph to a solid block, stamping its inverted shape into the block interior, plus cropping the block region.",
+      "conf": "high",
+      "closest": "association"
+     },
+     {
+      "task": "6e453dd6",
+      "rule": "Each black shape slides right until it touches the vertical 5 line; then every row in which the shape encloses a closed background hole gets its cells right of the 5 line painted 2.",
+      "gap": "Requires chaining move-until-contact with a row-wise marking conditioned on enclosed holes in the moved shape; modules apply one rule each.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "7491f3cf",
+      "rule": "The first panel contains a dividing line that splits it into two regions; the empty fourth panel is filled with panel 2's pattern on one side of that line (including the line) and panel 3's pattern on the other side.",
+      "gap": "Panel vote/overlay is cellwise boolean; needs a region mask derived from a line in one panel to select between two other panels per region.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "b99e7126",
+      "rule": "A lattice of identical 3x3 tiles has a few tiles replaced by a special tile; complete the replacement so that, at the tile level, the special tiles form a 3x3 arrangement shaped like the special tile's own foreground pattern (self-similar), aligned with the existing partial placement.",
+      "gap": "Needs hierarchical self-similar completion: infer tile-level layout equal to the tile's pattern and locate it consistently with the partial instances.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "db695cfb",
+      "rule": "Pairs of 1-cells on a common diagonal are joined by a diagonal 1-line; each 6-cell lying on such a connector shoots a 6-line along the perpendicular diagonal in both directions to the borders (overwriting); other 6s stay.",
+      "gap": "Needs chaining diagonal connect with conditional perpendicular diagonal rays fired only by 6s lying on a connector line.",
+      "conf": "high",
+      "closest": "dynamics"
+     }
+    ],
+    "CONTEXT": [
+     {
+      "task": "b5ca7ac4",
+      "rule": "Framed 5x5 boxes slide horizontally: boxes with an 8 frame slide left and boxes with a 2 frame slide right, each stopping at the grid edge or against a previously stopped box.",
+      "gap": "Gravity direction must be chosen per object by its frame colour, with boxes stacking against each other; dynamics uses one direction per task.",
+      "conf": "high",
+      "closest": "dynamics"
+     }
+    ],
+    "SYMBOL": [
+     {
+      "task": "136b0064",
+      "rule": "Each 3x3 glyph on the left (read in pairs, top to bottom) stands for a stroke of a fixed colour, direction and length (U-shape=2 cells left, Y=2 down, 1-glyph=3 right, 3-glyph=4 left); the strokes are chained as a turtle path starting below the 5 marker in the right panel.",
+      "gap": "Needs glyph-to-action binding (shape means direction+length) and sequential turtle-path drawing from a start marker; no module interprets glyphs as instructions.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "247ef758",
+      "rule": "Each small shape left of the frame is moved into the frame, centred at every intersection of a row and column whose border marker cells (left and top frame edges) have the shape's colour; shapes without matching markers stay put.",
+      "gap": "Border cells act as coordinate pointers: needs binding shape colour to row/column markers and copying the shape to each marked intersection.",
+      "conf": "high",
+      "closest": "association"
+     },
+     {
+      "task": "3e6067c3",
+      "rule": "A legend row lists colours in sequence; for each consecutive pair (a,b) the box with centre a is joined to the adjacent box with centre b by a bridge in colour a, tracing a path through the boxes in legend order.",
+      "gap": "Connect only joins same-colour cells; needs reading an ordered colour sequence legend and drawing bridges between boxes in that order.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "65b59efc",
+      "rule": "The top panels hold k x k tile patterns and the bottom row gives each panel a colour key; a small layout map (in key colours) is expanded so each map cell becomes the k x k pattern bound to its colour, drawn in that colour.",
+      "gap": "Needs binding pattern panels to colour keys and a map-driven fractal substitution: each map cell replaced by the pattern its colour denotes.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "9aaea919",
+      "rule": "Coloured bars on the bottom row act as commands for the column of plus-shapes above them: a 2-bar recolours its column's shapes to 5, and a 3-bar stacks that many extra copies on top of its column as the number of shapes recoloured.",
+      "gap": "Bar colours encode actions (recolour vs replicate) and the replication count comes from counting shapes in other columns; no action-glyph binding or counting.",
+      "conf": "high",
+      "closest": "association"
+     },
+     {
+      "task": "e3721c99",
+      "rule": "A legend of coloured glyphs encodes hole counts (glyph colour <-> number of holes); every grey blob is recoloured with the legend colour whose hole count equals its own, and blobs with no matching count are erased.",
+      "gap": "Legend binds colour to a hole count, varying per grid; needs reading the in-grid legend and matching objects by hole count, not by shape.",
+      "conf": "high",
+      "closest": "association"
+     }
+    ],
+    "COUNT_RELATION": [
+     {
+      "task": "1ae2feb7",
+      "rule": "Each coloured bar touching the wall is projected through the wall as a dotted ray whose period equals the bar's length (colour every n cells), the colour nearest the wall winning overlaps.",
+      "gap": "Ray through wall exists, but the dot period must be computed from the segment's length, with layered per-colour priority.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "2ba387bc",
+      "rule": "Collect the 4x4 squares, split them into hollow and solid, sort each list by vertical position, and stack them in a two-column output (hollow left, solid right), padding with black.",
+      "gap": "Needs object-list sorting by position, partition by hollow/solid, and assembling an output grid from multiple selected objects rather than one.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "31f7f899",
+      "rule": "Vertical bars of different colours cross a horizontal 6 line symmetrically; the bar lengths are re-assigned in ascending order from left to right (each column keeps its colour, still centred on the line).",
+      "gap": "Needs ranking/sorting of object lengths across objects and reassigning sorted sizes by position; no module compares or permutes object properties.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "581f7754",
+      "rule": "Each object contains a marker cell; the object is translated along one axis so that its marker lines up with the same-coloured reference cell on the grid edge (row or column given by the reference's side).",
+      "gap": "Move only goes until contact; needs translation to achieve alignment of an internal marker with a same-colour edge reference, axis chosen by reference position.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "58490d8a",
+      "rule": "The black panel lists colours in a column; output is that panel with each colour's row extended to show one dot (spaced by 1) per object of that colour found in the rest of the grid.",
+      "gap": "Needs counting objects per colour outside the panel and rendering counts as dot rows inside the cropped legend panel.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "62593bfd",
+      "rule": "Each object slides vertically to the grid edge: objects whose cell count equals that of another object move to the top edge, objects with a unique cell count move to the bottom edge (column kept).",
+      "gap": "Gravity direction must be conditioned on a relational property (size shared with another object); move/gravity uses one fixed direction per task.",
+      "conf": "high",
+      "closest": "dynamics"
+     }
+    ],
+    "GOAL_SEARCH": [
+     {
+      "task": "269e22fb",
+      "rule": "All outputs are the same hidden 20x20 two-colour picture (up to D8 pose and colour swap); the input is a fragment of it, and the output is the whole picture in the pose and colours that place the fragment correctly.",
+      "gap": "Needs a cross-demo object memory (one canonical image) plus registration of the input fragment against it under D8 pose and colour mapping.",
+      "conf": "high",
+      "closest": "self-model"
+     },
+     {
+      "task": "446ef5d2",
+      "rule": "Scattered jigsaw fragments (pieces of a bordered rectangular picture) are translated so that they fit together into one complete framed rectangle, anchored at the largest/anchor piece; everything else is erased.",
+      "gap": "Needs jigsaw assembly: search over piece placements so edges/borders match into a single complete rectangle.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "7b3084d4",
+      "rule": "Four irregular pieces are rotated/reflected and packed together without gaps into a solid square whose area equals their total cell count, with the piece carrying the 5 cell placed so the 5 lands at the top-left corner.",
+      "gap": "Needs a polyomino packing search over D8 poses and positions of several pieces into a square; composition only selects or overlays.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "cbebaa4b",
+      "rule": "Shapes carry colour-2 connector dots; keeping the 4 block fixed, all other shapes are translated so that their connector dots coincide pairwise with those of already-placed shapes, assembling one connected structure.",
+      "gap": "Needs connector-matching assembly: search translations of many pieces so 2-dot pairs coincide, building a tree from the anchor piece.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "f560132c",
+      "rule": "Four irregular shapes (one carrying a 2x2 colour key) are recoloured with the key's four colours by quadrant and fitted together, possibly rotated, like jigsaw pieces into a solid rectangle, which is the output.",
+      "gap": "Needs jigsaw packing search (D8 poses plus placement so pieces tile a rectangle) and binding the 2x2 key's quadrant colours to pieces.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "16b78196",
+      "rule": "Loose shapes are slid toward the jagged wall band and stacked so each piece interlocks exactly into the wall's notches and into the previous piece, forming a solid column against the wall.",
+      "gap": "Needs jigsaw-style fitting: choose order and offset so pieces interlock with wall gaps and each other, not just move-until-contact.",
+      "conf": "medium",
+      "closest": "dynamics"
+     }
+    ],
+    "GEOMETRY": [
+     {
+      "task": "45a5af55",
+      "rule": "The input's horizontal stripes, read top to bottom, become concentric square rings from outside in; output side is 2*(rows)-2 so the last stripe forms the centre.",
+      "gap": "Needs a row-to-ring coordinate remap, colours read from the input, and computed output size; field maps codes only to constant colours.",
+      "conf": "high",
+      "closest": "field"
+     },
+     {
+      "task": "b10624e5",
+      "rule": "The top-left quadrant holds a template (core block with coloured satellites); every other quadrant's core is completed with the template's satellites, mirrored to that quadrant's orientation and scaled to that core's size.",
+      "gap": "Quadrant mirror symmetry is present but at differing scales; needs template transfer anchored on the core with scale factor inferred from core size.",
+      "conf": "high",
+      "closest": "self-model"
+     },
+     {
+      "task": "c4d067a0",
+      "rule": "A small dotted key in the corner is a miniature layout; the part already drawn large (blocks matching one key row) fixes block size, spacing and anchor, and the remaining key cells are drawn as same-size blocks in that enlarged lattice.",
+      "gap": "Upscale is uniform; needs inferring a scale, gap and anchor from a partially drawn enlarged copy and completing the key in that lattice.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "13e47133",
+      "rule": "Separator lines partition the grid into (possibly non-rectangular) regions; each region is filled with concentric rings following its boundary, cycling the colours given by the seed cells placed diagonally in a region corner.",
+      "gap": "Needs ring code = distance to the boundary of each separator-delimited irregular region, with per-region colour cycle read from corner seeds.",
+      "conf": "medium",
+      "closest": "field"
+     },
+     {
+      "task": "16de56c4",
+      "rule": "In each row (or column) the two same-colour cells at the edge define a step; the dotted progression is extended across the line, taking the colour of a third differently-coloured cell on the lattice and stopping there, else running to the grid edge.",
+      "gap": "Rays are solid; needs dotted rays whose period is inferred from a cell pair per line, recoloured and stopped by an on-lattice terminal cell.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "20a9e565",
+      "rule": "The input shows a progression of shapes that grow step by step (with a cycling colour sequence); the output is the next, not-yet-drawn term of that progression (its size, shape and colour extrapolated).",
+      "gap": "Needs sequence extrapolation over objects: infer growth step and colour cycle across a series, then generate the next larger term.",
+      "conf": "medium",
+      "closest": "composition"
+     }
+    ],
+    "NEAR_REACH": [
+     {
+      "task": "8e5c0c38",
+      "rule": "Each object is made left-right mirror symmetric about its best vertical axis by deleting the few cells that have no mirror partner.",
+      "gap": "Self-model needs per-object symmetry with axis search, and repair by deletion (intersect with mirror) instead of filling occluded cells.",
+      "conf": "high",
+      "closest": "self-model"
+     },
+     {
+      "task": "981571dc",
+      "rule": "Fill the 0-masked blocks of a symmetric mosaic using its transpose symmetry plus horizontal/vertical mirror symmetry about an off-centre axis (between rows/cols 15 and 16).",
+      "gap": "Self-model needs mirror axes not centred on the grid (offset 15.5 in a 30-grid) and composing them with transpose to fill regions masked in both.",
+      "conf": "high",
+      "closest": "self-model"
+     },
+     {
+      "task": "bf45cf4b",
+      "rule": "Output is the bounding box of the monochrome mask shape scaled by the multicolour tile's size: each mask cell is replaced by a copy of the tile and each non-mask cell by background.",
+      "gap": "Fractal/tile exists but only self-similar; needs Kronecker product of one object's mask with a different (multicolour) object as tile.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "221dfab4",
+      "rule": "A coloured bar on one grid edge defines a band; moving away from it, rows (columns) alternate with period 6: even offsets paint the band with the bar colour, odd offsets clear the band to background, and every third even offset recolours all object cells along that whole line to 3.",
+      "gap": "Field needs an edge-bar marker (not a cell), band-membership and input-colour in the key, and orientation from which edge holds the bar.",
+      "conf": "medium",
+      "closest": "field"
+     },
+     {
+      "task": "53fb4810",
+      "rule": "Each blue plus-shaped 'emitter' with a short 2-colour seed beside it shoots a ray in the seed's direction to the grid edge, repeating the seed's colour sequence periodically (the example emitter already shows a full trail).",
+      "gap": "Dynamics rays are single-colour; needs a ray whose cells repeat the seed's periodic colour sequence, direction taken from the seed side.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "71e489b6",
+      "rule": "Small 0-coloured holes inside the 1 regions get a 7 halo on their 8-neighbouring 1 cells, while stray single 1 pixels in the 0 regions are erased; large 0 areas are untouched.",
+      "gap": "Behavior must treat colour-0 holes as objects and key on a size class, not exact shape, so unseen hole shapes (diagonal chains) generalise.",
+      "conf": "medium",
+      "closest": "behavior"
+     }
+    ]
+   },
+   "near_reach": [
+    {
+     "task": "53fb4810",
+     "closest": "dynamics",
+     "gap": "Dynamics rays are single-colour; needs a ray whose cells repeat the seed's periodic colour sequence, direction taken from the seed side."
+    },
+    {
+     "task": "dfadab01",
+     "closest": "behavior",
+     "gap": "Per-colour stamp table is close to behavior/pattern; needs asymmetric 4x4 stamp anchored top-left of a single cell, accumulated across demos, plus erasing unmarked glyphs."
+    },
+    {
+     "task": "8e5c0c38",
+     "closest": "self-model",
+     "gap": "Self-model needs per-object symmetry with axis search, and repair by deletion (intersect with mirror) instead of filling occluded cells."
+    },
+    {
+     "task": "221dfab4",
+     "closest": "field",
+     "gap": "Field needs an edge-bar marker (not a cell), band-membership and input-colour in the key, and orientation from which edge holds the bar."
+    },
+    {
+     "task": "71e489b6",
+     "closest": "behavior",
+     "gap": "Behavior must treat colour-0 holes as objects and key on a size class, not exact shape, so unseen hole shapes (diagonal chains) generalise."
+    },
+    {
+     "task": "981571dc",
+     "closest": "self-model",
+     "gap": "Self-model needs mirror axes not centred on the grid (offset 15.5 in a 30-grid) and composing them with transpose to fill regions masked in both."
+    },
+    {
+     "task": "7ed72f31",
+     "closest": "self-model",
+     "gap": "Symmetry axis must be per-object, anchored on the attached 2 marker (line axis or point centre), rather than a global grid axis."
+    },
+    {
+     "task": "aa4ec2a5",
+     "closest": "behavior",
+     "gap": "Needs a shape-agnostic rule: halo all objects plus recolour-if-holed with hole fill; change tables keyed by exact canonical shape do not generalise to new shapes."
+    },
+    {
+     "task": "bf45cf4b",
+     "closest": "composition",
+     "gap": "Fractal/tile exists but only self-similar; needs Kronecker product of one object's mask with a different (multicolour) object as tile."
+    },
+    {
+     "task": "fc7cae8d",
+     "closest": "composition",
+     "gap": "Object select + D8 exists, but needs segmenting the picture bounded by touching frame lines amid noise, excluding the frame, before crop-and-rotate."
+    }
+   ]
+  },
+  "new233": {
+   "n": 112,
+   "primary": {
+    "COMPOSITION": 26,
+    "SYMBOL": 11,
+    "NEAR_REACH": 23,
+    "COUNT_RELATION": 23,
+    "CONTEXT": 4,
+    "GOAL_SEARCH": 5,
+    "BEHAVIOUR": 10,
+    "GEOMETRY": 10
+   },
+   "primary_or_secondary": {
+    "BEHAVIOUR": 22,
+    "COMPOSITION": 41,
+    "SYMBOL": 21,
+    "NEAR_REACH": 24,
+    "CONTEXT": 17,
+    "GEOMETRY": 23,
+    "COUNT_RELATION": 31,
+    "GOAL_SEARCH": 8
+   },
+   "confidence": {
+    "low": 14,
+    "medium": 53,
+    "high": 45
+   },
+   "closest_module": {
+    "dynamics": 32,
+    "none": 11,
+    "field": 1,
+    "behavior": 17,
+    "composition": 31,
+    "association": 9,
+    "self-model": 4,
+    "periodic": 3,
+    "pattern": 4
+   },
+   "examples": {
+    "BEHAVIOUR": [
+     {
+      "task": "7e2bad24",
+      "rule": "A diagonal 1-segment is extended as a ray; it passes straight through colour-3 lines (overwriting the crossing cell with 1) but reflects off colour-2 lines like a mirror, continuing to the grid edge.",
+      "gap": "Needs diagonal ray extension with reflection (bounce) at obstacles and colour-dependent pass-through vs reflect behaviour.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "b25e450b",
+      "rule": "Each black rectangle touching a grid edge slides straight across to the opposite edge, and every cell in the band it sweeps through is cleaned to orange (grey noise erased).",
+      "gap": "Needs a slide-to-opposite-border action that ignores obstacles and wipes its swept band; move stops at contact and leaves no trail.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "758abdf0",
+      "rule": "Teal marks on one border: length-1 marks grow to length 2, while length-2 marks are erased and instead cut a 2-cell black notch at the opposite end of the same row/column.",
+      "gap": "Length-2 marks have a non-local effect (notch at the far opposite edge), beyond radius-4 local change tables.",
+      "conf": "medium",
+      "closest": "behavior"
+     },
+     {
+      "task": "97c75046",
+      "rule": "The grey cell moves straight toward the black staircase region until blocked, then slides diagonally along the region's edge while staying adjacent to it, stopping when blocked or when it would lose contact.",
+      "gap": "Move-until-contact exists; needs a follow-up trajectory sliding diagonally along an obstacle's edge with a contact-based stopping rule.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "984d8a3e",
+      "rule": "Each row's middle-colour run slides left through the left-colour region until its right end reaches the leftmost right edge of that run over all rows (or it hits the wall); the displaced left-colour cells reappear on its right.",
+      "gap": "Needs per-row sliding with a stopping line set globally (min right edge across rows) and displaced-fluid refill; gravity stops only at contact.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "985ae207",
+      "rule": "Each 3x3 ring whose centre has colour c is repeated periodically (period 3) in the direction of the large object of colour c until it overlaps that object by two cells.",
+      "gap": "Needs directed periodic extension of an object toward a same-colour target with a stopping condition (overlap into target).",
+      "conf": "medium",
+      "closest": "periodic"
+     }
+    ],
+    "COMPOSITION": [
+     {
+      "task": "11dc524f",
+      "rule": "The red shape slides toward the 2x2 grey block until it touches it, and the grey block is reshaped into the mirror image of the red shape reflected across the contact line.",
+      "gap": "Move-until-contact exists, but chaining it with reshaping the target object into the reflected copy of the mover is missing.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "1b59e163",
+      "rule": "Each multi-colour template shape contains one anchor-coloured cell; copies of the template are stamped at every isolated cell of that anchor colour, the original template is erased, and grey noise cells are deleted.",
+      "gap": "No operator to stamp a template object at all marker cells matching its anchor colour (copy-to-marker), with template removal.",
+      "conf": "high",
+      "closest": "association"
+     },
+     {
+      "task": "25c199f5",
+      "rule": "The grid is three 5x5 panels split by magenta lines, each holding one object; output is a 5x5 panel where the objects are stacked bottom-up in panel order (left panel lowest), keeping their columns, rows packed with no gaps.",
+      "gap": "Panels are split, but output needs vertical concatenation/stacking of each panel's object rows, not a cellwise vote or overlay.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "278e5215",
+      "rule": "Crop the grey mask shape; at each mask cell output the colour of the key's patterned row at that column, at each non-mask cell the colour of the key's fill row.",
+      "gap": "Needs mask-select between two key rows broadcast down the columns; key and mask are separate unequal-size objects, not separator panels.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "2e65ae53",
+      "rule": "All framed window objects share a compartment layout; the colours filled into compartments of any window are pooled by compartment position and every window (whatever its size) gets all its compartments filled accordingly.",
+      "gap": "Needs part-level object model (window -> compartments) and transfer of compartment fills across windows of different sizes.",
+      "conf": "high",
+      "closest": "association"
+     },
+     {
+      "task": "46c35fc7",
+      "rule": "In each multicolour 3x3 patch the four corner cells rotate 90 degrees counter-clockwise while the four edge-middle cells rotate 90 degrees clockwise; centre unchanged.",
+      "gap": "Needs part-wise transforms within an object (corners vs edges get opposite rotations), colour-agnostic; object-level D8 cannot split parts.",
+      "conf": "high",
+      "closest": "behavior"
+     }
+    ],
+    "CONTEXT": [
+     {
+      "task": "320afe60",
+      "rule": "Each colour-1 object is recoloured and pushed to a side edge (keeping its row): objects that are solid or have a fully enclosed hole become 2 and move to the left edge; objects whose hole is open to the outside become 3 and move to the right edge.",
+      "gap": "Needs open-vs-closed hole topology as a cue selecting both recolour and move direction to the grid edge per object.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "4e7e0eb9",
+      "rule": "Within each separator-bounded group of four blocks: if a yellow line divides the group, swap the blocks across that line (left/right or top/bottom); otherwise recolour all blue placeholder blocks to the group's single other colour.",
+      "gap": "Needs per-group selection between swap-across-divider and fill-placeholders, cued by presence/orientation of a yellow divider line.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "252143c9",
+      "rule": "The centre cell has a colour matching one of the noisy quadrant patterns; erase everything and draw a diagonal ray from the centre cell toward the corner of the quadrant containing that colour.",
+      "gap": "Ray direction must be selected by matching centre colour to the quadrant with same-colour pattern; then clear all other content.",
+      "conf": "medium",
+      "closest": "field"
+     },
+     {
+      "task": "8886d717",
+      "rule": "Specks of 8 lying inside the 2 region are erased, while 8 specks lying in the 7 region grow by one cell toward the 9 border line (wherever that border is).",
+      "gap": "Speck action depends on enclosing region colour and growth direction comes from the distant 9 border; local tables lack this non-local cue.",
+      "conf": "medium",
+      "closest": "behavior"
+     }
+    ],
+    "SYMBOL": [
+     {
+      "task": "22806e14",
+      "rule": "Remove the plus-shaped object and paint the centre cell of every odd-sided square of the main colour with the plus's colour; even-sided squares stay unchanged.",
+      "gap": "Mark colour comes from an indicator plus that varies per demo; also needs 'centre of odd square' for unseen sizes (7x7).",
+      "conf": "high",
+      "closest": "behavior"
+     },
+     {
+      "task": "2b9ef948",
+      "rule": "A bent 5-coloured key path runs from a coloured end to a 4 end: the background becomes the end colour, the 3x3 ring is translated by the key's end-to-end displacement vector, and diagonal 4-lines radiate from the ring's corners to the grid edges.",
+      "gap": "Must read a glyph as a displacement vector plus background colour, translate the ring accordingly, then chain diagonal corner rays.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "6d1d5c90",
+      "rule": "Drop the left marker column and cyclically shift the remaining rows downward by the row index of the red marker cell in that column.",
+      "gap": "Toroidal shift exists, but the shift amount must be read from a marker's position (row index) and the marker column removed.",
+      "conf": "high",
+      "closest": "periodic"
+     },
+     {
+      "task": "98c475bf",
+      "rule": "Each colour has a fixed glyph shape (consistent across demos) drawn on a horizontal line; erase the existing glyph and, for each pair of border marker cells, draw a line across that row plus that colour's glyph at its usual column.",
+      "gap": "Needs a cross-demo memory binding colour -> glyph shape/position, retrieved when only marker cells of that colour appear.",
+      "conf": "high",
+      "closest": "association"
+     },
+     {
+      "task": "13f06aa5",
+      "rule": "Each small arrow-shaped object with one odd-coloured tip cell shoots a dotted (every second cell) ray of the tip colour in the direction it points, and the grid edge it hits is painted entirely in that colour (corner where two painted edges meet becomes 0).",
+      "gap": "Ray direction must be inferred from the arrow shape's orientation; needs period-2 dotted rays and painting the whole hit border line.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "305b1341",
+      "rule": "A top-left key lists colour pairs a->b; each dot-lattice object of colour a gets every surrounding background cell within its 3x3 neighbourhood filled with b, with overlaps drawn in key-row priority (first row on top).",
+      "gap": "2-cell legend exists, but legend must drive a halo/dilation action per object with z-order taken from legend row order.",
+      "conf": "medium",
+      "closest": "association"
+     }
+    ],
+    "COUNT_RELATION": [
+     {
+      "task": "22425bda",
+      "rule": "The grid contains several crossing straight lines (horizontal, vertical, diagonal); output a 1-row list of their colours ordered by stacking depth, from the line drawn underneath to the line on top at crossings.",
+      "gap": "Needs occlusion relation between lines at crossing cells, a topological sort into depth order, and emitting colours as a sequence.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "48634b99",
+      "rule": "Among vertical teal line segments, one has its top or bottom half coloured maroon; that maroon half is removed and painted onto the same half (top/bottom) of the segment whose length is exactly 2 greater.",
+      "gap": "Needs ranking/comparison of segment lengths (find the line of length L+2) and transfer of a half-segment recolouring to it.",
+      "conf": "high",
+      "closest": "behavior"
+     },
+     {
+      "task": "5d588b4d",
+      "rule": "A bar of length n in colour c becomes, in raster order across the grid width, runs of length 1,2,...,n,...,2,1 separated by single blank cells, with height as needed.",
+      "gap": "Needs reading a count (bar length) and generating a counted sequence of runs written in raster (row-wrapped) order.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "878187ab",
+      "rule": "Count the two scattered speck colours; output (fixed 16x16, background 7) a bottom-left rectangle of 2 whose height is the minority count and width the majority count, with a 4 V-shape of diagonals rising from its bottom corners.",
+      "gap": "Needs numerosity of colours mapped to rectangle dimensions, plus drawing a diagonal V pattern inside it.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "8abad3cf",
+      "rule": "Count the cells of each colour (non-background); render each colour as a solid k x k square with k*k = its count, arranged left to right in ascending size, bottom-aligned, separated by one background column.",
+      "gap": "Needs per-colour cell counts mapped to square sizes, sorting by count, and assembling a new output layout.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "8e301a54",
+      "rule": "Every object moves straight down by a number of cells equal to its own cell count (clipped at the grid edge).",
+      "gap": "Translation exists, but displacement must equal each object's size (numerosity-driven move distance).",
+      "conf": "high",
+      "closest": "dynamics"
+     }
+    ],
+    "GOAL_SEARCH": [
+     {
+      "task": "42f14c03",
+      "rule": "Find the object whose holes (background-coloured gaps) exactly match the shapes of loose small pieces elsewhere; output that object cropped with its holes filled by the matching pieces' colours.",
+      "gap": "Needs shape-matching of loose pieces to holes, selecting the object they fit, and compositing pieces into holes.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "7e576d6e",
+      "rule": "Draw an orthogonal path of 8 from one marker cell to the other, travelling alongside walls and crossing each wall line only through its gate (the middle of its coloured segment), overwriting the gate cell.",
+      "gap": "Needs path routing between two markers that threads through gate segments in successive wall lines.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "83b6b474",
+      "rule": "Several coloured L/bar fragments scattered on the background are the pieces of a square ring; assemble them (translation only) into a closed square frame, with the background colour filling its interior, and output that square.",
+      "gap": "Needs puzzle-style assembly: find placements so fragments jointly form a closed rectangular frame.",
+      "conf": "high",
+      "closest": "none"
+     },
+     {
+      "task": "cc9053aa",
+      "rule": "Two 9 markers sit outside an 8 wall structure; recolour to 9 the route along the 8 wall lines connecting the two markers, taking the side of the structure away from the 7 cells (7s mark compartments the route must avoid).",
+      "gap": "Needs path search along wall segments between two markers with avoidance constraints set by 7 cells.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "f8f52ecc",
+      "rule": "Cells of the same colour (two or more) are joined into one connected orthogonal path (straight or L-shaped segments) in that colour, routed around the 8 walls; singleton colours are left alone.",
+      "gap": "Connect handles only aligned straight segments; needs L-shaped/tree routing between same-colour cells with obstacle avoidance.",
+      "conf": "medium",
+      "closest": "dynamics"
+     }
+    ],
+    "GEOMETRY": [
+     {
+      "task": "e3f79277",
+      "rule": "The 6x6 input shows a right-angle corner with arms of length k in one corner; output is a 16x16 canvas with, in the same corner, a right triangle whose arms are length 2k and whose hypotenuse is a diagonal line (outline only).",
+      "gap": "Needs scaling a corner shape by 2 about its corner and completing it into a triangle with a diagonal hypotenuse, on a fixed canvas.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "2ccd9fef",
+      "rule": "The input is a sequence of equal panels in which an inner shape grows by one cell per step (last panel blank); output is the next panel with the shape grown by one more step.",
+      "gap": "No sequence extrapolation across panels: infer per-step growth of a shape and render the next term.",
+      "conf": "medium",
+      "closest": "composition"
+     },
+     {
+      "task": "33067df9",
+      "rule": "The sparse lattice of coloured dots is upscaled into a fixed 26x26 canvas of blocks (block size set by lattice dimensions, 2-cell gaps/margins), with horizontally adjacent same-colour cells merged into one block, and vertical merges only for cells not merged horizontally.",
+      "gap": "Upscale to fixed canvas with variable block size plus merging adjacent equal-colour cells into rectangles; only fixed-factor upscale exists.",
+      "conf": "medium",
+      "closest": "composition"
+     },
+     {
+      "task": "9841fdad",
+      "rule": "Copy the objects of the small left panel into the empty wider right panel, keeping rows but re-laying out horizontally by anchoring: full-width bars stretch to the new width, left-aligned objects stay left, right-aligned objects move to the right side.",
+      "gap": "Needs anchor-aware non-uniform rescaling (stretch spans, preserve left/right alignment) from one panel to a differently sized panel.",
+      "conf": "medium",
+      "closest": "composition"
+     },
+     {
+      "task": "9f41bd9c",
+      "rule": "The grey comb (solid top plus teeth) jumps to the opposite side of the grid, its teeth sheared diagonally one cell per row back toward its old side, and the floor row under the vacated span turns maroon.",
+      "gap": "Needs non-rigid shear deformation of an object's teeth plus mirror relocation and a floor mark spanning the remaining width.",
+      "conf": "medium",
+      "closest": "dynamics"
+     },
+     {
+      "task": "d753a70b",
+      "rule": "Diamond outlines are rescaled about their centres by colour: colour-2 diamonds shrink by one step (radius minus 1), colour-5 diamonds grow by one (a single 5 becomes a radius-1 ring), other colours unchanged; partially off-grid diamonds included.",
+      "gap": "Needs concentric scaling of diamond rings (incl. off-grid centres), with direction chosen by object colour.",
+      "conf": "medium",
+      "closest": "behavior"
+     }
+    ],
+    "NEAR_REACH": [
+     {
+      "task": "2de01db2",
+      "rule": "Each row has one dominant colour C plus noise; output row is C exactly where the input row is not C, and 0 elsewhere (complement of that colour's mask).",
+      "gap": "Needs a per-row (panel-by-row) dominant colour and mask-complement operation; no module keys rows as units with a complement.",
+      "conf": "high",
+      "closest": "behavior"
+     },
+     {
+      "task": "60d73be6",
+      "rule": "A cross of divider lines splits the grid off-centre; the pattern in one quadrant is mirrored across the divider lines into the other quadrants (4-fold reflection about the cross, clipped at the grid edge).",
+      "gap": "Mirror symmetry must use the off-centre separator lines as axes and allow clipping; self-model assumes grid-centred global symmetry.",
+      "conf": "high",
+      "closest": "self-model"
+     },
+     {
+      "task": "6ca952ad",
+      "rule": "Objects of size 4 or more fall straight down (rigidly) until they hit the bottom edge; objects of size 3 or less stay in place.",
+      "gap": "Gravity must apply only to objects passing a size threshold (>=4 cells); small objects are exempt.",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "6ffe8f07",
+      "rule": "The 8 rectangle projects bands of 4 (its full width vertically and full height horizontally) to all grid edges; the bands paint over background and colour-2 objects but pass beneath colour-1 objects.",
+      "gap": "Rays must be object-wide bands in four directions with colour-specific layering (overwrite 2, keep 1).",
+      "conf": "high",
+      "closest": "dynamics"
+     },
+     {
+      "task": "833966f4",
+      "rule": "In the 5x1 column swap the first two cells and swap the last two cells, keeping the middle cell; i.e. a fixed positional permutation regardless of colours.",
+      "gap": "Needs a learned fixed cell-position permutation (swap rows 0/1 and 3/4) with colours copied from input; not a D8 transform.",
+      "conf": "high",
+      "closest": "composition"
+     },
+     {
+      "task": "9344f635",
+      "rule": "Each 2-cell segment extends into a full line along its own axis: horizontal pairs fill their whole row, vertical pairs fill their whole column, with row lines drawn over column lines.",
+      "gap": "Rays exist but in fixed directions; ray axis must follow each segment's orientation, with horizontal lines taking priority over vertical.",
+      "conf": "high",
+      "closest": "dynamics"
+     }
+    ]
+   },
+   "near_reach": [
+    {
+     "task": "17829a00",
+     "closest": "dynamics",
+     "gap": "Gravity direction must be chosen per object by matching its colour to the same-coloured border row."
+    },
+    {
+     "task": "2de01db2",
+     "closest": "behavior",
+     "gap": "Needs a per-row (panel-by-row) dominant colour and mask-complement operation; no module keys rows as units with a complement."
+    },
+    {
+     "task": "494ef9d7",
+     "closest": "dynamics",
+     "gap": "Move-until-contact must be gated by a learned colour-pair compatibility ({1,8},{4,7}) between single cells in the same row."
+    },
+    {
+     "task": "522fdd07",
+     "closest": "behavior",
+     "gap": "Needs colour-agnostic, size-keyed object change (erode ring / grow 1x1 to 9x9); test single cell has unseen colour 0."
+    },
+    {
+     "task": "5adee1b2",
+     "closest": "association",
+     "gap": "Legend lookup exists, but the action must be painting the padded-bbox exterior background around each shape, not recolouring or hole filling."
+    },
+    {
+     "task": "60d73be6",
+     "closest": "self-model",
+     "gap": "Mirror symmetry must use the off-centre separator lines as axes and allow clipping; self-model assumes grid-centred global symmetry."
+    },
+    {
+     "task": "6ca952ad",
+     "closest": "dynamics",
+     "gap": "Gravity must apply only to objects passing a size threshold (>=4 cells); small objects are exempt."
+    },
+    {
+     "task": "6ffe8f07",
+     "closest": "dynamics",
+     "gap": "Rays must be object-wide bands in four directions with colour-specific layering (overwrite 2, keep 1)."
+    },
+    {
+     "task": "833966f4",
+     "closest": "composition",
+     "gap": "Needs a learned fixed cell-position permutation (swap rows 0/1 and 3/4) with colours copied from input; not a D8 transform."
+    },
+    {
+     "task": "973e499e",
+     "closest": "composition",
+     "gap": "Fractal variant where each block is the mask of cells equal to that cell's colour, not the plain non-zero mask."
+    },
+    {
+     "task": "9968a131",
+     "closest": "pattern",
+     "gap": "Needs a colour-agnostic row-wise cyclic shift applied to alternate rows; learned local patterns are tied to seen colours."
+    },
+    {
+     "task": "9b30e358",
+     "closest": "periodic",
+     "gap": "Periodic extension must treat the uniform background region as unknown and use bottom-anchored vertical period equal to the motif height."
+    },
+    {
+     "task": "e84fef15",
+     "closest": "composition",
+     "gap": "Panel module needs majority tile vs odd-one-out difference overlay, marking mismatching cells with a new colour 1."
+    },
+    {
+     "task": "14b8e18c",
+     "closest": "behavior",
+     "gap": "Behaviour keys need a colour- and size-independent shape class 'is square (h==w)' so corner marks generalise to unseen colour/size."
+    },
+    {
+     "task": "458e3a53",
+     "closest": "composition",
+     "gap": "Panel downscale exists; needs restricting to panels of uniform colour (those breaking the periodic pattern) and cropping to their bounding block."
+    },
+    {
+     "task": "7e4d4f7c",
+     "closest": "composition",
+     "gap": "Crop exists; needs one extra step writing row 0 into row 2 with the non-background colour remapped to 6."
+    },
+    {
+     "task": "825aa9e9",
+     "closest": "dynamics",
+     "gap": "Gravity-until-contact exists; needs a stop-one-cell-short offset (resting gap of 1) instead of contact."
+    },
+    {
+     "task": "9344f635",
+     "closest": "dynamics",
+     "gap": "Rays exist but in fixed directions; ray axis must follow each segment's orientation, with horizontal lines taking priority over vertical."
+    },
+    {
+     "task": "a09f6c25",
+     "closest": "behavior",
+     "gap": "Symmetry key is lost in D8-canonical frames; needs absolute symmetry-axis type (H/V/diagonal) as the key, singletons deleted."
+    },
+    {
+     "task": "a644e277",
+     "closest": "composition",
+     "gap": "Needs crop delimited by anomalous lattice intersections (gaps in separator lines) rather than fixed corners or selected objects."
+    },
+    {
+     "task": "f28a3cbb",
+     "closest": "dynamics",
+     "gap": "Move-until-contact exists but in fixed directions; needs attraction toward the same-colour anchor object (8 directions) per stray cell."
+    },
+    {
+     "task": "f8cc533f",
+     "closest": "self-model",
+     "gap": "Self-similarity repair must work per object across colours (colour-agnostic template consensus or per-object symmetry), not global grid symmetry."
+    },
+    {
+     "task": "fbf15a0b",
+     "closest": "composition",
+     "gap": "Crop exists for fixed corners; needs half-crop whose axis and side are chosen by a marker pair's orientation and position, markers erased."
+    }
+   ]
+  }
+ },
+ "labels": [
+  {
+   "split": "agi2-eval",
+   "task": "136b0064",
+   "rule": "Each 3x3 glyph on the left (read in pairs, top to bottom) stands for a stroke of a fixed colour, direction and length (U-shape=2 cells left, Y=2 down, 1-glyph=3 right, 3-glyph=4 left); the strokes are chained as a turtle path starting below the 5 marker in the right panel.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "none",
+   "gap": "Needs glyph-to-action binding (shape means direction+length) and sequential turtle-path drawing from a start marker; no module interprets glyphs as instructions.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "16de56c4",
+   "rule": "In each row (or column) the two same-colour cells at the edge define a step; the dotted progression is extended across the line, taking the colour of a third differently-coloured cell on the lattice and stopping there, else running to the grid edge.",
+   "primary": "GEOMETRY",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Rays are solid; needs dotted rays whose period is inferred from a cell pair per line, recoloured and stopped by an on-lattice terminal cell.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "20a9e565",
+   "rule": "The input shows a progression of shapes that grow step by step (with a cycling colour sequence); the output is the next, not-yet-drawn term of that progression (its size, shape and colour extrapolated).",
+   "primary": "GEOMETRY",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "composition",
+   "gap": "Needs sequence extrapolation over objects: infer growth step and colour cycle across a series, then generate the next larger term.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "269e22fb",
+   "rule": "All outputs are the same hidden 20x20 two-colour picture (up to D8 pose and colour swap); the input is a fragment of it, and the output is the whole picture in the pose and colours that place the fragment correctly.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "GEOMETRY",
+   "closest_module": "self-model",
+   "gap": "Needs a cross-demo object memory (one canonical image) plus registration of the input fragment against it under D8 pose and colour mapping.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "2b83f449",
+   "rule": "Each horizontal 777 becomes 868 with a vertical 6 bar through its centre into the 8-rows above and below; then the 3 end-markers of each 8-row segment are rewritten (kept/doubled or erased) depending on whether the nearest 6 to that end came from above or below (exact count rule unclear).",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "behavior",
+   "gap": "Local stamp is learnable, but end-marker rewrite depends on a row-segment-level relation (origin of nearest 6); needs chaining a segment-level rule after the stamp.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "31f7f899",
+   "rule": "Vertical bars of different colours cross a horizontal 6 line symmetrically; the bar lengths are re-assigned in ascending order from left to right (each column keeps its colour, still centred on the line).",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "none",
+   "gap": "Needs ranking/sorting of object lengths across objects and reassigning sorted sizes by position; no module compares or permutes object properties.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "38007db0",
+   "rule": "The grid is a lattice of framed panels; in each row of panels exactly one panel differs from the others, and the output stacks these odd-one-out panels (one per panel row) into a single framed column.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Has odd-one-out selection globally, but not applied per row-group of panels with the selected panels re-assembled into a stacked output.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "409aa875",
+   "rule": "Each small chevron acts as an arrow: the cell a fixed distance (5) ahead along its pointing direction (orthogonal or diagonal) is marked 9 (or recoloured to 9 if a shape is there); where two arrows target the same cell it becomes 1.",
+   "primary": "SYMBOL",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Rays use fixed directions; needs arrow direction read from chevron orientation, a fixed-distance landing point, and collision counting to choose colour.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "4c3d4a41",
+   "rule": "The grey staircase profile on the left is moved into the right box: each box column receives the matching left column's height of 5s from the bottom, and the coloured bar in that column is pushed upward (clipped at the box top); the left shape is erased.",
+   "primary": "COMPOSITION",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "pattern",
+   "gap": "Needs cross-object column correspondence: read bar heights from one object and apply them as per-column fill/shift inside another object.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "53fb4810",
+   "rule": "Each blue plus-shaped 'emitter' with a short 2-colour seed beside it shoots a ray in the seed's direction to the grid edge, repeating the seed's colour sequence periodically (the example emitter already shows a full trail).",
+   "primary": "NEAR_REACH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Dynamics rays are single-colour; needs a ray whose cells repeat the seed's periodic colour sequence, direction taken from the seed side.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "58f5dbd5",
+   "rule": "Crop the region of solid 5x5 coloured blocks; inside each block, carve the 3x3 glyph of the same colour (found loose elsewhere in the grid) as background-coloured holes in the block's interior; glyphs with no matching block are dropped.",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "Needs colour-keyed binding of a free glyph to a solid block, stamping its inverted shape into the block interior, plus cropping the block region.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "64efde09",
+   "rule": "Single marker cells on the grid border define a colour palette; each long bar object emits parallel rays from its flat side (at fixed offsets along the bar) in those palette colours, running away from the bar until blocked or the edge.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Dynamics can cast rays, but not choose ray colours from a border-marker palette nor emit multiple coloured rays at offsets along a bar.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "6e4f6532",
+   "rule": "Each 8-shape with 9 'eye' cells and coloured tabs is lifted off, rotated/reflected so its tab colours face the matching coloured border walls, and placed so its 9 cells land on the loose 9 marker cells; original positions are erased.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "GEOMETRY",
+   "closest_module": "none",
+   "gap": "Needs docking: find D8 pose and translation per object so its 9 cells match the marker cells and tab colours face same-coloured borders.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7666fa5d",
+   "rule": "Several parallel anti-diagonal line segments of one colour are drawn; the background region lying between neighbouring segments (a V/triangle bounded by the segments and the opposite diagonal) is filled with colour 2 (exact boundary rule unclear).",
+   "primary": "GEOMETRY",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Enclosed-fill needs closed 4-connected boundaries; here regions are bounded by open diagonal segments, requiring diagonal-geometry region inference.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7b5033c1",
+   "rule": "A single multi-coloured snake path winds through the grid; trace it from its top end to its other end and output its cells' colours, one per row, as a 1-wide column (length = path length).",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "composition",
+   "gap": "Needs path tracing (ordered traversal of a connected curve from an endpoint) and serialising the visited colours into a new 1-D output.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "800d221b",
+   "rule": "A branching path network links several patterned 'rooms' to a central hub; each branch of the path (from a room up to the hub junction) is recoloured with that room's main colour, while the hub stays unchanged.",
+   "primary": "COUNT_RELATION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "behavior",
+   "gap": "Needs graph/topology reasoning: split a path tree into branches at the junction and recolour each branch by the room it connects to.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "88e364bc",
+   "rule": "A small patterned key block (1s and 2s inside a frame) in a corner encodes a direction (incl. diagonals); every 4 dot inside the irregular outlines slides in that direction until it is next to the outline wall.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Move-until-contact exists, but direction must be read from a key glyph that differs per task instance; needs glyph-to-direction binding.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "8b9c3697",
+   "rule": "Each comb-like object has a notch on one side; a colour-2 block lying in line with the notch and of matching width slides into it, leaving a trail of 0s behind it; all other 2 blocks are erased.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Move-until-contact lacks shape-fit matching (block width vs notch), a drawn trail of the vacated path, and deletion of unmatched pieces.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "9385bd28",
+   "rule": "Two same-colour L-shaped corner pieces mark opposite corners of a rectangle; a corner legend of 2-cell pairs (a b) says to fill the background inside the rectangle spanned by colour-a corners with colour b (b=0 means no fill), other objects kept on top.",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "Has 2-cell legends, but the fill target is the rectangle spanned by a pair of corner objects; needs grouping objects into a region, with layering.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "9bbf930d",
+   "rule": "Rows of coloured bars are separated by 7-rows with a 6 border column on the left; where a separator lies between two identical neighbouring bars, its left 6 is removed and a 6 is placed at the row's right end (plus extra 6 marks at open bar ends; details unclear).",
+   "primary": "COUNT_RELATION",
+   "secondary": "CONTEXT",
+   "closest_module": "behavior",
+   "gap": "Needs comparing adjacent objects (are the bars above and below identical?) and moving a marker to the opposite end conditioned on that relation.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "a395ee82",
+   "rule": "A sparse dot pattern (dots on a stride-2 lattice) is a map: each dot becomes a copy of the template shape in the dot's colour, laid out at shape-size spacing and anchored so the original shape sits at its own dot; the dot map is erased.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Fractal/tile is fixed; needs placing template copies driven by a separate stride-2 dot map with colours, scaled and anchored at the original shape.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "abc82100",
+   "rule": "A small key glyph (colours arranged around an 8 centre) defines a colour substitution; patterns of the source colour are recoloured to the target colour and re-drawn mirrored/reflected about a line or point (e.g. lines on lattice positions), while key and unmatched marks vanish; rule only partly understood.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Needs decoding an in-grid key glyph into a colour mapping plus a spatial reflection of the mapped patterns; beyond 2-cell legends.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "b6f77b65",
+   "rule": "The corner cell's colour names one of the stacked arch-shaped pieces; that piece is deleted and every piece that loses support falls straight down (as rigid bodies resting on each other) until supported.",
+   "primary": "BEHAVIOUR",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Gravity exists, but needs cue-selected deletion and rigid multi-object stacking physics where non-convex pieces rest on each other.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "c4d067a0",
+   "rule": "A small dotted key in the corner is a miniature layout; the part already drawn large (blocks matching one key row) fixes block size, spacing and anchor, and the remaining key cells are drawn as same-size blocks in that enlarged lattice.",
+   "primary": "GEOMETRY",
+   "secondary": "SYMBOL",
+   "closest_module": "composition",
+   "gap": "Upscale is uniform; needs inferring a scale, gap and anchor from a partially drawn enlarged copy and completing the key in that lattice.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "d35bdbdc",
+   "rule": "Each 3x3 framed box has a centre colour that points to the box whose frame has that colour; boxes at the start of such a pointer chain take the pointed box's centre colour, and the pointed-to boxes are erased (which boxes survive seems tied to the grey 5 path); rule partly uncertain.",
+   "primary": "SYMBOL",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "association",
+   "gap": "Needs colour-as-pointer reasoning between objects (centre colour refers to another box's frame colour) and chain resolution with deletion; association only matches same-shape templates.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "db0c5428",
+   "rule": "A 9x9 object made of 3x3 sub-blocks with an empty centre is 'exploded': its corner and edge sub-blocks are copied outward by one block step to form a 5x5-block ring pattern, and the hollow centre block is filled with a pattern assembled from the corner/edge colours.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs part-level decomposition of an object into sub-blocks, displacing parts outward, and synthesising the missing centre from parts; no part-based object model.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "dfadab01",
+   "rule": "Each single marker cell is replaced by a fixed 4x4 glyph anchored at it as top-left, glyph shape and colour chosen by marker colour (2->4 hollow square, 3->1 ring, 5->6 diagonal blocks, 8->7 X); pre-existing glyphs without a marker are erased.",
+   "primary": "NEAR_REACH",
+   "secondary": "SYMBOL",
+   "closest_module": "behavior",
+   "gap": "Per-colour stamp table is close to behavior/pattern; needs asymmetric 4x4 stamp anchored top-left of a single cell, accumulated across demos, plus erasing unmarked glyphs.",
+   "confidence": "medium",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "e8686506",
+   "rule": "Scattered fragments (an open main outline plus small paired pieces) are assembled into one compact left-right symmetric picture: the main outline is cropped and the small pieces are slotted into its gaps/centre so the result is mirror-symmetric.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "self-model",
+   "gap": "Needs assembling pieces into a target object: choose positions for each fragment inside the cropped outline so the whole is symmetric; no assembly search.",
+   "confidence": "low",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "f560132c",
+   "rule": "Four irregular shapes (one carrying a 2x2 colour key) are recoloured with the key's four colours by quadrant and fitted together, possibly rotated, like jigsaw pieces into a solid rectangle, which is the output.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "SYMBOL",
+   "closest_module": "none",
+   "gap": "Needs jigsaw packing search (D8 poses plus placement so pieces tile a rectangle) and binding the 2x2 key's quadrant colours to pieces.",
+   "confidence": "high",
+   "batch": "eval1"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "13e47133",
+   "rule": "Separator lines partition the grid into (possibly non-rectangular) regions; each region is filled with concentric rings following its boundary, cycling the colours given by the seed cells placed diagonally in a region corner.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "field",
+   "gap": "Needs ring code = distance to the boundary of each separator-delimited irregular region, with per-region colour cycle read from corner seeds.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "195c6913",
+   "rule": "From a start marker on the grid edge draw a staircase path rightwards/upwards that turns whenever it would leave the current colour region, writing the repeating colour sequence shown in the top-left legend and ending with the legend's terminal colour; legend and end markers are erased.",
+   "primary": "BEHAVIOUR",
+   "secondary": "SYMBOL",
+   "closest_module": "dynamics",
+   "gap": "Needs a turning path-following behaviour (turn on region boundary) plus reading a colour sequence from a legend to paint along the path.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "21897d95",
+   "rule": "Large colour regions carry small 1-coloured arrow glyphs holding a colour cell; each arrow paints the region it points into with its carried colour, glyphs are removed, regions are cleaned to rectangles and the whole grid is rotated 90 degrees.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Needs arrow glyphs interpreted as pointers carrying a colour into a neighbouring region, plus region-level recolouring and global rotation chained.",
+   "confidence": "low",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "271d71e2",
+   "rule": "Black-framed boxes of 5/7 cells attached to 9-coloured rails slide along the rail (toward the far 9 stop) and each step of travel converts one 5 into 7, so displacement equals the number of newly filled 7 cells (progress-bar).",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs coupled slide-and-fill behaviour: move box along rail to a stop while converting cells, with travel distance tied to a cell count.",
+   "confidence": "low",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "2ba387bc",
+   "rule": "Collect the 4x4 squares, split them into hollow and solid, sort each list by vertical position, and stack them in a two-column output (hollow left, solid right), padding with black.",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs object-list sorting by position, partition by hollow/solid, and assembling an output grid from multiple selected objects rather than one.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "332f06d7",
+   "rule": "A black k x k block travels through the blue maze corridor toward the red k x k block; it ends at the red block if the corridor is wide enough all the way, otherwise at the last position before the corridor narrows below k; its start cells become blue.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs path search of a k x k block through the maze toward a target, stopping where the corridor narrows; dynamics only moves straight.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "3a25b0d8",
+   "rule": "Two symmetric creature-like objects: a multicoloured one and a plain outline template of different size; output is the coloured object non-uniformly stretched (rows/columns duplicated or shifted) to fit the template's silhouette and bounding box.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs non-rigid deformation: stretching an object's rows/columns to match another object's outline, beyond D8 transforms and uniform scaling.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "446ef5d2",
+   "rule": "Scattered jigsaw fragments (pieces of a bordered rectangular picture) are translated so that they fit together into one complete framed rectangle, anchored at the largest/anchor piece; everything else is erased.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs jigsaw assembly: search over piece placements so edges/borders match into a single complete rectangle.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "4c416de3",
+   "rule": "Inside each black rectangular frame, a coloured marker near a corner marks that corner: the marker colour is put on the inner corner cell and a small L-shaped bracket of that colour is drawn hugging the frame's outer corner.",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "behavior",
+   "gap": "Needs part-level rule: map each marker to its nearest frame corner and draw a corner-oriented bracket there, whatever the marker offset.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "5545f144",
+   "rule": "Unclear: separator-split panels contain noise pixels plus one small shape recurring in different poses/positions; the output is a single panel showing only that shape in one pose at a position seemingly anchored to pixels common to all panels (test has a single panel).",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs recognising a recurring shape under noise and pose change across panels and inferring its output pose/location; panel voting fails because shapes move.",
+   "confidence": "low",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "5961cc34",
+   "rule": "A red beam shoots from the 4-tipped start marker; every blob it enters turns red and re-emits the beam (with the 3-marker's width) in the direction its green 3-marker points, chaining through blobs; untouched blobs are erased.",
+   "primary": "BEHAVIOUR",
+   "secondary": "SYMBOL",
+   "closest_module": "dynamics",
+   "gap": "Needs a ray that is redirected by objects: object-specific exit direction read from a marker side, chained across hits, with unhit objects deleted.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "65b59efc",
+   "rule": "The top panels hold k x k tile patterns and the bottom row gives each panel a colour key; a small layout map (in key colours) is expanded so each map cell becomes the k x k pattern bound to its colour, drawn in that colour.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs binding pattern panels to colour keys and a map-driven fractal substitution: each map cell replaced by the pattern its colour denotes.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "6ffbe589",
+   "rule": "Crop the large square concentric object (dropping the small stray pieces) and rotate its nested layers by different amounts (e.g. outer frame by 90 degrees, inner rings by 180), keeping the centre motif.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs part-wise transforms: decompose an object into nested rings and apply a different rotation to each, after cropping it.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "78332cb0",
+   "rule": "The separator-delimited 5x5 panels are re-laid out as a single strip (vertical for 2D/horizontal inputs, horizontal for vertical inputs) in the order that makes each panel's line pattern connect to the next one at the shared edge.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs re-arranging panels into a chain by matching edge contact points (a consistent ordering search), not voting/overlaying panels.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7b80bb43",
+   "rule": "Straight lines have gaps and some short diagonal stray segments; a gap is bridged (filled in line colour) when a displaced diagonal fragment of matching length sits next to it, and all diagonal fragments are erased; other gaps stay open.",
+   "primary": "GEOMETRY",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs pairing diagonal stray fragments with same-length line gaps (selective connect) and deleting the fragments; plain connect fills every gap.",
+   "confidence": "low",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "80a900e0",
+   "rule": "On a checkerboard, a diamond object has coloured diagonal edge segments; each segment is extruded outward (perpendicular to itself, away from the diamond) as a pair of diagonal stripes from its end cells to the grid border.",
+   "primary": "BEHAVIOUR",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs extruding each edge segment along its outward normal (direction set by its side of the object), from segment endpoints on checkerboard parity.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "89565ca0",
+   "rule": "Overlapping rectangle outlines of different colours are each divided into compartments by inner lines; output has one row per rectangle colour with bar length equal to its compartment count, rows sorted by count, padded with the noise colour.",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs counting enclosed compartments per (occluded) outline colour and rendering sorted count bars; no counting/sorting output generator exists.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "8e5c0c38",
+   "rule": "Each object is made left-right mirror symmetric about its best vertical axis by deleting the few cells that have no mirror partner.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "self-model",
+   "gap": "Self-model needs per-object symmetry with axis search, and repair by deletion (intersect with mirror) instead of filling occluded cells.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "97d7923e",
+   "rule": "Vertical bars have caps of a colour; a top-left legend gives, per cap colour, a vertical run of length k; the k-th tallest bar with that cap colour has its interior recoloured to the cap colour.",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "pattern",
+   "gap": "Needs ranking same-cap bars by height and reading k from the legend run length per colour; pattern module only copies local looks.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "a251c730",
+   "rule": "On a periodic background there are two framed boxes: one holds complete small motifs, the other only their key cells; output is the second box cropped with each key cell expanded into the matching motif copied from the first box.",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "Needs chaining crop-the-sparse-box with in-grid template stamping: match key cells to motifs found in another box and paste them around keys.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "a47bf94d",
+   "rule": "Solid 3x3 coloured squares are wired by 8-lines (5 marks crossings where wires pass over each other) to free terminals; each square turns into a hollow plus of its colour and an X-shape of that colour appears at the terminal its wire leads to.",
+   "primary": "BEHAVIOUR",
+   "secondary": "SYMBOL",
+   "closest_module": "dynamics",
+   "gap": "Needs tracing wires straight through crossing marks to find each square's terminal, then shape substitution (solid square to plus, X at endpoint).",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "b0039139",
+   "rule": "Four separator panels give a shape, a set of small green blobs, and two colours; output repeats the shape N times (N = number of green blobs) along the strip axis, drawn in the first colour on the second colour with one-cell gaps.",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs repetition count taken from the number of objects in a panel, combined with panel-role binding for shape and colours; tiling factors are fixed.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "b99e7126",
+   "rule": "A lattice of identical 3x3 tiles has a few tiles replaced by a special tile; complete the replacement so that, at the tile level, the special tiles form a 3x3 arrangement shaped like the special tile's own foreground pattern (self-similar), aligned with the existing partial placement.",
+   "primary": "COMPOSITION",
+   "secondary": "GOAL_SEARCH",
+   "closest_module": "composition",
+   "gap": "Needs hierarchical self-similar completion: infer tile-level layout equal to the tile's pattern and locate it consistently with the partial instances.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "c7f57c3e",
+   "rule": "Copies of one composite object appear at several scales in two variants (different colours of some parts, cap or foot part present/absent); every instance is converted to the other variant, keeping its scale.",
+   "primary": "GEOMETRY",
+   "secondary": "CONTEXT",
+   "closest_module": "association",
+   "gap": "Needs scale-invariant part matching across object instances and a variant swap (A to B, B to A), including adding/removing parts; association needs same-scale templates.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "d59b0160",
+   "rule": "A top-left key box lists a set of colours; every black box whose scattered cells include all key colours is erased (filled with the background 7), other boxes are kept.",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "composition",
+   "gap": "Needs a set-containment test between each box's colour set and a key's colour set to decide deletion; no such relational predicate exists.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "db695cfb",
+   "rule": "Pairs of 1-cells on a common diagonal are joined by a diagonal 1-line; each 6-cell lying on such a connector shoots a 6-line along the perpendicular diagonal in both directions to the borders (overwriting); other 6s stay.",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs chaining diagonal connect with conditional perpendicular diagonal rays fired only by 6s lying on a connector line.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "e12f9a14",
+   "rule": "Each 2x2 coloured core sits in a green frame with gaps; through every gap a ray of the core colour is emitted outward (straight for side gaps, diagonal for corner gaps) and runs to the border, deflecting/stopping at other objects.",
+   "primary": "BEHAVIOUR",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs rays whose direction is set per gap by its position relative to the core (8 directions), emitted only through frame openings.",
+   "confidence": "medium",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "e87109e9",
+   "rule": "The top legend maps each block colour to a turn (left/right, shown by where the colour bar sits in its box); the 8 seed extends as a 2-wide line that turns as the legend dictates whenever it hits a coloured block, until leaving the grid; legend is cropped away.",
+   "primary": "BEHAVIOUR",
+   "secondary": "SYMBOL",
+   "closest_module": "dynamics",
+   "gap": "Needs a bouncing/turning line behaviour whose turn direction at each obstacle is looked up from a colour-to-direction legend.",
+   "confidence": "high",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "f931b4a8",
+   "rule": "The grid has four quadrants: a holey pattern, a filler pattern and two shape/size cues; the holes (0) of the pattern are filled from the filler pattern and the result is tiled to an output size seemingly given by the other quadrants' extents or counts.",
+   "primary": "COMPOSITION",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "composition",
+   "gap": "Needs chaining panel overlay (fill holes from another panel) with tiling whose repeat counts are inferred from other panels' sizes/counts; exact size rule unclear.",
+   "confidence": "low",
+   "batch": "eval2"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "142ca369",
+   "rule": "Each L-corner object shoots a diagonal ray in the direction it points; when the ray hits another object it reflects (bounces) and continues, keeping its colour, until leaving the grid.",
+   "primary": "BEHAVIOUR",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Rays only go in fixed directions and stop/pass; needs diagonal ray direction from shape orientation plus reflection off obstacles (bounce trajectory).",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "1ae2feb7",
+   "rule": "Each coloured bar touching the wall is projected through the wall as a dotted ray whose period equals the bar's length (colour every n cells), the colour nearest the wall winning overlaps.",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "dynamics",
+   "gap": "Ray through wall exists, but the dot period must be computed from the segment's length, with layered per-colour priority.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "221dfab4",
+   "rule": "A coloured bar on one grid edge defines a band; moving away from it, rows (columns) alternate with period 6: even offsets paint the band with the bar colour, odd offsets clear the band to background, and every third even offset recolours all object cells along that whole line to 3.",
+   "primary": "NEAR_REACH",
+   "secondary": "COMPOSITION",
+   "closest_module": "field",
+   "gap": "Field needs an edge-bar marker (not a cell), band-membership and input-colour in the key, and orientation from which edge holds the bar.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "28a6681f",
+   "rule": "Colour-1 cells act like a conserved liquid: the topmost loose 1s are removed and the same number of 1s is poured into the lowest open gaps between the coloured walls (filling bottom-up, inside basins).",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs a fluid/pouring behaviour with mass conservation: count removed cells and fill basin cells bottom-up; gravity/fill-enclosed don't conserve count.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "2c181942",
+   "rule": "A small hub object has a differently coloured marker on each side; each scattered shape is moved to dock onto the hub side of its own colour, rotated so it points outward and overlaps the marker, and the rest is cleared.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "dynamics",
+   "gap": "Needs docking: move each object to the colour-matched side of a hub, rotating it into that side's frame; move-until-contact lacks target selection and rotation.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "35ab12c3",
+   "rule": "Same-colour dots are vertices of polygon outlines that get drawn (orthogonal and 45-degree edges); where a dot has an adjacent dot of another colour, a parallel offset copy of that outline is drawn in the second colour.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "dynamics",
+   "gap": "Connect only joins aligned pairs; needs polygon construction from vertex sets with diagonal edges and an offset (concentric) copy cued by companion dots.",
+   "confidence": "low",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "3dc255db",
+   "rule": "Foreign-colour cells lodged inside a host shape are removed and re-emitted as a straight line of the same number of cells sticking out of the host along its axis/apex (clipped at the border).",
+   "primary": "COUNT_RELATION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs 'inside host' relation, counting intruder cells, and a ray of that length from the host's apex direction rather than a fixed-direction ray.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "45a5af55",
+   "rule": "The input's horizontal stripes, read top to bottom, become concentric square rings from outside in; output side is 2*(rows)-2 so the last stripe forms the centre.",
+   "primary": "GEOMETRY",
+   "secondary": null,
+   "closest_module": "field",
+   "gap": "Needs a row-to-ring coordinate remap, colours read from the input, and computed output size; field maps codes only to constant colours.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "4c7dc4dd",
+   "rule": "On a noisy periodic background, large coloured frames each contain smaller framed panels holding sparse glyphs; the output is the contents of one target panel derived by analogy between the panel pairs (exact derivation unclear).",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "composition",
+   "gap": "Needs hierarchical frame/panel parsing on a noisy periodic background and analogical (A:B::C:?) transfer between panels; panel split assumes separator lines.",
+   "confidence": "low",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "581f7754",
+   "rule": "Each object contains a marker cell; the object is translated along one axis so that its marker lines up with the same-coloured reference cell on the grid edge (row or column given by the reference's side).",
+   "primary": "COUNT_RELATION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Move only goes until contact; needs translation to achieve alignment of an internal marker with a same-colour edge reference, axis chosen by reference position.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "5dbc8537",
+   "rule": "The grid has a template half whose region contains background-coloured holes and a pieces half with multi-colour patches; output is the template half with each hole filled by the patch of matching shape/size.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Same-shape matching exists for recolouring, but needs hole-to-piece matching across halves, copying multi-colour patch contents, and cropping the template half.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "67e490f4",
+   "rule": "Crop the large template block; each hole in it is filled with the colour most frequently used by the scattered small shapes having the same shape as that hole.",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Same-shape recolouring exists, but needs holes as shape keys, a majority vote over many same-shape donors with differing colours, and cropping the template.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "71e489b6",
+   "rule": "Small 0-coloured holes inside the 1 regions get a 7 halo on their 8-neighbouring 1 cells, while stray single 1 pixels in the 0 regions are erased; large 0 areas are untouched.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Behavior must treat colour-0 holes as objects and key on a size class, not exact shape, so unseen hole shapes (diagonal chains) generalise.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7b0280bc",
+   "rule": "The grid is a graph of 2x2 node blocks joined by thin edge paths; the route linking the two terminal nodes (the pair of the distinguished colour) is highlighted: its edges turn 5 and its intermediate nodes turn 3.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs graph parsing (nodes/edges with diagonal steps) and path search between terminal nodes, then recolouring only route elements; connect handles only aligned pairs.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7c66cb00",
+   "rule": "Small shapes above are removed and stamped at the bottom of the horizontal band whose body colour matches them, keeping their columns, recoloured with that band's palette (matching colour to band edge colour, other colour to band body).",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs chaining: colour-matched target band selection, drop to band floor, and palette re-mapping from the band's own two colours.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "8698868d",
+   "rule": "Crop the block of solid colour panels; each panel's count of stray dots matches the hole count of one loose shape, and that shape is placed inside the panel (panel colour as a 1-cell frame).",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs counting dots per panel and holes per shape, matching by equal count, and pasting shapes into panels; no assembly-by-matching primitive.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "898e7135",
+   "rule": "The holey container is upscaled x2 (holes become container colour) and each hole, read as a shape at half scale, is filled by the loose shape whose form matches it at x2; singleton noise is ignored.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs scale-invariant shape matching between holes and pieces (factor 2) and pasting pieces into the upscaled container; upscale alone cannot place pieces.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "8f215267",
+   "rule": "Loose small shapes are erased; each hollow rectangle receives, along its middle row from the right, one dot (every other cell) per loose shape of its own colour.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "association",
+   "gap": "Needs counting same-colour objects and rendering the count as a dotted tally inside the matching frame; no numerosity-to-drawing primitive.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "981571dc",
+   "rule": "Fill the 0-masked blocks of a symmetric mosaic using its transpose symmetry plus horizontal/vertical mirror symmetry about an off-centre axis (between rows/cols 15 and 16).",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "self-model",
+   "gap": "Self-model needs mirror axes not centred on the grid (offset 15.5 in a 30-grid) and composing them with transpose to fill regions masked in both.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "a25697e4",
+   "rule": "A free two-colour piece is rotated/flipped and moved so that its protruding part plugs exactly into the notch of a host shape, like a key into a lock; the piece's original position is cleared.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "GEOMETRY",
+   "closest_module": "dynamics",
+   "gap": "Needs search over D8 poses and placements of a piece to fit a host's concavity; move-until-contact uses a fixed pose and direction.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "a6f40cea",
+   "rule": "Output is the interior of the framed window rectangle, showing the parts of other (possibly periodically patterned) rectangle outlines that pass behind it, completed from their visible parts.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "self-model",
+   "gap": "Needs amodal completion of occluded rectangle outlines (extents and periodic border colours) under a window, then cropping it; no symmetry to exploit.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "b10624e5",
+   "rule": "The top-left quadrant holds a template (core block with coloured satellites); every other quadrant's core is completed with the template's satellites, mirrored to that quadrant's orientation and scaled to that core's size.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "self-model",
+   "gap": "Quadrant mirror symmetry is present but at differing scales; needs template transfer anchored on the core with scale factor inferred from core size.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "b9e38dc0",
+   "rule": "A seed colour inside an open container floods the container's interior and pours out through its open side, spreading as a widening 45-degree cone until the grid edge; stray noise cells block nothing.",
+   "primary": "BEHAVIOUR",
+   "secondary": "GEOMETRY",
+   "closest_module": "dynamics",
+   "gap": "Fill-enclosed needs closure; needs flood from a seed through an opening, then cone-shaped spreading whose direction comes from the container's open side.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "cb2d8a2c",
+   "rule": "From the 3 seed on the border, a 3-coloured path is drawn across the grid, detouring around each wall segment with a one-cell clearance and turning back toward its course; 1s in the walls become 2.",
+   "primary": "BEHAVIOUR",
+   "secondary": "GOAL_SEARCH",
+   "closest_module": "dynamics",
+   "gap": "Rays stop or pass obstacles; needs a path-drawing behaviour that wraps around walls with fixed clearance, choosing turn direction, until exiting the grid.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "d8e07eb2",
+   "rule": "Glyphs in the header are looked up in a fixed glyph catalogue below and each match gets a 3 surround; if the matches form one full catalogue row/column the header and footer turn 3, otherwise the footer turns 2.",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "pattern",
+   "gap": "Needs query-to-catalogue same-shape-and-colour matching across regions, then a global alignment test on matches selecting the header/footer colouring.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "dd6b8c4b",
+   "rule": "Every 9 that can reach the central 3x3 box without crossing 6 walls is removed (becomes 7) and the box cells are filled with that many 9s in reading order; walled-off 9s stay.",
+   "primary": "COUNT_RELATION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs reachability (connectivity through background, blocked by walls), counting reachable cells, and filling a target box with that count in reading order.",
+   "confidence": "medium",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "e3721c99",
+   "rule": "A legend of coloured glyphs encodes hole counts (glyph colour <-> number of holes); every grey blob is recoloured with the legend colour whose hole count equals its own, and blobs with no matching count are erased.",
+   "primary": "SYMBOL",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "association",
+   "gap": "Legend binds colour to a hole count, varying per grid; needs reading the in-grid legend and matching objects by hole count, not by shape.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "edb79dae",
+   "rule": "Outside a 5-framed panel, a legend pairs each block colour with a small glyph in another colour; the panel is cropped and each solid block inside is redrawn as its paired glyph pattern in the paired colour.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Legends are 2-cell colour maps; needs a colour-to-glyph-pattern legend (shape plus colour) applied to blocks, combined with cropping the framed panel.",
+   "confidence": "high",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "faa9f03d",
+   "rule": "Coloured wires with gaps and marker cells are repaired: 2-marked ends are reconnected (rerouted) and 4-marked cells mark turns/continuations, gaps are bridged, and crossings take the correct over/under colour; exact marker semantics unclear.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Connect joins aligned same-colour cells only; needs marker cells interpreted as wire-routing instructions (reconnect, turn) and crossing layering.",
+   "confidence": "low",
+   "batch": "eval3"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "16b78196",
+   "rule": "Loose shapes are slid toward the jagged wall band and stacked so each piece interlocks exactly into the wall's notches and into the previous piece, forming a solid column against the wall.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs jigsaw-style fitting: choose order and offset so pieces interlock with wall gaps and each other, not just move-until-contact.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "20270e3b",
+   "rule": "The grid contains a main fragment and a detached fragment, each marked with 7 cells; the detached fragment is moved and overlaid so its 7-marked cells coincide with the main fragment's 7s, gluing the drawing together and cropping to the union (7s become 4).",
+   "primary": "COMPOSITION",
+   "secondary": "GOAL_SEARCH",
+   "closest_module": "composition",
+   "gap": "Needs splitting grid into fragments and aligning them via marker-anchor correspondence (offset search), then union-crop; overlay only supports equal-size separator panels.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "247ef758",
+   "rule": "Each small shape left of the frame is moved into the frame, centred at every intersection of a row and column whose border marker cells (left and top frame edges) have the shape's colour; shapes without matching markers stay put.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Border cells act as coordinate pointers: needs binding shape colour to row/column markers and copying the shape to each marked intersection.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "291dc1e1",
+   "rule": "Coloured blocks lie in 2-row strips on an 8 background; the 1/2 border lines give the reading orientation, and the blocks are read strip by strip in that order, rotated upright, centred to the widest block's width and stacked vertically.",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "composition",
+   "gap": "Needs extracting a sequence of sub-objects, ordering them by marker-given reading direction, and re-assembling them centred in a stacked output.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "2d0172a1",
+   "rule": "Irregular hand-drawn nested closed loops and dots are redrawn as a clean schematic: each loop becomes a 1-cell-spaced rectangle, preserving the containment tree and left/right arrangement of inner shapes and dots.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "none",
+   "gap": "Needs topology-preserving abstraction of irregular curves (containment tree) and re-rendering as canonical nested rectangles; no shape normalisation exists.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "36a08778",
+   "rule": "Colour-6 streams flow downward from the top; when a stream hits a horizontal 2-bar it wraps the bar with a 6 outline (row above and both sides) and continues falling from both ends, recursively, until the bottom.",
+   "primary": "BEHAVIOUR",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Rays stop or pass obstacles but cannot split and flow around them; needs a recursive water-flow behaviour with outlining and branching.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "3e6067c3",
+   "rule": "A legend row lists colours in sequence; for each consecutive pair (a,b) the box with centre a is joined to the adjacent box with centre b by a bridge in colour a, tracing a path through the boxes in legend order.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Connect only joins same-colour cells; needs reading an ordered colour sequence legend and drawing bridges between boxes in that order.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "4a21e3da",
+   "rule": "Border 2-markers define cut lines across the grid (drawn in 2, with 7 where the line crosses the object); the 7 shape is cut along these lines and each piece slides to the grid corner/edge in its own quadrant, keeping its shape.",
+   "primary": "COMPOSITION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs cutting one object by marker-defined lines and moving each sub-part independently to its region's corner; moves act on whole objects only.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "4e34c42c",
+   "rule": "Several fragments are scattered on the background; fragments whose edge columns/rows are identical overlap there, and they are chained together edge-to-edge (rotating where needed) into one assembled object which is output cropped.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs matching fragment boundaries and searching the chaining order/orientation to assemble one object; no edge-matching or multi-part assembly exists.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "58490d8a",
+   "rule": "The black panel lists colours in a column; output is that panel with each colour's row extended to show one dot (spaced by 1) per object of that colour found in the rest of the grid.",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "composition",
+   "gap": "Needs counting objects per colour outside the panel and rendering counts as dot rows inside the cropped legend panel.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "62593bfd",
+   "rule": "Each object slides vertically to the grid edge: objects whose cell count equals that of another object move to the top edge, objects with a unique cell count move to the bottom edge (column kept).",
+   "primary": "COUNT_RELATION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Gravity direction must be conditioned on a relational property (size shared with another object); move/gravity uses one fixed direction per task.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "6e453dd6",
+   "rule": "Each black shape slides right until it touches the vertical 5 line; then every row in which the shape encloses a closed background hole gets its cells right of the 5 line painted 2.",
+   "primary": "COMPOSITION",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Requires chaining move-until-contact with a row-wise marking conditioned on enclosed holes in the moved shape; modules apply one rule each.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7491f3cf",
+   "rule": "The first panel contains a dividing line that splits it into two regions; the empty fourth panel is filled with panel 2's pattern on one side of that line (including the line) and panel 3's pattern on the other side.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Panel vote/overlay is cellwise boolean; needs a region mask derived from a line in one panel to select between two other panels per region.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7b3084d4",
+   "rule": "Four irregular pieces are rotated/reflected and packed together without gaps into a solid square whose area equals their total cell count, with the piece carrying the 5 cell placed so the 5 lands at the top-left corner.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs a polyomino packing search over D8 poses and positions of several pieces into a square; composition only selects or overlays.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "7ed72f31",
+   "rule": "Each shape touching a colour-2 marker is copied as its mirror image across that marker: a 2-line acts as a reflection axis, a single 2 cell as a point of 180-degree rotation.",
+   "primary": "NEAR_REACH",
+   "secondary": "CONTEXT",
+   "closest_module": "self-model",
+   "gap": "Symmetry axis must be per-object, anchored on the attached 2 marker (line axis or point centre), rather than a global grid axis.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "88bcf3b4",
+   "rule": "A wiggly path anchored at one end to a straight bar is swung over to the other side, re-drawn as a curve that hugs the third (target) object while keeping its length and anchor point; the original path is erased.",
+   "primary": "GEOMETRY",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "none",
+   "gap": "Needs non-rigid re-shaping of a path to wrap around a target object while preserving anchor and length; no deformable path model.",
+   "confidence": "low",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "8b7bacbf",
+   "rule": "Closed loops are linked by thin paths into networks; a corner marker cell (e.g. 4/7, or 6/8 in test) sits at the end of a network, and every loop connected to that marker's network has its interior filled with the marker colour; other loops stay empty.",
+   "primary": "COUNT_RELATION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Enclosed-fill exists, but must be conditioned on graph connectivity of the loop to a marker via paths, taking fill colour from that marker.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "8f3a5a89",
+   "rule": "Flood the background region reachable from the 6 seed; cells of that region adjacent (incl. diagonally) to a 1 wall or the grid border become 7, and 1-objects not touching that region are erased.",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs seeded flood-fill of a region, outlining its boundary, and deleting objects not adjacent to it; fill only handles enclosed background.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "9aaea919",
+   "rule": "Coloured bars on the bottom row act as commands for the column of plus-shapes above them: a 2-bar recolours its column's shapes to 5, and a 3-bar stacks that many extra copies on top of its column as the number of shapes recoloured.",
+   "primary": "SYMBOL",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "association",
+   "gap": "Bar colours encode actions (recolour vs replicate) and the replication count comes from counting shapes in other columns; no action-glyph binding or counting.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "a32d8b75",
+   "rule": "A side panel holds a small tile, a mask glyph and indicator boxes (4 and 7 positions in 6-frames) that set orientation/flip; the main canvas is cropped and the tile is stamped repeatedly over the region selected by the scaled-up mask, in the indicated orientation.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Indicator glyphs encode tile orientation and a mask glyph encodes where (scaled) to tile; needs binding these legend parts and composing tile-under-mask.",
+   "confidence": "low",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "aa4ec2a5",
+   "rule": "Every 1-object gets a 2-coloured outline (8-neighbour halo); objects that contain enclosed holes are additionally recoloured 8 with their hole cells set to 6, while hole-free objects stay 1.",
+   "primary": "NEAR_REACH",
+   "secondary": "COMPOSITION",
+   "closest_module": "behavior",
+   "gap": "Needs a shape-agnostic rule: halo all objects plus recolour-if-holed with hole fill; change tables keyed by exact canonical shape do not generalise to new shapes.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "b5ca7ac4",
+   "rule": "Framed 5x5 boxes slide horizontally: boxes with an 8 frame slide left and boxes with a 2 frame slide right, each stopping at the grid edge or against a previously stopped box.",
+   "primary": "CONTEXT",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Gravity direction must be chosen per object by its frame colour, with boxes stacking against each other; dynamics uses one direction per task.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "bf45cf4b",
+   "rule": "Output is the bounding box of the monochrome mask shape scaled by the multicolour tile's size: each mask cell is replaced by a copy of the tile and each non-mask cell by background.",
+   "primary": "NEAR_REACH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Fractal/tile exists but only self-similar; needs Kronecker product of one object's mask with a different (multicolour) object as tile.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "cbebaa4b",
+   "rule": "Shapes carry colour-2 connector dots; keeping the 4 block fixed, all other shapes are translated so that their connector dots coincide pairwise with those of already-placed shapes, assembling one connected structure.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COMPOSITION",
+   "closest_module": "none",
+   "gap": "Needs connector-matching assembly: search translations of many pieces so 2-dot pairs coincide, building a tree from the anchor piece.",
+   "confidence": "high",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "da515329",
+   "rule": "The small 8 cross (four arms around an empty centre) is the seed of a four-armed rotating spiral: each arm keeps extending and turning in the same rotational direction with 1-cell gaps, filling the whole grid; the seed itself is erased.",
+   "primary": "BEHAVIOUR",
+   "secondary": "GEOMETRY",
+   "closest_module": "dynamics",
+   "gap": "Needs a turtle-like spiral-growth behaviour (extend, turn, keep gap) iterated to the grid border from each arm; rays are straight only.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "de809cff",
+   "rule": "Two noisy solid colour regions: stray pixels outside the regions are deleted, and each background hole inside a region becomes an 8 surrounded by a 3x3 ring painted in the other region's colour.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "behavior",
+   "gap": "Needs noise-robust region segmentation plus a hole stamp whose colour is borrowed from the other region; chaining denoise and stamp is unsupported.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "e376de54",
+   "rule": "Several parallel line segments (horizontal, vertical or diagonal) share a start baseline; each is trimmed or extended along its direction to the length of the median/reference line.",
+   "primary": "COUNT_RELATION",
+   "secondary": "GEOMETRY",
+   "closest_module": "dynamics",
+   "gap": "Needs comparing line lengths across objects (median/reference) and extending or trimming each line, incl. diagonals, to that length.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "eee78d87",
+   "rule": "The 3x3 motif in the 6x6 input is colour-inverted (shape->0, background->7) and tiled with period 3 (offset 1) into a fixed 16x16 grid; inside the central 6x6 square the 0 cells become 9.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Tiling exists, but needs motif extraction with colour inversion, phase-shifted tiling to a fixed non-multiple output size, and a constant central overlay chained together.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "agi2-eval",
+   "task": "fc7cae8d",
+   "rule": "Amid border noise, a picture sits in the corner formed by two solid single-colour lines; the picture inside that L-frame (lines excluded) is cropped and rotated 90 degrees counter-clockwise (then flipped as needed).",
+   "primary": "NEAR_REACH",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Object select + D8 exists, but needs segmenting the picture bounded by touching frame lines amid noise, excluding the frame, before crop-and-rotate.",
+   "confidence": "medium",
+   "batch": "eval4"
+  },
+  {
+   "split": "new233",
+   "task": "1190bc91",
+   "rule": "Each cell of a coloured sequence line emits diagonal rays forming nested chevrons (sequence repeated shifted along diagonals), and the edge marker bars flood their colour into the triangular regions bounded by those diagonals, leaving the rest background.",
+   "primary": "COMPOSITION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs diagonal rays from every sequence cell with overwrite order, then chained region fill by border marker colour inside the ray-bounded wedges.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "13f06aa5",
+   "rule": "Each small arrow-shaped object with one odd-coloured tip cell shoots a dotted (every second cell) ray of the tip colour in the direction it points, and the grid edge it hits is painted entirely in that colour (corner where two painted edges meet becomes 0).",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Ray direction must be inferred from the arrow shape's orientation; needs period-2 dotted rays and painting the whole hit border line.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "17829a00",
+   "rule": "Small objects slide vertically as rigid bodies toward the border row of their own colour (top or bottom) until they touch that border or previously stacked objects.",
+   "primary": "NEAR_REACH",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Gravity direction must be chosen per object by matching its colour to the same-coloured border row.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "22425bda",
+   "rule": "The grid contains several crossing straight lines (horizontal, vertical, diagonal); output a 1-row list of their colours ordered by stacking depth, from the line drawn underneath to the line on top at crossings.",
+   "primary": "COUNT_RELATION",
+   "secondary": "GEOMETRY",
+   "closest_module": "none",
+   "gap": "Needs occlusion relation between lines at crossing cells, a topological sort into depth order, and emitting colours as a sequence.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "252143c9",
+   "rule": "The centre cell has a colour matching one of the noisy quadrant patterns; erase everything and draw a diagonal ray from the centre cell toward the corner of the quadrant containing that colour.",
+   "primary": "CONTEXT",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "field",
+   "gap": "Ray direction must be selected by matching centre colour to the quadrant with same-colour pattern; then clear all other content.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "2601afb7",
+   "rule": "Vertical bars on the floor exchange attributes: bar colours rotate one step right (cyclically) while bar heights rotate one step left.",
+   "primary": "COMPOSITION",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "behavior",
+   "gap": "Needs object attribute decomposition (colour vs height) with separate cyclic permutations across the ordered set of bars.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "2b9ef948",
+   "rule": "A bent 5-coloured key path runs from a coloured end to a 4 end: the background becomes the end colour, the 3x3 ring is translated by the key's end-to-end displacement vector, and diagonal 4-lines radiate from the ring's corners to the grid edges.",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "dynamics",
+   "gap": "Must read a glyph as a displacement vector plus background colour, translate the ring accordingly, then chain diagonal corner rays.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "2de01db2",
+   "rule": "Each row has one dominant colour C plus noise; output row is C exactly where the input row is not C, and 0 elsewhere (complement of that colour's mask).",
+   "primary": "NEAR_REACH",
+   "secondary": "COMPOSITION",
+   "closest_module": "behavior",
+   "gap": "Needs a per-row (panel-by-row) dominant colour and mask-complement operation; no module keys rows as units with a complement.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "2faf500b",
+   "rule": "Each 9-object contains a zigzag crack of 6 cells; the 6 cells are removed and the object splits along the crack into two halves that each move one cell away from the crack (perpendicular to it).",
+   "primary": "COMPOSITION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "behavior",
+   "gap": "Needs splitting an object into parts along an internal marker line and moving each part apart, a part-level action.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "320afe60",
+   "rule": "Each colour-1 object is recoloured and pushed to a side edge (keeping its row): objects that are solid or have a fully enclosed hole become 2 and move to the left edge; objects whose hole is open to the outside become 3 and move to the right edge.",
+   "primary": "CONTEXT",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs open-vs-closed hole topology as a cue selecting both recolour and move direction to the grid edge per object.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "42f14c03",
+   "rule": "Find the object whose holes (background-coloured gaps) exactly match the shapes of loose small pieces elsewhere; output that object cropped with its holes filled by the matching pieces' colours.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "composition",
+   "gap": "Needs shape-matching of loose pieces to holes, selecting the object they fit, and compositing pieces into holes.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "46c35fc7",
+   "rule": "In each multicolour 3x3 patch the four corner cells rotate 90 degrees counter-clockwise while the four edge-middle cells rotate 90 degrees clockwise; centre unchanged.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Needs part-wise transforms within an object (corners vs edges get opposite rotations), colour-agnostic; object-level D8 cannot split parts.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "494ef9d7",
+   "rule": "Within each row, when a specific colour pair occurs ({1,8} or {4,7}), the right-hand cell slides left until it touches the left-hand cell; other pairs stay put.",
+   "primary": "NEAR_REACH",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Move-until-contact must be gated by a learned colour-pair compatibility ({1,8},{4,7}) between single cells in the same row.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "522fdd07",
+   "rule": "Every solid square loses its outer ring (shrinks by one cell on each side, 3x3 becomes its centre), while the single isolated cell grows into a 9x9 square centred on itself.",
+   "primary": "NEAR_REACH",
+   "secondary": "GEOMETRY",
+   "closest_module": "behavior",
+   "gap": "Needs colour-agnostic, size-keyed object change (erode ring / grow 1x1 to 9x9); test single cell has unseen colour 0.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "58c02a16",
+   "rule": "The top-left motif (bordered by an L of a border colour) is expanded fractally: each foreground cell becomes a copy of the motif and each background cell becomes the motif recoloured with the border colour; this block pattern is then tiled to fill the grid.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Needs chained crop-motif, fractal self-substitution with border-colour recolour for background cells, then periodic tiling to the input size.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "5adee1b2",
+   "rule": "A corner legend of colour pairs (a b) says shape colour a gets a halo colour b: each shape's bounding box padded by one cell becomes a 7x7 square where exterior background is painted b (enclosed holes stay 0).",
+   "primary": "NEAR_REACH",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "Legend lookup exists, but the action must be painting the padded-bbox exterior background around each shape, not recolouring or hole filling.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "5e6bbc0b",
+   "rule": "In a 1/0 checkerboard with one 8 on an edge, all 1s in each line slide toward the 8's edge (compacting); in the 8's own line the 1s pack against the 8 and an equal number of 9s is written right after them.",
+   "primary": "COUNT_RELATION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs cell-level compaction toward the marker's edge (direction from marker position) plus writing a run of 9s whose length equals the 1-count.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "60d73be6",
+   "rule": "A cross of divider lines splits the grid off-centre; the pattern in one quadrant is mirrored across the divider lines into the other quadrants (4-fold reflection about the cross, clipped at the grid edge).",
+   "primary": "NEAR_REACH",
+   "secondary": "GEOMETRY",
+   "closest_module": "self-model",
+   "gap": "Mirror symmetry must use the off-centre separator lines as axes and allow clipping; self-model assumes grid-centred global symmetry.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "689c358e",
+   "rule": "Each interior object is an arrow; the frame cell where the arrow points (in line with its shaft) takes the arrow's colour and the frame cell at the opposite end of that line becomes 0.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs reading each object's pointing direction from its shape and marking frame cells at both ends of its axis.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "6ca952ad",
+   "rule": "Objects of size 4 or more fall straight down (rigidly) until they hit the bottom edge; objects of size 3 or less stay in place.",
+   "primary": "NEAR_REACH",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Gravity must apply only to objects passing a size threshold (>=4 cells); small objects are exempt.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "6ffe8f07",
+   "rule": "The 8 rectangle projects bands of 4 (its full width vertically and full height horizontally) to all grid edges; the bands paint over background and colour-2 objects but pass beneath colour-1 objects.",
+   "primary": "NEAR_REACH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Rays must be object-wide bands in four directions with colour-specific layering (overwrite 2, keep 1).",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "7e2bad24",
+   "rule": "A diagonal 1-segment is extended as a ray; it passes straight through colour-3 lines (overwriting the crossing cell with 1) but reflects off colour-2 lines like a mirror, continuing to the grid edge.",
+   "primary": "BEHAVIOUR",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs diagonal ray extension with reflection (bounce) at obstacles and colour-dependent pass-through vs reflect behaviour.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "7e576d6e",
+   "rule": "Draw an orthogonal path of 8 from one marker cell to the other, travelling alongside walls and crossing each wall line only through its gate (the middle of its coloured segment), overwriting the gate cell.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs path routing between two markers that threads through gate segments in successive wall lines.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "833966f4",
+   "rule": "In the 5x1 column swap the first two cells and swap the last two cells, keeping the middle cell; i.e. a fixed positional permutation regardless of colours.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Needs a learned fixed cell-position permutation (swap rows 0/1 and 3/4) with colours copied from input; not a D8 transform.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "83eb0a57",
+   "rule": "Several framed rectangles each carry small marker sub-patterns; output the largest frame with the smaller pieces nested inside it, each placed so that its marker pattern coincides with the matching marker in the frame that contains it (docking by shared marks).",
+   "primary": "COMPOSITION",
+   "secondary": "GOAL_SEARCH",
+   "closest_module": "composition",
+   "gap": "Needs hierarchical assembly: nest objects inside one another by aligning matching sub-patterns, then crop to the outer frame.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "878187ab",
+   "rule": "Count the two scattered speck colours; output (fixed 16x16, background 7) a bottom-left rectangle of 2 whose height is the minority count and width the majority count, with a 4 V-shape of diagonals rising from its bottom corners.",
+   "primary": "COUNT_RELATION",
+   "secondary": "GEOMETRY",
+   "closest_module": "none",
+   "gap": "Needs numerosity of colours mapped to rectangle dimensions, plus drawing a diagonal V pattern inside it.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "8886d717",
+   "rule": "Specks of 8 lying inside the 2 region are erased, while 8 specks lying in the 7 region grow by one cell toward the 9 border line (wherever that border is).",
+   "primary": "CONTEXT",
+   "secondary": "NEAR_REACH",
+   "closest_module": "behavior",
+   "gap": "Speck action depends on enclosing region colour and growth direction comes from the distant 9 border; local tables lack this non-local cue.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "8abad3cf",
+   "rule": "Count the cells of each colour (non-background); render each colour as a solid k x k square with k*k = its count, arranged left to right in ascending size, bottom-aligned, separated by one background column.",
+   "primary": "COUNT_RELATION",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs per-colour cell counts mapped to square sizes, sorting by count, and assembling a new output layout.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "902510d5",
+   "rule": "Scattered single noise cells are removed except that the repeated noise colour is drawn as a right triangle in the corner toward which the diagonal line shape points; triangle leg length appears to equal the number of noise cells minus one (unsure of exact size and colour-selection rule).",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "none",
+   "gap": "Needs noise-cell counting to size a corner triangle, choosing the corner from the line's pointing direction, and colour selection among noise.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "95755ff2",
+   "rule": "Legend rows/columns outside a 2-coloured diamond give one colour per row/column; inside the diamond each such row/column is filled by a ray of its legend colour growing from the diamond edge on the legend's side until it hits an interior obstacle or the far edge.",
+   "primary": "SYMBOL",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs a position-aligned colour legend mapped to rows/columns, plus rays confined to the diamond interior that stop at obstacles.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "973e499e",
+   "rule": "Colour-mask fractal: each input cell of colour c is replaced by an n x n block equal to the input's mask of colour c painted in c (other cells 0).",
+   "primary": "NEAR_REACH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Fractal variant where each block is the mask of cells equal to that cell's colour, not the plain non-zero mask.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "9841fdad",
+   "rule": "Copy the objects of the small left panel into the empty wider right panel, keeping rows but re-laying out horizontally by anchoring: full-width bars stretch to the new width, left-aligned objects stay left, right-aligned objects move to the right side.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs anchor-aware non-uniform rescaling (stretch spans, preserve left/right alignment) from one panel to a differently sized panel.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "985ae207",
+   "rule": "Each 3x3 ring whose centre has colour c is repeated periodically (period 3) in the direction of the large object of colour c until it overlaps that object by two cells.",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "periodic",
+   "gap": "Needs directed periodic extension of an object toward a same-colour target with a stopping condition (overlap into target).",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "9968a131",
+   "rule": "In a two-row alternating motif, every second motif row (the B rows) is cyclically shifted one cell to the right; the other rows are unchanged.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "pattern",
+   "gap": "Needs a colour-agnostic row-wise cyclic shift applied to alternate rows; learned local patterns are tied to seen colours.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "9b30e358",
+   "rule": "The motif at the bottom of the grid is tiled vertically upward with period equal to its height (aligned at the bottom), overwriting the empty background above.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "periodic",
+   "gap": "Periodic extension must treat the uniform background region as unknown and use bottom-anchored vertical period equal to the motif height.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "9caf5b84",
+   "rule": "Keep only the two most frequent colours in the grid; every other colour becomes 7.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Needs global colour-frequency ranking (top-2 colours) to decide which cells are recoloured to 7.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "9f669b64",
+   "rule": "A small block next to a larger block is pushed through it toward the grid edge (away from the third, anchor object); the pierced block splits in two with each half moving one cell outward to make room.",
+   "primary": "BEHAVIOUR",
+   "secondary": "COMPOSITION",
+   "closest_module": "dynamics",
+   "gap": "Needs an object-interaction behaviour: projectile passing through another object that splits and parts sideways; direction inferred from layout.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "a1aa0c1e",
+   "rule": "Horizontal lines divide the grid into bands each holding a striped pattern of the line colour; output 3x5: per band a bar of its colour whose length equals the number of solid rows in its pattern, a 9 column, and a 5 marking one band (selection rule for the 5 unclear).",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "composition",
+   "gap": "Needs counting repeated pattern rows per band, emitting counts as bar lengths in a summary grid, and placing the 5 indicator.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "a416fc5b",
+   "rule": "In a 3x3 panel grid, two panels holding the 2-motif define an orientation; empty panels are filled with 5- and 8-coloured copies of the motif to complete a fixed Y-shaped configuration rotated in 45-degree steps around the centre panel (one demo with an already complete configuration maps to a blank 16x16 grid).",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs a panel-level configuration template matched under 45-degree rotations of the 8-neighbour ring, then recoloured motif copies placed.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "aaecdb9a",
+   "rule": "Count the 8-connected objects of each colour and draw a bottom-aligned bar chart (5 columns, height = max count): each colour gets a fixed column (5,2,8,9,6 order) with bar height equal to its object count.",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "none",
+   "gap": "Needs per-colour object counting rendered as a histogram with a learned colour-to-column assignment and count-dependent output height.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "af726779",
+   "rule": "From the given 7/3 row, build rows downward every second row: a cell gets a colour where the row two above has a 3 flanked by two coloured cells, alternating 6 and 7 per generation, until no cells qualify (shrinking pyramid).",
+   "primary": "BEHAVIOUR",
+   "secondary": null,
+   "closest_module": "pattern",
+   "gap": "Needs an iterated cellular-automaton step (local rule applied generation by generation with alternating output colour) until extinction.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "b2bc3ffd",
+   "rule": "Each object resting on the 8 floor moves straight up by a number of rows equal to its own cell count.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Translation distance must equal the object's size; dynamics only moves fixed offsets or until contact.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "b71a7747",
+   "rule": "The input is a lattice of separator rows/columns with content blocks; delete the separator/frame rows and columns and concatenate the remaining content cells (blocks at lattice positions) into a compact grid that shows the drawn path.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs detecting irregular lattice/separator rows and columns and gluing the surviving sub-blocks into a new grid.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "bc93ec48",
+   "rule": "The objects touching the four grid corners are cycled clockwise: each corner object is translated (unrotated) so that it sits in the next corner clockwise; all other objects stay.",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs selecting corner-anchored objects and a group-level cyclic permutation of corner positions with corner-anchored placement.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "c3fa4749",
+   "rule": "In a noisy grid, solid monochrome regions are crossed by short paths of foreign (noise) cells; each such path is recoloured to the colour of its head cell (e.g. the cell at the region's edge), making a clean line through the region.",
+   "primary": "GEOMETRY",
+   "secondary": "CONTEXT",
+   "closest_module": "self-model",
+   "gap": "Needs segmenting solid regions within dense random noise and identifying the foreign path inside, then recolouring it with its endpoint colour.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "cc9053aa",
+   "rule": "Two 9 markers sit outside an 8 wall structure; recolour to 9 the route along the 8 wall lines connecting the two markers, taking the side of the structure away from the 7 cells (7s mark compartments the route must avoid).",
+   "primary": "GOAL_SEARCH",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Needs path search along wall segments between two markers with avoidance constraints set by 7 cells.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "d753a70b",
+   "rule": "Diamond outlines are rescaled about their centres by colour: colour-2 diamonds shrink by one step (radius minus 1), colour-5 diamonds grow by one (a single 5 becomes a radius-1 ring), other colours unchanged; partially off-grid diamonds included.",
+   "primary": "GEOMETRY",
+   "secondary": "CONTEXT",
+   "closest_module": "behavior",
+   "gap": "Needs concentric scaling of diamond rings (incl. off-grid centres), with direction chosen by object colour.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "db615bd4",
+   "rule": "A dotted 4 outline on the dot lattice becomes a solid frame; the dotted coloured pieces outside are solidified (filled across the lattice gaps) and packed inside the frame side by side in their original left-right/top-bottom order with one-cell gaps, and removed from outside.",
+   "primary": "COMPOSITION",
+   "secondary": "GOAL_SEARCH",
+   "closest_module": "composition",
+   "gap": "Needs lattice-aware solidification of dotted pieces and ordered packing of several pieces into a frame interior.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "df978a02",
+   "rule": "Several arrow-like objects point their 1-cell tips at a common centre; the dominant one (apparently the largest) keeps its tip and grows one full row/column at its back, while every other object loses its tip cell.",
+   "primary": "COUNT_RELATION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "behavior",
+   "gap": "Needs relational comparison among converging objects (winner by size) and two different object actions: tip removal vs back extension.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "e048c9ed",
+   "rule": "For each horizontal bar, write a single cell in the 5-marker's column on the bar's row whose colour encodes the bar's length (2->1, 3->4, 4->9, 5->6).",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "Needs object length measured and mapped through a learned length-to-colour code, written at the marker column.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "e45ef808",
+   "rule": "Between the 1 region (top) and 6 region (bottom) with a jagged boundary, draw a 9 line from the top down the column where the 1 region reaches deepest, and a 4 line from the top down the column of the 6 region's highest peak, stopping at the 6.",
+   "primary": "COUNT_RELATION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs boundary extremum detection (deepest/highest column of a region) to select where vertical rays of fixed colours are drawn.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "e84fef15",
+   "rule": "The grid is a lattice of identical 5x5 tiles except one corrupted tile; output the normal tile with 1 written at every cell where the corrupted tile differs from it.",
+   "primary": "NEAR_REACH",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Panel module needs majority tile vs odd-one-out difference overlay, marking mismatching cells with a new colour 1.",
+   "confidence": "high",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "f18ec8cc",
+   "rule": "The grid consists of vertical colour bands of varying width (with sprinkled noise cells) that are reordered as rigid units; usually the first band moves to the end (cyclic left rotation), but one demo instead reverses, so the ordering cue (possibly the noise) is unclear.",
+   "primary": "COMPOSITION",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "composition",
+   "gap": "Needs segmenting colour bands (no separator lines) and permuting them as units with their internal noise; ordering rule unresolved.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "f3e14006",
+   "rule": "Two crossing marker-bearing lines are replaced by a compact woven block bounded by the marker positions: rows alternate between the cross-line colour and patterns interleaving marker colours with the other line's colour (exact construction unclear).",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "none",
+   "gap": "Needs reading both lines' marker sequences and composing them into a 2D woven pattern within a marker-defined box.",
+   "confidence": "low",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "f8f52ecc",
+   "rule": "Cells of the same colour (two or more) are joined into one connected orthogonal path (straight or L-shaped segments) in that colour, routed around the 8 walls; singleton colours are left alone.",
+   "primary": "GOAL_SEARCH",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Connect handles only aligned straight segments; needs L-shaped/tree routing between same-colour cells with obstacle avoidance.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "fc10701f",
+   "rule": "The 7 block travels along its row/column band to the 9 block's position (replacing it, its old spot cleared); every gate of 0-dot pairs it passes through on the way gets its gap filled with 2.",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs move-to-target (block onto same-size target) plus marking the traversed gates with a trace colour.",
+   "confidence": "medium",
+   "batch": "new1"
+  },
+  {
+   "split": "new233",
+   "task": "11dc524f",
+   "rule": "The red shape slides toward the 2x2 grey block until it touches it, and the grey block is reshaped into the mirror image of the red shape reflected across the contact line.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Move-until-contact exists, but chaining it with reshaping the target object into the reflected copy of the mover is missing.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "14b8e18c",
+   "rule": "Every square object (equal height and width, solid or hollow, any size/colour) gets red marks on the two cells orthogonally outside each of its four bbox corners; non-square objects are unchanged.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Behaviour keys need a colour- and size-independent shape class 'is square (h==w)' so corner marks generalise to unseen colour/size.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "1b59e163",
+   "rule": "Each multi-colour template shape contains one anchor-coloured cell; copies of the template are stamped at every isolated cell of that anchor colour, the original template is erased, and grey noise cells are deleted.",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "No operator to stamp a template object at all marker cells matching its anchor colour (copy-to-marker), with template removal.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "22806e14",
+   "rule": "Remove the plus-shaped object and paint the centre cell of every odd-sided square of the main colour with the plus's colour; even-sided squares stay unchanged.",
+   "primary": "SYMBOL",
+   "secondary": "GEOMETRY",
+   "closest_module": "behavior",
+   "gap": "Mark colour comes from an indicator plus that varies per demo; also needs 'centre of odd square' for unseen sizes (7x7).",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "25c199f5",
+   "rule": "The grid is three 5x5 panels split by magenta lines, each holding one object; output is a 5x5 panel where the objects are stacked bottom-up in panel order (left panel lowest), keeping their columns, rows packed with no gaps.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Panels are split, but output needs vertical concatenation/stacking of each panel's object rows, not a cellwise vote or overlay.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "278e5215",
+   "rule": "Crop the grey mask shape; at each mask cell output the colour of the key's patterned row at that column, at each non-mask cell the colour of the key's fill row.",
+   "primary": "COMPOSITION",
+   "secondary": "SYMBOL",
+   "closest_module": "composition",
+   "gap": "Needs mask-select between two key rows broadcast down the columns; key and mask are separate unequal-size objects, not separator panels.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "2ccd9fef",
+   "rule": "The input is a sequence of equal panels in which an inner shape grows by one cell per step (last panel blank); output is the next panel with the shape grown by one more step.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "No sequence extrapolation across panels: infer per-step growth of a shape and render the next term.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "2e65ae53",
+   "rule": "All framed window objects share a compartment layout; the colours filled into compartments of any window are pooled by compartment position and every window (whatever its size) gets all its compartments filled accordingly.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "association",
+   "gap": "Needs part-level object model (window -> compartments) and transfer of compartment fills across windows of different sizes.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "305b1341",
+   "rule": "A top-left key lists colour pairs a->b; each dot-lattice object of colour a gets every surrounding background cell within its 3x3 neighbourhood filled with b, with overlaps drawn in key-row priority (first row on top).",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "2-cell legend exists, but legend must drive a halo/dilation action per object with z-order taken from legend row order.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "33067df9",
+   "rule": "The sparse lattice of coloured dots is upscaled into a fixed 26x26 canvas of blocks (block size set by lattice dimensions, 2-cell gaps/margins), with horizontally adjacent same-colour cells merged into one block, and vertical merges only for cells not merged horizontally.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Upscale to fixed canvas with variable block size plus merging adjacent equal-colour cells into rectangles; only fixed-factor upscale exists.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "458e3a53",
+   "rule": "The grid is a periodic background pattern divided into panels by yellow/teal lines; a rectangular group of panels is filled with solid colours, and the output is that group downscaled to one cell per panel.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Panel downscale exists; needs restricting to panels of uniform colour (those breaking the periodic pattern) and cropping to their bounding block.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "48634b99",
+   "rule": "Among vertical teal line segments, one has its top or bottom half coloured maroon; that maroon half is removed and painted onto the same half (top/bottom) of the segment whose length is exactly 2 greater.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Needs ranking/comparison of segment lengths (find the line of length L+2) and transfer of a half-segment recolouring to it.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "4e7e0eb9",
+   "rule": "Within each separator-bounded group of four blocks: if a yellow line divides the group, swap the blocks across that line (left/right or top/bottom); otherwise recolour all blue placeholder blocks to the group's single other colour.",
+   "primary": "CONTEXT",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs per-group selection between swap-across-divider and fill-placeholders, cued by presence/orientation of a yellow divider line.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "538b439f",
+   "rule": "Each solid rectangle beside the separator line is mirrored across that line, and the gap between the rectangle and its mirror copy is filled with the separator colour, overwriting noise dots.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "self-model",
+   "gap": "Needs per-object reflection across a line object plus bridging fill between original and copy; only global symmetry and same-colour connect exist.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "5a719d11",
+   "rule": "Panels come in left/right pairs, each a background with one shape; the shapes are swapped between the paired panels and each moved shape is drawn in its source panel's background colour, while pairs with equal backgrounds are cleared.",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "composition",
+   "gap": "Needs cross-panel object swap with colour remapping to the source background, and a same-background condition that erases both shapes.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "5d588b4d",
+   "rule": "A bar of length n in colour c becomes, in raster order across the grid width, runs of length 1,2,...,n,...,2,1 separated by single blank cells, with height as needed.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "none",
+   "gap": "Needs reading a count (bar length) and generating a counted sequence of runs written in raster (row-wrapped) order.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "5ecac7f7",
+   "rule": "The grid is three equal panels split by magenta lines; the output panel takes its left column band from panel 1, middle band from panel 2 and right band from panel 3 (bands 2/1/2 wide for 5-wide panels, 2/2/2 for 6-wide).",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Panel split exists; output must be assembled from a different column band of each panel (band k from panel k), not a cellwise vote.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "6350f1f4",
+   "rule": "Tiles in a separator lattice are either a fixed two-colour pattern or a solid minority-colour block, with grey noise on top; output swaps them: pattern tiles become solid majority colour, solid tiles receive the clean pattern, noise removed.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs per-tile type classification under noise and swapping roles of pattern tile and solid tile; no tile-level rewrite with denoising.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "6a980be1",
+   "rule": "Remove the border frame; extend the green band lines across the whole grid, and extend each red segment perpendicular to the band out to the grid edges as rays in the frame colour.",
+   "primary": "COMPOSITION",
+   "secondary": "CONTEXT",
+   "closest_module": "dynamics",
+   "gap": "Rays exist, but ray colour must be bound to the frame colour, combined with frame deletion and line extension through the frame.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "6d1d5c90",
+   "rule": "Drop the left marker column and cyclically shift the remaining rows downward by the row index of the red marker cell in that column.",
+   "primary": "SYMBOL",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "periodic",
+   "gap": "Toroidal shift exists, but the shift amount must be read from a marker's position (row index) and the marker column removed.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "758abdf0",
+   "rule": "Teal marks on one border: length-1 marks grow to length 2, while length-2 marks are erased and instead cut a 2-cell black notch at the opposite end of the same row/column.",
+   "primary": "BEHAVIOUR",
+   "secondary": "CONTEXT",
+   "closest_module": "behavior",
+   "gap": "Length-2 marks have a non-local effect (notch at the far opposite edge), beyond radius-4 local change tables.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "7e4d4f7c",
+   "rule": "Crop to the first three rows; the third row becomes a copy of the top row with its non-background colour replaced by magenta (6).",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Crop exists; needs one extra step writing row 0 into row 2 with the non-background colour remapped to 6.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "825aa9e9",
+   "rule": "Floating shapes fall straight down toward the floor region but stop leaving exactly one empty row between them and the floor (the floor's own shape below each object determines its stop).",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Gravity-until-contact exists; needs a stop-one-cell-short offset (resting gap of 1) instead of contact.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "83b6b474",
+   "rule": "Several coloured L/bar fragments scattered on the background are the pieces of a square ring; assemble them (translation only) into a closed square frame, with the background colour filling its interior, and output that square.",
+   "primary": "GOAL_SEARCH",
+   "secondary": null,
+   "closest_module": "none",
+   "gap": "Needs puzzle-style assembly: find placements so fragments jointly form a closed rectangular frame.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "8618d23e",
+   "rule": "Split the input into top and bottom halves; output places the top half with a maroon column on its right, then a full maroon row, then the bottom half with a maroon column on its left (halves offset diagonally by one).",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Needs splitting the grid into halves and reassembling them with a one-cell offset and a maroon separator cross.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "880c1354",
+   "rule": "The coloured regions surrounding the central yellow/orange shape exchange colours by a cyclic shift: each region takes the colour of its neighbouring region one step anticlockwise (colours rotate clockwise around the centre); shapes stay fixed.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "association",
+   "gap": "Needs ordering regions cyclically around a centre and recolouring each with its neighbour's colour (a colour permutation derived from spatial relations).",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "8a6d367c",
+   "rule": "The top strip holds small glyphs; the framed box shows a partially revealed block-scaled pattern; output is the frame with its interior completed as the glyph (matching the block grid and the revealed blocks) drawn at block scale in the interior colour.",
+   "primary": "SYMBOL",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs matching a partial block-scaled pattern to a legend glyph (scale-invariant subset match) and rendering the full glyph upscaled inside the frame.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "8e301a54",
+   "rule": "Every object moves straight down by a number of cells equal to its own cell count (clipped at the grid edge).",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Translation exists, but displacement must equal each object's size (numerosity-driven move distance).",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "9344f635",
+   "rule": "Each 2-cell segment extends into a full line along its own axis: horizontal pairs fill their whole row, vertical pairs fill their whole column, with row lines drawn over column lines.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Rays exist but in fixed directions; ray axis must follow each segment's orientation, with horizontal lines taking priority over vertical.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "9720b24f",
+   "rule": "Delete every foreign-colour cell/fragment that lies inside or within the concavity of another colour's outline shape; fragments lying outside any shape are kept.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Needs an 'inside / within hull of another object' relation to delete intruders; fill-enclosed only treats fully closed background.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "97c75046",
+   "rule": "The grey cell moves straight toward the black staircase region until blocked, then slides diagonally along the region's edge while staying adjacent to it, stopping when blocked or when it would lose contact.",
+   "primary": "BEHAVIOUR",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Move-until-contact exists; needs a follow-up trajectory sliding diagonally along an obstacle's edge with a contact-based stopping rule.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "984d8a3e",
+   "rule": "Each row's middle-colour run slides left through the left-colour region until its right end reaches the leftmost right edge of that run over all rows (or it hits the wall); the displaced left-colour cells reappear on its right.",
+   "primary": "BEHAVIOUR",
+   "secondary": "COUNT_RELATION",
+   "closest_module": "dynamics",
+   "gap": "Needs per-row sliding with a stopping line set globally (min right edge across rows) and displaced-fluid refill; gravity stops only at contact.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "98c475bf",
+   "rule": "Each colour has a fixed glyph shape (consistent across demos) drawn on a horizontal line; erase the existing glyph and, for each pair of border marker cells, draw a line across that row plus that colour's glyph at its usual column.",
+   "primary": "SYMBOL",
+   "secondary": null,
+   "closest_module": "association",
+   "gap": "Needs a cross-demo memory binding colour -> glyph shape/position, retrieved when only marker cells of that colour appear.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "99caaf76",
+   "rule": "Each cluster consists of a blue chevron and a 5-cell coloured plus; the whole cluster moves two cells in the chevron-to-plus direction and the plus is rotated 180 degrees (its colours reversed).",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "behavior",
+   "gap": "Needs a part-level rule: rigid translation of a composite object plus 180-degree rotation of its coloured sub-part, independent of the specific colours.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "9ba4a9aa",
+   "rule": "The grid holds 3x3 ring nodes (ring colour + centre colour) linked by colour-coded dotted paths; output is one node, apparently the endpoint reached by following the colour-coded path network (exact selection criterion unclear).",
+   "primary": "SYMBOL",
+   "secondary": "GOAL_SEARCH",
+   "closest_module": "composition",
+   "gap": "Needs graph/pointer following over dotted colour-coded paths between nodes; property-based object selection cannot identify the target node.",
+   "confidence": "low",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "9f41bd9c",
+   "rule": "The grey comb (solid top plus teeth) jumps to the opposite side of the grid, its teeth sheared diagonally one cell per row back toward its old side, and the floor row under the vacated span turns maroon.",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "dynamics",
+   "gap": "Needs non-rigid shear deformation of an object's teeth plus mirror relocation and a floor mark spanning the remaining width.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "a09f6c25",
+   "rule": "Recolour each red shape by its mirror-symmetry axis: symmetric about a horizontal axis -> blue, vertical axis -> green, diagonal axis -> magenta; isolated single cells are erased.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "behavior",
+   "gap": "Symmetry key is lost in D8-canonical frames; needs absolute symmetry-axis type (H/V/diagonal) as the key, singletons deleted.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "a2d730bd",
+   "rule": "Each isolated dot aligned with a same-colour bar is joined to it by a 1-wide line; the bar gets a 3-cell nub where the line leaves, and the dot becomes a hollow diamond (its four neighbours filled, centre cleared).",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Connect-aligned exists for same-colour cells; needs bar-to-dot connection plus decorations at both ends (edge nub, hollow diamond).",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "a644e277",
+   "rule": "In a noisy lattice of separator lines, four line crossings are interrupted (background colour); output is the crop of the rectangle whose corners are those interrupted crossings.",
+   "primary": "NEAR_REACH",
+   "secondary": "GEOMETRY",
+   "closest_module": "composition",
+   "gap": "Needs crop delimited by anomalous lattice intersections (gaps in separator lines) rather than fixed corners or selected objects.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "ad173014",
+   "rule": "Framed boxes containing glyphs are linked in a loop by blue lines; each glyph keeps its shape but takes the colour of the glyph in the next box along the loop (cyclic colour shift).",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "association",
+   "gap": "Needs graph relation 'next box along connecting line loop' and recolouring each glyph by its neighbour's colour.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "b25e450b",
+   "rule": "Each black rectangle touching a grid edge slides straight across to the opposite edge, and every cell in the band it sweeps through is cleaned to orange (grey noise erased).",
+   "primary": "BEHAVIOUR",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Needs a slide-to-opposite-border action that ignores obstacles and wipes its swept band; move stops at contact and leaves no trail.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "b5bb5719",
+   "rule": "Starting from the top row of red/grey cells, grow a downward triangle: each new cell under a gap is the colour opposite to its upper-left parent when both diagonal parents are coloured, repeated row by row until it narrows out.",
+   "primary": "BEHAVIOUR",
+   "secondary": null,
+   "closest_module": "pattern",
+   "gap": "Needs iterated application of a local two-parent rule row by row (1-D cellular automaton growth), not one-shot pattern rewriting.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "b74ca5d1",
+   "rule": "Corner cells act as colour keys; each small two-colour shape whose odd cell matches a corner colour has its two colours swapped, and a glyph in that corner colour is drawn in the matching corner (exact glyph derivation unclear).",
+   "primary": "SYMBOL",
+   "secondary": "COMPOSITION",
+   "closest_module": "association",
+   "gap": "Needs corner-marker keys linking shapes to corners, colour swap within shapes, and building a corner glyph from the linked shapes.",
+   "confidence": "low",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "bd283c4a",
+   "rule": "Count the cells of each colour and redraw the grid as a sorted histogram: colours in descending frequency fill columns from left to right, each column filled bottom-to-top, preserving all counts.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "none",
+   "gap": "Needs per-colour counting, sorting by frequency, and re-emitting cells in column-major fill order.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "c920a713",
+   "rule": "Several overlapping rectangular outlines of different colours are stacked; output is a set of concentric square rings ordered by stacking depth (bottom-most outline outermost, top-most innermost, a single centre cell).",
+   "primary": "COUNT_RELATION",
+   "secondary": "GEOMETRY",
+   "closest_module": "none",
+   "gap": "Needs inferring occlusion (drawn-over) order between outlines and rendering them as concentric rings in that order.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "d749d46f",
+   "rule": "Bars hanging from the top edge (with full-height blocks as dividers) are re-encoded into a 10-row output with bars hanging from the top and rising from the bottom; the exact length/position mapping (possibly a counting code) is unclear to me.",
+   "primary": "COUNT_RELATION",
+   "secondary": "SYMBOL",
+   "closest_module": "none",
+   "gap": "Output layout is computed from bar lengths/positions (a numeric re-encoding); no module derives geometry from counted bar lengths.",
+   "confidence": "low",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "db118e2a",
+   "rule": "Normalise the framed object to a 5x5 frame (corners blank) holding the 3x3 window centred on its interior content, then draw two copies in a 15x15 canvas at fixed diagonal offsets (2,2) and (8,8).",
+   "primary": "GEOMETRY",
+   "secondary": "COMPOSITION",
+   "closest_module": "composition",
+   "gap": "Needs resizing a frame object to a canonical size around its content plus fixed-position duplication; no frame-normalising rescale exists.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "dce56571",
+   "rule": "Replace the scattered object with a horizontal line in its colour whose length equals the object's cell count, centred horizontally on the grid's middle row.",
+   "primary": "COUNT_RELATION",
+   "secondary": null,
+   "closest_module": "none",
+   "gap": "Needs numerosity: count an object's cells and draw a centred line of that length.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "df9fd884",
+   "rule": "Two yellow notched brackets sit in opposite corners; the loose small object is moved to the bottom edge directly beneath the notch of the top bracket (the free bottom corner), keeping its shape.",
+   "primary": "COUNT_RELATION",
+   "secondary": "BEHAVIOUR",
+   "closest_module": "dynamics",
+   "gap": "Needs placement by alignment relation to another object's notch (column of top bracket's gap) plus moving to the bottom edge.",
+   "confidence": "low",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "e3f79277",
+   "rule": "The 6x6 input shows a right-angle corner with arms of length k in one corner; output is a 16x16 canvas with, in the same corner, a right triangle whose arms are length 2k and whose hypotenuse is a diagonal line (outline only).",
+   "primary": "GEOMETRY",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Needs scaling a corner shape by 2 about its corner and completing it into a triangle with a diagonal hypotenuse, on a fixed canvas.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "e734a0e8",
+   "rule": "The grid is a lattice of equal panels; one panel holds a template shape and some panels contain a single black hole cell; the template is copied into every panel with a hole (hole erased), others unchanged.",
+   "primary": "COMPOSITION",
+   "secondary": null,
+   "closest_module": "composition",
+   "gap": "Needs panel-level copy: write the template panel into all panels flagged by a hole marker; panel ops only vote/overlay into one output.",
+   "confidence": "high",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "ecb67b6d",
+   "rule": "In a noisy grey/orange grid, grey cells forming diagonal staircase lines (chains of cells stepping diagonally, possibly 2 wide) are recoloured teal; other grey cells stay (exact line criterion unclear).",
+   "primary": "GEOMETRY",
+   "secondary": null,
+   "closest_module": "pattern",
+   "gap": "Needs recognising diagonal/staircase line structures within dense noise; simple diagonal-run detection explains only part of the recoloured cells.",
+   "confidence": "low",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "f28a3cbb",
+   "rule": "Two 3x3 squares sit in opposite corners; every stray cell of a square's colour is pulled toward that square (straight if aligned with its rows/cols, otherwise diagonally) until it touches it.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "dynamics",
+   "gap": "Move-until-contact exists but in fixed directions; needs attraction toward the same-colour anchor object (8 directions) per stray cell.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "f8cc533f",
+   "rule": "Several objects of different colours are copies of one symmetric template shape with some cells missing; each object is completed to the full template shape in its own colour.",
+   "primary": "NEAR_REACH",
+   "secondary": null,
+   "closest_module": "self-model",
+   "gap": "Self-similarity repair must work per object across colours (colour-agnostic template consensus or per-object symmetry), not global grid symmetry.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "fbf15a0b",
+   "rule": "A pair of grey marker cells near one edge indicates a half: crop the grid to the half (top/bottom if the pair is vertical, left/right if horizontal) containing the markers, and erase the markers to background.",
+   "primary": "NEAR_REACH",
+   "secondary": "CONTEXT",
+   "closest_module": "composition",
+   "gap": "Crop exists for fixed corners; needs half-crop whose axis and side are chosen by a marker pair's orientation and position, markers erased.",
+   "confidence": "medium",
+   "batch": "new2"
+  },
+  {
+   "split": "new233",
+   "task": "fc4aaf52",
+   "rule": "The two-colour object (stacked identical halves) swaps its outline and fill colours; its top half is slid right until its bottom-left corner touches the bottom half's top-right corner diagonally, while the bottom half stays.",
+   "primary": "COMPOSITION",
+   "secondary": "GEOMETRY",
+   "closest_module": "behavior",
+   "gap": "Needs splitting an object into parts, a relative move of one part to diagonal contact, and swapping its two colours.",
+   "confidence": "medium",
+   "batch": "new2"
+  }
+ ]
+}

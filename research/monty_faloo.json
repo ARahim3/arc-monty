@@ -1,0 +1,7237 @@
+{
+ "distinct": {
+  "v5-top": {
+   "n": 1147,
+   "fa": 103,
+   "fa_c": 101.0,
+   "conf": 98,
+   "fac": 102,
+   "fac_c": 101.0,
+   "fac_wrong": [
+    "f5aa3634"
+   ],
+   "fac_drop": [
+    "8d5021e8",
+    "9565186b",
+    "c9e6f938",
+    "00576224",
+    "aaef0977",
+    "ad38a9d0"
+   ],
+   "fac_new": [
+    "1f85a75f",
+    "3aa6fb7a",
+    "c3f564a4",
+    "1d0a4b61",
+    "c663677b",
+    "ca8f78db",
+    "cd3c21df",
+    "d56f2372",
+    "f823c43c",
+    "dbff022c"
+   ],
+   "union": 108,
+   "union_c": 106.0,
+   "conf_c": 96.0,
+   "both": 92,
+   "drop": [
+    "8d5021e8",
+    "9565186b",
+    "c9e6f938",
+    "00576224",
+    "aaef0977",
+    "ad38a9d0"
+   ],
+   "new": [
+    "1f85a75f",
+    "3aa6fb7a",
+    "72ca375d",
+    "c3f564a4",
+    "1d0a4b61",
+    "c663677b",
+    "ca8f78db",
+    "cd3c21df",
+    "d56f2372",
+    "f823c43c",
+    "dbff022c"
+   ],
+   "wrong": [
+    "72ca375d",
+    "f5aa3634"
+   ],
+   "conf_wrong": [
+    "9565186b",
+    "f5aa3634"
+   ],
+   "joint": 0.0017436791630340018,
+   "bound": 0.2473585651005006
+  },
+  "v5-conf": {
+   "n": 1147,
+   "fa": 71,
+   "fa_c": 71.0,
+   "conf": 98,
+   "fac": 71,
+   "fac_c": 71.0,
+   "fac_wrong": [],
+   "fac_drop": [
+    "253bf280",
+    "29ec7d0e",
+    "4258a5f9",
+    "5614dbcf",
+    "6c434453",
+    "7468f01a",
+    "8d5021e8",
+    "913fb3ed",
+    "9565186b",
+    "a5313dff",
+    "b1948b0a",
+    "b60334d2",
+    "be94b721",
+    "c0f76784",
+    "c9e6f938",
+    "ce22a75a",
+    "d10ecb37",
+    "d364b489",
+    "00576224",
+    "2a5f8217",
+    "66e6c45b",
+    "7e02026e",
+    "833dafe3",
+    "f5aa3634",
+    "aaef0977",
+    "ad38a9d0",
+    "135a2760"
+   ],
+   "fac_new": [],
+   "union": 98,
+   "union_c": 96.0,
+   "conf_c": 96.0,
+   "both": 71,
+   "drop": [
+    "253bf280",
+    "29ec7d0e",
+    "4258a5f9",
+    "5614dbcf",
+    "6c434453",
+    "7468f01a",
+    "8d5021e8",
+    "913fb3ed",
+    "9565186b",
+    "a5313dff",
+    "b1948b0a",
+    "b60334d2",
+    "be94b721",
+    "c0f76784",
+    "c9e6f938",
+    "ce22a75a",
+    "d10ecb37",
+    "d364b489",
+    "00576224",
+    "2a5f8217",
+    "66e6c45b",
+    "7e02026e",
+    "833dafe3",
+    "f5aa3634",
+    "aaef0977",
+    "ad38a9d0",
+    "135a2760"
+   ],
+   "new": [],
+   "wrong": [],
+   "conf_wrong": [
+    "9565186b",
+    "f5aa3634"
+   ],
+   "joint": 0.0,
+   "bound": 0.2473585651005006
+  },
+  "p4-top": {
+   "n": 1147,
+   "fa": 103,
+   "fa_c": 101.0,
+   "conf": 98,
+   "fac": 103,
+   "fac_c": 101.0,
+   "fac_wrong": [
+    "72ca375d",
+    "f5aa3634"
+   ],
+   "fac_drop": [
+    "8d5021e8",
+    "c9e6f938",
+    "00576224",
+    "aaef0977",
+    "ad38a9d0"
+   ],
+   "fac_new": [
+    "1f85a75f",
+    "3aa6fb7a",
+    "72ca375d",
+    "c3f564a4",
+    "1d0a4b61",
+    "c663677b",
+    "ca8f78db",
+    "cd3c21df",
+    "f823c43c",
+    "dbff022c"
+   ],
+   "union": 108,
+   "union_c": 106.0,
+   "conf_c": 97.0,
+   "both": 93,
+   "drop": [
+    "8d5021e8",
+    "c9e6f938",
+    "00576224",
+    "aaef0977",
+    "ad38a9d0"
+   ],
+   "new": [
+    "1f85a75f",
+    "3aa6fb7a",
+    "72ca375d",
+    "c3f564a4",
+    "1d0a4b61",
+    "c663677b",
+    "ca8f78db",
+    "cd3c21df",
+    "f823c43c",
+    "dbff022c"
+   ],
+   "wrong": [
+    "72ca375d",
+    "f5aa3634"
+   ],
+   "conf_wrong": [
+    "f5aa3634"
+   ],
+   "joint": 0.0017436791630340018,
+   "bound": 0.2473585651005006
+  },
+  "p4-conf": {
+   "n": 1147,
+   "fa": 71,
+   "fa_c": 71.0,
+   "conf": 98,
+   "fac": 71,
+   "fac_c": 71.0,
+   "fac_wrong": [],
+   "fac_drop": [
+    "253bf280",
+    "29ec7d0e",
+    "4258a5f9",
+    "5614dbcf",
+    "6c434453",
+    "7468f01a",
+    "8d5021e8",
+    "913fb3ed",
+    "a5313dff",
+    "a9f96cdd",
+    "b1948b0a",
+    "b60334d2",
+    "be94b721",
+    "c0f76784",
+    "c9e6f938",
+    "ce22a75a",
+    "d10ecb37",
+    "d364b489",
+    "00576224",
+    "2a5f8217",
+    "66e6c45b",
+    "7e02026e",
+    "833dafe3",
+    "f5aa3634",
+    "aaef0977",
+    "ad38a9d0",
+    "135a2760"
+   ],
+   "fac_new": [],
+   "union": 98,
+   "union_c": 97.0,
+   "conf_c": 97.0,
+   "both": 71,
+   "drop": [
+    "253bf280",
+    "29ec7d0e",
+    "4258a5f9",
+    "5614dbcf",
+    "6c434453",
+    "7468f01a",
+    "8d5021e8",
+    "913fb3ed",
+    "a5313dff",
+    "a9f96cdd",
+    "b1948b0a",
+    "b60334d2",
+    "be94b721",
+    "c0f76784",
+    "c9e6f938",
+    "ce22a75a",
+    "d10ecb37",
+    "d364b489",
+    "00576224",
+    "2a5f8217",
+    "66e6c45b",
+    "7e02026e",
+    "833dafe3",
+    "f5aa3634",
+    "aaef0977",
+    "ad38a9d0",
+    "135a2760"
+   ],
+   "new": [],
+   "wrong": [],
+   "conf_wrong": [
+    "f5aa3634"
+   ],
+   "joint": 0.0,
+   "bound": 0.2473585651005006
+  }
+ },
+ "standard": {
+  "agi2-eval": {
+   "v5-top": {
+    "n": 120,
+    "faloo_answered": 4,
+    "faloo_correct": 4.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 3,
+    "both_correct": 3.0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "dbff022c",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 4,
+     "fold abstains": 105,
+     "(a) fold mispredicts held-out demo": 11
+    },
+    "fa_c": {
+     "answered": 4,
+     "correct": 4.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "fa_or_conf": {
+     "answered": 4,
+     "correct": 4.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "2/2",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "v5-conf": {
+    "n": 120,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 2,
+    "both_correct": 2.0,
+    "conf_dropped": [
+     [
+      "135a2760",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "answer": 2,
+     "fold abstains": 118
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "p4-top": {
+    "n": 120,
+    "faloo_answered": 4,
+    "faloo_correct": 4.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 3,
+    "both_correct": 3.0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "dbff022c",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 4,
+     "fold abstains": 105,
+     "(a) fold mispredicts held-out demo": 11
+    },
+    "fa_c": {
+     "answered": 4,
+     "correct": 4.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "fa_or_conf": {
+     "answered": 4,
+     "correct": 4.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "2/2",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "p4-conf": {
+    "n": 120,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 2,
+    "both_correct": 2.0,
+    "conf_dropped": [
+     [
+      "135a2760",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "answer": 2,
+     "fold abstains": 118
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "self-model alone": {
+    "n": 120,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "0934a4d8",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 1,
+     "fold abstains": 119
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "periodic alone": {
+    "n": 120,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "135a2760",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 119,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "behavior alone": {
+    "n": 120,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 114,
+     "(a) fold mispredicts held-out demo": 6
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "dynamics alone": {
+    "n": 120,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 119,
+     "(a) fold mispredicts held-out demo": 1
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "composition alone": {
+    "n": 120,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 120
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "association alone": {
+    "n": 120,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "dbff022c",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 119,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "pattern alone": {
+    "n": 120,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "1818057f",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 113,
+     "(a) fold mispredicts held-out demo": 6,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   },
+   "field alone": {
+    "n": 120,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 120
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2611,
+    "by_n": {
+     "2": {
+      "tasks": 34,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 61,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 6,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     }
+    }
+   }
+  },
+  "new233": {
+   "v5-top": {
+    "n": 233,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 1,
+    "both_correct": 1.0,
+    "conf_dropped": [
+     [
+      "aaef0977",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 187,
+     "(a) fold mispredicts held-out demo": 45,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "2/2",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "v5-conf": {
+    "n": 233,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 1,
+    "both_correct": 1.0,
+    "conf_dropped": [
+     [
+      "aaef0977",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 231,
+     "(a) fold mispredicts held-out demo": 1,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "2/2",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "p4-top": {
+    "n": 233,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 1,
+    "both_correct": 1.0,
+    "conf_dropped": [
+     [
+      "aaef0977",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 187,
+     "(a) fold mispredicts held-out demo": 45,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "2/2",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "p4-conf": {
+    "n": 233,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 3,
+    "conf_correct": 3.0,
+    "conf_wrong": [],
+    "both": 1,
+    "both_correct": 1.0,
+    "conf_dropped": [
+     [
+      "aaef0977",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 231,
+     "(a) fold mispredicts held-out demo": 1,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "2/2",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "self-model alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 233
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "periodic alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 233
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "behavior alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 196,
+     "(a) fold mispredicts held-out demo": 37
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "dynamics alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 232,
+     "(a) fold mispredicts held-out demo": 1
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "composition alone": {
+    "n": 233,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "cf5fd0ad",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 231,
+     "(a) fold mispredicts held-out demo": 1,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "association alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 233
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "pattern alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 223,
+     "(a) fold mispredicts held-out demo": 10
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "field alone": {
+    "n": 233,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 233
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2626,
+    "by_n": {
+     "2": {
+      "tasks": 59,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 138,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 32,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "7": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   }
+  },
+  "agi2-train": {
+   "v5-top": {
+    "n": 1000,
+    "faloo_answered": 88,
+    "faloo_correct": 86.0,
+    "faloo_precision": 0.9773,
+    "faloo_wrong": [
+     "72ca375d",
+     "f5aa3634"
+    ],
+    "conf_answered": 87,
+    "conf_correct": 85.0,
+    "conf_wrong": [
+     "9565186b",
+     "f5aa3634"
+    ],
+    "both": 81,
+    "both_correct": 80.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "9565186b",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "aaef0977",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1d0a4b61",
+      1.0
+     ],
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "cd3c21df",
+      1.0
+     ],
+     [
+      "d56f2372",
+      1.0
+     ],
+     [
+      "f823c43c",
+      1.0
+     ]
+    ],
+    "why": {
+     "(a) fold mispredicts held-out demo": 173,
+     "answer": 88,
+     "fold abstains": 738,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 87,
+     "correct": 86.0,
+     "wrong": [
+      "f5aa3634"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 81,
+     "correct": 80.0
+    },
+    "fa_or_conf": {
+     "answered": 94,
+     "correct": 91.0
+    },
+    "joint_error_rate": 0.002,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "14/14",
+      "conf": "14/14",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "37/39",
+      "conf": "36/37",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "20/20",
+      "conf": "20/21",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "11/11",
+      "conf": "11/11",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "3/3",
+      "conf": "3/3",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "v5-conf": {
+    "n": 1000,
+    "faloo_answered": 62,
+    "faloo_correct": 62.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 87,
+    "conf_correct": 85.0,
+    "conf_wrong": [
+     "9565186b",
+     "f5aa3634"
+    ],
+    "both": 62,
+    "both_correct": 62.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "253bf280",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "2a5f8217",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "66e6c45b",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "6c434453",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7468f01a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7e02026e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "833dafe3",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "9565186b",
+      "fold abstains",
+      0.0
+     ],
+     [
+      "a5313dff",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "aaef0977",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b60334d2",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "be94b721",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c0f76784",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d364b489",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "f5aa3634",
+      "fold abstains",
+      0.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 931,
+     "answer": 62,
+     "(a) fold mispredicts held-out demo": 7
+    },
+    "fa_c": {
+     "answered": 62,
+     "correct": 62.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 62,
+     "correct": 62.0
+    },
+    "fa_or_conf": {
+     "answered": 87,
+     "correct": 85.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "3/3",
+      "conf": "14/14",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "27/27",
+      "conf": "36/37",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "18/18",
+      "conf": "20/21",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "11/11",
+      "conf": "11/11",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "3/3",
+      "conf": "3/3",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "p4-top": {
+    "n": 1000,
+    "faloo_answered": 88,
+    "faloo_correct": 86.0,
+    "faloo_precision": 0.9773,
+    "faloo_wrong": [
+     "72ca375d",
+     "f5aa3634"
+    ],
+    "conf_answered": 87,
+    "conf_correct": 86.0,
+    "conf_wrong": [
+     "f5aa3634"
+    ],
+    "both": 82,
+    "both_correct": 81.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "aaef0977",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1d0a4b61",
+      1.0
+     ],
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "cd3c21df",
+      1.0
+     ],
+     [
+      "f823c43c",
+      1.0
+     ]
+    ],
+    "why": {
+     "(a) fold mispredicts held-out demo": 173,
+     "answer": 88,
+     "fold abstains": 738,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 88,
+     "correct": 86.0,
+     "wrong": [
+      "72ca375d",
+      "f5aa3634"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 82,
+     "correct": 81.0
+    },
+    "fa_or_conf": {
+     "answered": 93,
+     "correct": 91.0
+    },
+    "joint_error_rate": 0.002,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "14/14",
+      "conf": "14/14",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "37/39",
+      "conf": "37/38",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "20/20",
+      "conf": "20/20",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "11/11",
+      "conf": "11/11",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "3/3",
+      "conf": "3/3",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "p4-conf": {
+    "n": 1000,
+    "faloo_answered": 62,
+    "faloo_correct": 62.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 87,
+    "conf_correct": 86.0,
+    "conf_wrong": [
+     "f5aa3634"
+    ],
+    "both": 62,
+    "both_correct": 62.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "253bf280",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "2a5f8217",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "66e6c45b",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "6c434453",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7468f01a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7e02026e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "833dafe3",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "a5313dff",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "a9f96cdd",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "aaef0977",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "ad38a9d0",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b60334d2",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "be94b721",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c0f76784",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d364b489",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "f5aa3634",
+      "fold abstains",
+      0.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 931,
+     "answer": 62,
+     "(a) fold mispredicts held-out demo": 7
+    },
+    "fa_c": {
+     "answered": 62,
+     "correct": 62.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 62,
+     "correct": 62.0
+    },
+    "fa_or_conf": {
+     "answered": 87,
+     "correct": 86.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "3/3",
+      "conf": "14/14",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "28/28",
+      "conf": "37/38",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "17/17",
+      "conf": "20/20",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "11/11",
+      "conf": "11/11",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "3/3",
+      "conf": "3/3",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "self-model alone": {
+    "n": 1000,
+    "faloo_answered": 3,
+    "faloo_correct": 3.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "3345333e",
+      1.0
+     ],
+     [
+      "f9012d9b",
+      1.0
+     ],
+     [
+      "ff805c23",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 997,
+     "answer": 3
+    },
+    "fa_c": {
+     "answered": 3,
+     "correct": 3.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "periodic alone": {
+    "n": 1000,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "1d0a4b61",
+      1.0
+     ],
+     [
+      "f823c43c",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 997,
+     "answer": 2,
+     "(a) fold mispredicts held-out demo": 1
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "behavior alone": {
+    "n": 1000,
+    "faloo_answered": 11,
+    "faloo_correct": 11.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      1.0
+     ],
+     [
+      "66e6c45b",
+      1.0
+     ],
+     [
+      "84f2aca1",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      1.0
+     ],
+     [
+      "95990924",
+      1.0
+     ],
+     [
+      "a9f96cdd",
+      1.0
+     ],
+     [
+      "b60334d2",
+      1.0
+     ],
+     [
+      "c0f76784",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      1.0
+     ],
+     [
+      "d364b489",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 862,
+     "(a) fold mispredicts held-out demo": 126,
+     "answer": 11,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 11,
+     "correct": 11.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 11,
+     "correct": 11.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "6/6",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "3/3",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "dynamics alone": {
+    "n": 1000,
+    "faloo_answered": 10,
+    "faloo_correct": 10.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "00d62c1b",
+      1.0
+     ],
+     [
+      "1e0a9b12",
+      1.0
+     ],
+     [
+      "253bf280",
+      1.0
+     ],
+     [
+      "623ea044",
+      1.0
+     ],
+     [
+      "a5313dff",
+      1.0
+     ],
+     [
+      "d037b0a7",
+      1.0
+     ],
+     [
+      "d282b262",
+      1.0
+     ],
+     [
+      "dbc1a6ce",
+      1.0
+     ],
+     [
+      "ded97339",
+      1.0
+     ],
+     [
+      "ea786f4a",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 987,
+     "answer": 10,
+     "(a) fold mispredicts held-out demo": 3
+    },
+    "fa_c": {
+     "answered": 10,
+     "correct": 10.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 10,
+     "correct": 10.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "7/7",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "composition alone": {
+    "n": 1000,
+    "faloo_answered": 55,
+    "faloo_correct": 53.0,
+    "faloo_precision": 0.9636,
+    "faloo_wrong": [
+     "72ca375d",
+     "f5aa3634"
+    ],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "007bbfb7",
+      1.0
+     ],
+     [
+      "0520fde7",
+      1.0
+     ],
+     [
+      "0c786b71",
+      1.0
+     ],
+     [
+      "0c9aba6e",
+      1.0
+     ],
+     [
+      "195ba7dc",
+      1.0
+     ],
+     [
+      "1b2d62fb",
+      1.0
+     ],
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "23b5c85d",
+      1.0
+     ],
+     [
+      "281123b4",
+      1.0
+     ],
+     [
+      "3428a4f5",
+      1.0
+     ],
+     [
+      "34b99a2b",
+      1.0
+     ],
+     [
+      "3af2c5a8",
+      1.0
+     ],
+     [
+      "46442a0e",
+      1.0
+     ],
+     [
+      "4c4377d9",
+      1.0
+     ],
+     [
+      "506d28a5",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      1.0
+     ],
+     [
+      "59341089",
+      1.0
+     ],
+     [
+      "5b6cbef5",
+      1.0
+     ],
+     [
+      "5bd6f4ac",
+      1.0
+     ],
+     [
+      "5d2a5c43",
+      1.0
+     ],
+     [
+      "60c09cac",
+      1.0
+     ],
+     [
+      "62c24649",
+      1.0
+     ],
+     [
+      "6430c8c4",
+      1.0
+     ],
+     [
+      "67e8384a",
+      1.0
+     ],
+     [
+      "68b67ca3",
+      1.0
+     ],
+     [
+      "6d0aefbc",
+      1.0
+     ],
+     [
+      "6fa7a44f",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "7468f01a",
+      1.0
+     ],
+     [
+      "7953d61e",
+      1.0
+     ],
+     [
+      "7fe24cdd",
+      1.0
+     ],
+     [
+      "833dafe3",
+      1.0
+     ],
+     [
+      "8be77c9e",
+      1.0
+     ],
+     [
+      "9172f3a0",
+      1.0
+     ],
+     [
+      "99b1bc43",
+      1.0
+     ],
+     [
+      "9a4bb226",
+      1.0
+     ],
+     [
+      "a416b8f3",
+      1.0
+     ],
+     [
+      "a68b268e",
+      1.0
+     ],
+     [
+      "bc4146bd",
+      1.0
+     ],
+     [
+      "be94b721",
+      1.0
+     ],
+     [
+      "c48954c1",
+      1.0
+     ],
+     [
+      "c59eb873",
+      1.0
+     ],
+     [
+      "cd3c21df",
+      1.0
+     ],
+     [
+      "ce4f8723",
+      1.0
+     ],
+     [
+      "cf5fd0ad",
+      1.0
+     ],
+     [
+      "cf98881b",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      1.0
+     ],
+     [
+      "d56f2372",
+      1.0
+     ],
+     [
+      "e133d23d",
+      1.0
+     ],
+     [
+      "e57337a4",
+      1.0
+     ],
+     [
+      "e98196ab",
+      1.0
+     ],
+     [
+      "e99362f0",
+      1.0
+     ],
+     [
+      "ed98d772",
+      1.0
+     ],
+     [
+      "f2829549",
+      1.0
+     ],
+     [
+      "f5aa3634",
+      0.0
+     ]
+    ],
+    "why": {
+     "(a) fold mispredicts held-out demo": 9,
+     "answer": 55,
+     "fold abstains": 936
+    },
+    "fa_c": {
+     "answered": 54,
+     "correct": 53.0,
+     "wrong": [
+      "f5aa3634"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 55,
+     "correct": 53.0
+    },
+    "joint_error_rate": 0.002,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "5/5",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "19/21",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "16/16",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "10/10",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "3/3",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "association alone": {
+    "n": 1000,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "2a5f8217",
+      1.0
+     ],
+     [
+      "845d6e51",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 998,
+     "answer": 2
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "pattern alone": {
+    "n": 1000,
+    "faloo_answered": 10,
+    "faloo_correct": 9.0,
+    "faloo_precision": 0.9,
+    "faloo_wrong": [
+     "3aa6fb7a"
+    ],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "3aa6fb7a",
+      0.0
+     ],
+     [
+      "54d9e175",
+      1.0
+     ],
+     [
+      "6c434453",
+      1.0
+     ],
+     [
+      "7e02026e",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      1.0
+     ],
+     [
+      "b60334d2",
+      1.0
+     ],
+     [
+      "c0f76784",
+      1.0
+     ],
+     [
+      "c8f0f002",
+      1.0
+     ],
+     [
+      "d90796e8",
+      1.0
+     ],
+     [
+      "e0fb7511",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 930,
+     "(a) fold mispredicts held-out demo": 60,
+     "answer": 10
+    },
+    "fa_c": {
+     "answered": 10,
+     "correct": 9.0,
+     "wrong": [
+      "3aa6fb7a"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 10,
+     "correct": 9.0
+    },
+    "joint_error_rate": 0.001,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "2/3",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "6/6",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "field alone": {
+    "n": 1000,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 1000
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2463,
+    "by_n": {
+     "2": {
+      "tasks": 158,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 575,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 189,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 49,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 8,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   }
+  },
+  "agi1-eval": {
+   "v5-top": {
+    "n": 400,
+    "faloo_answered": 39,
+    "faloo_correct": 38.0,
+    "faloo_precision": 0.9744,
+    "faloo_wrong": [
+     "f5aa3634"
+    ],
+    "conf_answered": 34,
+    "conf_correct": 33.0,
+    "conf_wrong": [
+     "f5aa3634"
+    ],
+    "both": 33,
+    "both_correct": 32.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1d0a4b61",
+      1.0
+     ],
+     [
+      "c663677b",
+      1.0
+     ],
+     [
+      "ca8f78db",
+      1.0
+     ],
+     [
+      "cd3c21df",
+      1.0
+     ],
+     [
+      "d56f2372",
+      1.0
+     ],
+     [
+      "f823c43c",
+      1.0
+     ]
+    ],
+    "why": {
+     "(a) fold mispredicts held-out demo": 48,
+     "fold abstains": 313,
+     "answer": 39
+    },
+    "fa_c": {
+     "answered": 39,
+     "correct": 38.0,
+     "wrong": [
+      "f5aa3634"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 33,
+     "correct": 32.0
+    },
+    "fa_or_conf": {
+     "answered": 40,
+     "correct": 39.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "4/4",
+      "conf": "4/4",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "17/18",
+      "conf": "12/13",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "8/8",
+      "conf": "8/8",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "7/7",
+      "conf": "7/7",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "2/2",
+      "conf": "2/2",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "v5-conf": {
+    "n": 400,
+    "faloo_answered": 28,
+    "faloo_correct": 28.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 34,
+    "conf_correct": 33.0,
+    "conf_wrong": [
+     "f5aa3634"
+    ],
+    "both": 28,
+    "both_correct": 28.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "2a5f8217",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "66e6c45b",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7e02026e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "833dafe3",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "f5aa3634",
+      "fold abstains",
+      0.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 372,
+     "answer": 28
+    },
+    "fa_c": {
+     "answered": 28,
+     "correct": 28.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 28,
+     "correct": 28.0
+    },
+    "fa_or_conf": {
+     "answered": 34,
+     "correct": 33.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "1/1",
+      "conf": "4/4",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "10/10",
+      "conf": "12/13",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "8/8",
+      "conf": "8/8",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "7/7",
+      "conf": "7/7",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "2/2",
+      "conf": "2/2",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "p4-top": {
+    "n": 400,
+    "faloo_answered": 38,
+    "faloo_correct": 37.0,
+    "faloo_precision": 0.9737,
+    "faloo_wrong": [
+     "f5aa3634"
+    ],
+    "conf_answered": 34,
+    "conf_correct": 33.0,
+    "conf_wrong": [
+     "f5aa3634"
+    ],
+    "both": 33,
+    "both_correct": 32.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1d0a4b61",
+      1.0
+     ],
+     [
+      "c663677b",
+      1.0
+     ],
+     [
+      "ca8f78db",
+      1.0
+     ],
+     [
+      "cd3c21df",
+      1.0
+     ],
+     [
+      "f823c43c",
+      1.0
+     ]
+    ],
+    "why": {
+     "(a) fold mispredicts held-out demo": 49,
+     "fold abstains": 313,
+     "answer": 38
+    },
+    "fa_c": {
+     "answered": 38,
+     "correct": 37.0,
+     "wrong": [
+      "f5aa3634"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 33,
+     "correct": 32.0
+    },
+    "fa_or_conf": {
+     "answered": 39,
+     "correct": 38.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "4/4",
+      "conf": "4/4",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "16/17",
+      "conf": "12/13",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "8/8",
+      "conf": "8/8",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "7/7",
+      "conf": "7/7",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "2/2",
+      "conf": "2/2",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "p4-conf": {
+    "n": 400,
+    "faloo_answered": 28,
+    "faloo_correct": 28.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 34,
+    "conf_correct": 33.0,
+    "conf_wrong": [
+     "f5aa3634"
+    ],
+    "both": 28,
+    "both_correct": 28.0,
+    "conf_dropped": [
+     [
+      "00576224",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "2a5f8217",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "66e6c45b",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7e02026e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "833dafe3",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "f5aa3634",
+      "fold abstains",
+      0.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 372,
+     "answer": 28
+    },
+    "fa_c": {
+     "answered": 28,
+     "correct": 28.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 28,
+     "correct": 28.0
+    },
+    "fa_or_conf": {
+     "answered": 34,
+     "correct": 33.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "1/1",
+      "conf": "4/4",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "10/10",
+      "conf": "12/13",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "8/8",
+      "conf": "8/8",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "7/7",
+      "conf": "7/7",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "2/2",
+      "conf": "2/2",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "self-model alone": {
+    "n": 400,
+    "faloo_answered": 4,
+    "faloo_correct": 4.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "0934a4d8",
+      1.0
+     ],
+     [
+      "67b4a34d",
+      1.0
+     ],
+     [
+      "e66aafb8",
+      1.0
+     ],
+     [
+      "f4081712",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 396,
+     "answer": 4
+    },
+    "fa_c": {
+     "answered": 4,
+     "correct": 4.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 4,
+     "correct": 4.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "periodic alone": {
+    "n": 400,
+    "faloo_answered": 5,
+    "faloo_correct": 5.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "1d0a4b61",
+      1.0
+     ],
+     [
+      "c663677b",
+      1.0
+     ],
+     [
+      "ca8f78db",
+      1.0
+     ],
+     [
+      "e95e3d8e",
+      1.0
+     ],
+     [
+      "f823c43c",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 395,
+     "answer": 5
+    },
+    "fa_c": {
+     "answered": 5,
+     "correct": 5.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 5,
+     "correct": 5.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "4/4",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "behavior alone": {
+    "n": 400,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "66e6c45b",
+      1.0
+     ],
+     [
+      "84f2aca1",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 372,
+     "(a) fold mispredicts held-out demo": 26,
+     "answer": 2
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "dynamics alone": {
+    "n": 400,
+    "faloo_answered": 1,
+    "faloo_correct": 1.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "d282b262",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 399,
+     "answer": 1
+    },
+    "fa_c": {
+     "answered": 1,
+     "correct": 1.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 1,
+     "correct": 1.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "composition alone": {
+    "n": 400,
+    "faloo_answered": 23,
+    "faloo_correct": 22.0,
+    "faloo_precision": 0.9565,
+    "faloo_wrong": [
+     "f5aa3634"
+    ],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "0c786b71",
+      1.0
+     ],
+     [
+      "0c9aba6e",
+      1.0
+     ],
+     [
+      "195ba7dc",
+      1.0
+     ],
+     [
+      "281123b4",
+      1.0
+     ],
+     [
+      "34b99a2b",
+      1.0
+     ],
+     [
+      "506d28a5",
+      1.0
+     ],
+     [
+      "59341089",
+      1.0
+     ],
+     [
+      "5b6cbef5",
+      1.0
+     ],
+     [
+      "5d2a5c43",
+      1.0
+     ],
+     [
+      "60c09cac",
+      1.0
+     ],
+     [
+      "68b67ca3",
+      1.0
+     ],
+     [
+      "7953d61e",
+      1.0
+     ],
+     [
+      "833dafe3",
+      1.0
+     ],
+     [
+      "9a4bb226",
+      1.0
+     ],
+     [
+      "bc4146bd",
+      1.0
+     ],
+     [
+      "c48954c1",
+      1.0
+     ],
+     [
+      "cd3c21df",
+      1.0
+     ],
+     [
+      "d56f2372",
+      1.0
+     ],
+     [
+      "e133d23d",
+      1.0
+     ],
+     [
+      "e57337a4",
+      1.0
+     ],
+     [
+      "e99362f0",
+      1.0
+     ],
+     [
+      "ed98d772",
+      1.0
+     ],
+     [
+      "f5aa3634",
+      0.0
+     ]
+    ],
+    "why": {
+     "(a) fold mispredicts held-out demo": 2,
+     "fold abstains": 375,
+     "answer": 23
+    },
+    "fa_c": {
+     "answered": 23,
+     "correct": 22.0,
+     "wrong": [
+      "f5aa3634"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 23,
+     "correct": 22.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "7/8",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "6/6",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "5/5",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "association alone": {
+    "n": 400,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "2a5f8217",
+      1.0
+     ],
+     [
+      "845d6e51",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 398,
+     "answer": 2
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "pattern alone": {
+    "n": 400,
+    "faloo_answered": 2,
+    "faloo_correct": 2.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "7e02026e",
+      1.0
+     ],
+     [
+      "e0fb7511",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 375,
+     "(a) fold mispredicts held-out demo": 23,
+     "answer": 2
+    },
+    "fa_c": {
+     "answered": 2,
+     "correct": 2.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 2,
+     "correct": 2.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   },
+   "field alone": {
+    "n": 400,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 400
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2369,
+    "by_n": {
+     "2": {
+      "tasks": 45,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 218,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 88,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 31,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 14,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 4,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     }
+    }
+   }
+  },
+  "agi1-train": {
+   "v5-top": {
+    "n": 400,
+    "faloo_answered": 60,
+    "faloo_correct": 59.0,
+    "faloo_precision": 0.9833,
+    "faloo_wrong": [
+     "72ca375d"
+    ],
+    "conf_answered": 59,
+    "conf_correct": 58.0,
+    "conf_wrong": [
+     "9565186b"
+    ],
+    "both": 56,
+    "both_correct": 56.0,
+    "conf_dropped": [
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "9565186b",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "c3f564a4",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 60,
+     "fold abstains": 258,
+     "(a) fold mispredicts held-out demo": 81,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 59,
+     "correct": 59.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 56,
+     "correct": 56.0
+    },
+    "fa_or_conf": {
+     "answered": 63,
+     "correct": 61.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "10/10",
+      "conf": "8/8",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "27/28",
+      "conf": "28/28",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "14/14",
+      "conf": "14/15",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "v5-conf": {
+    "n": 400,
+    "faloo_answered": 41,
+    "faloo_correct": 41.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 59,
+    "conf_correct": 58.0,
+    "conf_wrong": [
+     "9565186b"
+    ],
+    "both": 41,
+    "both_correct": 41.0,
+    "conf_dropped": [
+     [
+      "253bf280",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "29ec7d0e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "6c434453",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7468f01a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "9565186b",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "a5313dff",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b60334d2",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "be94b721",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c0f76784",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d364b489",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "answer": 41,
+     "fold abstains": 353,
+     "(a) fold mispredicts held-out demo": 6
+    },
+    "fa_c": {
+     "answered": 41,
+     "correct": 41.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 41,
+     "correct": 41.0
+    },
+    "fa_or_conf": {
+     "answered": 59,
+     "correct": 58.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "2/2",
+      "conf": "8/8",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "21/21",
+      "conf": "28/28",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "11/11",
+      "conf": "14/15",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "p4-top": {
+    "n": 400,
+    "faloo_answered": 61,
+    "faloo_correct": 60.0,
+    "faloo_precision": 0.9836,
+    "faloo_wrong": [
+     "72ca375d"
+    ],
+    "conf_answered": 59,
+    "conf_correct": 59.0,
+    "conf_wrong": [],
+    "both": 57,
+    "both_correct": 57.0,
+    "conf_dropped": [
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "c3f564a4",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 61,
+     "fold abstains": 258,
+     "(a) fold mispredicts held-out demo": 80,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 61,
+     "correct": 60.0,
+     "wrong": [
+      "72ca375d"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 57,
+     "correct": 57.0
+    },
+    "fa_or_conf": {
+     "answered": 63,
+     "correct": 62.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "10/10",
+      "conf": "8/8",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "28/29",
+      "conf": "29/29",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "14/14",
+      "conf": "14/14",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "p4-conf": {
+    "n": 400,
+    "faloo_answered": 41,
+    "faloo_correct": 41.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 59,
+    "conf_correct": 59.0,
+    "conf_wrong": [],
+    "both": 41,
+    "both_correct": 41.0,
+    "conf_dropped": [
+     [
+      "253bf280",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "29ec7d0e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "6c434453",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7468f01a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "a5313dff",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "a9f96cdd",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b60334d2",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "be94b721",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c0f76784",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d364b489",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "answer": 41,
+     "fold abstains": 353,
+     "(a) fold mispredicts held-out demo": 6
+    },
+    "fa_c": {
+     "answered": 41,
+     "correct": 41.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 41,
+     "correct": 41.0
+    },
+    "fa_or_conf": {
+     "answered": 59,
+     "correct": 59.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "2/2",
+      "conf": "8/8",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "22/22",
+      "conf": "29/29",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "10/10",
+      "conf": "14/14",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "self-model alone": {
+    "n": 400,
+    "faloo_answered": 5,
+    "faloo_correct": 5.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "3345333e",
+      1.0
+     ],
+     [
+      "9ecd008a",
+      1.0
+     ],
+     [
+      "dc0a314f",
+      1.0
+     ],
+     [
+      "f9012d9b",
+      1.0
+     ],
+     [
+      "ff805c23",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 395,
+     "answer": 5
+    },
+    "fa_c": {
+     "answered": 5,
+     "correct": 5.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 5,
+     "correct": 5.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "4/4",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "periodic alone": {
+    "n": 400,
+    "faloo_answered": 3,
+    "faloo_correct": 3.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "0dfd9992",
+      1.0
+     ],
+     [
+      "29ec7d0e",
+      1.0
+     ],
+     [
+      "c3f564a4",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 396,
+     "answer": 3,
+     "(a) fold mispredicts held-out demo": 1
+    },
+    "fa_c": {
+     "answered": 3,
+     "correct": 3.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 3,
+     "correct": 3.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "behavior alone": {
+    "n": 400,
+    "faloo_answered": 9,
+    "faloo_correct": 9.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      1.0
+     ],
+     [
+      "95990924",
+      1.0
+     ],
+     [
+      "a9f96cdd",
+      1.0
+     ],
+     [
+      "b60334d2",
+      1.0
+     ],
+     [
+      "c0f76784",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      1.0
+     ],
+     [
+      "d364b489",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 326,
+     "(a) fold mispredicts held-out demo": 64,
+     "answer": 9,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 9,
+     "correct": 9.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 9,
+     "correct": 9.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "5/5",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "2/2",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "dynamics alone": {
+    "n": 400,
+    "faloo_answered": 9,
+    "faloo_correct": 9.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "00d62c1b",
+      1.0
+     ],
+     [
+      "1e0a9b12",
+      1.0
+     ],
+     [
+      "253bf280",
+      1.0
+     ],
+     [
+      "623ea044",
+      1.0
+     ],
+     [
+      "a5313dff",
+      1.0
+     ],
+     [
+      "d037b0a7",
+      1.0
+     ],
+     [
+      "dbc1a6ce",
+      1.0
+     ],
+     [
+      "ded97339",
+      1.0
+     ],
+     [
+      "ea786f4a",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 389,
+     "answer": 9,
+     "(a) fold mispredicts held-out demo": 2
+    },
+    "fa_c": {
+     "answered": 9,
+     "correct": 9.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 9,
+     "correct": 9.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "6/6",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "composition alone": {
+    "n": 400,
+    "faloo_answered": 31,
+    "faloo_correct": 30.0,
+    "faloo_precision": 0.9677,
+    "faloo_wrong": [
+     "72ca375d"
+    ],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "007bbfb7",
+      1.0
+     ],
+     [
+      "0520fde7",
+      1.0
+     ],
+     [
+      "1b2d62fb",
+      1.0
+     ],
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "23b5c85d",
+      1.0
+     ],
+     [
+      "3428a4f5",
+      1.0
+     ],
+     [
+      "3af2c5a8",
+      1.0
+     ],
+     [
+      "46442a0e",
+      1.0
+     ],
+     [
+      "4c4377d9",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      1.0
+     ],
+     [
+      "5bd6f4ac",
+      1.0
+     ],
+     [
+      "62c24649",
+      1.0
+     ],
+     [
+      "6430c8c4",
+      1.0
+     ],
+     [
+      "67e8384a",
+      1.0
+     ],
+     [
+      "6d0aefbc",
+      1.0
+     ],
+     [
+      "6fa7a44f",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "7468f01a",
+      1.0
+     ],
+     [
+      "7fe24cdd",
+      1.0
+     ],
+     [
+      "8be77c9e",
+      1.0
+     ],
+     [
+      "9172f3a0",
+      1.0
+     ],
+     [
+      "99b1bc43",
+      1.0
+     ],
+     [
+      "a416b8f3",
+      1.0
+     ],
+     [
+      "a68b268e",
+      1.0
+     ],
+     [
+      "be94b721",
+      1.0
+     ],
+     [
+      "c59eb873",
+      1.0
+     ],
+     [
+      "ce4f8723",
+      1.0
+     ],
+     [
+      "cf98881b",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      1.0
+     ],
+     [
+      "e98196ab",
+      1.0
+     ],
+     [
+      "f2829549",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 31,
+     "fold abstains": 363,
+     "(a) fold mispredicts held-out demo": 6
+    },
+    "fa_c": {
+     "answered": 30,
+     "correct": 30.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 31,
+     "correct": 30.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "3/3",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "11/12",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "10/10",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "5/5",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "association alone": {
+    "n": 400,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 400
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "pattern alone": {
+    "n": 400,
+    "faloo_answered": 8,
+    "faloo_correct": 7.0,
+    "faloo_precision": 0.875,
+    "faloo_wrong": [
+     "3aa6fb7a"
+    ],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [
+     [
+      "3aa6fb7a",
+      0.0
+     ],
+     [
+      "54d9e175",
+      1.0
+     ],
+     [
+      "6c434453",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      1.0
+     ],
+     [
+      "b60334d2",
+      1.0
+     ],
+     [
+      "c0f76784",
+      1.0
+     ],
+     [
+      "c8f0f002",
+      1.0
+     ],
+     [
+      "d90796e8",
+      1.0
+     ]
+    ],
+    "why": {
+     "fold abstains": 369,
+     "(a) fold mispredicts held-out demo": 23,
+     "answer": 8
+    },
+    "fa_c": {
+     "answered": 8,
+     "correct": 7.0,
+     "wrong": [
+      "3aa6fb7a"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 8,
+     "correct": 7.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "2/3",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "4/4",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "1/1",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "field alone": {
+    "n": 400,
+    "faloo_answered": 0,
+    "faloo_correct": 0,
+    "faloo_precision": null,
+    "faloo_wrong": [],
+    "conf_answered": 0,
+    "conf_correct": 0,
+    "conf_wrong": [],
+    "both": 0,
+    "both_correct": 0,
+    "conf_dropped": [],
+    "faloo_new": [],
+    "why": {
+     "fold abstains": 400
+    },
+    "fa_c": {
+     "answered": 0,
+     "correct": 0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "fa_or_conf": {
+     "answered": 0,
+     "correct": 0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   }
+  }
+ },
+ "cpu": {
+  "agi2-eval": {
+   "tasks": 120,
+   "fold_cpu_s": 621.0,
+   "full_cpu_s": 216.0,
+   "ratio": 2.88,
+   "fold_cpu_per_task": 5.18
+  },
+  "agi1-eval": {
+   "tasks": 400,
+   "fold_cpu_s": 1866.0,
+   "full_cpu_s": 726.0,
+   "ratio": 2.57,
+   "fold_cpu_per_task": 4.67
+  },
+  "agi2-train": {
+   "tasks": 1000,
+   "fold_cpu_s": 2566.0,
+   "full_cpu_s": 1007.0,
+   "ratio": 2.55,
+   "fold_cpu_per_task": 2.57
+  },
+  "agi1-train": {
+   "tasks": 400,
+   "fold_cpu_s": 956.0,
+   "full_cpu_s": 367.0,
+   "ratio": 2.6,
+   "fold_cpu_per_task": 2.39
+  }
+ },
+ "audit": {
+  "behavior": {
+   "loo1_candidates": 1827,
+   "b_automatic": 1815,
+   "tasks": 14,
+   "fold_unseen_on_test": 0
+  },
+  "pattern": {
+   "loo1_candidates": 18,
+   "b_automatic": 18,
+   "tasks": 11
+  },
+  "field": {
+   "loo1_candidates": 2,
+   "b_automatic": 2,
+   "tasks": 1
+  },
+  "dynamics": {
+   "tasks_loo1": 10,
+   "multi_distinct": 0,
+   "mean_full_fit": 2.7,
+   "hyp_list_leak": 6,
+   "b_true_reinduction": 10,
+   "b_monty_folds": 10
+  },
+  "composition": {
+   "tasks_loo1": 56,
+   "multi_distinct": 2,
+   "mean_full_fit": 1.86,
+   "hyp_list_leak": 11,
+   "b_true_reinduction": 54,
+   "b_monty_folds": 56
+  },
+  "association": {
+   "tasks_loo1": 3,
+   "multi_distinct": 1,
+   "mean_full_fit": 2.0,
+   "hyp_list_leak": 0,
+   "b_true_reinduction": 3,
+   "b_monty_folds": 3
+  },
+  "periodic": {
+   "tasks_loo1": 4,
+   "multi_distinct": 0,
+   "mean_full_fit": 1.0,
+   "hyp_list_leak": 1,
+   "b_true_reinduction": 4,
+   "b_monty_folds": 4
+  }
+ },
+ "p8": {
+  "agi1-train": {
+   "v5-top": {
+    "n": 400,
+    "faloo_answered": 59,
+    "faloo_correct": 58.0,
+    "faloo_precision": 0.9831,
+    "faloo_wrong": [
+     "72ca375d"
+    ],
+    "conf_answered": 66,
+    "conf_correct": 62.0,
+    "conf_wrong": [
+     "0ca9ddb6",
+     "7447852a",
+     "834ec97d",
+     "a5f85a15"
+    ],
+    "both": 55,
+    "both_correct": 55.0,
+    "conf_dropped": [
+     [
+      "0ca9ddb6",
+      "fold abstains",
+      0.0
+     ],
+     [
+      "3bd67248",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "3bdb4ada",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "7447852a",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "834ec97d",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "8403a5d5",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "a5f85a15",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "b27ca6d3",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "e8593010",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "c3f564a4",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 59,
+     "fold abstains": 249,
+     "(a) fold mispredicts held-out demo": 91,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 58,
+     "correct": 58.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 55,
+     "correct": 55.0
+    },
+    "fa_or_conf": {
+     "answered": 70,
+     "correct": 65.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "10/10",
+      "conf": "10/10",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "26/27",
+      "conf": "30/34",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "14/14",
+      "conf": "14/14",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "v5-conf": {
+    "n": 400,
+    "faloo_answered": 42,
+    "faloo_correct": 42.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 66,
+    "conf_correct": 62.0,
+    "conf_wrong": [
+     "0ca9ddb6",
+     "7447852a",
+     "834ec97d",
+     "a5f85a15"
+    ],
+    "both": 42,
+    "both_correct": 42.0,
+    "conf_dropped": [
+     [
+      "0ca9ddb6",
+      "fold abstains",
+      0.0
+     ],
+     [
+      "253bf280",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "29ec7d0e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "3bd67248",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "3bdb4ada",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "6c434453",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7447852a",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "7468f01a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "834ec97d",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "8403a5d5",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "a5313dff",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "a5f85a15",
+      "fold abstains",
+      0.0
+     ],
+     [
+      "b1948b0a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b27ca6d3",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b60334d2",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "be94b721",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d364b489",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "e8593010",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "answer": 42,
+     "fold abstains": 349,
+     "(a) fold mispredicts held-out demo": 9
+    },
+    "fa_c": {
+     "answered": 42,
+     "correct": 42.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 42,
+     "correct": 42.0
+    },
+    "fa_or_conf": {
+     "answered": 66,
+     "correct": 62.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "2/2",
+      "conf": "10/10",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "21/21",
+      "conf": "30/34",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "12/12",
+      "conf": "14/14",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "p4-top": {
+    "n": 400,
+    "faloo_answered": 61,
+    "faloo_correct": 60.0,
+    "faloo_precision": 0.9836,
+    "faloo_wrong": [
+     "72ca375d"
+    ],
+    "conf_answered": 61,
+    "conf_correct": 60.0,
+    "conf_wrong": [
+     "9565186b"
+    ],
+    "both": 57,
+    "both_correct": 57.0,
+    "conf_dropped": [
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "9565186b",
+      "(a) fold mispredicts held-out demo",
+      0.0
+     ],
+     [
+      "b27ca6d3",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ]
+    ],
+    "faloo_new": [
+     [
+      "1f85a75f",
+      1.0
+     ],
+     [
+      "3aa6fb7a",
+      1.0
+     ],
+     [
+      "72ca375d",
+      0.0
+     ],
+     [
+      "c3f564a4",
+      1.0
+     ]
+    ],
+    "why": {
+     "answer": 61,
+     "fold abstains": 249,
+     "(a) fold mispredicts held-out demo": 89,
+     "(b) fold models disagree on test": 1
+    },
+    "fa_c": {
+     "answered": 61,
+     "correct": 60.0,
+     "wrong": [
+      "72ca375d"
+     ]
+    },
+    "fa_and_conf": {
+     "answered": 57,
+     "correct": 57.0
+    },
+    "fa_or_conf": {
+     "answered": 65,
+     "correct": 63.0
+    },
+    "joint_error_rate": 0.0025,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "10/10",
+      "conf": "9/9",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "28/29",
+      "conf": "29/29",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "14/14",
+      "conf": "14/15",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   },
+   "p4-conf": {
+    "n": 400,
+    "faloo_answered": 41,
+    "faloo_correct": 41.0,
+    "faloo_precision": 1.0,
+    "faloo_wrong": [],
+    "conf_answered": 61,
+    "conf_correct": 60.0,
+    "conf_wrong": [
+     "9565186b"
+    ],
+    "both": 41,
+    "both_correct": 41.0,
+    "conf_dropped": [
+     [
+      "253bf280",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "29ec7d0e",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "4258a5f9",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "5614dbcf",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "6c434453",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "7468f01a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "8d5021e8",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "913fb3ed",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "9565186b",
+      "fold abstains",
+      0.0
+     ],
+     [
+      "a5313dff",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "a9f96cdd",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b1948b0a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b27ca6d3",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "b60334d2",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "be94b721",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c0f76784",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "c9e6f938",
+      "(a) fold mispredicts held-out demo",
+      1.0
+     ],
+     [
+      "ce22a75a",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d10ecb37",
+      "fold abstains",
+      1.0
+     ],
+     [
+      "d364b489",
+      "fold abstains",
+      1.0
+     ]
+    ],
+    "faloo_new": [],
+    "why": {
+     "answer": 41,
+     "fold abstains": 354,
+     "(a) fold mispredicts held-out demo": 5
+    },
+    "fa_c": {
+     "answered": 41,
+     "correct": 41.0,
+     "wrong": []
+    },
+    "fa_and_conf": {
+     "answered": 41,
+     "correct": 41.0
+    },
+    "fa_or_conf": {
+     "answered": 61,
+     "correct": 60.0
+    },
+    "joint_error_rate": 0.0,
+    "mean_bound": 0.2448,
+    "by_n": {
+     "2": {
+      "tasks": 56,
+      "faloo": "2/2",
+      "conf": "9/9",
+      "bound": 0.333
+     },
+     "3": {
+      "tasks": 237,
+      "faloo": "22/22",
+      "conf": "29/29",
+      "bound": 0.25
+     },
+     "4": {
+      "tasks": 78,
+      "faloo": "10/10",
+      "conf": "14/15",
+      "bound": 0.2
+     },
+     "5": {
+      "tasks": 18,
+      "faloo": "6/6",
+      "conf": "6/6",
+      "bound": 0.167
+     },
+     "6": {
+      "tasks": 5,
+      "faloo": "1/1",
+      "conf": "1/1",
+      "bound": 0.143
+     },
+     "7": {
+      "tasks": 3,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.125
+     },
+     "8": {
+      "tasks": 2,
+      "faloo": "0/0",
+      "conf": "1/1",
+      "bound": 0.111
+     },
+     "10": {
+      "tasks": 1,
+      "faloo": "0/0",
+      "conf": "0/0",
+      "bound": 0.091
+     }
+    }
+   }
+  }
+ },
+ "vote_ablation_cross_module": {
+  "agi2-eval": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "agi1-eval": {
+   "answered": 34,
+   "correct": 33.0,
+   "precision": 0.9706,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "agi2-train": {
+   "answered": 87,
+   "correct": 86.0,
+   "precision": 0.9885,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "agi1-train": {
+   "answered": 59,
+   "correct": 59.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "new233": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  }
+ }
+}

@@ -1,0 +1,13 @@
+concept {"items": 480, "pass2": 58.0, "tasks": 160, "counts": {"fc": [35.0, 44], "fa": [35.0, 44], "a": [35.0, 44], "v5": [42.0, 49], "fit": [43.0, 74]}, "a_equals_fc": true, "fa_equals_fc": true, "items_with_event": 20, "share": 0.041666666666666664, "two_plus": 0, "event_real": 9, "mean_bound": 0.28322916666666664, "joint": 0.01875, "wrong_outside_E": 0, "roles": 1761, "n_hist": {"3": 183, "2": 225, "4": 66, "1": 3, "5": 3}}
+mini {"items": 149, "pass2": 20.0, "tasks": 149, "counts": {"fc": [8.0, 9], "fa": [8.0, 9], "a": [8.0, 9], "v5": [11.0, 11], "fit": [15.0, 29]}, "a_equals_fc": true, "fa_equals_fc": true, "items_with_event": 4, "share": 0.026845637583892617, "two_plus": 0, "event_real": 1, "mean_bound": 0.22727974858847338, "joint": 0.006711409395973154, "wrong_outside_E": 0, "roles": 677, "n_hist": {"3": 82, "4": 46, "6": 3, "5": 11, "2": 5, "7": 1, "8": 1}}
+oned {"items": 901, "pass2": 198.0, "tasks": 901, "counts": {"fc": [161.0, 172], "fa": [161.0, 172], "a": [161.0, 172], "v5": [167.0, 178], "fit": [187.0, 285]}, "a_equals_fc": true, "fa_equals_fc": true, "items_with_event": 54, "share": 0.05993340732519423, "two_plus": 0, "event_real": 11, "mean_bound": 0.25, "joint": 0.01220865704772475, "wrong_outside_E": 0, "roles": 3604, "n_hist": {"3": 901}}
+minimal {"items": 48, "pass2": 7.0, "tasks": 16, "counts": {"fc": [5.0, 5], "fa": [5.0, 5], "a": [5.0, 5], "v5": [5.0, 5], "fit": [6.0, 17]}, "a_equals_fc": true, "fa_equals_fc": true, "items_with_event": 0, "share": 0.0, "two_plus": 0, "event_real": 0, "mean_bound": 0.26458333333333334, "joint": 0.0, "wrong_outside_E": 0, "roles": 186, "n_hist": {"3": 30, "2": 12, "4": 6}}
+public eval minus concept, fc: +18.1 [+4.3, +33.9]
+public eval minus concept, v5: +11.5 [+0.0, +23.9]
+public eval minus concept, fit: +8.0 [-11.8, +28.0]
+public eval minus mini, fc: +8.7 [-6.2, +33.3]
+public eval minus mini, v5: -2.8 [-9.4, +0.0]
+public eval minus mini, fit: +14.4 [-7.8, +36.0]
+public eval minus oned, fc: +4.0 [-3.1, +19.0]
+public eval minus oned, v5: +3.4 [-4.4, +15.1]
+public eval minus oned, fit: +0.5 [-19.9, +28.1]

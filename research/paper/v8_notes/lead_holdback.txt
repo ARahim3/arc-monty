@@ -1,0 +1,47 @@
+--- per RUN
+full-data, verified (the plain rule)                       runs   20 ( 16.7% of 120), tasks  20, right   15.5, precision  77.5% wilson (58.4, 91.9); mean cost 26.4k
+fold, verified on its n-1 demos                            runs   86 ( 24.0% of 359), tasks  54, right   46.7, precision  54.3% wilson (44.2, 64.7); mean cost 25.5k
+fold, verified on n-1 AND predicts held-out (held-back rule) runs   57 ( 15.9% of 359), tasks  33, right   44.5, precision  78.1% wilson (64.8, 86.2); mean cost 24.8k
+fold, verified on n-1 but misses held-out (rejected)       runs   29 (  8.1% of 359), tasks  28, right    2.2, precision   7.5% wilson (1.9, 22.0); mean cost 26.8k
+fold, predicts held-out, not verified on n-1               runs   14 (  3.9% of 359), tasks  13, right    3.5, precision  25.0% wilson (11.7, 54.6); mean cost 34.9k
+mean right per run: full 0.1458, fold 0.1453; mean held rate over folds 0.1978
+--- exchangeability check over all folds (each fold model has one held-out demo and the test pair(s) as its unseen items)
+  held-out demo right: 71/359 = 19.8%; test right: 52.2/359 = 14.5%
+  held right & test wrong: 23.0 ; held wrong & test right: 4.2 (equal in expectation under exchangeability)
+--- per TASK, expected over a random fold per task vs the one full run: same token cost (1 run per task)
+  one random held-back fold per task: expected answered 17.9 of 120, expected right 14.3, precision 79.7%
+  one full-data run per task:          answered 20 of 120, right 15.5, precision 77.5%
+  total right if the answer is just the output (no gate): full 17.5; random fold 16.8
+  bootstrap by task, precision: held-back 79.5 [66.4, 91.0]; full verified 77.5 [57.9, 94.4]; diff +2.0 [-17.6, +23.0]
+--- tasks: held-back verified on any fold, vs full verified
+  tasks with any held-back fold 33 ; full verified 20 ; both 14 ; only held-back 19 ; only full 6
+  mean precision of held-back folds on tasks where full did NOT verify: [('136b0064', 1.0), ('291dc1e1', 1.0), ('36a08778', 1.0), ('3e6067c3', 1.0), ('53fb4810', 1.0), ('58f5dbd5', 1.0), ('6e453dd6', 0.0), ('7491f3cf', 0.33), ('8e5c0c38', 1.0), ('8f215267', 1.0), ('981571dc', 1.0), ('9aaea919', 0.0), ('a395ee82', 1.0), ('b99e7126', 0.5), ('db0c5428', 1.0), ('dfadab01', 0.0), ('e376de54', 1.0), ('eee78d87', 1.0), ('f931b4a8', 0.75)]
+  full verified right on tasks with no held-back fold: [('221dfab4', 0.0), ('38007db0', 0.5), ('4c3d4a41', 0.0), ('7ed72f31', 1.0), ('b5ca7ac4', 1.0), ('da515329', 0.0)]
+  cost: full mean 33.5k, fold mean 33.0k
+--- by n
+  n=2: full verified 3.5/6; held-back 4.0/5 of 68 folds
+  n=3: full verified 9.0/11; held-back 29.0/33 of 183 folds
+  n=4: full verified 2.0/2; held-back 7.0/13 of 72 folds
+  n=5: full verified 1.0/1; held-back 3.5/5 of 30 folds
+  n=6: full verified 0.0/0; held-back 1.0/1 of 6 folds
+(1) folds 359: held right 71 (19.8%), test right 52.2 (14.5%); discordant held-only 23.0, test-only 4.2
+    held rate minus test rate, points: +5.2 [+2.2, +8.7]; discordant difference +18.9 [+8.0, +31.8]
+    tasks with more held-only than test-only: 17; the reverse: 4; sign p ~ 0.0036 (one-sided)
+(2) fold programs verified on what they saw: 86, precision 54.3%; also predict held-out 57: 78.1%; miss it 29: 7.5%
+    difference, points: +70.5 [+55.3, +84.6] (tasks 54)
+(3) plain samples per task: [(2, 6), (3, 39), (4, 75)]
+    keys of a plain test_out vs SOL ok? 75
+    tasks with >=3 plain samples 114
+    mean runs per task: plain 3.6578947368421053 full+folds 3.973684210526316
+    tokens per task: plain 125.9k ; full+folds 131.5k
+    plain first 1 samples: pass@2 21.0 of 114
+    plain first 2 samples: pass@2 27.5 of 114
+    plain first 3 samples: pass@2 31.5 of 114
+    plain first 4 samples: pass@2 31.5 of 114
+    full-data greedy alone: 17.5
+    full-data greedy + all folds: 31.0
+    folds only (no full-data run): 26.0
+    full+folds minus all plain: -0.5 [-8.0, +7.0]; tasks better 9, worse 10
+(4) tasks where the greedy full run did not verify: 100
+    plain stochastic sample on those tasks: runs 354, verified 32 (9.0%), right among verified 14.5
+    greedy fold on those tasks:             runs 301, held-back verified 26 (8.6%), right among those 18.5

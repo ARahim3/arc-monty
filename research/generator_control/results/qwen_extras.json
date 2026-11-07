@@ -1,0 +1,74 @@
+{
+ "stops": {
+  "verified": 171,
+  "right": 159,
+  "wrong": 12,
+  "by": {
+   "(a)": 9,
+   "(b)": 2,
+   "(c)": 1
+  },
+  "right_rejected": {
+   "(b)": 5,
+   "(a)": 47
+  }
+ },
+ "hypergeom_random_subset_avoids_all_wrong": 3.735310063836544e-06,
+ "restarts": {
+  "jobs_claimed_more_than_once": 223,
+  "jobs_resumed": 28,
+  "tasks_with_a_restart": 73,
+  "tasks_without": 127,
+  "fit": [
+   102,
+   108
+  ],
+  "fa": [
+   74,
+   74
+  ],
+  "fc": [
+   71,
+   71
+  ],
+  "mean_h_minus_t": -0.01837270341207349
+ },
+ "kv": {
+  "vm_logs": 18,
+  "preemptions_total": 30.0,
+  "peak_kv": 0.9755029147150992
+ },
+ "here": {
+  "diff": -0.01,
+  "ci": [
+   -0.035,
+   0.015
+  ]
+ },
+ "vs_other": {
+  "ARC-AGI-2 eval": {
+   "diff": 0.049675023212627664,
+   "ci": [
+    0.013812154696132596,
+    0.08638743455497382
+   ],
+   "here_minus_it": -0.059675023212627666,
+   "here_minus_it_ci": [
+    -0.10438718662952645,
+    -0.01661080074487896
+   ]
+  },
+  "ConceptARC": {
+   "diff": -0.05074160811865729,
+   "ci": [
+    -0.08120649651972156,
+    -0.020881670533642684
+   ],
+   "here_minus_it": 0.04074160811865729,
+   "here_minus_it_ci": [
+    0.0025304136253041266,
+    0.07947940947940947
+   ]
+  }
+ }
+}

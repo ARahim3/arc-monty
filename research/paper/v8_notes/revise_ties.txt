@@ -1,0 +1,18 @@
+folds in main file 359 tasks 120
+file order: plain 31.5; full+folds 31.0; difference -0.5 [-8.0, +7.0]; better 9, worse 10
+fold-index order: plain 31.5; full+folds 33.0; difference +1.5 [-6.0, +9.0]; better 9, worse 8
+tier, then vote count: plain 31.5; full+folds 33.0; difference +1.5 [-6.0, +9.0]; better 9, worse 8
+random ties, 200 draws: plain mean 30.88, full+folds mean 31.65, difference +0.77
+tasks with a top-tier candidate: plain 35 full+folds 37
+
+Range check, first-seen within a tier
+plain arm, last-round rule keyed on n_ok: 31.5
+plain arm, last-round rule keyed on test_out: 31.0
+  three tiers, file order: fold arm 31.0; minus plain (n_ok) -0.5 [-8.0, +7.0]
+  three tiers, file order: fold arm 31.0; minus plain (test_out) +0.0 [-7.5, +7.5]
+  three tiers, canonical order: fold arm 33.0; minus plain (n_ok) +1.5 [-6.0, +9.0]
+  three tiers, canonical order: fold arm 33.0; minus plain (test_out) +2.0 [-5.5, +9.5]
+  two tiers, canonical order: fold arm 33.5; minus plain (n_ok) +2.0 [-5.5, +9.5]
+  two tiers, canonical order: fold arm 33.5; minus plain (test_out) +2.5 [-5.0, +10.0]
+  two tiers, file order: fold arm 31.0; minus plain (n_ok) -0.5 [-8.0, +7.0]
+  two tiers, file order: fold arm 31.0; minus plain (test_out) +0.0 [-7.5, +7.5]

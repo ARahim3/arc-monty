@@ -1,0 +1,121 @@
+{
+ "agi2-eval": {
+  "stats": {
+   "single>=0.99|confident=True": [
+    3,
+    3.0
+   ],
+   "single>=0.99|confident=False": [
+    1,
+    1.0
+   ]
+  },
+  "accumulated": []
+ },
+ "agi1-eval": {
+  "stats": {
+   "single>=0.99|confident=True": [
+    34,
+    33.0
+   ]
+  },
+  "accumulated": []
+ },
+ "agi2-train": {
+  "stats": {
+   "single>=0.99|confident=True": [
+    86,
+    85.0
+   ],
+   "single>=0.99|confident=False": [
+    4,
+    3.0
+   ],
+   "accumulated|confident=True": [
+    1,
+    0.0
+   ],
+   "accumulated|confident=False": [
+    1,
+    0.0
+   ]
+  },
+  "accumulated": [
+   {
+    "task": "9565186b",
+    "max_raw": 0.75,
+    "n_dup": 42,
+    "pooled": 1.027,
+    "voters": [
+     "behavior@0"
+    ],
+    "correct": 0.0,
+    "confident": true
+   },
+   {
+    "task": "ea786f4a",
+    "max_raw": 0.6666666666666666,
+    "n_dup": 84,
+    "pooled": 1.22,
+    "voters": [
+     "behavior@0"
+    ],
+    "correct": 0.0,
+    "confident": false
+   }
+  ]
+ },
+ "agi1-train": {
+  "stats": {
+   "single>=0.99|confident=True": [
+    58,
+    58.0
+   ],
+   "single>=0.99|confident=False": [
+    4,
+    3.0
+   ],
+   "accumulated|confident=True": [
+    1,
+    0.0
+   ],
+   "accumulated|confident=False": [
+    1,
+    0.0
+   ]
+  },
+  "accumulated": [
+   {
+    "task": "9565186b",
+    "max_raw": 0.75,
+    "n_dup": 42,
+    "pooled": 1.027,
+    "voters": [
+     "behavior@0"
+    ],
+    "correct": 0.0,
+    "confident": true
+   },
+   {
+    "task": "ea786f4a",
+    "max_raw": 0.6666666666666666,
+    "n_dup": 84,
+    "pooled": 1.22,
+    "voters": [
+     "behavior@0"
+    ],
+    "correct": 0.0,
+    "confident": false
+   }
+  ]
+ },
+ "new233": {
+  "stats": {
+   "single>=0.99|confident=True": [
+    3,
+    3.0
+   ]
+  },
+  "accumulated": []
+ }
+}

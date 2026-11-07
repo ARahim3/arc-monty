@@ -1,0 +1,37 @@
+{
+ "agi1-train": {
+  "v5 1 view": {
+   "answered": 59,
+   "correct": 58.0,
+   "wrong": [
+    "9565186b"
+   ]
+  },
+  "v5 8 views": {
+   "answered": 66,
+   "correct": 62.0,
+   "wrong": [
+    "0ca9ddb6",
+    "7447852a",
+    "834ec97d",
+    "a5f85a15"
+   ]
+  },
+  "P4 1 view": {
+   "answered": 59,
+   "correct": 59.0,
+   "wrong": []
+  },
+  "P4 8 views": {
+   "answered": 61,
+   "correct": 60.0,
+   "wrong": [
+    "9565186b"
+   ]
+  },
+  "check_vs_paper_writer_real_8view_run": {
+   "confident_flag_mismatches": [],
+   "n": 400
+  }
+ }
+}

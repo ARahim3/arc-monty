@@ -1,0 +1,40 @@
+{
+ "agi2-eval": {
+  "fires": 1,
+  "new_solves": [
+   "981571dc"
+  ],
+  "wrong": []
+ },
+ "agi1-eval": {
+  "fires": 10,
+  "new_solves": [
+   "47996f11",
+   "903d1b4a",
+   "929ab4e9",
+   "981571dc",
+   "af22c60d"
+  ],
+  "wrong": []
+ },
+ "agi2-train": {
+  "fires": 4,
+  "new_solves": [
+   "b8825c91"
+  ],
+  "wrong": []
+ },
+ "agi1-train": {
+  "fires": 6,
+  "new_solves": [
+   "3631a71a",
+   "b8825c91"
+  ],
+  "wrong": []
+ },
+ "new233": {
+  "fires": 0,
+  "new_solves": [],
+  "wrong": []
+ }
+}

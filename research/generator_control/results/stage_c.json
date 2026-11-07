@@ -1,0 +1,315 @@
+{
+ "label": "stage C, Addendum 4",
+ "tasks": 160,
+ "mean_bound": 0.28322916666666664,
+ "rules": {
+  "fit": {
+   "right": 146.0,
+   "answered": 155,
+   "exact": [
+    0.8926389308118279,
+    0.9731084410589976
+   ],
+   "coverage": 0.96875,
+   "coverage_ci": [
+    0.9375,
+    0.99375
+   ],
+   "wrong": 9.0,
+   "joint": 0.05625,
+   "joint_exact": [
+    0.026040638123327235,
+    0.10409240943363712
+   ],
+   "floor": 0.7076344086021505,
+   "floor_ci": [
+    0.6978888888888889,
+    0.7149895178197065
+   ],
+   "vacuous": false,
+   "wrong_tasks": [
+    "AboveBelow/AboveBelow9",
+    "CleanUp/CleanUp6",
+    "Count/Count6",
+    "Count/Count8",
+    "HorizontalVertical/HorizontalVertical2",
+    "HorizontalVertical/HorizontalVertical7",
+    "InsideOutside/InsideOutside9",
+    "SameDifferent/SameDifferent8",
+    "TopBottom3D/TopBottom3D5"
+   ]
+  },
+  "ab": {
+   "right": 80.0,
+   "answered": 81,
+   "exact": [
+    0.9331243790677892,
+    0.9996874833128462
+   ],
+   "coverage": 0.50625,
+   "coverage_ci": [
+    0.43125,
+    0.5875
+   ],
+   "wrong": 1.0,
+   "joint": 0.00625,
+   "joint_exact": [
+    0.00015822378119882067,
+    0.03432932968414143
+   ],
+   "floor": 0.4405349794238683,
+   "floor_ci": [
+    0.3432367149758455,
+    0.5179078014184397
+   ],
+   "vacuous": false,
+   "wrong_tasks": [
+    "AboveBelow/AboveBelow9"
+   ]
+  },
+  "abc": {
+   "right": 79.0,
+   "answered": 80,
+   "exact": [
+    0.9323122155360777,
+    0.9996835774723674
+   ],
+   "coverage": 0.5,
+   "coverage_ci": [
+    0.425,
+    0.58125
+   ],
+   "wrong": 1.0,
+   "joint": 0.00625,
+   "joint_exact": [
+    0.00015822378119882067,
+    0.03432932968414143
+   ],
+   "floor": 0.4335416666666667,
+   "floor_ci": [
+    0.33357843137254906,
+    0.5127240143369176
+   ],
+   "vacuous": false,
+   "wrong_tasks": [
+    "AboveBelow/AboveBelow9"
+   ]
+  }
+ },
+ "E": {
+  "tasks": 160,
+  "folds": 427,
+  "held_right": 323,
+  "test_right": 358.0,
+  "held_rate": 0.7564402810304449,
+  "test_rate": 0.8384074941451991,
+  "held_rate_ci": [
+   0.705607476635514,
+   0.8037825059101655
+  ],
+  "test_rate_ci": [
+   0.7980769230769231,
+   0.8767441860465116
+  ],
+  "difference": -0.08196721311475409,
+  "difference_ci": [
+   -0.1186046511627907,
+   -0.045346062052505964
+  ],
+  "discordant_held_only": 13.0,
+  "discordant_test_only": 48.0,
+  "half_width": 0.03662929455514237
+ },
+ "split_verified": {
+  "tasks": 159,
+  "programs": 415,
+  "precision": 0.8530120481927711,
+  "predict_held": {
+   "programs": 322,
+   "right": 309.0,
+   "precision": 0.9596273291925466
+  },
+  "miss_held": {
+   "programs": 93,
+   "right": 45.0,
+   "precision": 0.4838709677419355
+  },
+  "difference": 0.47575636145061106,
+  "difference_ci": [
+   0.3788517441860465,
+   0.571236602143657
+  ],
+  "per_task": {
+   "tasks_with_hit": 140,
+   "mean_precision_hit": 0.9488095238095239,
+   "tasks_with_miss": 71,
+   "mean_precision_miss": 0.49765258215962443,
+   "tasks_with_both": 52,
+   "mean_paired_difference": 0.41025641025641024,
+   "paired_ci": [
+    0.27564102564102566,
+    0.5448717948717948
+   ]
+  }
+ },
+ "verified": {
+  "verified": 155,
+  "fully_right": 146,
+  "not_fully_right": 9,
+  "certified": 80,
+  "wrong_kept": 1,
+  "wrong_rejected": 8,
+  "hypergeom_p_kept_or_fewer": 0.013134589420239305
+ },
+ "run": {
+  "records": 587,
+  "tokens": {
+   "fold": 13188206,
+   "full": 5015354
+  },
+  "rounds": 647,
+  "hit_cap": 326,
+  "no_code": 1,
+  "skipped": 0,
+  "max_prompt": 3734,
+  "resumed": 0,
+  "vms": [
+   "arc-v6e-r21-europe-west4-a"
+  ]
+ },
+ "vs_stage2": {
+  "stage2_all_three": -0.05074160811865729,
+  "stage2_first_pair": -0.06791569086651054,
+  "stage2_first_pair_ci": [
+   -0.1026252983293556,
+   -0.03309692671394799
+  ],
+  "here": -0.08196721311475409,
+  "here_ci_same_resamples": [
+   -0.11848341232227488,
+   -0.045146726862302484
+  ],
+  "c_minus_stage2_first_pair": -0.014051522248243548,
+  "c_minus_ci": [
+   -0.04751131221719457,
+   0.01904761904761905
+  ],
+  "tasks": 160
+ },
+ "retry": {
+  "per": {
+   "not_fitting": 8,
+   "retried_1": 8,
+   "fit_1": 7,
+   "retried_2": 1,
+   "fit_2": 1,
+   "never": 0,
+   "runs": 9,
+   "tokens": 387200
+  },
+  "incomplete_folds": 0,
+  "rules": {
+   "fit": {
+    "right": 146.0,
+    "answered": 155,
+    "exact": [
+     0.8926389308118279,
+     0.9731084410589976
+    ],
+    "coverage": 0.96875,
+    "coverage_ci": [
+     0.9375,
+     0.99375
+    ],
+    "wrong": 9.0,
+    "joint": 0.05625,
+    "joint_exact": [
+     0.026040638123327235,
+     0.10409240943363712
+    ],
+    "floor": 0.7076344086021505,
+    "floor_ci": [
+     0.6978888888888889,
+     0.7149895178197065
+    ],
+    "vacuous": false,
+    "wrong_tasks": [
+     "AboveBelow/AboveBelow9",
+     "CleanUp/CleanUp6",
+     "Count/Count6",
+     "Count/Count8",
+     "HorizontalVertical/HorizontalVertical2",
+     "HorizontalVertical/HorizontalVertical7",
+     "InsideOutside/InsideOutside9",
+     "SameDifferent/SameDifferent8",
+     "TopBottom3D/TopBottom3D5"
+    ]
+   },
+   "ab": {
+    "right": 81.0,
+    "answered": 82,
+    "exact": [
+     0.9339172906106932,
+     0.9996912939036298
+    ],
+    "coverage": 0.5125,
+    "coverage_ci": [
+     0.4375,
+     0.59375
+    ],
+    "wrong": 1.0,
+    "joint": 0.00625,
+    "joint_exact": [
+     0.00015822378119882067,
+     0.03432932968414143
+    ],
+    "floor": 0.4473577235772358,
+    "floor_ci": [
+     0.3526190476190477,
+     0.5229824561403509
+    ],
+    "vacuous": false,
+    "wrong_tasks": [
+     "AboveBelow/AboveBelow9"
+    ]
+   },
+   "abc": {
+    "right": 80.0,
+    "answered": 81,
+    "exact": [
+     0.9331243790677892,
+     0.9996874833128462
+    ],
+    "coverage": 0.50625,
+    "coverage_ci": [
+     0.43125,
+     0.5875
+    ],
+    "wrong": 1.0,
+    "joint": 0.00625,
+    "joint_exact": [
+     0.00015822378119882067,
+     0.03432932968414143
+    ],
+    "floor": 0.4405349794238683,
+    "floor_ci": [
+     0.3432367149758455,
+     0.5179078014184397
+    ],
+    "vacuous": false,
+    "wrong_tasks": [
+     "AboveBelow/AboveBelow9"
+    ]
+   }
+  },
+  "verified": {
+   "verified": 155,
+   "fully_right": 146,
+   "not_fully_right": 9,
+   "certified": 81,
+   "wrong_kept": 1,
+   "wrong_rejected": 8,
+   "hypergeom_p_kept_or_fewer": 0.011852840414553945
+  }
+ }
+}

@@ -1,0 +1,8 @@
+FA-LOO canon minus abs -4.5 pts [-12.5, +0.0] does not separate
+FA-LOO no behaviour minus full +7.7 pts [+1.2, +17.3] separates
+FA-LOO both minus canon -1.3 pts [-5.0, +0.0] does not separate
+disagree pooled {"vc": 22.0, "va": 23.0, "fc": 6.0, "fa": 10.0, "bc": 198.0, "ba": 215.0, "v5_only": [0.8333333333333334, 1.0], "fa_only": [0.2222222222222222, 0.9], "diff": 0.35652173913043483, "diff_ci": [0.021354166666666605, 0.75]}
+dev_gap keys ['concept', 'mini', 'oned'] {"fc": {"diff": 0.19474153297682717, "ci": [0.06888711212640396, 0.34747706422018354], "separates": true}, "a": {"diff": 0.1853146853146853, "ci": [0.058300601062954496, 0.3387361068882808], "separates": true}, "v5": {"diff": 0.12244897959183676, "ci": [0.01996255166985583, 0.2432432432432432], "sep
+agi1-eval in agi2-train 376 agi1-train in agi2-train 391 agi2-eval in agi1-eval 6 union eval 514 union all 1147
+Qwen alone (qv, qu) 25.5 | merged 28.5
+Leadholm abstract: rincipled movements. We find that such policies complement Monty's modular architecture, a design that can accommodate communication between modules to further accelerate inference speed via a novel `voting' algorithm. Finally, we examine Monty's use of associative, Hebbian-like binding to enable rapid, continual, and computationally efficient learning, properties that compare favorably to current

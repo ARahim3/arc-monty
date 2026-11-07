@@ -1,0 +1,357 @@
+[
+ {
+  "split": "agi2-eval",
+  "task": "16b78196",
+  "module": "pattern",
+  "best_acc": 0.9,
+  "copy_acc": 0.8922222222222222,
+  "wrong_cells": [
+   [
+    90
+   ]
+  ]
+ },
+ {
+  "split": "agi2-eval",
+  "task": "2b83f449",
+  "module": "behavior",
+  "best_acc": 0.6934984520123839,
+  "copy_acc": 0.8080495356037152,
+  "wrong_cells": [
+   [
+    99,
+    102
+   ]
+  ]
+ },
+ {
+  "split": "agi2-eval",
+  "task": "4c3d4a41",
+  "module": "pattern",
+  "best_acc": 0.89375,
+  "copy_acc": 0.825,
+  "wrong_cells": [
+   [
+    34
+   ],
+   [
+    17
+   ]
+  ]
+ },
+ {
+  "split": "agi2-eval",
+  "task": "800d221b",
+  "module": "behavior",
+  "best_acc": 0.84,
+  "copy_acc": 0.84,
+  "wrong_cells": [
+   [
+    144,
+    144
+   ]
+  ]
+ },
+ {
+  "split": "agi2-eval",
+  "task": "97d7923e",
+  "module": "pattern",
+  "best_acc": 0.93,
+  "copy_acc": 0.94,
+  "wrong_cells": [
+   [
+    14
+   ]
+  ]
+ },
+ {
+  "split": "agi2-eval",
+  "task": "981571dc",
+  "module": "behavior",
+  "best_acc": 0.8977777777777778,
+  "copy_acc": 0.9666666666666667,
+  "wrong_cells": [
+   [
+    92,
+    110
+   ]
+  ]
+ },
+ {
+  "split": "agi2-eval",
+  "task": "d35bdbdc",
+  "module": "behavior",
+  "best_acc": 0.83,
+  "copy_acc": 0.7533333333333333,
+  "wrong_cells": [
+   [
+    17,
+    18
+   ],
+   [
+    32,
+    44
+   ],
+   [
+    33,
+    36
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "396d80d7",
+  "module": "behavior",
+  "best_acc": 0.96875,
+  "copy_acc": 0.953125,
+  "wrong_cells": [
+   [
+    12,
+    8
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "52df9849",
+  "module": "behavior",
+  "best_acc": 0.96875,
+  "copy_acc": 0.912109375,
+  "wrong_cells": [
+   [
+    44,
+    44
+   ],
+   [
+    8,
+    13
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "5792cb4d",
+  "module": "behavior",
+  "best_acc": 0.79,
+  "copy_acc": 0.8,
+  "wrong_cells": [
+   [
+    21
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "58c02a16",
+  "module": "behavior",
+  "best_acc": 0.28515625,
+  "copy_acc": 0.34375,
+  "wrong_cells": [
+   [
+    183
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "60d73be6",
+  "module": "behavior",
+  "best_acc": 0.839572192513369,
+  "copy_acc": 0.839572192513369,
+  "wrong_cells": [
+   [
+    30
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "689c358e",
+  "module": "behavior",
+  "best_acc": 0.9090909090909091,
+  "copy_acc": 0.9338842975206612,
+  "wrong_cells": [
+   [
+    11,
+    11
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "6a980be1",
+  "module": "behavior",
+  "best_acc": 0.3490304709141274,
+  "copy_acc": 0.5013850415512465,
+  "wrong_cells": [
+   [
+    235,
+    235
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "753ea09b",
+  "module": "behavior",
+  "best_acc": 0.8366666666666667,
+  "copy_acc": 0.8644444444444445,
+  "wrong_cells": [
+   [
+    147,
+    181
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "758abdf0",
+  "module": "behavior",
+  "best_acc": 0.9140625,
+  "copy_acc": 0.8515625,
+  "wrong_cells": [
+   [
+    11
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "98c475bf",
+  "module": "behavior",
+  "best_acc": 0.8525,
+  "copy_acc": 0.825,
+  "wrong_cells": [
+   [
+    89,
+    59
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "9b30e358",
+  "module": "behavior",
+  "best_acc": 0.68,
+  "copy_acc": 0.7,
+  "wrong_cells": [
+   [
+    16,
+    19
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "9f8de559",
+  "module": "behavior",
+  "best_acc": 0.9897959183673469,
+  "copy_acc": 0.9948979591836735,
+  "wrong_cells": [
+   [
+    2,
+    2
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "aa62e3f4",
+  "module": "behavior",
+  "best_acc": 0.48,
+  "copy_acc": 0.12,
+  "wrong_cells": [
+   [
+    13,
+    14
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "ad3b40cf",
+  "module": "behavior",
+  "best_acc": 0.9480968858131488,
+  "copy_acc": 0.9584775086505191,
+  "wrong_cells": [
+   [
+    19,
+    15
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "b2bc3ffd",
+  "module": "behavior",
+  "best_acc": 0.59375,
+  "copy_acc": 0.78125,
+  "wrong_cells": [
+   [
+    26
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "bae5c565",
+  "module": "behavior",
+  "best_acc": 0.7933884297520661,
+  "copy_acc": 0.6694214876033058,
+  "wrong_cells": [
+   [
+    25
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "bd5af378",
+  "module": "behavior",
+  "best_acc": 0.1375,
+  "copy_acc": 0.075,
+  "wrong_cells": [
+   [
+    69,
+    69
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "cc9053aa",
+  "module": "behavior",
+  "best_acc": 0.7654320987654321,
+  "copy_acc": 0.7654320987654321,
+  "wrong_cells": [
+   [
+    19
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "d93c6891",
+  "module": "behavior",
+  "best_acc": 0.8402777777777778,
+  "copy_acc": 0.8333333333333334,
+  "wrong_cells": [
+   [
+    46
+   ]
+  ]
+ },
+ {
+  "split": "new233",
+  "task": "ecb67b6d",
+  "module": "pattern",
+  "best_acc": 0.9407894736842105,
+  "copy_acc": 0.8782894736842105,
+  "wrong_cells": [
+   [
+    18,
+    26
+   ]
+  ]
+ }
+]

@@ -1,0 +1,115 @@
+rids 11637, with all four configurations 11637, malformed 0, duplicate lines 0, of which differ 0
+jobs 11637 raw rids not in jobs 0
+concept: items 480, tasks 160, clusters 160; item vs disk mismatches {'held job': 3, 'test job': 3}
+
+=== ConceptARC (concept): items 480, clusters 160, mean 1/(n+1) 28.3%, have a top answer 480
+  top answer: 182/480 = 37.9% [32.1, 43.8]; coverage 100.0%
+  top answer, fits: 152/310 = 49.0% [41.9, 56.0]; coverage 64.6%
+  plain (a): 14/21 = 66.7% [33.3, 93.3]; coverage 4.4%
+  (a)+(b): 11/17 = 64.7% [27.3, 93.3]; coverage 3.5%
+  FA-LOO: 11/15 = 73.3% [38.5, 100.0]; coverage 3.1%
+  pass@1,2,3 [182, 226, 251]; FA-LOO minus top +35.4 [+1.1, +61.7]; minus fit +24.3 [-10.0, +50.4]; minus (a) +6.7 [-2.8, +13.3]
+  top answers not fitting 170 of 480; (a) passes 21; (b) fails 4: right 2, wrong 2; (c) fails 2; FA-LOO wrong 4, joint 0.83%
+  FA-LOO tasks 6, with a wrong answer 3; clusters answered 6; Clopper-Pearson tasks all right (np.float64(11.811724875702522), np.float64(88.18827512429748)); by n {('n=2', False): 3, ('n=2', True): 1, ('n>=3', True): 10, ('n>=3', False): 1}
+  floor -806.3%
+  Table 5: predict 172/285 = 60.4%; miss 152/993 = 15.3%; difference +45.0 [+35.3, +54.6]
+  Table 4: folds 1281; held 22.2% test 25.3%; diff -3.0 [-6.3, +0.2]; held only 113 test only 152; clusters 27:54, sign p 0.003596347718824061
+  WITHIN paper's cluster: {'clusters': 52, 'diff': 0.1762820512820513, 'ci': (0.08226495726495726, 0.2724358974358974), 'pos': 23, 'neg': 10, 'zero': 19, 'sign_p': 0.03508203336969018, 'pred_mean': 0.5256410256410257, 'miss_mean': 0.34935897435897434, 'n_pred': 225, 'n_miss': 249}
+  WITHIN item (task and test pair): {'clusters': 156, 'diff': 0.1762820512820513, 'ci': (0.10042735042735042, 0.25106837606837606), 'pos': 46, 'neg': 17, 'zero': 93, 'sign_p': 0.00033670934946623826, 'pred_mean': 0.5256410256410257, 'miss_mean': 0.34935897435897434, 'n_pred': 225, 'n_miss': 249}
+  WITHIN task, only fold answers that fit what the fold saw: {'clusters': 42, 'diff': 0.17557634164777022, 'ci': (0.05654596560846561, 0.2932865646258503), 'pos': 20, 'neg': 9, 'zero': 13, 'sign_p': 0.06142834573984146, 'pred_mean': 0.541912320483749, 'miss_mean': 0.3663359788359788, 'n_pred': 173, 'n_miss': 182}
+  overlap with Monty-ARC FA-LOO (44 answers, right 35): both 7 (2020 right 4, Monty right 5, same? see below); 2020 only 8, right 7; Monty only 37, right 30; union 52
+mini: items 149, tasks 149, clusters 149; item vs disk mismatches {}
+
+=== Mini-ARC (mini): items 149, clusters 149, mean 1/(n+1) 22.7%, have a top answer 149
+  top answer: 66/149 = 44.3% [36.2, 52.3]; coverage 100.0%
+  top answer, fits: 48/76 = 63.2% [52.1, 73.8]; coverage 51.0%
+  plain (a): 29/32 = 90.6% [79.3, 100.0]; coverage 21.5%
+  (a)+(b): 29/32 = 90.6% [79.3, 100.0]; coverage 21.5%
+  FA-LOO: 29/32 = 90.6% [79.3, 100.0]; coverage 21.5%
+  pass@1,2,3 [66, 76, 78]; FA-LOO minus top +46.3 [+35.1, +57.6]; minus fit +27.5 [+14.9, +40.1]; minus (a) +0.0 [+0.0, +0.0]
+  top answers not fitting 73 of 149; (a) passes 32; (b) fails 0: right 0, wrong 0; (c) fails 0; FA-LOO wrong 3, joint 2.01%
+  FA-LOO tasks 32, with a wrong answer 3; clusters answered 32; Clopper-Pearson tasks all right (np.float64(74.97730493162054), np.float64(98.02328198267152)); by n {('n>=3', True): 29, ('n>=3', False): 3}
+  floor -5.8%
+  Table 5: predict 151/203 = 74.4%; miss 49/325 = 15.1%; difference +59.3 [+47.8, +69.8]
+  Table 4: folds 528; held 38.4% test 37.9%; diff +0.6 [-4.6, +6.0]; held only 52 test only 49; clusters 25:32, sign p 0.42704285650325524
+  WITHIN paper's cluster: {'clusters': 47, 'diff': 0.2801418439716312, 'ci': (0.1524822695035461, 0.4148936170212766), 'pos': 20, 'neg': 5, 'zero': 22, 'sign_p': 0.004077315330505371, 'pred_mean': 0.5460992907801419, 'miss_mean': 0.2659574468085106, 'n_pred': 91, 'n_miss': 88}
+  WITHIN item (task and test pair): {'clusters': 47, 'diff': 0.2801418439716312, 'ci': (0.1524822695035461, 0.4148936170212766), 'pos': 20, 'neg': 5, 'zero': 22, 'sign_p': 0.004077315330505371, 'pred_mean': 0.5460992907801419, 'miss_mean': 0.2659574468085106, 'n_pred': 91, 'n_miss': 88}
+  WITHIN task, only fold answers that fit what the fold saw: {'clusters': 23, 'diff': 0.34057971014492755, 'ci': (0.13043478260869565, 0.5507246376811594), 'pos': 9, 'neg': 2, 'zero': 12, 'sign_p': 0.0654296875, 'pred_mean': 0.6086956521739131, 'miss_mean': 0.2681159420289855, 'n_pred': 39, 'n_miss': 33}
+  overlap with Monty-ARC FA-LOO (9 answers, right 8): both 5 (2020 right 4, Monty right 4, same? see below); 2020 only 27, right 25; Monty only 4, right 4; union 36
+oned: items 901, tasks 901, clusters 18; item vs disk mismatches {}
+
+=== 1D-ARC (oned): items 901, clusters 18, mean 1/(n+1) 25.0%, have a top answer 615
+  top answer: 412/615 = 67.0% [48.6, 84.1]; coverage 68.3%
+  top answer, fits: 370/445 = 83.1% [70.5, 91.9]; coverage 49.4%
+  plain (a): 192/205 = 93.7% [86.8, 97.2]; coverage 22.8%
+  (a)+(b): 177/184 = 96.2% [89.7, 99.3]; coverage 20.4%
+  FA-LOO: 176/183 = 96.2% [89.7, 99.3]; coverage 20.3%
+  pass@1,2,3 [412, 445, 461]; FA-LOO minus top +29.2 [+12.8, +46.3]; minus fit +13.0 [+6.0, +22.5]; minus (a) +2.5 [+1.2, +3.9]
+  top answers not fitting 170 of 615; (a) passes 205; (b) fails 21: right 16, wrong 5; (c) fails 1; FA-LOO wrong 7, joint 0.78%
+  FA-LOO tasks 183, with a wrong answer 7; clusters answered 12; Clopper-Pearson tasks all right (np.float64(92.27783552991737), np.float64(98.44849625903869)); by n {('n>=3', True): 176, ('n>=3', False): 7}
+  floor -23.1%
+  Table 5: predict 834/983 = 84.8%; miss 151/862 = 17.5%; difference +67.3 [+55.4, +75.8]
+  Table 4: folds 2703; held 36.4% test 36.4%; diff -0.1 [-1.0, +0.9]; held only 149 test only 151; clusters 5:6, sign p 1.0
+  Table 4 by task, descriptive: tasks 95:126, sign p 0.043
+  WITHIN paper's cluster: {'clusters': 14, 'diff': 0.492657062826422, 'ci': (0.3851961384290379, 0.5965391634427822), 'pos': 14, 'neg': 0, 'zero': 0, 'sign_p': 0.0001220703125, 'pred_mean': 0.7178731179134102, 'miss_mean': 0.22521605508698817, 'n_pred': 983, 'n_miss': 862}
+  WITHIN task, bootstrap over tasks: {'clusters': 232, 'diff': 0.46551724137931033, 'ci': (0.40086206896551724, 0.5301724137931034), 'pos': 133, 'neg': 8, 'zero': 91, 'sign_p': 2.4139453472431493e-30, 'pred_mean': 0.7025862068965517, 'miss_mean': 0.23706896551724138, 'n_pred': 368, 'n_miss': 328}
+  WITHIN task, bootstrap over types: {'tasks': 232, 'types': 14, 'diff': 0.46551724137931033, 'ci': (0.34449627857522597, 0.5754724895529948), 'type_balanced': 0.46106878488072345, 'type_balanced_ci': (0.3412199766270145, 0.576635738543066), 'per_type': {'1d_fill': (4, 0.75), '1d_flip': (12, 0.625), '1d_hollow': (29, 0.69), '1d_mirror': (22, 0.364), '1d_move_1p': (30, 0.333), '1d_move_2p': (12, 0.042), '1d_move_2p_dp': (11, 0.727), '1d_move_3p': (10, 0.1), '1d_move_dp': (28, 0.643), '1d_padded_fill': (4, 0.5), '1d_recolor_cmp': (17, 0.529), '1d_recolor_cnt': (7, 0.5), '1d_recolor_oe': (17, 0.118), '1d_scale_dp': (29, 0.534)}}
+  WITHIN item (task and test pair): {'clusters': 232, 'diff': 0.46551724137931033, 'ci': (0.40086206896551724, 0.5301724137931034), 'pos': 133, 'neg': 8, 'zero': 91, 'sign_p': 2.4139453472431493e-30, 'pred_mean': 0.7025862068965517, 'miss_mean': 0.23706896551724138, 'n_pred': 368, 'n_miss': 328}
+  WITHIN task, only fold answers that fit what the fold saw: {'clusters': 176, 'diff': 0.5482954545454546, 'ci': (0.4744318181818182, 0.6193181818181818), 'pos': 110, 'neg': 3, 'zero': 63, 'sign_p': 4.633363741607924e-29, 'pred_mean': 0.8068181818181818, 'miss_mean': 0.2585227272727273, 'n_pred': 278, 'n_miss': 234}
+  overlap with Monty-ARC FA-LOO (172 answers, right 161): both 14 (2020 right 14, Monty right 9, same? see below); 2020 only 169, right 162; Monty only 158, right 152; union 341
+  1D-ARC: no full-data answer 286; Monty-only answers on those 112; union on readable 229
+minimal: items 48, tasks 16, clusters 16; item vs disk mismatches {}
+
+=== MinimalTasks (minimal): items 48, clusters 16, mean 1/(n+1) 26.5%, have a top answer 48
+  top answer: 31/48 = 64.6% [47.9, 81.2]; coverage 100.0%
+  top answer, fits: 29/41 = 70.7% [53.1, 86.1]; coverage 85.4%
+  plain (a): 12/12 = 100.0% [100.0, 100.0]; coverage 25.0%
+  (a)+(b): 12/12 = 100.0% [100.0, 100.0]; coverage 25.0%
+  FA-LOO: 12/12 = 100.0% [100.0, 100.0]; coverage 25.0%
+  pass@1,2,3 [31, 37, 38]; FA-LOO minus top +35.4 [+18.8, +52.1]; minus fit +29.3 [+13.9, +46.5]; minus (a) +0.0 [+0.0, +0.0]
+  top answers not fitting 7 of 48; (a) passes 12; (b) fails 0: right 0, wrong 0; (c) fails 0; FA-LOO wrong 0, joint 0.00%
+  FA-LOO tasks 4, with a wrong answer 0; clusters answered 4; Clopper-Pearson tasks all right (np.float64(39.76353643835253), 100); by n {('n>=3', True): 12}
+  floor -5.8%
+  Table 5: predict 54/63 = 85.7%; miss 16/75 = 21.3%; difference +64.4 [+44.6, +80.3]
+  Table 4: folds 138; held 45.7% test 50.7%; diff -5.1 [-14.0, +2.9]; held only 9 test only 16; clusters 2:5, sign p 0.453125
+  WITHIN paper's cluster: {'clusters': 7, 'diff': 0.23809523809523808, 'ci': (0.11904761904761904, 0.35714285714285715), 'pos': 5, 'neg': 0, 'zero': 2, 'sign_p': 0.0625, 'pred_mean': 0.619047619047619, 'miss_mean': 0.38095238095238093, 'n_pred': 24, 'n_miss': 36}
+  WITHIN item (task and test pair): {'clusters': 21, 'diff': 0.23809523809523808, 'ci': (0.023809523809523808, 0.47619047619047616), 'pos': 9, 'neg': 4, 'zero': 8, 'sign_p': 0.266845703125, 'pred_mean': 0.6190476190476191, 'miss_mean': 0.38095238095238093, 'n_pred': 24, 'n_miss': 36}
+  WITHIN task, only fold answers that fit what the fold saw: {'clusters': 7, 'diff': 0.2857142857142857, 'ci': (0.11904761904761904, 0.4523809523809524), 'pos': 5, 'neg': 0, 'zero': 2, 'sign_p': 0.0625, 'pred_mean': 0.6428571428571429, 'miss_mean': 0.35714285714285715, 'n_pred': 23, 'n_miss': 31}
+  overlap with Monty-ARC FA-LOO (5 answers, right 5): both 0 (2020 right 0, Monty right 0, same? see below); 2020 only 12, right 12; Monty only 5, right 5; union 17
+agi2: items 160, tasks 113, clusters 113; item vs disk mismatches {}
+
+=== ARC-AGI-2 eval (agi2): items 160, clusters 113, mean 1/(n+1) 26.0%, have a top answer 160
+  top answer: 2/160 = 1.2% [0.0, 3.2]; coverage 100.0%
+  top answer, fits: 1/5 = 20.0% [0.0, 50.0]; coverage 3.1%
+  plain (a): 0/0; coverage 0.0%
+  (a)+(b): 0/0; coverage 0.0%
+  FA-LOO: 0/0; coverage 0.0%
+  pass@1,2,3 [2, 2, 2]; FA-LOO minus top n/a; minus fit n/a; minus (a) n/a
+  top answers not fitting 155 of 160; (a) passes 0; (b) fails 0: right 0, wrong 0; (c) fails 0; FA-LOO wrong 0, joint 0.00%
+  FA-LOO tasks 0, with a wrong answer 0; clusters answered 0; Clopper-Pearson tasks all right None; by n {}
+  Table 5: predict 1/6 = 16.7%; miss 3/468 = 0.6%; difference +16.0 [-0.6, +48.8]
+  Table 4: folds 483; held 1.2% test 0.8%; diff +0.4 [-0.6, +1.6]; held only 5 test only 3; clusters 3:2, sign p 1.0
+  WITHIN paper's cluster: {'clusters': 4, 'diff': 0.0625, 'ci': (0.0, 0.1875), 'pos': 1, 'neg': 0, 'zero': 3, 'sign_p': 1.0, 'pred_mean': 0.125, 'miss_mean': 0.0625, 'n_pred': 6, 'n_miss': 18}
+  WITHIN item (task and test pair): {'clusters': 6, 'diff': 0.08333333333333333, 'ci': (0.0, 0.25), 'pos': 1, 'neg': 0, 'zero': 5, 'sign_p': 1.0, 'pred_mean': 0.16666666666666666, 'miss_mean': 0.08333333333333333, 'n_pred': 6, 'n_miss': 18}
+  WITHIN task, only fold answers that fit what the fold saw: {'clusters': 3, 'diff': 0.05555555555555556, 'ci': (0.0, 0.16666666666666666), 'pos': 1, 'neg': 0, 'zero': 2, 'sign_p': 1.0, 'pred_mean': 0.16666666666666666, 'miss_mean': 0.1111111111111111, 'n_pred': 4, 'n_miss': 9}
+
+Authors' sheet: items 480, right 249; mine canonical pass@3 251; agree 470/480 = 97.9%
+native order: items 480; pass@3 252; agree 477/480 = 99.4%
+  group AboveBelow: authors' count 21 of 30
+  group Count: authors' count 18 of 30
+  group HorizontalVertical: authors' count 13 of 30
+  group InsideOutside: authors' count 17 of 30
+  group Order: authors' count 8 of 30
+  group SameDifferent: authors' count 16 of 30
+checks: repeat 130 of 130 same list; reversed top unchanged 123 of 130, whole list 101
+1D-ARC tasks with a grid wider than 30 cells: 286
+process statuses: {('concept', 'ok'): 8728, ('mini', 'ok'): 4812, ('oned', 'ok'): 17204, ('oned', 'crash'): 8008, ('minimal', 'ok'): 924, ('agi2', 'ok'): 3822, ('agi2', 'mem'): 90, ('check', 'ok'): 952, ('check', 'crash'): 88, ('native', 'ok'): 1920}
+
+Within-task control, 2020 program, in the paper's format (post hoc; paired difference over clusters with both kinds; 10,000 resamples, seed 0):
+  concept: +17.6 [+8.2, +27.2], 52 tasks, 23:10, ties 19, sign p 0.0351; predict 52.6% vs miss 34.9%
+  mini: +28.0 [+15.2, +41.5], 47 tasks, 20:5, ties 22, sign p 0.00408; predict 54.6% vs miss 26.6%
+  minimal: +23.8 [+11.9, +35.7], 7 tasks, 5:0, ties 2, sign p 0.0625; predict 61.9% vs miss 38.1%
+  agi2: +6.2 [+0.0, +18.8], 4 tasks, 1:0, ties 3, sign p 1; predict 12.5% vs miss 6.2%
+  oned, by task, resampling types (quoted in the paper): +46.6 [+34.4, +57.5], 232 tasks in 14 types; resampling tasks +46.6 [+40.1, +53.0], 133:8, ties 91, sign p 2.41e-30; predict 70.3% vs miss 23.7%
+  oned, within type, the paper's cluster (not a within-task control): +49.3 [+38.5, +59.7], 14 types, 14:0
+  only fold answers that fit what the fold saw (Qwen's verified counterpart): {'concept': '+17.6 [+5.7, +29.3] (42)', 'mini': '+34.1 [+13.0, +55.1] (23)', 'oned': '+54.8 [+47.4, +61.9] (176)', 'minimal': '+28.6 [+11.9, +45.2] (7)', 'agi2': '+5.6 [+0.0, +16.7] (3)'}

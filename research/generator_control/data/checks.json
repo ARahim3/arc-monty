@@ -1,0 +1,174 @@
+{
+ "tasks": 200,
+ "pairs": 800,
+ "stats": {
+  "calls": 833,
+  "invalid": 33,
+  "call_errors": 1,
+  "call_timeouts": 0,
+  "tuples_rejected": 0
+ },
+ "tasks_with_rejected_tuple": 0,
+ "tasks_with_repeated_output": 4,
+ "tasks_all_same_shape": 125,
+ "mean_area_by_position": [
+  293.7,
+  300.6,
+  311.5,
+  310.5
+ ],
+ "mean_difficulty_by_position": [
+  0.498,
+  0.49,
+  0.502,
+  0.502
+ ],
+ "largest_side_hist": {
+  "2": 3,
+  "3": 4,
+  "4": 12,
+  "5": 11,
+  "6": 14,
+  "7": 8,
+  "8": 8,
+  "9": 10,
+  "10": 13,
+  "11": 11,
+  "12": 17,
+  "13": 22,
+  "14": 14,
+  "15": 25,
+  "16": 26,
+  "17": 27,
+  "18": 32,
+  "19": 45,
+  "20": 41,
+  "21": 39,
+  "22": 35,
+  "23": 30,
+  "24": 52,
+  "25": 53,
+  "26": 56,
+  "27": 48,
+  "28": 52,
+  "29": 71,
+  "30": 21
+ },
+ "secs_total": 333.0,
+ "distinct_pairs": 800,
+ "overlap": {
+  "agi2-train": {
+   "files": 1000,
+   "their_pairs": 4308,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  },
+  "agi2-eval": {
+   "files": 120,
+   "their_pairs": 526,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  },
+  "agi1-train": {
+   "files": 400,
+   "their_pairs": 1718,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  },
+  "agi1-eval": {
+   "files": 400,
+   "their_pairs": 1782,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  },
+  "conceptarc": {
+   "files": 160,
+   "their_pairs": 905,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  },
+  "minimal": {
+   "files": 16,
+   "their_pairs": 93,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  },
+  "mini-arc": {
+   "files": 149,
+   "their_pairs": 671,
+   "pairs_shared": 0,
+   "inputs_shared": 1,
+   "tasks_with_shared_pair": []
+  },
+  "1d-arc": {
+   "files": 901,
+   "their_pairs": 3545,
+   "pairs_shared": 0,
+   "inputs_shared": 0,
+   "tasks_with_shared_pair": []
+  }
+ },
+ "dev": {
+  "task_ids": 1147,
+  "distinct_pairs": 4950,
+  "pairs_shared": 0,
+  "inputs_shared": 0,
+  "tasks_with_shared_pair": [],
+  "test_pair_shared": [],
+  "tasks_with_shared_input": []
+ },
+ "pairs_repeated_between_tasks": 0,
+ "re_arc_zip": {
+  "pairs": 800,
+  "pair_hits": 4,
+  "input_hits": 4,
+  "tasks_with_pair_hit": 4,
+  "tasks_with_input_hit": 4,
+  "per_task": {
+   "995c5fa3": {
+    "pair_positions": [
+     0
+    ],
+    "input_positions": [
+     0
+    ]
+   },
+   "feca6190": {
+    "pair_positions": [
+     0
+    ],
+    "input_positions": [
+     0
+    ]
+   },
+   "7fe24cdd": {
+    "pair_positions": [
+     1
+    ],
+    "input_positions": [
+     1
+    ]
+   },
+   "6e02f1e3": {
+    "pair_positions": [
+     1
+    ],
+    "input_positions": [
+     1
+    ]
+   }
+  }
+ },
+ "generation": {
+  "n": 200,
+  "failed": {},
+  "considered": 200,
+  "secs": 8.2
+ }
+}

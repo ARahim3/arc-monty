@@ -1,0 +1,52 @@
+=== 1. FA-LOO as written (5.1) vs with the full run verified (the Qwen plans)
+re-arc: tasks 200 records 800 Counter({'fold': 600, 'full': 200})
+  re-arc (a)+(b)+(c) as 5.1 writes it: 108/108 right, coverage 54.0% of 200
+  re-arc (a)+(b)+(c), full run verified: 107/107 right, coverage 53.5% of 200
+  re-arc (a)+(b): 111/111 right, coverage 55.5% of 200
+  tasks answered only when the full run need not verify: ['rearc_db3e9e38']
+    rearc_db3e9e38 full run fit: False full output right: True folds' answer right: True
+  ARC-AGI-2 (a)+(b)+(c) as 5.1 writes it: 7/7 right, coverage 5.8% of 120
+  ARC-AGI-2 (a)+(b)+(c), full run verified: 7/7 right, coverage 5.8% of 120
+  ARC-AGI-2 (a)+(b): 9/9 right, coverage 7.5% of 120
+  tasks answered only when the full run need not verify: []
+  ConceptARC (all test inputs shown), per pair: as written 232/232 (48.3%); full run verified 232/232 (48.3%); of 480 pairs; tasks as written 86, verified 86
+  ConceptARC, one-input run, per pair: as written 79/80 (50.0%); full run verified 79/80 (50.0%); of 160 pairs; tasks as written 80, verified 80
+
+=== 2. Table C7, Qwen, ConceptARC per pair (all test inputs shown)
+  FA-LOO (a)+(b)+(c), full run verified: 232/232
+  (a)+(b): 239/240
+  plain (a), the full run's output wherever (a) holds: 249/264 94.3%
+  plain (a), full run also verified: 248/261 95.0%
+  fit (full run verified): 417/450
+  plain (a) answered with an unverified full run: [('Copy/Copy8', False), ('Copy/Copy8', False), ('Copy/Copy8', True)]
+
+=== 3. Retry rule: folds that came to fit (task level, fraction of test outputs)
+  first runs: FA-LOO 7.0/7, coverage 5.8%, verified 45, verified-but-wrong 14, kept 0, p = 0.0579
+  first runs + retries (post hoc): FA-LOO 15.0/15, coverage 12.5%, verified 45, verified-but-wrong 14, kept 0, p = 0.0009
+  replication, no retries: FA-LOO 11.0/11, coverage 9.2%, verified 45, verified-but-wrong 11, kept 0, p = 0.0282
+  replication + retries (planned): FA-LOO 16.0/16, coverage 13.3%, verified 45, verified-but-wrong 11, kept 0, p = 0.0034
+  post hoc add-on: retried folds that came to fit 29; predict held-out 21, right on test 15.00; miss 8, right on test 0.00
+     two-test tasks among them: 2 folds with a fractional test score
+  planned replication: retried folds that came to fit 22; predict held-out 19, right on test 12.50; miss 3, right on test 0.50
+     two-test tasks among them: 2 folds with a fractional test score
+
+=== 4. Held-out split, one-input run (Table 3 / C9 row): verified fold programs, right on test input 1
+  predict 309/322 = 96.0%; miss 45/93 = 48.4%; between +47.6
+  between interval [38.2, 56.8]; within +41.0 over 52 tasks [27.9, 54.5] (own bootstrap, seed 0)
+
+=== 5. Table 8: candidate order at k samples per task, ARC-AGI-2, 32k logged runs
+  k=1 {'verified first': 34.67, 'unverified first': 34.67, 'perfect': 34.67}; random: exact mean 34.67, 5th-95th percentile of 100,000 orders 34.67-34.67 (median 34.67); crowded 0 of 167
+     Table 8 random cell, mean (5th, 95th percentile): 34.7 (34.7, 34.7)
+  k=2 {'verified first': 47.0, 'unverified first': 47.0, 'perfect': 47.0}; random: exact mean 47.00, 5th-95th percentile of 100,000 orders 47.00-47.00 (median 47.00); crowded 0 of 167
+     Table 8 random cell, mean (5th, 95th percentile): 47.0 (47.0, 47.0)
+  k=3 {'verified first': 55.0, 'unverified first': 45.5, 'perfect': 57.0}; random: exact mean 52.00, 5th-95th percentile of 100,000 orders 49.00-54.50 (median 52.00); crowded 51 of 167
+     Table 8 random cell, mean (5th, 95th percentile): 52.0 (49.0, 54.5)
+  k=4 {'verified first': 55.0, 'unverified first': 42.0, 'perfect': 57.5}; random: exact mean 50.42, 5th-95th percentile of 100,000 orders 47.50-53.50 (median 50.50); crowded 91 of 167
+     Table 8 random cell, mean (5th, 95th percentile): 50.4 (47.5, 53.5)
+  single-test tasks 75, with four samples 75: solved by no sample 39, by all four 13; unsolved by verified-first 41, of which never solved 39
+  one common rate 0.310: expected none 17.0, all four 0.69
+
+=== 6. Section 9: the notebook's merge (cell 13, no NVARC) on the 16k one-sample runs
+  run 1 (qwen38_ps_b16384, sample 0): {'Qwen alone': 21.0, 'with Monty-ARC': 24.0}; Monty-ARC confident on 3 test outputs
+  run 2 (qwen38_ps_xhigh_b16384, sample 0): {'Qwen alone': 18.0, 'with Monty-ARC': 21.0}; Monty-ARC confident on 3 test outputs
+  this run's Monty-ARC outputs equal the earlier notebook-mode cache on 120 of 120 tasks

@@ -1,0 +1,903 @@
+{
+ "hand": {
+  "items": 80,
+  "pass1_column": 16,
+  "pass1_monty": 9.0,
+  "answered_column": 66,
+  "answered_monty": 17,
+  "pass2_column": 19.0,
+  "pass2_monty": 9.0,
+  "clusters_with_a_column_solve": 19,
+  "clusters_with_a_monty_solve": 9,
+  "clusters": 77,
+  "top_clusters_column": [
+   [
+    "yk003",
+    1.0,
+    1
+   ],
+   [
+    "yk004",
+    1.0,
+    1
+   ],
+   [
+    "yk007",
+    1.0,
+    1
+   ],
+   [
+    "yk013",
+    1.0,
+    1
+   ],
+   [
+    "2wfys5w64",
+    1.0,
+    1
+   ],
+   [
+    "2wfys5w64-relative-right-side",
+    1.0,
+    1
+   ]
+  ],
+  "top_clusters_monty": [
+   [
+    "yk004",
+    1.0,
+    1
+   ],
+   [
+    "178fcbfb-easier",
+    1.0,
+    1
+   ],
+   [
+    "ihiz27k2n",
+    1.0,
+    1
+   ],
+   [
+    "jnohuorzh",
+    1.0,
+    1
+   ],
+   [
+    "jnohuorzh-easier",
+    1.0,
+    1
+   ],
+   [
+    "rcpwrfki1",
+    1.0,
+    1
+   ]
+  ],
+  "first_right_column_by_sensor": [
+   [
+    "color",
+    11
+   ],
+   [
+    "mask/pose",
+    3
+   ],
+   [
+    "mask",
+    3
+   ],
+   [
+    "near",
+    2
+   ],
+   [
+    "objc",
+    2
+   ],
+   [
+    "color/pose",
+    2
+   ]
+  ],
+  "first_right_column_by_reach": [
+   [
+    "reach 1",
+    14
+   ],
+   [
+    "reach 2",
+    5
+   ],
+   [
+    "reach 6",
+    3
+   ],
+   [
+    "reach 3",
+    1
+   ]
+  ],
+  "pass2_cells_only": 16.0,
+  "answers_by_ev": {
+   "1.0": [
+    8,
+    7
+   ],
+   "(0,1)": [
+    18,
+    9
+   ],
+   "0": [
+    40,
+    0
+   ]
+  }
+ },
+ "tama": {
+  "items": 1567,
+  "pass1_column": 126,
+  "pass1_monty": 137.0,
+  "answered_column": 960,
+  "answered_monty": 253,
+  "pass2_column": 145.0,
+  "pass2_monty": 139.0,
+  "clusters_with_a_column_solve": 15,
+  "clusters_with_a_monty_solve": 14,
+  "clusters": 50,
+  "top_clusters_column": [
+   [
+    "mask_of_primary_rectangle",
+    30.0,
+    30
+   ],
+   [
+    "cross",
+    21.0,
+    36
+   ],
+   [
+    "mask",
+    21.0,
+    34
+   ],
+   [
+    "mask_of_intersection_rectangle",
+    14.0,
+    30
+   ],
+   [
+    "scale",
+    13.0,
+    29
+   ],
+   [
+    "mask_of_obscured_rectangle",
+    10.0,
+    30
+   ]
+  ],
+  "top_clusters_monty": [
+   [
+    "scale",
+    20.0,
+    29
+   ],
+   [
+    "gravity_draw",
+    19.0,
+    34
+   ],
+   [
+    "gravity_move",
+    15.0,
+    34
+   ],
+   [
+    "bool",
+    14.0,
+    27
+   ],
+   [
+    "input_image_create_output_symmetry_rect",
+    14.0,
+    27
+   ],
+   [
+    "input_image_create_output_symmetry_square",
+    14.0,
+    27
+   ]
+  ],
+  "first_right_column_by_sensor": [
+   [
+    "color",
+    122
+   ],
+   [
+    "mask",
+    18
+   ],
+   [
+    "near",
+    17
+   ],
+   [
+    "color/pose",
+    13
+   ],
+   [
+    "mask/pose",
+    8
+   ],
+   [
+    "obj",
+    6
+   ],
+   [
+    "objc",
+    2
+   ],
+   [
+    "nearc",
+    1
+   ]
+  ],
+  "first_right_column_by_reach": [
+   [
+    "reach 1",
+    134
+   ],
+   [
+    "reach 2",
+    31
+   ],
+   [
+    "reach 6",
+    11
+   ],
+   [
+    "reach 3",
+    11
+   ]
+  ],
+  "pass2_cells_only": 135.0,
+  "answers_by_ev": {
+   "1.0": [
+    87,
+    77
+   ],
+   "(0,1)": [
+    186,
+    41
+   ],
+   "0": [
+    687,
+    8
+   ]
+  }
+ },
+ "pqa": {
+  "items": 210,
+  "pass1_column": 2,
+  "pass1_monty": 0.0,
+  "answered_column": 210,
+  "answered_monty": 5,
+  "pass2_column": 2.0,
+  "pass2_monty": 0.0,
+  "clusters_with_a_column_solve": 2,
+  "clusters_with_a_monty_solve": 0,
+  "clusters": 7,
+  "top_clusters_column": [
+   [
+    "continuity-connection",
+    1.0,
+    30
+   ],
+   [
+    "proximity-identification",
+    1.0,
+    30
+   ],
+   [
+    "closure-filling",
+    0.0,
+    30
+   ],
+   [
+    "reflection-symmetry",
+    0.0,
+    30
+   ],
+   [
+    "rotation-symmetry",
+    0.0,
+    30
+   ],
+   [
+    "shape-pattern-similarity",
+    0.0,
+    30
+   ]
+  ],
+  "top_clusters_monty": [
+   [
+    "closure-filling",
+    0.0,
+    30
+   ],
+   [
+    "continuity-connection",
+    0.0,
+    30
+   ],
+   [
+    "proximity-identification",
+    0.0,
+    30
+   ],
+   [
+    "reflection-symmetry",
+    0.0,
+    30
+   ],
+   [
+    "rotation-symmetry",
+    0.0,
+    30
+   ],
+   [
+    "shape-pattern-similarity",
+    0.0,
+    30
+   ]
+  ],
+  "first_right_column_by_sensor": [
+   [
+    "obj",
+    2
+   ],
+   [
+    "color",
+    1
+   ]
+  ],
+  "first_right_column_by_reach": [
+   [
+    "reach 1",
+    3
+   ]
+  ],
+  "pass2_cells_only": 1.0,
+  "answers_by_ev": {
+   "1.0": [
+    0,
+    0
+   ],
+   "(0,1)": [
+    29,
+    2
+   ],
+   "0": [
+    181,
+    0
+   ]
+  }
+ },
+ "concept": {
+  "items": 480,
+  "pass1_column": 42,
+  "pass1_monty": 55.0,
+  "answered_column": 358,
+  "answered_monty": 136,
+  "pass2_column": 47.0,
+  "pass2_monty": 58.0,
+  "clusters_with_a_column_solve": 33,
+  "clusters_with_a_monty_solve": 26,
+  "clusters": 160,
+  "top_clusters_column": [
+   [
+    "CompleteShape/CompleteShape9",
+    3.0,
+    3
+   ],
+   [
+    "Copy/Copy1",
+    3.0,
+    3
+   ],
+   [
+    "HorizontalVertical/HorizontalVertical4",
+    3.0,
+    3
+   ],
+   [
+    "CleanUp/CleanUp5",
+    2.0,
+    3
+   ],
+   [
+    "CompleteShape/CompleteShape5",
+    2.0,
+    3
+   ],
+   [
+    "FilledNotFilled/FilledNotFilled10",
+    2.0,
+    3
+   ]
+  ],
+  "top_clusters_monty": [
+   [
+    "Copy/Copy1",
+    3.0,
+    3
+   ],
+   [
+    "ExtendToBoundary/ExtendToBoundary2",
+    3.0,
+    3
+   ],
+   [
+    "ExtendToBoundary/ExtendToBoundary5",
+    3.0,
+    3
+   ],
+   [
+    "ExtendToBoundary/ExtendToBoundary8",
+    3.0,
+    3
+   ],
+   [
+    "ExtractObjects/ExtractObjects1",
+    3.0,
+    3
+   ],
+   [
+    "ExtractObjects/ExtractObjects3",
+    3.0,
+    3
+   ]
+  ],
+  "first_right_column_by_sensor": [
+   [
+    "color",
+    23
+   ],
+   [
+    "mask",
+    15
+   ],
+   [
+    "obj",
+    8
+   ],
+   [
+    "near",
+    5
+   ],
+   [
+    "objn",
+    5
+   ],
+   [
+    "color/pose",
+    4
+   ],
+   [
+    "mask/pose",
+    4
+   ],
+   [
+    "nearc",
+    3
+   ],
+   [
+    "objc",
+    3
+   ],
+   [
+    "nears",
+    2
+   ]
+  ],
+  "first_right_column_by_reach": [
+   [
+    "reach 1",
+    50
+   ],
+   [
+    "reach 6",
+    12
+   ],
+   [
+    "reach 2",
+    8
+   ],
+   [
+    "reach 3",
+    2
+   ]
+  ],
+  "pass2_cells_only": 36.0,
+  "answers_by_ev": {
+   "1.0": [
+    25,
+    17
+   ],
+   "(0,1)": [
+    84,
+    18
+   ],
+   "0": [
+    249,
+    7
+   ]
+  }
+ },
+ "mini": {
+  "items": 149,
+  "pass1_column": 30,
+  "pass1_monty": 20.0,
+  "answered_column": 148,
+  "answered_monty": 55,
+  "pass2_column": 35.0,
+  "pass2_monty": 20.0,
+  "clusters_with_a_column_solve": 35,
+  "clusters_with_a_monty_solve": 20,
+  "clusters": 149,
+  "top_clusters_column": [
+   [
+    "1_3_5_l6aejqqqc1b47pjr5g4",
+    1.0,
+    1
+   ],
+   [
+    "Change_the_object_order_l69a4gt4sal4b6ihjkc",
+    1.0,
+    1
+   ],
+   [
+    "Colony_Expansion_2_l6d2q1yx5npw0qdrnzn",
+    1.0,
+    1
+   ],
+   [
+    "Color_Emcoding_l6aftgp22mlspnm1zxb",
+    1.0,
+    1
+   ],
+   [
+    "Color_corners_of_the_rectangle_l6ab1kfb2tyukiwz069",
+    1.0,
+    1
+   ],
+   [
+    "Delete_upper_left_corner_l6agnxc5cev5d7xu89q",
+    1.0,
+    1
+   ]
+  ],
+  "top_clusters_monty": [
+   [
+    "Change_the_order_of_sticks_l6afheel22a49dadhpf",
+    1.0,
+    1
+   ],
+   [
+    "Color_corners_of_the_rectangle_l6ab1kfb2tyukiwz069",
+    1.0,
+    1
+   ],
+   [
+    "Diagonal_expansion__l6abirdahy8nxqq8mrv",
+    1.0,
+    1
+   ],
+   [
+    "ExpandnContract_l6ab75bv3lho8o820hg",
+    1.0,
+    1
+   ],
+   [
+    "Filling_Corner_Corrected_l6bhlma1gimq40v7dyb",
+    1.0,
+    1
+   ],
+   [
+    "Importance_of_social_distance_l6afc1q0dm28z9i6egn",
+    1.0,
+    1
+   ]
+  ],
+  "first_right_column_by_sensor": [
+   [
+    "color",
+    19
+   ],
+   [
+    "mask",
+    10
+   ],
+   [
+    "color/pose",
+    8
+   ],
+   [
+    "near",
+    6
+   ],
+   [
+    "objc",
+    3
+   ],
+   [
+    "mask/pose",
+    2
+   ],
+   [
+    "nears",
+    1
+   ],
+   [
+    "nearc",
+    1
+   ]
+  ],
+  "first_right_column_by_reach": [
+   [
+    "reach 1",
+    28
+   ],
+   [
+    "reach 2",
+    11
+   ],
+   [
+    "reach 3",
+    7
+   ],
+   [
+    "reach 6",
+    4
+   ]
+  ],
+  "pass2_cells_only": 31.0,
+  "answers_by_ev": {
+   "1.0": [
+    15,
+    13
+   ],
+   "(0,1)": [
+    46,
+    16
+   ],
+   "0": [
+    87,
+    1
+   ]
+  }
+ },
+ "oned": {
+  "items": 901,
+  "pass1_column": 336,
+  "pass1_monty": 198.0,
+  "answered_column": 897,
+  "answered_monty": 327,
+  "pass2_column": 422.0,
+  "pass2_monty": 198.0,
+  "clusters_with_a_column_solve": 18,
+  "clusters_with_a_monty_solve": 13,
+  "clusters": 18,
+  "top_clusters_column": [
+   [
+    "1d_pcopy_mc",
+    50.0,
+    50
+   ],
+   [
+    "1d_recolor_cnt",
+    48.0,
+    50
+   ],
+   [
+    "1d_pcopy_1c",
+    47.0,
+    50
+   ],
+   [
+    "1d_denoising_1c",
+    45.0,
+    50
+   ],
+   [
+    "1d_hollow",
+    45.0,
+    50
+   ],
+   [
+    "1d_denoising_mc",
+    43.0,
+    50
+   ]
+  ],
+  "top_clusters_monty": [
+   [
+    "1d_pcopy_1c",
+    50.0,
+    50
+   ],
+   [
+    "1d_pcopy_mc",
+    50.0,
+    50
+   ],
+   [
+    "1d_recolor_cnt",
+    38.0,
+    50
+   ],
+   [
+    "1d_move_2p_dp",
+    10.0,
+    50
+   ],
+   [
+    "1d_scale_dp",
+    8.0,
+    51
+   ],
+   [
+    "1d_denoising_1c",
+    7.0,
+    50
+   ]
+  ],
+  "first_right_column_by_sensor": [
+   [
+    "mask",
+    255
+   ],
+   [
+    "color",
+    130
+   ],
+   [
+    "obj",
+    46
+   ],
+   [
+    "objn",
+    31
+   ],
+   [
+    "near",
+    23
+   ],
+   [
+    "objc",
+    23
+   ],
+   [
+    "color/pose",
+    16
+   ],
+   [
+    "mask/pose",
+    7
+   ],
+   [
+    "nears",
+    7
+   ],
+   [
+    "nearc",
+    3
+   ],
+   [
+    "nearsc",
+    1
+   ]
+  ],
+  "first_right_column_by_reach": [
+   [
+    "reach 1",
+    320
+   ],
+   [
+    "reach 2",
+    159
+   ],
+   [
+    "reach 3",
+    34
+   ],
+   [
+    "reach 6",
+    29
+   ]
+  ],
+  "pass2_cells_only": 410.0,
+  "answers_by_ev": {
+   "1.0": [
+    245,
+    185
+   ],
+   "(0,1)": [
+    308,
+    143
+   ],
+   "0": [
+    344,
+    8
+   ]
+  }
+ },
+ "six groups, cells only": 14.0,
+ "concept by group: column, Monty-ARC": {
+  "AboveBelow": [
+   1.0,
+   0.0
+  ],
+  "Center": [
+   3.0,
+   2.0
+  ],
+  "CleanUp": [
+   3.0,
+   5.0
+  ],
+  "CompleteShape": [
+   6.0,
+   7.0
+  ],
+  "Copy": [
+   5.0,
+   3.0
+  ],
+  "Count": [
+   0.0,
+   0.0
+  ],
+  "ExtendToBoundary": [
+   1.0,
+   9.0
+  ],
+  "ExtractObjects": [
+   0.0,
+   6.0
+  ],
+  "FilledNotFilled": [
+   3.0,
+   6.0
+  ],
+  "HorizontalVertical": [
+   11.0,
+   0.0
+  ],
+  "InsideOutside": [
+   4.0,
+   0.0
+  ],
+  "MoveToBoundary": [
+   0.0,
+   6.0
+  ],
+  "Order": [
+   0.0,
+   0.0
+  ],
+  "SameDifferent": [
+   5.0,
+   1.0
+  ],
+  "TopBottom2D": [
+   2.0,
+   11.0
+  ],
+  "TopBottom3D": [
+   3.0,
+   2.0
+  ]
+ }
+}

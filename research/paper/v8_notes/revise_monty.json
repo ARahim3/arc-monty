@@ -1,0 +1,383 @@
+{
+ "exch_concept": {
+  "folds": 1281,
+  "held": 163.0,
+  "test": 151.0,
+  "held_rate": 0.12724434035909446,
+  "test_rate": 0.11787665886026542,
+  "diff": 0.00936768149882904,
+  "ci": [
+   -0.007899363210290701,
+   0.02981795626334312
+  ],
+  "held_only": 33.0,
+  "test_only": 21.0,
+  "clusters": 160,
+  "clusters_more_held": 11,
+  "clusters_more_test": 15,
+  "sign_p": 0.557197093963623
+ },
+ "exch_mini": {
+  "folds": 528,
+  "held": 62.0,
+  "test": 63.0,
+  "held_rate": 0.11742424242424243,
+  "test_rate": 0.11931818181818182,
+  "diff": -0.001893939393939394,
+  "ci": [
+   -0.028143911608289014,
+   0.02495201535508637
+  ],
+  "held_only": 15.0,
+  "test_only": 16.0,
+  "clusters": 149,
+  "clusters_more_held": 7,
+  "clusters_more_test": 10,
+  "sign_p": 0.629058837890625
+ },
+ "exch_oned": {
+  "folds": 2703,
+  "held": 566.0,
+  "test": 598.0,
+  "held_rate": 0.2093969663337033,
+  "test_rate": 0.22123566407695153,
+  "diff": -0.011838697743248243,
+  "ci": [
+   -0.028423772609819122,
+   0.0011111111111111111
+  ],
+  "held_only": 47.0,
+  "test_only": 79.0,
+  "clusters": 18,
+  "clusters_more_held": 4,
+  "clusters_more_test": 8,
+  "sign_p": 0.3876953125
+ },
+ "exch_oned_by_task": {
+  "folds": 2703,
+  "held": 566.0,
+  "test": 598.0,
+  "held_rate": 0.2093969663337033,
+  "test_rate": 0.22123566407695153,
+  "diff": -0.011838697743248243,
+  "ci": [
+   -0.022567517573066964,
+   -0.0011098779134295228
+  ],
+  "held_only": 47.0,
+  "test_only": 79.0,
+  "clusters": 901,
+  "clusters_more_held": 19,
+  "clusters_more_test": 69,
+  "sign_p": 7.8366246313468e-08
+ },
+ "exch_public_eval": {
+  "folds": 1703,
+  "held": 171.0,
+  "test": 165.0,
+  "held_rate": 0.10041103934233706,
+  "test_rate": 0.09688784497944804,
+  "diff": 0.0035231943628890195,
+  "ci": [
+   -0.002364066193853428,
+   0.010569583088667059
+  ],
+  "held_only": 11.0,
+  "test_only": 5.0,
+  "clusters": 514,
+  "clusters_more_held": 5,
+  "clusters_more_test": 5,
+  "sign_p": 1.0
+ },
+ "exch_agi2_eval": {
+  "folds": 359,
+  "held": 12.0,
+  "test": 12.0,
+  "held_rate": 0.033426183844011144,
+  "test_rate": 0.033426183844011144,
+  "diff": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "held_only": 0.0,
+  "test_only": 0.0,
+  "clusters": 120,
+  "clusters_more_held": 0,
+  "clusters_more_test": 0,
+  "sign_p": null
+ },
+ "b_unseen": {
+  "roles": 6228,
+  "pass_a": 912,
+  "b_fail": 0
+ },
+ "b_dev": {
+  "roles": 4834,
+  "pass_a": 471,
+  "b_fail": 3,
+  "eval_pass_a": 190,
+  "eval_b_fail": 0
+ },
+ "vote_concept": {
+  "agree": [
+   39.0,
+   54.0
+  ],
+  "fit": [
+   43.0,
+   74.0
+  ],
+  "diff": 0.14114114114114118,
+  "ci": [
+   -0.010752688172043001,
+   0.2926853730132211
+  ],
+  "with_a": [
+   35.0,
+   44.0
+  ],
+  "without_a": [
+   4.0,
+   10.0
+  ]
+ },
+ "vote_mini": {
+  "agree": [
+   11.0,
+   13.0
+  ],
+  "fit": [
+   15.0,
+   29.0
+  ],
+  "diff": 0.3289124668435013,
+  "ci": [
+   0.07459520887597675,
+   0.573855042016806
+  ],
+  "with_a": [
+   8.0,
+   9.0
+  ],
+  "without_a": [
+   3.0,
+   4.0
+  ]
+ },
+ "vote_oned": {
+  "agree": [
+   166.0,
+   178.0
+  ],
+  "fit": [
+   187.0,
+   285.0
+  ],
+  "diff": 0.27644391878572827,
+  "ci": [
+   0.13223978242059262,
+   0.44581113184771715
+  ],
+  "with_a": [
+   161.0,
+   172.0
+  ],
+  "without_a": [
+   5.0,
+   6.0
+  ]
+ },
+ "sens_concept": {
+  "fc": {
+   "pair": 0.7954545454545454,
+   "balanced": 0.7685185185185186,
+   "clusters": 18,
+   "c": 35.0,
+   "a": 44
+  },
+  "fit": {
+   "pair": 0.581081081081081,
+   "balanced": 0.5135135135135135,
+   "clusters": 37,
+   "c": 43.0,
+   "a": 74
+  },
+  "v5": {
+   "pair": 0.8571428571428571,
+   "balanced": 0.850877192982456,
+   "clusters": 19,
+   "c": 42.0,
+   "a": 49
+  }
+ },
+ "concept_n=2": [
+  13.0,
+  19
+ ],
+ "concept_n>=3": [
+  22.0,
+  25
+ ],
+ "sens_mini": {
+  "fc": {
+   "pair": 0.8888888888888888,
+   "balanced": 0.8888888888888888,
+   "clusters": 9,
+   "c": 8.0,
+   "a": 9
+  },
+  "fit": {
+   "pair": 0.5172413793103449,
+   "balanced": 0.5172413793103449,
+   "clusters": 29,
+   "c": 15.0,
+   "a": 29
+  },
+  "v5": {
+   "pair": 1.0,
+   "balanced": 1.0,
+   "clusters": 11,
+   "c": 11.0,
+   "a": 11
+  }
+ },
+ "sens_oned": {
+  "fc": {
+   "pair": 0.936046511627907,
+   "balanced": 0.7591269841269841,
+   "clusters": 12,
+   "c": 161.0,
+   "a": 172
+  },
+  "fit": {
+   "pair": 0.656140350877193,
+   "balanced": 0.4499883669853182,
+   "clusters": 16,
+   "c": 187.0,
+   "a": 285
+  },
+  "v5": {
+   "pair": 0.9382022471910112,
+   "balanced": 0.7873671044402752,
+   "clusters": 13,
+   "c": 167.0,
+   "a": 178
+  }
+ },
+ "oned_wo3_fc": [
+  23.0,
+  30
+ ],
+ "oned_wo3_fit": [
+  56.0,
+  150
+ ],
+ "oned_wo3_v5": [
+  32.0,
+  39
+ ],
+ "top_eval": [
+  48.0,
+  91
+ ],
+ "top_concept": [
+  55.0,
+  136
+ ],
+ "top_mini": [
+  20.0,
+  55
+ ],
+ "top_oned": [
+  198.0,
+  327
+ ],
+ "p2_8_concept_real": {
+  "x": 60.0,
+  "y": 58.0,
+  "diff": 2.0,
+  "ci": [
+   0.0,
+   5.0
+  ],
+  "tasks_x_more": 2,
+  "tasks_y_more": 0,
+  "sign_p": 0.5,
+  "separates": false
+ },
+ "p2_8_concept_demo": {
+  "x": 191.0,
+  "y": 179.0,
+  "diff": 12.0,
+  "ci": [
+   2.0,
+   25.0
+  ],
+  "tasks_x_more": 5,
+  "tasks_y_more": 0,
+  "sign_p": 0.0625,
+  "separates": true
+ },
+ "p2_8_mini_real": {
+  "x": 20.0,
+  "y": 20.0,
+  "diff": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "tasks_x_more": 0,
+  "tasks_y_more": 0,
+  "sign_p": null,
+  "separates": false
+ },
+ "p2_8_mini_demo": {
+  "x": 69.0,
+  "y": 66.0,
+  "diff": 3.0,
+  "ci": [
+   0.0,
+   7.0
+  ],
+  "tasks_x_more": 3,
+  "tasks_y_more": 0,
+  "sign_p": 0.25,
+  "separates": false
+ },
+ "p2_8_oned_real": {
+  "x": 200.0,
+  "y": 198.0,
+  "diff": 2.0,
+  "ci": [
+   0.0,
+   6.0
+  ],
+  "tasks_x_more": 1,
+  "tasks_y_more": 0,
+  "sign_p": 1.0,
+  "separates": false
+ },
+ "p2_8_oned_demo": {
+  "x": 601.0,
+  "y": 598.0,
+  "diff": 3.0,
+  "ci": [
+   0.0,
+   9.0
+  ],
+  "tasks_x_more": 1,
+  "tasks_y_more": 0,
+  "sign_p": 1.0,
+  "separates": false
+ },
+ "veto": {
+  "kinds": {
+   "within one module": 9
+  },
+  "veto_wrong": 4.0,
+  "veto": 9,
+  "kept_wrong": 18.0,
+  "kept": 238
+ }
+}

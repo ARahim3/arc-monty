@@ -1,0 +1,44 @@
+{
+ "V1a_rotate_concept": {
+  "folds": 4962,
+  "fold_mismatches": 0,
+  "fulls": 1761,
+  "full_mismatches": 0
+ },
+ "V1b_concept_full": {
+  "items": 480,
+  "mismatches": 0
+ },
+ "V2_frame_filter_vs_real": {
+  "items": 480,
+  "mismatches": {
+   "canon": 0,
+   "abs": 0
+  }
+ },
+ "V3_p8_vs_real": {
+  "sample": 60,
+  "mismatches": 0
+ },
+ "V4_dev_numbers": {
+  "checked": 20,
+  "mismatches": {}
+ },
+ "V5_extra_sets_vs_real": {
+  "mini": {
+   "sample": 40,
+   "checks": 80,
+   "mismatches": 0
+  },
+  "oned": {
+   "sample": 40,
+   "checks": 80,
+   "mismatches": 0
+  },
+  "minimal": {
+   "sample": 40,
+   "checks": 80,
+   "mismatches": 0
+  }
+ }
+}

@@ -1,0 +1,56 @@
+rids 11637 complete 11637
+
+=== ConceptARC: items 480, clusters 160, has 480, mean 1/(n+1) 28.3%
+usual 182/480 = 37.9% [32.1, 43.8]; top fits 152/310 = 49.0% [41.9, 56.0]; (a) 14/21 = 66.7% [33.3, 93.3]; (a)+(b) 11/17 = 64.7% [27.3, 93.3]; FA-LOO+(c) 11/15 = 73.3% [38.5, 100.0]; coverage 3.1%
+pass@1,2,3 [182, 226, 251]; FC minus usual +35.4 [+1.1, +61.7]; FC minus top-fits +24.3 [-10.0, +50.4]; FC minus (a) +6.7 [-2.8, +13.3]
+clusters answered 6, with wrong 3; tasks answered 6, with wrong 3; joint 0.83%
+split: predict 60.4% of 285; miss 15.3% of 993; diff +45.0 [+35.3, +54.6]
+exch: folds 1281; held 22.2% test 25.3%; diff -3.0 [-6.3, +0.2]; discordant 113/152; clusters 27:54; sign p 0.003596347718824061
+(a) passes 21; (b) fails 4 (full-data answer right 2, wrong 2); (c) fails 2; top answers not fitting 170 of 480
+floor -806.3%
+overlap: both 7; ice right 4, Monty right 5; ice only 8, right 7; Monty only 37, right 30; union 52
+
+=== Mini-ARC: items 149, clusters 149, has 149, mean 1/(n+1) 22.7%
+usual 66/149 = 44.3% [36.2, 52.3]; top fits 48/76 = 63.2% [52.1, 73.8]; (a) 29/32 = 90.6% [79.3, 100.0]; (a)+(b) 29/32 = 90.6% [79.3, 100.0]; FA-LOO+(c) 29/32 = 90.6% [79.3, 100.0]; coverage 21.5%
+pass@1,2,3 [66, 76, 78]; FC minus usual +46.3 [+35.1, +57.6]; FC minus top-fits +27.5 [+14.9, +40.1]; FC minus (a) +0.0 [+0.0, +0.0]
+clusters answered 32, with wrong 3; tasks answered 32, with wrong 3; joint 2.01%
+split: predict 74.4% of 203; miss 15.1% of 325; diff +59.3 [+47.8, +69.8]
+exch: folds 528; held 38.4% test 37.9%; diff +0.6 [-4.6, +6.0]; discordant 52/49; clusters 25:32; sign p 0.42704285650325524
+(a) passes 32; (b) fails 0 (full-data answer right 0, wrong 0); (c) fails 0; top answers not fitting 73 of 149
+floor -5.8%
+overlap: both 5; ice right 4, Monty right 4; ice only 27, right 25; Monty only 4, right 4; union 36
+
+=== 1D-ARC: items 901, clusters 18, has 615, mean 1/(n+1) 25.0%
+usual 412/615 = 67.0% [48.6, 84.1]; top fits 370/445 = 83.1% [70.5, 91.9]; (a) 192/205 = 93.7% [86.8, 97.2]; (a)+(b) 177/184 = 96.2% [89.7, 99.3]; FA-LOO+(c) 176/183 = 96.2% [89.7, 99.3]; coverage 20.3%
+pass@1,2,3 [412, 445, 461]; FC minus usual +29.2 [+12.8, +46.3]; FC minus top-fits +13.0 [+6.0, +22.5]; FC minus (a) +2.5 [+1.2, +3.9]
+clusters answered 12, with wrong 4; tasks answered 183, with wrong 7; joint 0.78%
+split: predict 84.8% of 983; miss 17.5% of 862; diff +67.3 [+55.4, +75.8]
+exch: folds 2703; held 36.4% test 36.4%; diff -0.1 [-1.0, +0.9]; discordant 149/151; clusters 5:6; sign p 1.0
+(a) passes 205; (b) fails 21 (full-data answer right 16, wrong 5); (c) fails 1; top answers not fitting 170 of 615
+floor -23.1%
+overlap: both 14; ice right 14, Monty right 9; ice only 169, right 162; Monty only 158, right 152; union 341
+
+=== MinimalTasks: items 48, clusters 16, has 48, mean 1/(n+1) 26.5%
+usual 31/48 = 64.6% [47.9, 81.2]; top fits 29/41 = 70.7% [53.1, 86.1]; (a) 12/12 = 100.0% [100.0, 100.0]; (a)+(b) 12/12 = 100.0% [100.0, 100.0]; FA-LOO+(c) 12/12 = 100.0% [100.0, 100.0]; coverage 25.0%
+pass@1,2,3 [31, 37, 38]; FC minus usual +35.4 [+18.8, +52.1]; FC minus top-fits +29.3 [+13.9, +46.5]; FC minus (a) +0.0 [+0.0, +0.0]
+clusters answered 4, with wrong 0; tasks answered 4, with wrong 0; joint 0.00%
+split: predict 85.7% of 63; miss 21.3% of 75; diff +64.4 [+44.6, +80.3]
+exch: folds 138; held 45.7% test 50.7%; diff -5.1 [-14.0, +2.9]; discordant 9/16; clusters 2:5; sign p 0.453125
+(a) passes 12; (b) fails 0 (full-data answer right 0, wrong 0); (c) fails 0; top answers not fitting 7 of 48
+floor -5.8%
+overlap: both 0; ice right 0, Monty right 0; ice only 12, right 12; Monty only 5, right 5; union 17
+
+=== ARC-AGI-2 eval, 113 tasks: items 160, clusters 113, has 160, mean 1/(n+1) 26.0%
+usual 2/160 = 1.2% [0.0, 3.2]; top fits 1/5 = 20.0% [0.0, 50.0]; (a) 0/0; (a)+(b) 0/0; FA-LOO+(c) 0/0; coverage 0.0%
+pass@1,2,3 [2, 2, 2]; FC minus usual n/a; FC minus top-fits n/a; FC minus (a) n/a
+clusters answered 0, with wrong 0; tasks answered 0, with wrong 0; joint 0.00%
+split: predict 16.7% of 6; miss 0.6% of 468; diff +16.0 [-0.6, +48.8]
+exch: folds 483; held 1.2% test 0.8%; diff +0.4 [-0.6, +1.6]; discordant 5/3; clusters 3:2; sign p 1.0
+(a) passes 0; (b) fails 0 (full-data answer right 0, wrong 0); (c) fails 0; top answers not fitting 155 of 160
+floor n/a
+
+reproduction: common 480; mine 251; authors 249; agree 470 = 97.9%
+native jobs 480 {'rid': 'chk_nat_305abf1e695bded9aa70', 'set': 'native', 'stage': 2, 'orig': '305abf1e695bded9aa70', 'key': 'AboveBelow/AboveBelow1#0', 'train': 'list', 'query': 'list'}
+native: items 480; pass@3 252; agree 477 = 99.4%
+1D items with no full-data answer: 286
+1D full-run statuses Counter({'ok': 2460, 'crash': 1144})

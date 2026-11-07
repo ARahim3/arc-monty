@@ -1,0 +1,51 @@
+== A hand-made items 80 clusters 77
+ pass2 19.0 FA-LOO+(c) (6, 6) cov 7.5 fit (13, 28) top (16, 66)
+ split (23, 26, 14, 174, 80.4, (62.0, 93.0)) within (53.7, (16.7, 88.9), 9)
+ folds (n summed where n>1) 236 held-out minus test (11.0, 15.7, -4.7)
+ Monty pass2 9.0 FA-LOO+(c) (7, 7) cov 8.8 v5 (8, 8) fit (7, 11)
+ Monty split (20, 25, 3, 32, 70.6, (40.5, 90.0)) within (0.0, (0.0, 0.0), 3)
+== B tama items 1567 clusters 50
+ pass2 145.0 FA-LOO+(c) (73, 76) cov 4.9 fit (104, 344) top (126, 960)
+ split (290, 411, 105, 2732, 66.7, (41.8, 82.7)) within (4.4, (-3.1, 12.4), 62)
+ folds (n summed where n>1) 4904 held-out minus test (8.4, 8.1, 0.3)
+ Monty pass2 139.0 FA-LOO+(c) (111, 116) cov 7.4 v5 (115, 121) fit (128, 175)
+ Monty split (438, 482, 35, 568, 84.7, (71.7, 94.5)) within (21.2, (9.6, 42.5), 24)
+== PQA items 210 clusters 7
+ pass2 2.0 FA-LOO+(c) (0, 0) cov 0.0 fit (1, 24) top (2, 210)
+ split (0, 27, 11, 1443, -0.8, (-1.7, 0.0)) within (-1.1, (-5.6, 0.0), 5)
+ folds (n summed where n>1) 1470 held-out minus test (1.8, 0.7, 1.1)
+ Monty pass2 0.0 FA-LOO+(c) (0, 0) cov 0.0 v5 (0, 0) fit (0, 1)
+ Monty split (0, 0, 0, 12, None, None) within None
+== ConceptARC items 480 clusters 160
+ pass2 47.0 FA-LOO+(c) (11, 16) cov 3.3 fit (35, 159) top (42, 358)
+ split (51, 91, 50, 847, 50.1, (34.8, 67.1)) within (17.1, (0.0, 35.9), 13)
+ folds (n summed where n>1) 1278 held-out minus test (7.1, 7.9, -0.8)
+== Mini-ARC items 149 clusters 149
+ pass2 35.0 FA-LOO+(c) (10, 10) cov 6.7 fit (28, 85) top (30, 148)
+ split (74, 91, 16, 436, 77.6, (65.6, 87.1)) within (27.3, (11.3, 44.3), 25)
+ folds (n summed where n>1) 528 held-out minus test (17.2, 17.0, 0.2)
+== 1D-ARC items 901 clusters 18
+ pass2 422.0 FA-LOO+(c) (76, 86) cov 9.5 fit (321, 566) top (336, 897)
+ split (483, 703, 232, 1967, 56.9, (42.3, 64.2)) within (21.1, (9.6, 29.2), 232)
+ folds (n summed where n>1) 2703 held-out minus test (26.0, 26.5, -0.4)
+== games, changed transitions
+M1 motor x 41.0 y 5.1 diff 35.8 (22.3, 50.3) games 13 n 1426
+M5 displacement x 41.0 y 43.3 diff -2.4 (-7.0, 1.2) games 13 n 1426
+M4a pop x 38.7 y 37.6 diff 1.1 (0.0, 3.5) games 13 n 1426
+M4b pop x 40.5 y 37.6 diff 2.9 (-0.2, 7.2) games 13 n 1426
+M4a single x 33.5 y 37.9 diff -4.4 (-11.1, 1.9) games 13 n 1426
+M4b single x 35.1 y 37.9 diff -2.7 (-13.4, 6.1) games 13 n 1426
+M2 vs Monty columns k=3 x 44.4 y 20.3 diff 24.1 (14.7, 34.8) games 13 n 1291
+M3 vs repeat k=3 x 44.4 y 24.9 diff 19.5 (8.0, 33.7) games 13 n 1291
+M6 rollout h=4 x 45.6 y 34.3 diff 11.3 (-0.8, 25.5) games 13 n 248
+E2 games library minus alone, all x 65.2 y 67.4 diff -2.3 (-3.9, -0.9) games 13 n 3120
+== static arms: S2 object sensors, S3 count, E2: from analysis.json (read directly)
+hand S2 {'x': 19.0, 'y': 16.0, 'diff': 3.0, 'ci': [0.0, 7.0], 'tasks_x_more': 3, 'tasks_y_more': 0, 'sign_p': 0.25, 'separates': False} count {'x': 19.0, 'y': 19.0, 'diff': 0.0, 'ci': [0.0, 0.0], 'tasks_x_more': 0, 'tasks_y_more': 0, 'sign_p': None, 'separates': False}
+tama S2 {'x': 145.0, 'y': 135.0, 'diff': 10.0, 'ci': [1.0, 25.0], 'tasks_x_more': 4, 'tasks_y_more': 0, 'sign_p': 0.125, 'separates': True} count {'x': 145.0, 'y': 145.0, 'diff': 0.0, 'ci': [0.0, 0.0], 'tasks_x_more': 0, 'tasks_y_more': 0, 'sign_p': None, 'separates': False}
+S3a 20.0 [11.0, 30.0] S3b 4.0 [0.0, 10.0]
+E2 {'alone': 47.0, 'same': 36.0, 'other': 31.0} -11.0 [-29.0, 3.0]
+hand {'pass1_column': 16, 'pass1_monty': 9.0, 'answered_column': 66, 'answered_monty': 17, 'pass2_cells_only': 16.0} first right by reach [['reach 1', 14], ['reach 2', 5], ['reach 6', 3], ['reach 3', 1]]
+tama {'pass1_column': 126, 'pass1_monty': 137.0, 'answered_column': 960, 'answered_monty': 253, 'pass2_cells_only': 135.0} first right by reach [['reach 1', 134], ['reach 2', 31], ['reach 6', 11], ['reach 3', 11]]
+concept {'pass1_column': 42, 'pass1_monty': 55.0, 'answered_column': 358, 'answered_monty': 136, 'pass2_cells_only': 36.0} first right by reach [['reach 1', 50], ['reach 6', 12], ['reach 2', 8], ['reach 3', 2]]
+mini {'pass1_column': 30, 'pass1_monty': 20.0, 'answered_column': 148, 'answered_monty': 55, 'pass2_cells_only': 31.0} first right by reach [['reach 1', 28], ['reach 2', 11], ['reach 3', 7], ['reach 6', 4]]
+oned {'pass1_column': 336, 'pass1_monty': 198.0, 'answered_column': 897, 'answered_monty': 327, 'pass2_cells_only': 410.0} first right by reach [['reach 1', 320], ['reach 2', 159], ['reach 3', 34], ['reach 6', 29]]

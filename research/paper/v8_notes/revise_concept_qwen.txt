@@ -1,0 +1,19 @@
+records Counter({'fold': 427, 'full': 160}) errors 0 tasks 160 pairs 480 tokens 19846587
+folds 427
+task level: verified 150, right 139.00, 92.7%, Wilson rounded (87.3, 95.9), unrounded (87.3, 95.9); (a)+(b) 70, right 69.67; (a)+(b)+(c) 65, right 65.00, Wilson (94.4, 100.0), coverage 40.6%
+verified not fully right 22; kept 0; fully right 128; rejected 63; random avoid p 9.59e-07
+stops: (a) 11, (b) 7, (c) 4
+verified at held-out rate 1.0: 87 wrong among them: 11
+AUROC 0.584 [0.45, 0.72]; exact one-sided p 0.0828
+pairs: FA-LOO+(c) 232/232 = coverage 48.3%, joint 0/480; (a)+(b) 239/240; (a) with full 249/264 = 94.3%; verified 417/450 = 92.7%; one attempt 421/480 = 87.7%
+tasks answered 86, with a wrong answer 0; Clopper-Pearson 95.8, 100
+mean worst case per pair 28.32%, per task 28.32%; floor at pair coverage 41.4%, at task coverage 30.3%
+both answer 23; Qwen right 23; Monty right 18; Qwen alone 209, right 209; Monty alone 21, right 17
+P1: 409 programs in 159 tasks, 84.0%; predict 321, 94.5%; miss 88, 45.8%
+  difference +48.7 [+41.0, +56.4]
+  within 49 tasks with both kinds: +36.7 [+26.9, +46.9]
+P2: folds 427; held 325 (76.1%), test 346.67 (81.2%), diff -5.1 [-8.1, -2.1]; held-only 18.67, test-only 40.33; tasks 29:46, sign p 0.0639
+programs 659; with a literal list of 8+ single digits 0; examples []
+test pair equals a demo of its task: 0
+ARC-AGI-2 stops of 14: (a) 12, (b) 2, (c) 0; certified 7
+at held-out rate 1.0 among verified: 11, wrong 2

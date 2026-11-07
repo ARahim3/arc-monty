@@ -1,0 +1,48 @@
+
+=== concept: items 480, clusters 160, pass@2 58
+  top 55/136 = 40.4% [28.1, 52.9]; fit 43/74 = 58.1% [41.4, 73.4]; v5 42/49 = 85.7% [74.2, 95.2]; plain (a) 35/44 = 79.5% [64.4, 92.3]; (a)+(b) 35/44 = 79.5% [64.4, 92.3]; FA-LOO 35/44 = 79.5% [64.4, 92.3]; coverage 9.2%; joint 9/480
+  FA-LOO minus fit +21.4 [+3.3, +40.3]; v5 minus fit +27.6 [+11.3, +45.4]; FA-LOO minus v5 -6.2 [-15.1, +1.8]
+  Table 5 as captioned: evidence >= .99 44/54 = 81.5% [69.0, 91.9]; below 11/82 = 13.4% [3.9, 25.7]; difference +68.1 [+51.5, +82.6]; buckets {('(0,.5)', 0.0): 1, ('0', 0.0): 64, ('0', 1.0): 7, ('>=.99', 0.0): 10, ('>=.99', 1.0): 44, ('[.5,.99)', 0.0): 6, ('[.5,.99)', 1.0): 4}
+  Table 4: folds 1281; held 12.7% test 11.8%; diff +0.9 [-0.8, +3.0]; held only 33 test only 21; clusters 11:15
+  FOLD-LEVEL split (same measure as the other learners; fold models that give a test answer): predict 130/163 = 79.8%; miss 21/324 = 6.5%; difference +73.3 [+59.0, +84.9]
+  FOLD-LEVEL within task: {'clusters': 12, 'diff': 43.6, 'ci': [22.2, 64.7], 'pos': 8, 'neg': 0, 'zero': 4, 'n_pred': 62, 'n_miss': 23}
+  FOLD-LEVEL within task, formatted: +43.6 [+22.2, +64.7], 12 tasks
+  EVIDENCE inside tasks (top answer >= .99 vs below, tasks with both): {'clusters': 1, 'diff': 0.0, 'ci': [0.0, 0.0], 'pos': 0, 'neg': 0, 'zero': 1, 'n_pred': 2, 'n_miss': 1}
+  test pairs per task: {3: 160}
+
+=== mini: items 149, clusters 149, pass@2 20
+  top 20/55 = 36.4% [23.6, 49.2]; fit 15/29 = 51.7% [33.3, 70.0]; v5 11/11 = 100.0% [100.0, 100.0]; plain (a) 8/9 = 88.9% [63.6, 100.0]; (a)+(b) 8/9 = 88.9% [63.6, 100.0]; FA-LOO 8/9 = 88.9% [63.6, 100.0]; coverage 6.0%; joint 1/149
+  FA-LOO minus fit +37.2 [+8.7, +62.5]; v5 minus fit +48.3 [+30.0, +66.7]; FA-LOO minus v5 -11.1 [-36.4, +0.0]
+  Table 5 as captioned: evidence >= .99 11/12 = 91.7% [72.7, 100.0]; below 9/43 = 20.9% [9.3, 34.0]; difference +70.7 [+48.0, +87.9]; buckets {('(0,.5)', 1.0): 1, ('0', 0.0): 32, ('0', 1.0): 3, ('>=.99', 0.0): 1, ('>=.99', 1.0): 11, ('[.5,.99)', 0.0): 2, ('[.5,.99)', 1.0): 5}
+  Table 4: folds 528; held 11.7% test 11.9%; diff -0.2 [-2.8, +2.5]; held only 15 test only 16; clusters 7:10
+  FOLD-LEVEL split (same measure as the other learners; fold models that give a test answer): predict 47/62 = 75.8%; miss 16/185 = 8.6%; difference +67.2 [+47.7, +82.8]
+  FOLD-LEVEL within task: {'clusters': 11, 'diff': 21.2, 'ci': [-6.1, 50.0], 'pos': 4, 'neg': 1, 'zero': 6, 'n_pred': 26, 'n_miss': 14}
+  FOLD-LEVEL within task, formatted: +21.2 [-6.1, +50.0], 11 tasks
+  EVIDENCE inside tasks (top answer >= .99 vs below, tasks with both): {'clusters': 0}
+  test pairs per task: {1: 149}
+
+=== oned: items 901, clusters 18, pass@2 198
+  top 198/327 = 60.6% [34.7, 79.3]; fit 187/285 = 65.6% [39.5, 82.1]; v5 167/178 = 93.8% [82.9, 98.3]; plain (a) 161/172 = 93.6% [79.1, 98.3]; (a)+(b) 161/172 = 93.6% [79.1, 98.3]; FA-LOO 161/172 = 93.6% [79.1, 98.3]; coverage 19.1%; joint 11/901
+  FA-LOO minus fit +28.0 [+13.4, +45.7]; v5 minus fit +28.2 [+13.4, +47.0]; FA-LOO minus v5 -0.2 [-4.2, +0.1]
+  Table 5 as captioned: evidence >= .99 170/181 = 93.9% [82.9, 98.3]; below 28/146 = 19.2% [12.7, 27.6]; difference +74.7 [+61.2, +82.9]; buckets {('(0,.5)', 0.0): 1, ('0', 0.0): 109, ('0', 1.0): 19, ('>=.99', 0.0): 11, ('>=.99', 1.0): 170, ('[.5,.99)', 0.0): 8, ('[.5,.99)', 1.0): 9}
+  Table 4: folds 2703; held 20.9% test 22.1%; diff -1.2 [-2.8, +0.1]; held only 47 test only 79; clusters 4:8
+  FOLD-LEVEL split (same measure as the other learners; fold models that give a test answer): predict 519/566 = 91.7%; miss 79/358 = 22.1%; difference +69.6 [+52.5, +80.8]
+  FOLD-LEVEL within task: {'clusters': 20, 'diff': 35.0, 'ci': [10.0, 60.0], 'pos': 8, 'neg': 1, 'zero': 11, 'n_pred': 38, 'n_miss': 22}
+  FOLD-LEVEL within task, formatted: +35.0 [+10.0, +60.0], 20 tasks
+  EVIDENCE inside tasks (top answer >= .99 vs below, tasks with both): {'clusters': 0}
+  test pairs per task: {1: 901}
+
+=== minimal: items 48, clusters 16, pass@2 7
+  top 7/25 = 28.0% [0.0, 55.0]; fit 6/17 = 35.3% [0.0, 65.4]; v5 5/5 = 100.0% [100.0, 100.0]; plain (a) 5/5 = 100.0% [100.0, 100.0]; (a)+(b) 5/5 = 100.0% [100.0, 100.0]; FA-LOO 5/5 = 100.0% [100.0, 100.0]; coverage 10.4%; joint 0/48
+  FA-LOO minus fit +64.7 [+33.3, +86.4]; v5 minus fit +64.7 [+33.3, +86.4]; FA-LOO minus v5 +0.0 [+0.0, +0.0]
+  Table 5 as captioned: evidence >= .99 5/5 = 100.0% [100.0, 100.0]; below 2/20 = 10.0% [0.0, 30.8]; difference +90.0 [+69.2, +100.0]; buckets {('0', 0.0): 17, ('>=.99', 1.0): 5, ('[.5,.99)', 0.0): 1, ('[.5,.99)', 1.0): 2}
+  Table 4: folds 138; held 15.2% test 15.9%; diff -0.7 [-2.3, +0.0]; held only 2 test only 3; clusters 0:1
+  FOLD-LEVEL split (same measure as the other learners; fold models that give a test answer): predict 19/21 = 90.5%; miss 3/32 = 9.4%; difference +81.1 [+48.9, +100.0]
+  FOLD-LEVEL within task: {'clusters': 2, 'diff': 50.0, 'ci': [0.0, 100.0], 'pos': 1, 'neg': 0, 'zero': 1, 'n_pred': 12, 'n_miss': 5}
+  FOLD-LEVEL within task, formatted: +50.0 [+0.0, +100.0], 2 tasks
+  EVIDENCE inside tasks (top answer >= .99 vs below, tasks with both): {'clusters': 1, 'diff': 100.0, 'ci': [100.0, 100.0], 'pos': 1, 'neg': 0, 'zero': 0, 'n_pred': 2, 'n_miss': 1}
+  test pairs per task: {3: 16}
+
+=== oned: fold-level within-task, resampling types
+Table 4 by task, descriptive: tasks 19:69, sign p 7.84e-08
+tasks 20 in 11 types: +35.0 [+9.5, +66.7]; {'1d_denoising_1c': 1, '1d_denoising_mc': 1, '1d_flip': 1, '1d_hollow': 3, '1d_move_1p': 1, '1d_move_2p': 1, '1d_move_2p_dp': 2, '1d_move_3p': 1, '1d_move_dp': 1, '1d_recolor_cmp': 3, '1d_scale_dp': 5}

@@ -1,0 +1,50 @@
+{
+ "behavior": {
+  "loo1_candidates": 1827,
+  "b_automatic": 1815,
+  "tasks": 14,
+  "fold_unseen_on_test": 0
+ },
+ "pattern": {
+  "loo1_candidates": 18,
+  "b_automatic": 18,
+  "tasks": 11
+ },
+ "field": {
+  "loo1_candidates": 2,
+  "b_automatic": 2,
+  "tasks": 1
+ },
+ "dynamics": {
+  "tasks_loo1": 10,
+  "multi_distinct": 0,
+  "mean_full_fit": 2.7,
+  "hyp_list_leak": 6,
+  "b_true_reinduction": 10,
+  "b_monty_folds": 10
+ },
+ "composition": {
+  "tasks_loo1": 56,
+  "multi_distinct": 2,
+  "mean_full_fit": 1.86,
+  "hyp_list_leak": 11,
+  "b_true_reinduction": 54,
+  "b_monty_folds": 56
+ },
+ "association": {
+  "tasks_loo1": 3,
+  "multi_distinct": 1,
+  "mean_full_fit": 2.0,
+  "hyp_list_leak": 0,
+  "b_true_reinduction": 3,
+  "b_monty_folds": 3
+ },
+ "periodic": {
+  "tasks_loo1": 4,
+  "multi_distinct": 0,
+  "mean_full_fit": 1.0,
+  "hyp_list_leak": 1,
+  "b_true_reinduction": 4,
+  "b_monty_folds": 4
+ }
+} errors {}

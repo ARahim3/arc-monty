@@ -1,0 +1,651 @@
+{
+ "agi2-eval": {
+  "v5": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "no-consensus": {
+   "answered": 4,
+   "correct": 4.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "cross-module": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "fit-only": {
+   "answered": 6,
+   "correct": 3.0,
+   "precision": 0.5,
+   "wrong": [
+    "16b78196",
+    "4c3d4a41",
+    "97d7923e"
+   ]
+  },
+  "fit-only, no-consensus": {
+   "answered": 11,
+   "correct": 4.0,
+   "precision": 0.3636,
+   "wrong": [
+    "16b78196",
+    "2b83f449",
+    "4c3d4a41",
+    "800d221b",
+    "97d7923e",
+    "d35bdbdc",
+    "981571dc"
+   ]
+  },
+  "threshold 0.9": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "threshold 0.75": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "threshold 0.5": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "pass2 cross-module (always answer)": {
+   "answered": 0,
+   "correct": 4.0,
+   "precision": null,
+   "wrong": []
+  }
+ },
+ "agi1-eval": {
+  "v5": {
+   "answered": 34,
+   "correct": 33.0,
+   "precision": 0.9706,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "no-consensus": {
+   "answered": 34,
+   "correct": 33.0,
+   "precision": 0.9706,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "cross-module": {
+   "answered": 34,
+   "correct": 33.0,
+   "precision": 0.9706,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "fit-only": {
+   "answered": 61,
+   "correct": 41.0,
+   "precision": 0.6721,
+   "wrong": [
+    "009d5c81",
+    "03560426",
+    "16b78196",
+    "25094a63",
+    "45737921",
+    "4e469f39",
+    "4cd1b7b2",
+    "55059096",
+    "50f325b5",
+    "60a26a3e",
+    "72207abc",
+    "92e50de0",
+    "94be5b80",
+    "a04b2602",
+    "d2acf2cb",
+    "e74e1818",
+    "f5aa3634",
+    "f83cb3f6",
+    "fe9372f3",
+    "ff72ca3e"
+   ]
+  },
+  "fit-only, no-consensus": {
+   "answered": 83,
+   "correct": 44.0,
+   "precision": 0.5301,
+   "wrong": [
+    "009d5c81",
+    "03560426",
+    "0a2355a6",
+    "0becf7df",
+    "16b78196",
+    "1c56ad9f",
+    "2b01abd0",
+    "25094a63",
+    "37d3e8b2",
+    "45737921",
+    "4e469f39",
+    "4cd1b7b2",
+    "55059096",
+    "50f325b5",
+    "60a26a3e",
+    "72207abc",
+    "84db8fc4",
+    "7ee1c6ea",
+    "92e50de0",
+    "94be5b80",
+    "a04b2602",
+    "a57f2f04",
+    "a8610ef7",
+    "ae58858e",
+    "d304284e",
+    "d2acf2cb",
+    "e69241bd",
+    "e74e1818",
+    "e7dd8335",
+    "e7b06bea",
+    "e88171ec",
+    "e9ac8c9e",
+    "ef26cbf6",
+    "f5c89df1",
+    "f5aa3634",
+    "f83cb3f6",
+    "fe9372f3",
+    "ff72ca3e",
+    "981571dc"
+   ]
+  },
+  "threshold 0.9": {
+   "answered": 35,
+   "correct": 34.0,
+   "precision": 0.9714,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "threshold 0.75": {
+   "answered": 39,
+   "correct": 37.0,
+   "precision": 0.9487,
+   "wrong": [
+    "f5aa3634",
+    "ff72ca3e"
+   ]
+  },
+  "threshold 0.5": {
+   "answered": 44,
+   "correct": 41.0,
+   "precision": 0.9318,
+   "wrong": [
+    "55059096",
+    "f5aa3634",
+    "ff72ca3e"
+   ]
+  },
+  "pass2 cross-module (always answer)": {
+   "answered": 0,
+   "correct": 46.0,
+   "precision": null,
+   "wrong": []
+  }
+ },
+ "agi2-train": {
+  "v5": {
+   "answered": 87,
+   "correct": 85.0,
+   "precision": 0.977,
+   "wrong": [
+    "9565186b",
+    "f5aa3634"
+   ]
+  },
+  "no-consensus": {
+   "answered": 92,
+   "correct": 89.0,
+   "precision": 0.9674,
+   "wrong": [
+    "54d9e175",
+    "9565186b",
+    "f5aa3634"
+   ]
+  },
+  "cross-module": {
+   "answered": 87,
+   "correct": 86.0,
+   "precision": 0.9885,
+   "wrong": [
+    "f5aa3634"
+   ]
+  },
+  "fit-only": {
+   "answered": 142,
+   "correct": 99.0,
+   "precision": 0.6972,
+   "wrong": [
+    "009d5c81",
+    "03560426",
+    "0d3d703e",
+    "25094a63",
+    "3befdf3e",
+    "4347f46a",
+    "44d8ac46",
+    "45737921",
+    "4cd1b7b2",
+    "4e469f39",
+    "55059096",
+    "50f325b5",
+    "5792cb4d",
+    "58c02a16",
+    "60a26a3e",
+    "60d73be6",
+    "67a3c6ac",
+    "72207abc",
+    "7447852a",
+    "758abdf0",
+    "834ec97d",
+    "868de0fa",
+    "8f2ea7aa",
+    "92e50de0",
+    "94be5b80",
+    "98cf29f8",
+    "a04b2602",
+    "b2bc3ffd",
+    "bae5c565",
+    "caa06a1f",
+    "cc9053aa",
+    "d06dbe63",
+    "d2acf2cb",
+    "d5d6de2d",
+    "d93c6891",
+    "e74e1818",
+    "ec883f72",
+    "ecdecbb3",
+    "f8a8fe49",
+    "f5aa3634",
+    "f83cb3f6",
+    "fe9372f3",
+    "ff72ca3e"
+   ]
+  },
+  "fit-only, no-consensus": {
+   "answered": 216,
+   "correct": 120.0,
+   "precision": 0.5556,
+   "wrong": [
+    "009d5c81",
+    "03560426",
+    "0a2355a6",
+    "0d3d703e",
+    "0becf7df",
+    "1b60fb0c",
+    "1c56ad9f",
+    "22168020",
+    "272f95fa",
+    "2b01abd0",
+    "25094a63",
+    "396d80d7",
+    "37d3e8b2",
+    "3befdf3e",
+    "3c9b0459",
+    "4347f46a",
+    "44d8ac46",
+    "45737921",
+    "4cd1b7b2",
+    "4e469f39",
+    "52df9849",
+    "54d9e175",
+    "55059096",
+    "50f325b5",
+    "5582e5ca",
+    "5792cb4d",
+    "58c02a16",
+    "60a26a3e",
+    "6150a2bd",
+    "60d73be6",
+    "67385a82",
+    "67a3c6ac",
+    "689c358e",
+    "6a980be1",
+    "6e82a1ae",
+    "72207abc",
+    "7447852a",
+    "758abdf0",
+    "753ea09b",
+    "810b9b61",
+    "834ec97d",
+    "7ee1c6ea",
+    "84db8fc4",
+    "868de0fa",
+    "8eb1be9a",
+    "8f2ea7aa",
+    "92e50de0",
+    "94be5b80",
+    "9565186b",
+    "952a094c",
+    "98cf29f8",
+    "98c475bf",
+    "9b30e358",
+    "a04b2602",
+    "9f8de559",
+    "a5f85a15",
+    "a57f2f04",
+    "a79310a0",
+    "a8610ef7",
+    "aa62e3f4",
+    "aba27056",
+    "ad3b40cf",
+    "ae58858e",
+    "b2862040",
+    "b2bc3ffd",
+    "bae5c565",
+    "bd5af378",
+    "caa06a1f",
+    "cc9053aa",
+    "d06dbe63",
+    "d23f8c26",
+    "d304284e",
+    "d2acf2cb",
+    "d5d6de2d",
+    "d93c6891",
+    "e21d9049",
+    "e48d4e1a",
+    "e69241bd",
+    "e73095fd",
+    "e76a88a6",
+    "e74e1818",
+    "e7dd8335",
+    "e8dc4411",
+    "e7b06bea",
+    "e88171ec",
+    "e9ac8c9e",
+    "ec883f72",
+    "ecb67b6d",
+    "ecdecbb3",
+    "ef26cbf6",
+    "f5c89df1",
+    "f8a8fe49",
+    "f5aa3634",
+    "f83cb3f6",
+    "fe9372f3",
+    "ff72ca3e"
+   ]
+  },
+  "threshold 0.9": {
+   "answered": 90,
+   "correct": 86.0,
+   "precision": 0.9556,
+   "wrong": [
+    "7447852a",
+    "9565186b",
+    "a5f85a15",
+    "f5aa3634"
+   ]
+  },
+  "threshold 0.75": {
+   "answered": 97,
+   "correct": 91.0,
+   "precision": 0.9381,
+   "wrong": [
+    "7447852a",
+    "834ec97d",
+    "868de0fa",
+    "a5f85a15",
+    "f5aa3634",
+    "ff72ca3e"
+   ]
+  },
+  "threshold 0.5": {
+   "answered": 110,
+   "correct": 102.0,
+   "precision": 0.9273,
+   "wrong": [
+    "55059096",
+    "6e82a1ae",
+    "7447852a",
+    "834ec97d",
+    "868de0fa",
+    "b2862040",
+    "f5aa3634",
+    "ff72ca3e"
+   ]
+  },
+  "pass2 cross-module (always answer)": {
+   "answered": 0,
+   "correct": 123.0,
+   "precision": null,
+   "wrong": []
+  }
+ },
+ "agi1-train": {
+  "v5": {
+   "answered": 59,
+   "correct": 58.0,
+   "precision": 0.9831,
+   "wrong": [
+    "9565186b"
+   ]
+  },
+  "no-consensus": {
+   "answered": 64,
+   "correct": 62.0,
+   "precision": 0.9688,
+   "wrong": [
+    "54d9e175",
+    "9565186b"
+   ]
+  },
+  "cross-module": {
+   "answered": 59,
+   "correct": 59.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "fit-only": {
+   "answered": 80,
+   "correct": 64.0,
+   "precision": 0.8,
+   "wrong": [
+    "0d3d703e",
+    "3befdf3e",
+    "4347f46a",
+    "44d8ac46",
+    "67a3c6ac",
+    "7447852a",
+    "834ec97d",
+    "868de0fa",
+    "8f2ea7aa",
+    "98cf29f8",
+    "caa06a1f",
+    "d06dbe63",
+    "d5d6de2d",
+    "ecdecbb3",
+    "ec883f72",
+    "f8a8fe49"
+   ]
+  },
+  "fit-only, no-consensus": {
+   "answered": 119,
+   "correct": 77.0,
+   "precision": 0.6471,
+   "wrong": [
+    "0d3d703e",
+    "1b60fb0c",
+    "22168020",
+    "272f95fa",
+    "3befdf3e",
+    "3c9b0459",
+    "4347f46a",
+    "44d8ac46",
+    "5582e5ca",
+    "54d9e175",
+    "6150a2bd",
+    "67385a82",
+    "67a3c6ac",
+    "6e82a1ae",
+    "7447852a",
+    "0dfd9992",
+    "810b9b61",
+    "834ec97d",
+    "73251a56",
+    "868de0fa",
+    "8eb1be9a",
+    "8f2ea7aa",
+    "9565186b",
+    "98cf29f8",
+    "952a094c",
+    "a5f85a15",
+    "a79310a0",
+    "aba27056",
+    "b2862040",
+    "caa06a1f",
+    "d06dbe63",
+    "d23f8c26",
+    "d5d6de2d",
+    "e21d9049",
+    "c3f564a4",
+    "e48d4e1a",
+    "e73095fd",
+    "e76a88a6",
+    "e8dc4411",
+    "ecdecbb3",
+    "ec883f72",
+    "f8a8fe49"
+   ]
+  },
+  "threshold 0.9": {
+   "answered": 61,
+   "correct": 58.0,
+   "precision": 0.9508,
+   "wrong": [
+    "7447852a",
+    "9565186b",
+    "a5f85a15"
+   ]
+  },
+  "threshold 0.75": {
+   "answered": 64,
+   "correct": 60.0,
+   "precision": 0.9375,
+   "wrong": [
+    "7447852a",
+    "834ec97d",
+    "868de0fa",
+    "a5f85a15"
+   ]
+  },
+  "threshold 0.5": {
+   "answered": 73,
+   "correct": 68.0,
+   "precision": 0.9315,
+   "wrong": [
+    "6e82a1ae",
+    "7447852a",
+    "834ec97d",
+    "868de0fa",
+    "b2862040"
+   ]
+  },
+  "pass2 cross-module (always answer)": {
+   "answered": 0,
+   "correct": 80.0,
+   "precision": null,
+   "wrong": []
+  }
+ },
+ "new233": {
+  "v5": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "no-consensus": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "cross-module": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "fit-only": {
+   "answered": 12,
+   "correct": 4.0,
+   "precision": 0.3333,
+   "wrong": [
+    "5792cb4d",
+    "58c02a16",
+    "60d73be6",
+    "758abdf0",
+    "b2bc3ffd",
+    "bae5c565",
+    "cc9053aa",
+    "d93c6891"
+   ]
+  },
+  "fit-only, no-consensus": {
+   "answered": 29,
+   "correct": 9.0,
+   "precision": 0.3103,
+   "wrong": [
+    "396d80d7",
+    "52df9849",
+    "5792cb4d",
+    "58c02a16",
+    "60d73be6",
+    "689c358e",
+    "6a980be1",
+    "758abdf0",
+    "753ea09b",
+    "98c475bf",
+    "9b30e358",
+    "9f8de559",
+    "aa62e3f4",
+    "ad3b40cf",
+    "b2bc3ffd",
+    "bae5c565",
+    "bd5af378",
+    "cc9053aa",
+    "d93c6891",
+    "ecb67b6d"
+   ]
+  },
+  "threshold 0.9": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "threshold 0.75": {
+   "answered": 3,
+   "correct": 3.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "threshold 0.5": {
+   "answered": 5,
+   "correct": 5.0,
+   "precision": 1.0,
+   "wrong": []
+  },
+  "pass2 cross-module (always answer)": {
+   "answered": 0,
+   "correct": 9.0,
+   "precision": null,
+   "wrong": []
+  }
+ }
+}

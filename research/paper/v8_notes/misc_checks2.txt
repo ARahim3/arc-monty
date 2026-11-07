@@ -1,0 +1,15 @@
+development distinct pairs 4950
+concept items 480 distinct pairs 905 shared with development 0
+mini items 149 distinct pairs 671 shared with development 0
+oned items 901 distinct pairs 3545 shared with development 0
+minimal items 48 distinct pairs 93 shared with development 0
+1D-ARC FA-LOO answers by type [('1d_pcopy_1c', 50), ('1d_pcopy_mc', 50), ('1d_recolor_cnt', 42), ('1d_scale_dp', 7), ('1d_move_2p_dp', 6), ('1d_move_dp', 5), ('1d_move_1p', 3), ('1d_move_2p', 3), ('1d_move_3p', 3), ('1d_denoising_1c', 1), ('1d_mirror', 1), ('1d_recolor_oe', 1)] top 3 sum 142 of 172 types 18
+concept v5 42.0 v5t 42.0
+concept fit 43.0 fitt 43.0
+mini v5 11.0 v5t 11.0
+mini fit 15.0 fitt 15.0
+oned v5 167.0 v5t 167.0
+oned fit 187.0 fitt 187.0
+public eval tasks 514 single test 450 multi 64
+public eval: (a) set == FA-LOO+(c) set True 42
+FA-LOO wrong on public eval ['f5aa3634'] v5 wrong ['f5aa3634']

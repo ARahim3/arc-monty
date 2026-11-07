@@ -1,0 +1,8 @@
+qwen38_ps_b16384.jsonl records 195 tasks with both samples 75
+  both samples: tasks 120; precision 28.5; conf ignored 26.5; unverified first 18.5; guesses first 20.5; Qwen alone 25.5; random mean 23.86 (20.5, 26.5); crowded 58 of 167
+  sample 0: tasks 120; precision 24.0; conf ignored 23.0; unverified first 23.0; guesses first 24.0; Qwen alone 21.0; random mean 23.45 (22.0, 24.0); crowded 7 of 167
+  sample 1: tasks 75; precision 16.5; conf ignored 15.5; unverified first 15.5; guesses first 16.5; Qwen alone 13.5; random mean 16.32 (15.5, 16.5); crowded 6 of 167
+qwen38_ps_xhigh_b16384.jsonl records 234 tasks with both samples 114
+  both samples: tasks 120; precision 24.0; conf ignored 22.0; unverified first 16.5; guesses first 19.5; Qwen alone 22.0; random mean 21.20 (19.0, 24.0); crowded 86 of 167
+  sample 0: tasks 120; precision 21.0; conf ignored 19.0; unverified first 19.0; guesses first 21.0; Qwen alone 18.0; random mean 20.18 (19.0, 21.0); crowded 9 of 167
+  sample 1: tasks 114; precision 16.5; conf ignored 15.5; unverified first 15.5; guesses first 17.5; Qwen alone 14.5; random mean 16.85 (15.5, 17.5); crowded 10 of 167

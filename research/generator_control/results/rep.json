@@ -1,0 +1,152 @@
+{
+ "label": "planned replication (Addendum 2), ARC-AGI-2 public eval, seen split",
+ "tasks_planned": 45,
+ "tasks_complete": 45,
+ "per": {
+  "folds": 142,
+  "first_fit": 109,
+  "retried_1": 33,
+  "fit_1": 16,
+  "retried_2": 17,
+  "fit_2": 6,
+  "never_fit": 11,
+  "runs": 192,
+  "tokens": 10340136,
+  "missing": 0
+ },
+ "primary": {
+  "verified": 45,
+  "verified_right": 35.5,
+  "verified_wrong": 11,
+  "abc_answered": 16,
+  "abc_right": 16.0,
+  "abc_fully_right": 16,
+  "abc_exact": [
+   0.7940927857921773,
+   1.0
+  ],
+  "abc_coverage": 0.13333333333333333,
+  "wrong_kept": 0,
+  "wrong_rejected": 11,
+  "hypergeom_p": 0.00340839989166705,
+  "ab_answered": 17,
+  "ab_right": 17.0,
+  "abc_tasks": [
+   "136b0064",
+   "1818057f",
+   "2ba387bc",
+   "36a08778",
+   "38007db0",
+   "3e6067c3",
+   "58490d8a",
+   "58f5dbd5",
+   "5961cc34",
+   "65b59efc",
+   "981571dc",
+   "a395ee82",
+   "aa4ec2a5",
+   "b99e7126",
+   "bf45cf4b",
+   "c4d067a0"
+  ],
+  "ab_tasks": [
+   "136b0064",
+   "1818057f",
+   "2ba387bc",
+   "36a08778",
+   "38007db0",
+   "3e6067c3",
+   "58490d8a",
+   "58f5dbd5",
+   "5961cc34",
+   "65b59efc",
+   "7b5033c1",
+   "981571dc",
+   "a395ee82",
+   "aa4ec2a5",
+   "b99e7126",
+   "bf45cf4b",
+   "c4d067a0"
+  ],
+  "abc_wrong_tasks": [],
+  "ab_wrong_tasks": []
+ },
+ "no_retry_same_runs": {
+  "verified": 45,
+  "verified_right": 35.5,
+  "verified_wrong": 11,
+  "abc_answered": 11,
+  "abc_right": 11.0,
+  "abc_fully_right": 11,
+  "abc_exact": [
+   0.7150858470818455,
+   1.0
+  ],
+  "abc_coverage": 0.09166666666666666,
+  "wrong_kept": 0,
+  "wrong_rejected": 11,
+  "hypergeom_p": 0.02818531665891131,
+  "ab_answered": 12,
+  "ab_right": 12.0,
+  "abc_tasks": [
+   "136b0064",
+   "1818057f",
+   "2ba387bc",
+   "38007db0",
+   "3e6067c3",
+   "58490d8a",
+   "58f5dbd5",
+   "5961cc34",
+   "a395ee82",
+   "b99e7126",
+   "bf45cf4b"
+  ],
+  "ab_tasks": [
+   "136b0064",
+   "1818057f",
+   "2ba387bc",
+   "38007db0",
+   "3e6067c3",
+   "58490d8a",
+   "58f5dbd5",
+   "5961cc34",
+   "7b5033c1",
+   "a395ee82",
+   "b99e7126",
+   "bf45cf4b"
+  ],
+  "abc_wrong_tasks": [],
+  "ab_wrong_tasks": []
+ },
+ "overlap": {
+  "with_first_run_15": [
+   "136b0064",
+   "1818057f",
+   "2ba387bc",
+   "58490d8a",
+   "58f5dbd5",
+   "981571dc",
+   "a395ee82",
+   "aa4ec2a5",
+   "bf45cf4b"
+  ],
+  "first_run_n": 15,
+  "only_here": [
+   "36a08778",
+   "38007db0",
+   "3e6067c3",
+   "5961cc34",
+   "65b59efc",
+   "b99e7126",
+   "c4d067a0"
+  ],
+  "only_first": [
+   "221dfab4",
+   "7b5033c1",
+   "7c66cb00",
+   "b5ca7ac4",
+   "e3721c99",
+   "eee78d87"
+  ]
+ }
+}

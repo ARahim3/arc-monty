@@ -1,0 +1,16 @@
+{
+ "agi2-eval": {
+  "n": 120,
+  "top_same": 120,
+  "attempts_same": 120,
+  "conf_same": 120,
+  "differ": []
+ },
+ "agi1-eval": {
+  "n": 400,
+  "top_same": 400,
+  "attempts_same": 400,
+  "conf_same": 400,
+  "differ": []
+ }
+}

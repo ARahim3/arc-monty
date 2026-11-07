@@ -1,0 +1,9 @@
+concept_p0.jsonl ['task', 'm', 'truth', 'grids', 'runs', 'cpu'] ['F0', '0,1'] ['self-model', 'periodic', 'behavior'] ['wall', 'cpu', 'err', 'cands']
+concept_p1-7.jsonl ['task', 'm', 'truth', 'grids', 'runs', 'cpu'] ['F0', '0,1'] ['self-model', 'periodic', 'behavior'] ['wall', 'cpu', 'err', 'cands']
+concept p0 cpu 1592.5 p1-7 cpu 11446.2 8-view / 1-view 8.19
+mini_p0.jsonl ['task', 'm', 'truth', 'grids', 'runs', 'cpu'] ['F0', '0,1'] ['self-model', 'periodic', 'behavior'] ['wall', 'cpu', 'err', 'cands']
+mini_p1-7.jsonl ['task', 'm', 'truth', 'grids', 'runs', 'cpu'] ['F0', '0,1'] ['self-model', 'periodic', 'behavior'] ['wall', 'cpu', 'err', 'cands']
+mini p0 cpu 854.8 p1-7 cpu 6213.0 8-view / 1-view 8.27
+oned_p0.jsonl ['task', 'm', 'truth', 'grids', 'runs', 'cpu'] ['F0', '0,1'] ['self-model', 'periodic', 'behavior'] ['wall', 'cpu', 'err', 'cands']
+oned_p1-7.jsonl ['task', 'm', 'truth', 'grids', 'runs', 'cpu'] ['F0', '0,1'] ['self-model', 'periodic', 'behavior'] ['wall', 'cpu', 'err', 'cands']
+oned p0 cpu 1724.7 p1-7 cpu 12904.4 8-view / 1-view 8.48

@@ -1,0 +1,18 @@
+concept: tasks 84, items 252, clusters 84
+  inner (a)+(b): 29/36 = 80.6% [58.3, 93.0]; coverage 13.0% of 276 roles; joint 2.54%; events 7
+  inner with (c): 28/35
+  real FA-LOO, same tasks: 22/25 = 88.0% [66.7, 100.0]; coverage 9.9%; joint 1.19%
+  inner minus real: -7.4 [-35.4, +15.6]
+  compared with reviewer's raw rows: tasks 84, role mismatches 0 of 276
+mini: tasks 144, items 144, clusters 144
+  inner (a)+(b): 17/22 = 77.3% [46.2, 94.1]; coverage 4.2% of 518 roles; joint 0.97%; events 5
+  inner with (c): 17/21
+  real FA-LOO, same tasks: 8/9 = 88.9% [62.5, 100.0]; coverage 6.2%; joint 0.69%
+  inner minus real: -11.6 [-50.0, +18.9]
+  compared with reviewer's raw rows: tasks 144, role mismatches 0 of 518
+oned: tasks 901, items 901, clusters 18
+  inner (a)+(b): 456/544 = 83.8% [34.0, 94.0]; coverage 20.1% of 2703 roles; joint 3.26%; events 90
+  inner with (c): 456/542
+  real FA-LOO, same tasks: 161/172 = 93.6% [79.1, 98.3]; coverage 19.1%; joint 1.22%
+  inner minus real: -9.8 [-43.2, -1.0]
+  compared with reviewer's raw rows: tasks 901, role mismatches 0 of 2703

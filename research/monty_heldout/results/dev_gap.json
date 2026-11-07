@@ -1,0 +1,136 @@
+{
+ "concept": {
+  "fc": {
+   "diff": 0.19474153297682717,
+   "ci": [
+    0.06888711212640396,
+    0.34747706422018354
+   ],
+   "separates": true
+  },
+  "a": {
+   "diff": 0.1853146853146853,
+   "ci": [
+    0.058300601062954496,
+    0.3387361068882808
+   ],
+   "separates": true
+  },
+  "v5": {
+   "diff": 0.12244897959183676,
+   "ci": [
+    0.01996255166985583,
+    0.2432432432432432
+   ],
+   "separates": true
+  },
+  "fit": {
+   "diff": 0.12592528834567052,
+   "ci": [
+    -0.04191608002850259,
+    0.3145512305680084
+   ],
+   "separates": false
+  },
+  "portfolio": {
+   "system": 54,
+   "sum_modules": 54,
+   "union": 54,
+   "in_two_or_more": [],
+   "system_not_in_union": [],
+   "union_not_in_system": [],
+   "system_top_equals_a_module_top": 54,
+   "system_top_not_from_single_module_at_99": []
+  }
+ },
+ "mini": {
+  "fc": {
+   "diff": 0.10130718954248374,
+   "ci": [
+    -0.027027027027026973,
+    0.36363636363636365
+   ],
+   "separates": false
+  },
+  "a": {
+   "diff": 0.09188034188034189,
+   "ci": [
+    -0.04123711340206182,
+    0.34944004524886757
+   ],
+   "separates": false
+  },
+  "v5": {
+   "diff": -0.020408163265306145,
+   "ci": [
+    -0.052631578947368474,
+    0.0
+   ],
+   "separates": false
+  },
+  "fit": {
+   "diff": 0.18976499011640668,
+   "ci": [
+    -0.009153387013904554,
+    0.39349991565086395
+   ],
+   "separates": false
+  },
+  "portfolio": {
+   "system": 12,
+   "sum_modules": 13,
+   "union": 12,
+   "in_two_or_more": [
+    "OrangeToYellow_l6aasjvev63lnj34jm#0"
+   ],
+   "system_not_in_union": [],
+   "union_not_in_system": [],
+   "system_top_equals_a_module_top": 12,
+   "system_top_not_from_single_module_at_99": []
+  }
+ },
+ "oned": {
+  "fc": {
+   "diff": 0.05414956680346561,
+   "ci": [
+    0.0025750979621735537,
+    0.2067559418591908
+   ],
+   "separates": true
+  },
+  "a": {
+   "diff": 0.04472271914132375,
+   "ci": [
+    -0.011098431762026172,
+    0.19761113022572227
+   ],
+   "separates": false
+  },
+  "v5": {
+   "diff": 0.04138958954368266,
+   "ci": [
+    -0.013732192968877214,
+    0.15765711595372617
+   ],
+   "separates": false
+  },
+  "fit": {
+   "diff": 0.05086601854955852,
+   "ci": [
+    -0.13197587476549064,
+    0.32136394261983803
+   ],
+   "separates": false
+  },
+  "portfolio": {
+   "system": 181,
+   "sum_modules": 181,
+   "union": 181,
+   "in_two_or_more": [],
+   "system_not_in_union": [],
+   "union_not_in_system": [],
+   "system_top_equals_a_module_top": 181,
+   "system_top_not_from_single_module_at_99": []
+  }
+ }
+}

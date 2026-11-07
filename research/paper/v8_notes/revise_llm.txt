@@ -1,0 +1,19 @@
+records Counter({'fold': 359, 'full': 120, 'rev': 20, 'rep': 20})
+folds 359 full 120
+fold programs verified on what they saw: 86 programs in 54 tasks, right 46.7, 54.3%
+  predict held-out: 57 in 33 tasks, right 44.5, 78.1%
+  miss it: 29 in 28 tasks, right 2.2, 7.5%
+  difference +70.6 [+55.5, +84.6] over 54 tasks
+full-data verified 20, right 15.5, wilson (55.73137531320157, 90.4067408766163)
+one random passing fold per task: expected answered 17.9, right 14.3, 79.7% ; full verified 77.5% ; diff +2.2 [-17.3, +22.8]
+discordant: folds 359; held 71 (19.8%), test 52.2 (14.5%), diff +5.2 [+2.1, +8.7]; held-only 23.0, test-only 4.2; tasks 17:4, two-sided sign p 0.0072
+  single-test tasks only (75): held 60, test 42.0 of 217
+  multi-test tasks (45): held 11, test 10.2 of 142
+  among fold programs verified on what they saw (86): held 57, test 46.7
+mean held rate over folds 0.1978; full-data right 17.5/120 = 14.6%
+cost: full 4.02M; all folds 11.83M -> 3.95x; folds on 20 verified tasks: 58 folds 1.55M -> 1.39x; early exit: 40 folds 0.98M -> 1.24x
+certified 5 [1.0, 1.0, 1.0, 1.0, 1.0] | (a) passes 7 [('7491f3cf', False, 0.0), ('db695cfb', True, 1.0)] | (a)+(b) 5
+tasks with >=3 plain samples 114 mean plain runs 3.6578947368421053 mean full+fold runs 3.973684210526316
+tokens per task: plain 125.9k; full+folds 131.5k
+plain 31.5; full+folds 33.0; difference +1.5 [-6.0, +9.0]; tasks better 9, worse 8
+full run not verified: 100 tasks; plain runs 354, verified 32, right 14.5; folds 301, passing 26, right 18.5

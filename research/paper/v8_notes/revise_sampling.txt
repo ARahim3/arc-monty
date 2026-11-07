@@ -1,0 +1,26 @@
+records Counter({'plain': 360, 'fold': 359, 'full': 120}) errors 0 tokens by kind {'full': 7376347, 'fold': 21446612, 'plain': 22132109}
+tasks 120 folds 359 mean worst case 26.11
+verified 45, right 32.67, 72.6%; Wilson unrounded (58.2, 83.5), rounded (59.0, 84.0)
+(a)+(b) 9 right 9.0; Wilson (70.1, 100.0); (a)+(b)+(c) 7 right 7.0; Wilson (64.6, 100.0); coverage 5.8%
+(a) with A(D)'s answer: 14 tasks, all right 9, not all right [('38007db0', 0.0, False), ('5961cc34', 0.0, False), ('c4d067a0', 0.0, False), ('dbff022c', 0.0, True), ('dfadab01', 0.0, True)]
+verified and every fold held and wrong: ['dbff022c', 'dfadab01'] | (a)+(b) without (c): ['38007db0', 'c4d067a0'] [1.0, 1.0]
+not fully right 14; kept 0; fully right 31; rejected right 24; random avoid p 0.0579
+AUROC 0.705 [0.52, 0.87]; exact one-sided p 0.0130; right 31, wrong 14
+joint: wrong among (a)+(b)+(c): 0.0, among (a)+(b): 0.0 of 120
+P1: verified fold programs 146 in 70 tasks, 62.1%; predict 99, 83.3%; miss 47, 17.4%
+  difference +66.0 [+53.6, +77.9]
+  within 17 tasks with both kinds: +37.5 [+11.3, +62.5]
+P2: folds 359; held 118 (32.9%), test 100.17 (27.9%), diff +5.0 [+1.4, +8.6]; held-only 28.50, test-only 10.67; tasks 22:9, sign p 0.0294
+  single-test 84 vs 70.0 of 217; multi-test 34 vs 30.2 of 142
+P3 c=2: plain 47.00, fold 45.50, minus -1.50 [-5.5, +2.5]; better fold 2, plain 5; three tiers 45.50; tokens 14.5M / 14.6M
+P3 c=3: plain 55.00, fold 52.00, minus -3.00 [-9.5, +3.5]; better fold 5, plain 10; three tiers 53.00; tokens 22.0M / 21.7M
+P3 c=4: plain 55.00, fold 53.50, minus -1.50 [-9.0, +6.0]; better fold 7, plain 10; three tiers 56.00; tokens 27.4M / 26.8M
+per run: plain verified 131.67/175 = 75.2% [66.2, 83.5]; fold vh 82.5/99 = 83.3% [75.0, 90.8]; diff +8.1 [+0.5, +15.9]
+hard tasks 75: plain runs 225, verified 33, 66.7%, right 22.0; folds 226, vh 24, 81.2%, right 19.5; right per run diff -0.011 [-0.041, +0.018]
+cost: full 7.38M; folds 21.45M -> 3.91x; on 45 verified tasks 133 folds -> 1.94x; early exit 91 folds -> 1.61x; v 0.375, mean n 2.99, 1+vn 2.12, mean n on verified 2.96
+tokens per run: full 61.5k, fold 59.7k, plain 61.5k
+replay i: [(32, 15.67), (64, 34.67), (96, 42.5), (128, 49.0), (160, 53.5), (192, 55.0), (224, 55.0)]; final 55.00 at 246k per task; stopped 0
+replay ii: [(32, 15.67), (64, 34.67), (96, 40.17), (128, 47.17), (160, 48.17)]; final 48.17 at 174k per task; stopped 65
+replay iii: [(32, 15.67), (64, 35.67), (96, 40.5), (128, 46.5), (160, 50.0), (192, 52.0), (224, 51.0), (256, 54.5), (288, 56.5), (320, 59.0)]; final 60.50 at 359k per task; stopped 7
+(a) passes: 14 with a full-data answer: 13 all right: 9 | no answer: ['c4d067a0']
+first sample unverified tasks 75 | verified tasks where folds all held but no agreement or no match: [('3e6067c3', False, True), ('7491f3cf', False, True), ('dbff022c', False, False), ('dfadab01', False, False)]

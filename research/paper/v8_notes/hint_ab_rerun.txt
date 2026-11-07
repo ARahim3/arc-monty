@@ -1,0 +1,6 @@
+tasks with both arms: 120
+plain (orig + replicate)           samples 429  per-task-mean verified  20.0  verified-correct  14.0  verified in round 1  8.4  mean cost 34.5k
+hint (Monty perception notes)      samples 240  per-task-mean verified  22.0  verified-correct  16.1  verified in round 1 11.0  mean cost 34.2k
+hint - plain: +2.1 verified-correct tasks per 120 [95% CI -1.7, +6.0]
+  excl. Monty-solved (116): +2.1 [-1.8, +6.0]
+noise check, replicate - original (same config, 120 tasks): -3.8 [-9.0, +1.2]

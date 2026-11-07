@@ -1,0 +1,66 @@
+{
+ "concept": {
+  "items": 480,
+  "has": 480,
+  "p1": 182,
+  "p2": 226,
+  "p3": 251,
+  "usual_right": 182,
+  "a": 21,
+  "a_right": 14,
+  "fa": 17,
+  "fa_right": 11,
+  "fc": 15,
+  "fc_right": 11
+ },
+ "mini": {
+  "items": 149,
+  "has": 149,
+  "p1": 66,
+  "p2": 76,
+  "p3": 78,
+  "usual_right": 66,
+  "a": 32,
+  "a_right": 29,
+  "fa": 32,
+  "fa_right": 29,
+  "fc": 32,
+  "fc_right": 29
+ },
+ "oned": {
+  "items": 901,
+  "has": 615,
+  "p1": 412,
+  "p2": 445,
+  "p3": 461,
+  "usual_right": 412,
+  "a": 205,
+  "a_right": 192,
+  "fa": 184,
+  "fa_right": 177,
+  "fc": 183,
+  "fc_right": 176
+ },
+ "minimal": {
+  "items": 48,
+  "has": 48,
+  "p1": 31,
+  "p2": 37,
+  "p3": 38,
+  "usual_right": 31,
+  "a": 12,
+  "a_right": 12,
+  "fa": 12,
+  "fa_right": 12,
+  "fc": 12,
+  "fc_right": 12
+ },
+ "agi2": {
+  "items": 160,
+  "has": 160,
+  "p1": 2,
+  "p2": 2,
+  "p3": 2,
+  "usual_right": 2
+ }
+}

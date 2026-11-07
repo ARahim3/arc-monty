@@ -1,0 +1,15 @@
+{
+ "frozen_at_utc": "2026-11-01T22:17:27+00:00",
+ "files": {
+  "column.py": "606595751dcab27fd78e247ca98129440391d675647de46278b4928b2f6629e5",
+  "settings.py": "89f689a7dcc711bfafe27c96806518913feb19ac877e6b2a38039767b6f6dfcd",
+  "static.py": "85b7a0f357adb55dbe9d10a15ae69bb6e1c196f21d8a83541f68efbdf3f1eddb",
+  "games.py": "68915521dc05477f28f27f8c882fdd367200ee5e65450fada7931aa0b4d74c64",
+  "data_sets.py": "261936fdf8882ad978a8c486220ca3485214167e5d787496c6c2ca8eab2fc213",
+  "monty_fresh.py": "fd20de4408f99c871773957e87f128554bbda9daa4177546152a7e03a7511a56",
+  "run_all.py": "2eaa3aaf9f3d7bdccee3cb781cb0d856e7e7127a5eb72c7c7fa671c99d37f93b"
+ },
+ "code_sha256": "53daa80f0434dd9472827c9973c8a8b442cdd909259b6c634078fb7dd7f893b4",
+ "plan_section0_sha256": "89550048ab255c71e708ace8b6847d43bb7dff19bfcebee0ea41c9662d3efd16",
+ "analysis_at_freeze_sha256": "1dd8012f60398aa55a252448b5232c40aefc8cea74fd7c7cf6ecea95f99f3b36"
+}

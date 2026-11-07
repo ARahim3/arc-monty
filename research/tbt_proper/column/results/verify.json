@@ -1,0 +1,66 @@
+{
+ "frozen": "53daa80f0434dd9472827c9973c8a8b442cdd909259b6c634078fb7dd7f893b4",
+ "rescore": {
+  "arc-community": "15/15",
+  "nosound": "9/9",
+  "dbigham": "12/12",
+  "sequence": "12/12",
+  "tama": "21/21",
+  "pqa": "36/36",
+  "concept": "36/36",
+  "mini": "12/12",
+  "oned": "12/12"
+ },
+ "test_input_equals_a_demo_input": {
+  "arc-community": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 26
+  },
+  "nosound": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 9
+  },
+  "dbigham": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 20
+  },
+  "sequence": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 25
+  },
+  "tama": {
+   "items": 2,
+   "column_solves": 0.0,
+   "of": 1567
+  },
+  "pqa": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 210
+  },
+  "concept": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 480
+  },
+  "mini": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 149
+  },
+  "oned": {
+   "items": 0,
+   "column_solves": 0,
+   "of": 901
+  }
+ },
+ "game_rerun": {
+  "game": "cn04-2fe56bfb",
+  "rows": 240,
+  "same": 240
+ }
+}

@@ -1,0 +1,83 @@
+transitions 2880 games 12
+exact playfield: column 0.641, no-change 0.584
+changed transitions: 1197 column exact 0.260 changed-cell recall 0.393
+k=2: n=2703 column 0.648 | B0 0.587 B1rel 0.630 Monty any 0.608
+     on 1116 changed: column 0.273 B1rel 0.164 Monty any 0.079
+k=3: n=2621 column 0.651 | B0 0.588 B1rel 0.631 Monty any 0.615
+     on 1081 changed: column 0.278 B1rel 0.164 Monty any 0.086
+k=6: n=2405 column 0.661 | B0 0.588 B1rel 0.635 Monty any 0.621
+     on 991 changed: column 0.288 B1rel 0.168 Monty any 0.092
+k=12: n=2051 column 0.674 | B0 0.597 B1rel 0.646 Monty any 0.623
+     on 826 changed: column 0.295 B1rel 0.173 Monty any 0.070
+per game column / no-change
+  ar25 240 0.596 0.238
+  bp35 240 0.379 0.488
+  cd82 240 0.608 0.762
+  g50t 240 0.646 0.588
+  lp85 240 0.95 0.95
+  ls20 240 0.633 0.433
+  s5i5 240 0.833 0.875
+  sc25 240 0.808 0.55
+  sk48 240 0.45 0.388
+  su15 240 0.825 0.767
+  tr87 240 0.05 0.0
+  vc33 240 0.908 0.975
+
+Persisting models: library from the 11 other games, colour-free
+ first use of an action key: n=93 alone 0.559 library 0.161 no-change 0.559; on 41 changed: alone 0.000 library 0.000; changed-cell recall alone 0.001 library 0.003
+ uses 1-2: n=166 alone 0.530 library 0.500 no-change 0.548; on 75 changed: alone 0.147 library 0.133; changed-cell recall alone 0.271 library 0.271
+ uses >= 3: n=2621 alone 0.651 library 0.648 no-change 0.588; on 1081 changed: alone 0.278 library 0.275; changed-cell recall alone 0.432 library 0.435
+ library minus alone, all transitions: -0.0170 [-0.024, -0.01]
+
+Hypothesis-driven action, probe states: 120 games 12
+ states where top-2 hypotheses disagree on some action: 0.617
+ hypothesis-testing: surprise 0.550, no-op 0.308
+ least-used: surprise 0.358, no-op 0.658
+ largest predicted change: surprise 0.517, no-op 0.283
+ random action (mean over actions): surprise 0.403, no-op 0.547
+ HT - random: +0.147 [0.024, 0.285]
+ least-used - random: -0.045 [-0.175, 0.066]
+ pred-change - random: +0.113 [-0.01, 0.228]
+ HT - least-used: +0.192 [-0.033, 0.458]
+
+Switches (same column, 12 tuning games, paired by transition, CI by game)
+ full    exact 0.641, on changed 0.260, changed-cell recall 0.393; calibrated non-identity: coverage 0.087, precision 0.484
+ nomove  exact 0.564, on changed 0.011, changed-cell recall 0.041; calibrated non-identity: coverage 0.047, precision 0.007; minus full on changed -0.249 [-0.405, -0.111]
+ noptr   exact 0.653, on changed 0.293, changed-cell recall 0.437; calibrated non-identity: coverage 0.058, precision 0.749; minus full on changed +0.033 [0.006, 0.066]
+ ego     exact 0.616, on changed 0.231, changed-cell recall 0.350; calibrated non-identity: coverage 0.049, precision 0.550; minus full on changed -0.029 [-0.073, 0.012]
+ r1      exact 0.515, on changed 0.016, changed-cell recall 0.152; calibrated non-identity: coverage 0.106, precision 0.033; minus full on changed -0.244 [-0.399, -0.105]
+ r3      exact 0.563, on changed 0.078, changed-cell recall 0.282; calibrated non-identity: coverage 0.103, precision 0.175; minus full on changed -0.182 [-0.304, -0.081]
+
+Open-loop rollouts (no new sensation; exact playfield at k steps, against 'still looks like the start')
+ k=2: n=240 rollout 0.537, unchanged-frame baseline 0.487
+ k=4: n=240 rollout 0.354, unchanged-frame baseline 0.338
+ k=8: n=240 rollout 0.192, unchanged-frame baseline 0.217
+
+ k=3: 2621 transitions; no-change labels agree with the probe on 1.0000; 1081 changed
+   column minus B1rel: all +0.019 [-0.042, 0.083]; changed +0.114 [-0.002, 0.285]
+   column minus Monty any: all +0.035 [-0.024, 0.098]; changed +0.191 [0.097, 0.316]
+   calibrated non-identity: column coverage 0.095 precision 0.492; Monty coverage 0.036 precision 0.632
+
+ k=6: 2405 transitions; no-change labels agree with the probe on 1.0000; 991 changed
+   column minus B1rel: all +0.025 [-0.035, 0.091]; changed +0.120 [-0.005, 0.298]
+   column minus Monty any: all +0.040 [-0.016, 0.103]; changed +0.196 [0.095, 0.315]
+   calibrated non-identity: column coverage 0.098 precision 0.500; Monty coverage 0.032 precision 0.895
+
+ k=12: 2051 transitions; no-change labels agree with the probe on 1.0000; 826 changed
+   column minus B1rel: all +0.028 [-0.033, 0.097]; changed +0.122 [-0.014, 0.309]
+   column minus Monty any: all +0.051 [-0.003, 0.116]; changed +0.225 [0.12, 0.352]
+   calibrated non-identity: column coverage 0.102 precision 0.522; Monty coverage 0.052 precision 0.962
+
+Per game, changed transitions: column, B1rel (k=3)
+  ar25 n=168 column 0.512 B1rel 0.518 Monty 0.298
+  bp35 n=109 column 0.064 B1rel 0.119 Monty 0.000
+  cd82 n=47 column 0.000 B1rel 0.043 Monty 0.043
+  g50t n=91 column 0.308 B1rel 0.352 Monty 0.000
+  lp85 n=6 column 0.000 B1rel 0.000 Monty 0.000
+  ls20 n=125 column 0.512 B1rel 0.072 Monty 0.080
+  s5i5 n=24 column 0.083 B1rel 0.000 Monty 0.000
+  sc25 n=98 column 0.684 B1rel 0.112 Monty 0.235
+  sk48 n=136 column 0.132 B1rel 0.118 Monty 0.044
+  su15 n=46 column 0.348 B1rel 0.000 Monty 0.000
+  tr87 n=228 column 0.053 B1rel 0.031 Monty 0.009
+  vc33 n=3 column 0.000 B1rel 0.000 Monty 0.000

@@ -1,0 +1,12 @@
+random held-out games 13 seeds [0, 1, 2] levels/seed 5.33 mean score 0.163
+random tune games 12 seeds [0, 1, 2] levels/seed 5.67 mean score 0.005
+random all games 25 seeds [0, 1, 2] levels/seed 11.0 mean score 0.087
+  contribution to the held-out mean: {'sp80': 0.135, 'r11l': 0.028, 'ft09': 0.0, 'm0r0': 0.0} per seed {'sp80': [4.76, 0.48, 0.02], 'r11l': [0.04, 0.01, 1.04]}
+v3 held-out games 13 seeds [0, 1, 2] levels/seed 16.67 mean score 0.12
+v3 tune games 12 seeds [0, 1, 2] levels/seed 13.67 mean score 0.534
+v3 all games 25 seeds [0, 1, 2] levels/seed 30.33 mean score 0.318
+  contribution to the held-out mean: {'tu93': 0.1, 'm0r0': 0.007, 'ft09': 0.006, 'lf52': 0.003} per seed {'tu93': [1.49, 0.83, 1.6], 'm0r0': [0.04, 0.19, 0.03]}
+v7 held-out games 13 seeds [0, 1, 2] levels/seed 19.33 mean score 0.061
+v7 tune games 12 seeds [0, 1, 2] levels/seed 15.33 mean score 0.887
+v7 all games 25 seeds [0, 1, 2] levels/seed 34.67 mean score 0.457
+  contribution to the held-out mean: {'tu93': 0.029, 'dc22': 0.014, 'sp80': 0.006, 'ft09': 0.006} per seed {'tu93': [0.61, 0.33, 0.19], 'dc22': [0.09, 0.26, 0.2]}

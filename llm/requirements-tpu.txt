@@ -1,0 +1,4 @@
+# Serving + generation for the Qwen3.8-27B benchmark (TPU v6e-8 / v4-8 VM, Python 3.12). Installed by llm/vm/setup.sh.
+# The client side (llm/run_bench.py, llm/arcllm/) is stdlib-only plus transformers (tokenizer), which vllm-tpu brings.
+vllm-tpu==0.32.0
+huggingface_hub[hf_xet]

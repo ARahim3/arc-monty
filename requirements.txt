@@ -1,0 +1,14 @@
+# Python 3.12 (tested with CPython 3.12.13 on macOS arm64).
+# Monty-ARC (arcmonty/), the evaluation scripts (research/monty_eval/, research/paper/scripts/, research/arc2/)
+# and the Qwen result scoring (llm/score.py). Monty-ARC itself needs only numpy and scipy.
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2  # figures only
+
+# Optional
+# kagglesdk==0.1.38   # tools/gpu_quota.py only (reads your own Kaggle quota)
+# openpyxl            # research/paper/judge_v8b/audit/misc1.py only
+# typst, pymupdf      # research/paper/v8_notes/scripts/build_pdf.py only (typesets the paper)
+# re-arc's generators: research/generator_control/vm/gen_rearc.py imports them from a clone, on a VM
+# ARC-AGI-3 code (arc3_agent/, research/arc3_wm/): see requirements-arc3.txt
+# Qwen generation on TPU (llm/run_bench.py, llm/vm/): see llm/requirements-tpu.txt

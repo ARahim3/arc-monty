@@ -1,0 +1,67 @@
+=== 1. re-arc, Qwen, real role
+tasks 200 records 800 errors 0
+top (has answer) 163 fit 159 171
+(a) 118 (a)+(b) 111 111 (a)+(b)+(c) 107 107
+coverage 53.5 CI [46.5, 60.5] floor 53.271028037383175
+floor interval 46.23655913978495 58.67768595041323
+joint wrong 0 of 200; CP upper 1.8275340355136227
+h 75.5 t 76.5 h-t -1.0 CI (-3.5, 1.5)
+discordant h only / t only 27 33
+verified wrong 12 stopped by (a) 9 (b) 2 (c) 1
+P(random 107 of 171 avoids all 12) 3.735310063836544e-06
+rejected right 52 of 159
+verified on what they saw 423 447 27 67 diff 54.33236502053491 (40.78675739735454, 67.30519480519482) within (28.571428571428573, 42) (9.803921568627452, 47.36842105263158)
+with a test answer 426 453 33 128 diff 68.25848509933775 (59.02564102564103, 77.02844375698203) within (42.5, 60) (26.785714285714285, 57.6271186440678)
+=== 2. re-arc, Qwen, rotation
+rot records 600 err 0
+identity broken 0 tasks with 0/1/2+ events {0: 190, 1: 10} on real role 0 expected 2.5
+mean h-t real role -1.0 exact two-sided p 0.5688018678746719
+role-avg (a)+(b) 416 421 precision 98.812351543943 wrong not event 0 per role ans {0: 110, 2: 98, 1: 102, 3: 111} per role wrong {2: 2, 1: 2, 0: 1}
+role-avg coverage 52.625 46.625 58.75 floor 52.49406175771971 role-avg joint 0.625
+=== 3. retry rule, first run (post hoc), ARC-AGI-2 eval
+stage 1 records 479 err 0 retry records 57 err 0 distinct 57
+stage 1 {'verified': 45, 'verified_right': 32.666666666666664, 'wrong': 14, 'abc': 7, 'abc_right': 7.0, 'wrong_kept': 0, 'p': 0.057946166142422526, 'ab': 7, 'ab_right': 7.0} ab all tasks 9 9
+retry {'verified': 45, 'verified_right': 32.666666666666664, 'wrong': 14, 'abc': 15, 'abc_right': 15.0, 'wrong_kept': 0, 'p': 0.0008714658813921435, 'ab': 15, 'ab_right': 15.0} {'not fitting': 40, 'run': 55, 'fit1': 23, 'fit2': 6} tokens 3427983 ab all 17 17
+coverage of 120 12.5 5.833333333333333
+retry answer tasks ['136b0064', '1818057f', '221dfab4', '2ba387bc', '58490d8a', '58f5dbd5', '7b5033c1', '7c66cb00', '981571dc', 'a395ee82', 'aa4ec2a5', 'b5ca7ac4', 'bf45cf4b', 'e3721c99', 'eee78d87']
+=== 4. replication (planned)
+plain 360 0 rep 192 0
+verified plain 1 tasks 45
+rep with retries {'verified': 45, 'verified_right': 35.5, 'wrong': 11, 'abc': 16, 'abc_right': 16.0, 'wrong_kept': 0, 'p': 0.00340839989166705, 'ab': 17, 'ab_right': 17.0} coverage 13.333333333333334 {'first': 142, 'runs': 192, 'first_fit': 109, 'fit1': 16, 'fit2': 6} tokens 10340136
+rep no retries {'verified': 45, 'verified_right': 35.5, 'wrong': 11, 'abc': 11, 'abc_right': 11.0, 'wrong_kept': 0, 'p': 0.02818531665891131, 'ab': 12, 'ab_right': 12.0} coverage 9.166666666666666
+overlap of first run's 15 and rep's 16: 9 verified on both 35
+=== 5. failing folds on right verified tasks that FA-LOO rejects
+ARC-AGI-2 right 31 rejected 24 {'(a)': 22, '(b)': 2} failing folds {'no fit n-1': 22, 'fit, missed held-out': 9}
+ConceptARC right 128 rejected 63 {'(b)': 10, '(a)': 52, '(c)': 1} failing folds {'fit, missed held-out': 62, 'no fit n-1': 6}
+=== 6. ranking at k samples per task, ARC-AGI-2, 32k logged runs
+k 1 {'ver': 34.67, 'unv': 34.67, 'rnd': 34.67, 'oracle': 34.67} random mean 34.67 min 34.7 max 34.7 crowded 0 of 167
+k 2 {'ver': 47.0, 'unv': 47.0, 'rnd': 47.0, 'oracle': 47.0} random mean 47.0 min 47.0 max 47.0 crowded 0 of 167
+k 3 {'ver': 55.0, 'unv': 45.5, 'rnd': 52.5, 'oracle': 57.0} random mean 51.98 min 48.0 max 55.5 crowded 51 of 167
+k 4 {'ver': 55.0, 'unv': 42.0, 'rnd': 47.0, 'oracle': 57.5} random mean 51.02 min 47.0 max 56.0 crowded 91 of 167
+ verified - unverified 13.0 (7.0, 19.5)
+ oracle - verified 2.5 (0.0, 6.0)
+single-test tasks 75 with 4 samples 75 by # right {0: 39, 4: 13, 2: 8, 3: 5, 1: 10}
+mean rate 0.31 expected none if independent at the same rate 17.000340749999996 all four 0.6926407499999999
+=== 7. plan timing
+first start 2026-10-31 22:10:53.992879+00:00 jobs 479 finished by addendum 2 85 minutes 55.10011868874232
+resumed from checkpoint 35 started more than once: see .ckpt/.claims
+=== 8. re-arc minus other sets, held-out minus test (independent bootstraps)
+h-t re-arc -1.0 AGI2 4.967502321262767 (1.5285996055226827, 8.677685950413224) Concept -5.074160811865729 (-8.118657298985168, -2.1951219512195115)
+re-arc minus AGI2 -5.967502321262767 (-10.330601092896174, -1.6906158357771257)
+re-arc minus Concept 4.074160811865729 (0.167427701674276, 8.018779342723006)
+=== 9. FA-LOO minus fit, Qwen, bootstrap by task
+AGI2 (27.407407407407412, (15.116279069767447, 40.666666666666664)) Concept (7.333333333333336, (4.3010752688172005, 10.745614035087725)) re-arc (7.017543859649122, (3.4682080924855474, 11.24260355029586)) AGI2 retry (27.407407407407412, (15.116279069767447, 40.69767441860465))
+Concept tasks: verified 150 right 139.0 abc 65
+=== 10. token multiples, ARC-AGI-2
+full tokens 7376347 all folds ratio 3.907484151708156 folds on verified ratio 1.941207890572393 with retries (55 used) 2.4059342652941895 n folds verified tasks 133
+=== 11. per-run verified precision, 16k runs, and merge orders from the notebook-mode Monty cache
+P 0 verified 23.0 right 17.5 76.1
+P 1 verified 14.0 right 12.0 85.7
+X 0 verified 21.0 right 13.5 64.3
+X 1 verified 17.0 right 11.0 64.7
+pooled 54.0 75.0 72.0
+one sample precision 24.0 conf ignored 23.0 reversed GCUV 24.0 guesses only first GVCU 24.0 unverified before verified UVCG 23.0 Qwen alone 21.0 random 23.4 22.0 24.0 crowded 7
+replicate precision 21.0 conf ignored 19.0 reversed GCUV 21.0 guesses only first GVCU 21.0 unverified before verified UVCG 19.0 Qwen alone 18.0 random 20.2 19.0 21.0 crowded 9
+two samples precision 28.5 conf ignored 26.5 reversed GCUV 20.5 guesses only first GVCU 28.5 unverified before verified UVCG 18.5 Qwen alone 25.5 random 23.9 20.5 26.5 crowded 58
+=== 12. retried folds that came to fit, first run
+fit 29.0 predict held-out 21.0 of those right on test 15.0 miss 8.0 right 0.0

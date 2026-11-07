@@ -1,0 +1,20 @@
+sym_h1 tasks 375 folds 1205 folds changed by demo order 0
+sym_h2 tasks 375 folds 1205 folds changed by demo order 0
+folds differing between hash seeds 0
+Clopper-Pearson 11/18 [0.357, 0.827] | 5/5 [0.478, 1.0]
+C(15,5)/C(20,5) = 0.1937
+faloo_qwen.json keys ['summary', 'tasks']
+greedy verified 20 sum right 15.5 certified 5 certified right 5.0 not fully right ['221dfab4', '38007db0', '4c3d4a41', 'da515329', 'dbff022c'] all rejected True
+folds on verified: held 33 of 58
+rerun same on verified 10 | certified rerun same 5 of 5 | uncertified rerun same 5 of 15
+rerun-agree right 10.0 of 10
+reversed same 8 certified 4 uncertified 4
+tasks where >=2 stochastic verified samples agree 15 right 12.0 wrong ['6e453dd6', '78332cb0', 'dfadab01']
+those wrong: held-out folds {'6e453dd6': (1, 3), '78332cb0': (0, 3), 'dfadab01': (3, 4)}
+plain verified samples 75 right 54.0 tasks 120
+concept totals {'p2': 58.0, 'k1': 249.0, 'k2': 136.0, 'g': 92.0, 'both': 45.0, 'cand': 136.0, 'm': 480.0, 'human': 0.9105274505058607} n_mach 480 n_hum 480
+six groups p2 1.0 humans [0.905, 0.88, 0.911, 0.909, 0.828, 0.883] any candidate [8, 0, 10, 2, 0, 7] kaggle1 [21, 18, 13, 17, 8, 16]
+CPU folds/pass 2.594559585492228 with (c) 3.594559585492228
+save-run check: 240 tasks in submission, 240 with known solutions: 30.00 correct (12.50%)
+
+merge complementarity: {}

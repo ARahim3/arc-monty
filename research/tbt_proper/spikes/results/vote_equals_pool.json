@@ -1,0 +1,55 @@
+{
+ "assertion": "vote == pool held after every step of every trial",
+ "trials": 480,
+ "tasks": 60,
+ "summary": {
+  "walk/1": {
+   "trials": 60,
+   "median_reads": 20.0,
+   "median_steps": 20.0,
+   "median_cells": 100.0
+  },
+  "walk/2": {
+   "trials": 60,
+   "median_reads": 31.0,
+   "median_steps": 15.5,
+   "median_cells": 100.0
+  },
+  "walk/4": {
+   "trials": 60,
+   "median_reads": 34.0,
+   "median_steps": 8.5,
+   "median_cells": 100.0
+  },
+  "walk/8": {
+   "trials": 60,
+   "median_reads": 40.0,
+   "median_steps": 5.0,
+   "median_cells": 100.0
+  },
+  "hyp/1": {
+   "trials": 60,
+   "median_reads": 15.5,
+   "median_steps": 15.5,
+   "median_cells": 100.0
+  },
+  "hyp/2": {
+   "trials": 60,
+   "median_reads": 14.0,
+   "median_steps": 7.0,
+   "median_cells": 100.0
+  },
+  "hyp/4": {
+   "trials": 60,
+   "median_reads": 12.0,
+   "median_steps": 3.0,
+   "median_cells": 100.0
+  },
+  "hyp/8": {
+   "trials": 60,
+   "median_reads": 16.0,
+   "median_steps": 2.0,
+   "median_cells": 100.0
+  }
+ }
+}

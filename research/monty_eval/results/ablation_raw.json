@@ -1,0 +1,6375 @@
+{
+ "agi2-eval": {
+  "n": 120,
+  "subsets": {
+   "full": {
+    "pass2": 4.0,
+    "pass2_pct": 3.33,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 11,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "-self-model": {
+    "pass2": 3.0,
+    "pass2_pct": 2.5,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 10,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "135a2760",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "-periodic": {
+    "pass2": 3.0,
+    "pass2_pct": 2.5,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 10,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "-behavior": {
+    "pass2": 4.0,
+    "pass2_pct": 3.33,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 7,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "-dynamics": {
+    "pass2": 4.0,
+    "pass2_pct": 3.33,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 11,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "-composition": {
+    "pass2": 4.0,
+    "pass2_pct": 3.33,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 11,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "-association": {
+    "pass2": 3.0,
+    "pass2_pct": 2.5,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 10,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "1818057f"
+    ]
+   },
+   "-pattern": {
+    "pass2": 3.0,
+    "pass2_pct": 2.5,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 7,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "dbff022c"
+    ]
+   },
+   "-field": {
+    "pass2": 4.0,
+    "pass2_pct": 3.33,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 11,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "135a2760",
+     "1818057f",
+     "dbff022c"
+    ]
+   },
+   "self-model alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.83,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8"
+    ]
+   },
+   "periodic alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.83,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "135a2760"
+    ]
+   },
+   "behavior alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 4,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "dynamics alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "composition alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "association alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.83,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": [
+     "dbff022c"
+    ]
+   },
+   "pattern alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.83,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 4,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "1818057f"
+    ]
+   },
+   "field alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   }
+  },
+  "timing": {
+   "self-model": {
+    "wall_mean": 0.087,
+    "wall_median": 0.042,
+    "wall_p90": 0.164,
+    "wall_max": 1.88,
+    "cpu_mean": 0.087,
+    "cpu_p90": 0.163,
+    "cpu_max": 1.88,
+    "cpu_total": 10.4
+   },
+   "periodic": {
+    "wall_mean": 0.032,
+    "wall_median": 0.019,
+    "wall_p90": 0.081,
+    "wall_max": 0.17,
+    "cpu_mean": 0.032,
+    "cpu_p90": 0.081,
+    "cpu_max": 0.17,
+    "cpu_total": 3.8
+   },
+   "behavior": {
+    "wall_mean": 0.111,
+    "wall_median": 0.051,
+    "wall_p90": 0.286,
+    "wall_max": 1.31,
+    "cpu_mean": 0.111,
+    "cpu_p90": 0.282,
+    "cpu_max": 1.31,
+    "cpu_total": 13.3
+   },
+   "dynamics": {
+    "wall_mean": 1.107,
+    "wall_median": 0.396,
+    "wall_p90": 1.731,
+    "wall_max": 50.69,
+    "cpu_mean": 1.105,
+    "cpu_p90": 1.728,
+    "cpu_max": 50.64,
+    "cpu_total": 132.6
+   },
+   "composition": {
+    "wall_mean": 0.45,
+    "wall_median": 0.0,
+    "wall_p90": 0.944,
+    "wall_max": 18.64,
+    "cpu_mean": 0.449,
+    "cpu_p90": 0.943,
+    "cpu_max": 18.58,
+    "cpu_total": 53.9
+   },
+   "association": {
+    "wall_mean": 0.007,
+    "wall_median": 0.004,
+    "wall_p90": 0.016,
+    "wall_max": 0.08,
+    "cpu_mean": 0.007,
+    "cpu_p90": 0.016,
+    "cpu_max": 0.08,
+    "cpu_total": 0.9
+   },
+   "pattern": {
+    "wall_mean": 0.003,
+    "wall_median": 0.001,
+    "wall_p90": 0.011,
+    "wall_max": 0.05,
+    "cpu_mean": 0.003,
+    "cpu_p90": 0.011,
+    "cpu_max": 0.05,
+    "cpu_total": 0.4
+   },
+   "field": {
+    "wall_mean": 0.006,
+    "wall_median": 0.004,
+    "wall_p90": 0.014,
+    "wall_max": 0.05,
+    "cpu_mean": 0.006,
+    "cpu_p90": 0.014,
+    "cpu_max": 0.05,
+    "cpu_total": 0.7
+   },
+   "total": {
+    "wall_mean": 1.804,
+    "wall_median": 0.935,
+    "wall_p90": 2.408,
+    "wall_max": 51.51,
+    "cpu_mean": 1.801,
+    "cpu_max": 51.46,
+    "over_60s": [],
+    "over_120s": []
+   }
+  },
+  "errors": {},
+  "full_vs_union_alone": {
+   "full": 4,
+   "union_alone": 4,
+   "lost_by_vote": [],
+   "gained_by_vote": []
+  },
+  "modules": {
+   "self-model": {
+    "alone_solved": 1,
+    "unique": [
+     "0934a4d8"
+    ],
+    "loo_lost": [
+     "0934a4d8"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "periodic": {
+    "alone_solved": 1,
+    "unique": [
+     "135a2760"
+    ],
+    "loo_lost": [
+     "135a2760"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "behavior": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "dynamics": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "composition": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "association": {
+    "alone_solved": 1,
+    "unique": [
+     "dbff022c"
+    ],
+    "loo_lost": [
+     "dbff022c"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "pattern": {
+    "alone_solved": 1,
+    "unique": [
+     "1818057f"
+    ],
+    "loo_lost": [
+     "1818057f"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "field": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   }
+  },
+  "calibration": {
+   "full": {
+    "1.0": [
+     4,
+     4.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     7,
+     0.0
+    ]
+   },
+   "self-model": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "periodic": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "behavior": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     4,
+     0.0
+    ]
+   },
+   "dynamics": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "composition": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "association": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "pattern": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     3,
+     0.0
+    ]
+   },
+   "field": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "full_by_voter": {
+    "self-model": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "periodic": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "behavior": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      4,
+      0.0
+     ]
+    },
+    "dynamics": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "composition": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "association": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "pattern": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      3,
+      0.0
+     ]
+    },
+    "field": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ncand_mean": {
+   "self-model": 0.02,
+   "periodic": 0.01,
+   "behavior": 0.58,
+   "dynamics": 0.0,
+   "composition": 0.0,
+   "association": 0.02,
+   "pattern": 0.04,
+   "field": 0.0
+  }
+ },
+ "agi1-eval": {
+  "n": 400,
+  "subsets": {
+   "full": {
+    "pass2": 46.0,
+    "pass2_pct": 11.5,
+    "pass1": 45.0,
+    "tasks_solved": 46,
+    "answered": 83,
+    "confident": 34,
+    "confident_correct": 33.0,
+    "precision": 0.9706,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e88171ec",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "-self-model": {
+    "pass2": 42.0,
+    "pass2_pct": 10.5,
+    "pass1": 41.0,
+    "tasks_solved": 42,
+    "answered": 79,
+    "confident": 30,
+    "confident_correct": 29.0,
+    "precision": 0.9667,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e88171ec",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f823c43c"
+    ]
+   },
+   "-periodic": {
+    "pass2": 41.0,
+    "pass2_pct": 10.25,
+    "pass1": 40.0,
+    "tasks_solved": 41,
+    "answered": 78,
+    "confident": 33,
+    "confident_correct": 32.0,
+    "precision": 0.9697,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e88171ec",
+     "e99362f0",
+     "ed98d772",
+     "f4081712"
+    ]
+   },
+   "-behavior": {
+    "pass2": 42.0,
+    "pass2_pct": 10.5,
+    "pass1": 41.0,
+    "tasks_solved": 42,
+    "answered": 59,
+    "confident": 32,
+    "confident_correct": 31.0,
+    "precision": 0.9688,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e88171ec",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "-dynamics": {
+    "pass2": 45.0,
+    "pass2_pct": 11.25,
+    "pass1": 44.0,
+    "tasks_solved": 45,
+    "answered": 82,
+    "confident": 33,
+    "confident_correct": 32.0,
+    "precision": 0.9697,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e88171ec",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "-composition": {
+    "pass2": 22.0,
+    "pass2_pct": 5.5,
+    "pass1": 22.0,
+    "tasks_solved": 22,
+    "answered": 58,
+    "confident": 12,
+    "confident_correct": 12.0,
+    "precision": 1.0,
+    "solved": [
+     "00dbd492",
+     "0934a4d8",
+     "12eac192",
+     "1d0a4b61",
+     "292dd178",
+     "2a5f8217",
+     "5207a7b5",
+     "66e6c45b",
+     "67b4a34d",
+     "7e02026e",
+     "845d6e51",
+     "84f2aca1",
+     "ae58858e",
+     "c663677b",
+     "ca8f78db",
+     "d282b262",
+     "e0fb7511",
+     "e66aafb8",
+     "e88171ec",
+     "e95e3d8e",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "-association": {
+    "pass2": 44.0,
+    "pass2_pct": 11.0,
+    "pass1": 43.0,
+    "tasks_solved": 44,
+    "answered": 81,
+    "confident": 32,
+    "confident_correct": 31.0,
+    "precision": 0.9688,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "292dd178",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e88171ec",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "-pattern": {
+    "pass2": 41.0,
+    "pass2_pct": 10.25,
+    "pass1": 40.0,
+    "tasks_solved": 41,
+    "answered": 67,
+    "confident": 32,
+    "confident_correct": 31.0,
+    "precision": 0.9688,
+    "solved": [
+     "00576224",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "-field": {
+    "pass2": 46.0,
+    "pass2_pct": 11.5,
+    "pass1": 45.0,
+    "tasks_solved": 46,
+    "answered": 83,
+    "confident": 34,
+    "confident_correct": 33.0,
+    "precision": 0.9706,
+    "solved": [
+     "00576224",
+     "00dbd492",
+     "0934a4d8",
+     "0c786b71",
+     "0c9aba6e",
+     "12eac192",
+     "195ba7dc",
+     "1d0a4b61",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "34b99a2b",
+     "506d28a5",
+     "5207a7b5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "66e6c45b",
+     "67b4a34d",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "7e02026e",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "9a4bb226",
+     "ae58858e",
+     "bc4146bd",
+     "c48954c1",
+     "c663677b",
+     "ca8f78db",
+     "cd3c21df",
+     "d282b262",
+     "d56f2372",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e66aafb8",
+     "e88171ec",
+     "e95e3d8e",
+     "e99362f0",
+     "ed98d772",
+     "f4081712",
+     "f823c43c"
+    ]
+   },
+   "self-model alone": {
+    "pass2": 4.0,
+    "pass2_pct": 1.0,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 4,
+    "confident": 4,
+    "confident_correct": 4.0,
+    "precision": 1.0,
+    "solved": [
+     "0934a4d8",
+     "67b4a34d",
+     "e66aafb8",
+     "f4081712"
+    ]
+   },
+   "periodic alone": {
+    "pass2": 5.0,
+    "pass2_pct": 1.25,
+    "pass1": 5.0,
+    "tasks_solved": 5,
+    "answered": 5,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "1d0a4b61",
+     "c663677b",
+     "ca8f78db",
+     "e95e3d8e",
+     "f823c43c"
+    ]
+   },
+   "behavior alone": {
+    "pass2": 5.0,
+    "pass2_pct": 1.25,
+    "pass1": 5.0,
+    "tasks_solved": 5,
+    "answered": 30,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "12eac192",
+     "292dd178",
+     "5207a7b5",
+     "66e6c45b",
+     "84f2aca1"
+    ]
+   },
+   "dynamics alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.25,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "d282b262"
+    ]
+   },
+   "composition alone": {
+    "pass2": 24.0,
+    "pass2_pct": 6.0,
+    "pass1": 23.0,
+    "tasks_solved": 24,
+    "answered": 25,
+    "confident": 22,
+    "confident_correct": 21.0,
+    "precision": 0.9545,
+    "solved": [
+     "00576224",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "281123b4",
+     "34b99a2b",
+     "506d28a5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "833dafe3",
+     "9a4bb226",
+     "bc4146bd",
+     "c48954c1",
+     "cd3c21df",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e99362f0",
+     "ed98d772"
+    ]
+   },
+   "association alone": {
+    "pass2": 2.0,
+    "pass2_pct": 0.5,
+    "pass1": 2.0,
+    "tasks_solved": 2,
+    "answered": 2,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "2a5f8217",
+     "845d6e51"
+    ]
+   },
+   "pattern alone": {
+    "pass2": 6.0,
+    "pass2_pct": 1.5,
+    "pass1": 6.0,
+    "tasks_solved": 6,
+    "answered": 22,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "00dbd492",
+     "7e02026e",
+     "84f2aca1",
+     "ae58858e",
+     "e0fb7511",
+     "e88171ec"
+    ]
+   },
+   "field alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   }
+  },
+  "timing": {
+   "self-model": {
+    "wall_mean": 0.061,
+    "wall_median": 0.017,
+    "wall_p90": 0.139,
+    "wall_max": 1.71,
+    "cpu_mean": 0.061,
+    "cpu_p90": 0.138,
+    "cpu_max": 1.71,
+    "cpu_total": 24.2
+   },
+   "periodic": {
+    "wall_mean": 0.021,
+    "wall_median": 0.011,
+    "wall_p90": 0.057,
+    "wall_max": 0.19,
+    "cpu_mean": 0.021,
+    "cpu_p90": 0.057,
+    "cpu_max": 0.19,
+    "cpu_total": 8.6
+   },
+   "behavior": {
+    "wall_mean": 0.111,
+    "wall_median": 0.031,
+    "wall_p90": 0.306,
+    "wall_max": 2.11,
+    "cpu_mean": 0.111,
+    "cpu_p90": 0.306,
+    "cpu_max": 2.1,
+    "cpu_total": 44.5
+   },
+   "dynamics": {
+    "wall_mean": 1.231,
+    "wall_median": 0.127,
+    "wall_p90": 1.547,
+    "wall_max": 54.02,
+    "cpu_mean": 1.229,
+    "cpu_p90": 1.546,
+    "cpu_max": 53.91,
+    "cpu_total": 491.8
+   },
+   "composition": {
+    "wall_mean": 0.372,
+    "wall_median": 0.0,
+    "wall_p90": 0.683,
+    "wall_max": 17.33,
+    "cpu_mean": 0.371,
+    "cpu_p90": 0.682,
+    "cpu_max": 17.32,
+    "cpu_total": 148.5
+   },
+   "association": {
+    "wall_mean": 0.01,
+    "wall_median": 0.003,
+    "wall_p90": 0.023,
+    "wall_max": 0.49,
+    "cpu_mean": 0.01,
+    "cpu_p90": 0.023,
+    "cpu_max": 0.49,
+    "cpu_total": 3.9
+   },
+   "pattern": {
+    "wall_mean": 0.005,
+    "wall_median": 0.001,
+    "wall_p90": 0.011,
+    "wall_max": 0.23,
+    "cpu_mean": 0.005,
+    "cpu_p90": 0.011,
+    "cpu_max": 0.23,
+    "cpu_total": 1.9
+   },
+   "field": {
+    "wall_mean": 0.006,
+    "wall_median": 0.006,
+    "wall_p90": 0.013,
+    "wall_max": 0.05,
+    "cpu_mean": 0.006,
+    "cpu_p90": 0.013,
+    "cpu_max": 0.05,
+    "cpu_total": 2.5
+   },
+   "total": {
+    "wall_mean": 1.817,
+    "wall_median": 0.56,
+    "wall_p90": 2.65,
+    "wall_max": 54.81,
+    "cpu_mean": 1.815,
+    "cpu_max": 54.7,
+    "over_60s": [],
+    "over_120s": []
+   }
+  },
+  "errors": {},
+  "full_vs_union_alone": {
+   "full": 46,
+   "union_alone": 46,
+   "lost_by_vote": [],
+   "gained_by_vote": []
+  },
+  "modules": {
+   "self-model": {
+    "alone_solved": 4,
+    "unique": [
+     "0934a4d8",
+     "67b4a34d",
+     "e66aafb8",
+     "f4081712"
+    ],
+    "loo_lost": [
+     "0934a4d8",
+     "67b4a34d",
+     "e66aafb8",
+     "f4081712"
+    ],
+    "loo_gained": [],
+    "in_full_top": 4
+   },
+   "periodic": {
+    "alone_solved": 5,
+    "unique": [
+     "1d0a4b61",
+     "c663677b",
+     "ca8f78db",
+     "e95e3d8e",
+     "f823c43c"
+    ],
+    "loo_lost": [
+     "1d0a4b61",
+     "c663677b",
+     "ca8f78db",
+     "e95e3d8e",
+     "f823c43c"
+    ],
+    "loo_gained": [],
+    "in_full_top": 5
+   },
+   "behavior": {
+    "alone_solved": 5,
+    "unique": [
+     "12eac192",
+     "292dd178",
+     "5207a7b5",
+     "66e6c45b"
+    ],
+    "loo_lost": [
+     "12eac192",
+     "292dd178",
+     "5207a7b5",
+     "66e6c45b"
+    ],
+    "loo_gained": [],
+    "in_full_top": 5
+   },
+   "dynamics": {
+    "alone_solved": 1,
+    "unique": [
+     "d282b262"
+    ],
+    "loo_lost": [
+     "d282b262"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "composition": {
+    "alone_solved": 24,
+    "unique": [
+     "00576224",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "281123b4",
+     "34b99a2b",
+     "506d28a5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "833dafe3",
+     "9a4bb226",
+     "bc4146bd",
+     "c48954c1",
+     "cd3c21df",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e99362f0",
+     "ed98d772"
+    ],
+    "loo_lost": [
+     "00576224",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "281123b4",
+     "34b99a2b",
+     "506d28a5",
+     "59341089",
+     "5b6cbef5",
+     "5d2a5c43",
+     "60c09cac",
+     "68b67ca3",
+     "73ccf9c2",
+     "7953d61e",
+     "833dafe3",
+     "9a4bb226",
+     "bc4146bd",
+     "c48954c1",
+     "cd3c21df",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e99362f0",
+     "ed98d772"
+    ],
+    "loo_gained": [],
+    "in_full_top": 24
+   },
+   "association": {
+    "alone_solved": 2,
+    "unique": [
+     "2a5f8217",
+     "845d6e51"
+    ],
+    "loo_lost": [
+     "2a5f8217",
+     "845d6e51"
+    ],
+    "loo_gained": [],
+    "in_full_top": 2
+   },
+   "pattern": {
+    "alone_solved": 6,
+    "unique": [
+     "00dbd492",
+     "7e02026e",
+     "ae58858e",
+     "e0fb7511",
+     "e88171ec"
+    ],
+    "loo_lost": [
+     "00dbd492",
+     "7e02026e",
+     "ae58858e",
+     "e0fb7511",
+     "e88171ec"
+    ],
+    "loo_gained": [],
+    "in_full_top": 6
+   },
+   "field": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   }
+  },
+  "calibration": {
+   "full": {
+    "1.0": [
+     34,
+     33.0
+    ],
+    "[0.5,1)": [
+     14,
+     11.0
+    ],
+    "(0,0.5)": [
+     2,
+     0.0
+    ],
+    "0": [
+     33,
+     1.0
+    ]
+   },
+   "self-model": {
+    "1.0": [
+     4,
+     4.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "periodic": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     4,
+     4.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "behavior": {
+    "1.0": [
+     2,
+     2.0
+    ],
+    "[0.5,1)": [
+     3,
+     2.0
+    ],
+    "(0,0.5)": [
+     1,
+     0.0
+    ],
+    "0": [
+     24,
+     1.0
+    ]
+   },
+   "dynamics": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "composition": {
+    "1.0": [
+     22,
+     21.0
+    ],
+    "[0.5,1)": [
+     3,
+     2.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "association": {
+    "1.0": [
+     2,
+     2.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "pattern": {
+    "1.0": [
+     2,
+     2.0
+    ],
+    "[0.5,1)": [
+     5,
+     3.0
+    ],
+    "(0,0.5)": [
+     2,
+     1.0
+    ],
+    "0": [
+     13,
+     0.0
+    ]
+   },
+   "field": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "full_by_voter": {
+    "self-model": {
+     "1.0": [
+      4,
+      4.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "periodic": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      4,
+      4.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "behavior": {
+     "1.0": [
+      2,
+      2.0
+     ],
+     "[0.5,1)": [
+      2,
+      2.0
+     ],
+     "(0,0.5)": [
+      1,
+      0.0
+     ],
+     "0": [
+      23,
+      1.0
+     ]
+    },
+    "dynamics": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "composition": {
+     "1.0": [
+      22,
+      21.0
+     ],
+     "[0.5,1)": [
+      3,
+      2.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "association": {
+     "1.0": [
+      2,
+      2.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "pattern": {
+     "1.0": [
+      3,
+      3.0
+     ],
+     "[0.5,1)": [
+      5,
+      3.0
+     ],
+     "(0,0.5)": [
+      1,
+      0.0
+     ],
+     "0": [
+      10,
+      0.0
+     ]
+    },
+    "field": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ncand_mean": {
+   "self-model": 0.04,
+   "periodic": 0.01,
+   "behavior": 1.74,
+   "dynamics": 0.0,
+   "composition": 0.13,
+   "association": 0.01,
+   "pattern": 0.07,
+   "field": 0.0
+  }
+ },
+ "agi2-train": {
+  "n": 1000,
+  "subsets": {
+   "full": {
+    "pass2": 123.0,
+    "pass2_pct": 12.3,
+    "pass1": 119.0,
+    "tasks_solved": 123,
+    "answered": 216,
+    "confident": 87,
+    "confident_correct": 85.0,
+    "precision": 0.977,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "00dbd492",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1d61978c",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "3345333e",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d56f2372",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f823c43c",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "-self-model": {
+    "pass2": 120.0,
+    "pass2_pct": 12.0,
+    "pass1": 116.0,
+    "tasks_solved": 120,
+    "answered": 213,
+    "confident": 84,
+    "confident_correct": 82.0,
+    "precision": 0.9762,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "00dbd492",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1d61978c",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d56f2372",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f823c43c",
+     "fd02da9e"
+    ]
+   },
+   "-periodic": {
+    "pass2": 120.0,
+    "pass2_pct": 12.0,
+    "pass1": 116.0,
+    "tasks_solved": 120,
+    "answered": 213,
+    "confident": 87,
+    "confident_correct": 85.0,
+    "precision": 0.977,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "00dbd492",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d61978c",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "3345333e",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d56f2372",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "-behavior": {
+    "pass2": 101.0,
+    "pass2_pct": 10.1,
+    "pass1": 100.0,
+    "tasks_solved": 101,
+    "answered": 128,
+    "confident": 80,
+    "confident_correct": 78.0,
+    "precision": 0.975,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "00dbd492",
+     "0520fde7",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "2a5f8217",
+     "3345333e",
+     "3428a4f5",
+     "34b99a2b",
+     "3af2c5a8",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "54d9e175",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "aaef0977",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d4a91cb9",
+     "d56f2372",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f823c43c",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-dynamics": {
+    "pass2": 115.0,
+    "pass2_pct": 11.5,
+    "pass1": 112.0,
+    "tasks_solved": 115,
+    "answered": 212,
+    "confident": 79,
+    "confident_correct": 76.0,
+    "precision": 0.962,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00dbd492",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1d61978c",
+     "1f85a75f",
+     "23b5c85d",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "3345333e",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d56f2372",
+     "d90796e8",
+     "dc1df850",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f823c43c",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "-composition": {
+    "pass2": 64.0,
+    "pass2_pct": 6.4,
+    "pass1": 61.0,
+    "tasks_solved": 64,
+    "answered": 156,
+    "confident": 33,
+    "confident_correct": 32.0,
+    "precision": 0.9697,
+    "solved": [
+     "00d62c1b",
+     "00dbd492",
+     "0962bcdd",
+     "0ca9ddb6",
+     "12eac192",
+     "1d0a4b61",
+     "1d61978c",
+     "1e0a9b12",
+     "253bf280",
+     "292dd178",
+     "2a5f8217",
+     "3345333e",
+     "342dd610",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "484b58aa",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "623ea044",
+     "66e6c45b",
+     "67385a82",
+     "6c434453",
+     "7e02026e",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "913fb3ed",
+     "95990924",
+     "a5313dff",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "c0f76784",
+     "c8f0f002",
+     "ce22a75a",
+     "d037b0a7",
+     "d282b262",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e8593010",
+     "e88171ec",
+     "ea786f4a",
+     "f1bcbc2c",
+     "f823c43c",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "-association": {
+    "pass2": 121.0,
+    "pass2_pct": 12.1,
+    "pass1": 117.0,
+    "tasks_solved": 121,
+    "answered": 214,
+    "confident": 85,
+    "confident_correct": 83.0,
+    "precision": 0.9765,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "00dbd492",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1d61978c",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "292dd178",
+     "3345333e",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d56f2372",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f823c43c",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "-pattern": {
+    "pass2": 108.0,
+    "pass2_pct": 10.8,
+    "pass1": 104.0,
+    "tasks_solved": 108,
+    "answered": 188,
+    "confident": 83,
+    "confident_correct": 81.0,
+    "precision": 0.9759,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1d61978c",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "3345333e",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "aaef0977",
+     "ad38a9d0",
+     "b27ca6d3",
+     "b60334d2",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d364b489",
+     "d4f3cd78",
+     "d56f2372",
+     "dbc1a6ce",
+     "ded97339",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f2829549",
+     "f823c43c",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "-field": {
+    "pass2": 122.0,
+    "pass2_pct": 12.2,
+    "pass1": 118.0,
+    "tasks_solved": 122,
+    "answered": 215,
+    "confident": 86,
+    "confident_correct": 84.0,
+    "precision": 0.9767,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "00d62c1b",
+     "00dbd492",
+     "0520fde7",
+     "0962bcdd",
+     "0c786b71",
+     "0c9aba6e",
+     "0ca9ddb6",
+     "12eac192",
+     "195ba7dc",
+     "1b2d62fb",
+     "1d0a4b61",
+     "1d61978c",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "281123b4",
+     "292dd178",
+     "2a5f8217",
+     "3345333e",
+     "3428a4f5",
+     "342dd610",
+     "34b99a2b",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "506d28a5",
+     "50cb2852",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "66e6c45b",
+     "67385a82",
+     "67e8384a",
+     "68b67ca3",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7e02026e",
+     "7fe24cdd",
+     "833dafe3",
+     "8403a5d5",
+     "845d6e51",
+     "84f2aca1",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a834deea",
+     "a9f96cdd",
+     "ad38a9d0",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "bc4146bd",
+     "be94b721",
+     "c0f76784",
+     "c48954c1",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce22a75a",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d282b262",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d56f2372",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e0fb7511",
+     "e133d23d",
+     "e57337a4",
+     "e8593010",
+     "e88171ec",
+     "e98196ab",
+     "e99362f0",
+     "ea786f4a",
+     "ed98d772",
+     "f1bcbc2c",
+     "f2829549",
+     "f823c43c",
+     "f9012d9b",
+     "fd02da9e",
+     "ff805c23"
+    ]
+   },
+   "self-model alone": {
+    "pass2": 3.0,
+    "pass2_pct": 0.3,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 3,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "3345333e",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "periodic alone": {
+    "pass2": 3.0,
+    "pass2_pct": 0.3,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 3,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": [
+     "1d0a4b61",
+     "484b58aa",
+     "f823c43c"
+    ]
+   },
+   "behavior alone": {
+    "pass2": 31.0,
+    "pass2_pct": 3.1,
+    "pass1": 29.0,
+    "tasks_solved": 31,
+    "answered": 112,
+    "confident": 15,
+    "confident_correct": 13.0,
+    "precision": 0.8667,
+    "solved": [
+     "0962bcdd",
+     "0ca9ddb6",
+     "12eac192",
+     "1d61978c",
+     "292dd178",
+     "342dd610",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "4258a5f9",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "66e6c45b",
+     "6c434453",
+     "8403a5d5",
+     "84f2aca1",
+     "913fb3ed",
+     "95990924",
+     "a834deea",
+     "a9f96cdd",
+     "ad38a9d0",
+     "b27ca6d3",
+     "b60334d2",
+     "c0f76784",
+     "ce22a75a",
+     "d037b0a7",
+     "d364b489",
+     "d4f3cd78",
+     "e8593010",
+     "fd02da9e"
+    ]
+   },
+   "dynamics alone": {
+    "pass2": 10.0,
+    "pass2_pct": 1.0,
+    "pass1": 10.0,
+    "tasks_solved": 10,
+    "answered": 10,
+    "confident": 10,
+    "confident_correct": 10.0,
+    "precision": 1.0,
+    "solved": [
+     "00d62c1b",
+     "1e0a9b12",
+     "253bf280",
+     "623ea044",
+     "a5313dff",
+     "d037b0a7",
+     "d282b262",
+     "dbc1a6ce",
+     "ded97339",
+     "ea786f4a"
+    ]
+   },
+   "composition alone": {
+    "pass2": 59.0,
+    "pass2_pct": 5.9,
+    "pass1": 58.0,
+    "tasks_solved": 59,
+    "answered": 60,
+    "confident": 54,
+    "confident_correct": 53.0,
+    "precision": 0.9815,
+    "solved": [
+     "00576224",
+     "007bbfb7",
+     "0520fde7",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "281123b4",
+     "3428a4f5",
+     "34b99a2b",
+     "3af2c5a8",
+     "46442a0e",
+     "4c4377d9",
+     "506d28a5",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "68b67ca3",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7fe24cdd",
+     "833dafe3",
+     "8be77c9e",
+     "8d5021e8",
+     "9172f3a0",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a68b268e",
+     "bc4146bd",
+     "be94b721",
+     "c48954c1",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d10ecb37",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e98196ab",
+     "e99362f0",
+     "ed98d772",
+     "f2829549"
+    ]
+   },
+   "association alone": {
+    "pass2": 2.0,
+    "pass2_pct": 0.2,
+    "pass1": 2.0,
+    "tasks_solved": 2,
+    "answered": 2,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "2a5f8217",
+     "845d6e51"
+    ]
+   },
+   "pattern alone": {
+    "pass2": 24.0,
+    "pass2_pct": 2.4,
+    "pass1": 24.0,
+    "tasks_solved": 24,
+    "answered": 52,
+    "confident": 10,
+    "confident_correct": 9.0,
+    "precision": 0.9,
+    "solved": [
+     "00dbd492",
+     "4258a5f9",
+     "4612dd53",
+     "50cb2852",
+     "54d9e175",
+     "67385a82",
+     "6c434453",
+     "7e02026e",
+     "84f2aca1",
+     "913fb3ed",
+     "a5313dff",
+     "ae58858e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "c0f76784",
+     "c8f0f002",
+     "d4a91cb9",
+     "d90796e8",
+     "dc1df850",
+     "e0fb7511",
+     "e88171ec",
+     "f1bcbc2c"
+    ]
+   },
+   "field alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.1,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "aaef0977"
+    ]
+   }
+  },
+  "timing": {
+   "self-model": {
+    "wall_mean": 0.041,
+    "wall_median": 0.014,
+    "wall_p90": 0.104,
+    "wall_max": 0.98,
+    "cpu_mean": 0.041,
+    "cpu_p90": 0.104,
+    "cpu_max": 0.97,
+    "cpu_total": 41.2
+   },
+   "periodic": {
+    "wall_mean": 0.017,
+    "wall_median": 0.008,
+    "wall_p90": 0.041,
+    "wall_max": 0.32,
+    "cpu_mean": 0.017,
+    "cpu_p90": 0.041,
+    "cpu_max": 0.32,
+    "cpu_total": 16.6
+   },
+   "behavior": {
+    "wall_mean": 0.085,
+    "wall_median": 0.035,
+    "wall_p90": 0.211,
+    "wall_max": 1.99,
+    "cpu_mean": 0.085,
+    "cpu_p90": 0.211,
+    "cpu_max": 1.98,
+    "cpu_total": 84.9
+   },
+   "dynamics": {
+    "wall_mean": 0.56,
+    "wall_median": 0.113,
+    "wall_p90": 1.122,
+    "wall_max": 39.17,
+    "cpu_mean": 0.558,
+    "cpu_p90": 1.114,
+    "cpu_max": 39.0,
+    "cpu_total": 557.5
+   },
+   "composition": {
+    "wall_mean": 0.29,
+    "wall_median": 0.0,
+    "wall_p90": 0.742,
+    "wall_max": 17.41,
+    "cpu_mean": 0.289,
+    "cpu_p90": 0.741,
+    "cpu_max": 17.33,
+    "cpu_total": 289.1
+   },
+   "association": {
+    "wall_mean": 0.008,
+    "wall_median": 0.002,
+    "wall_p90": 0.017,
+    "wall_max": 0.55,
+    "cpu_mean": 0.008,
+    "cpu_p90": 0.017,
+    "cpu_max": 0.55,
+    "cpu_total": 7.5
+   },
+   "pattern": {
+    "wall_mean": 0.004,
+    "wall_median": 0.001,
+    "wall_p90": 0.011,
+    "wall_max": 0.22,
+    "cpu_mean": 0.004,
+    "cpu_p90": 0.011,
+    "cpu_max": 0.22,
+    "cpu_total": 4.2
+   },
+   "field": {
+    "wall_mean": 0.007,
+    "wall_median": 0.006,
+    "wall_p90": 0.015,
+    "wall_max": 0.06,
+    "cpu_mean": 0.007,
+    "cpu_p90": 0.014,
+    "cpu_max": 0.06,
+    "cpu_total": 6.5
+   },
+   "total": {
+    "wall_mean": 1.012,
+    "wall_median": 0.494,
+    "wall_p90": 1.88,
+    "wall_max": 39.75,
+    "cpu_mean": 1.007,
+    "cpu_max": 39.58,
+    "over_60s": [],
+    "over_120s": []
+   }
+  },
+  "errors": {},
+  "full_vs_union_alone": {
+   "full": 123,
+   "union_alone": 124,
+   "lost_by_vote": [
+    "54d9e175"
+   ],
+   "gained_by_vote": []
+  },
+  "modules": {
+   "self-model": {
+    "alone_solved": 3,
+    "unique": [
+     "3345333e",
+     "f9012d9b",
+     "ff805c23"
+    ],
+    "loo_lost": [
+     "3345333e",
+     "f9012d9b",
+     "ff805c23"
+    ],
+    "loo_gained": [],
+    "in_full_top": 3
+   },
+   "periodic": {
+    "alone_solved": 3,
+    "unique": [
+     "1d0a4b61",
+     "484b58aa",
+     "f823c43c"
+    ],
+    "loo_lost": [
+     "1d0a4b61",
+     "484b58aa",
+     "f823c43c"
+    ],
+    "loo_gained": [],
+    "in_full_top": 3
+   },
+   "behavior": {
+    "alone_solved": 31,
+    "unique": [
+     "0962bcdd",
+     "0ca9ddb6",
+     "12eac192",
+     "1d61978c",
+     "292dd178",
+     "342dd610",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "66e6c45b",
+     "8403a5d5",
+     "95990924",
+     "a834deea",
+     "a9f96cdd",
+     "ad38a9d0",
+     "ce22a75a",
+     "d364b489",
+     "d4f3cd78",
+     "e8593010",
+     "fd02da9e"
+    ],
+    "loo_lost": [
+     "0962bcdd",
+     "0ca9ddb6",
+     "12eac192",
+     "1d61978c",
+     "292dd178",
+     "342dd610",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "5168d44c",
+     "5207a7b5",
+     "52364a65",
+     "66e6c45b",
+     "8403a5d5",
+     "95990924",
+     "a834deea",
+     "a9f96cdd",
+     "ad38a9d0",
+     "ce22a75a",
+     "d364b489",
+     "d4f3cd78",
+     "e8593010",
+     "fd02da9e"
+    ],
+    "loo_gained": [
+     "54d9e175"
+    ],
+    "in_full_top": 32
+   },
+   "dynamics": {
+    "alone_solved": 10,
+    "unique": [
+     "00d62c1b",
+     "1e0a9b12",
+     "253bf280",
+     "623ea044",
+     "d282b262",
+     "dbc1a6ce",
+     "ded97339",
+     "ea786f4a"
+    ],
+    "loo_lost": [
+     "00d62c1b",
+     "1e0a9b12",
+     "253bf280",
+     "623ea044",
+     "d282b262",
+     "dbc1a6ce",
+     "ded97339",
+     "ea786f4a"
+    ],
+    "loo_gained": [],
+    "in_full_top": 9
+   },
+   "composition": {
+    "alone_solved": 59,
+    "unique": [
+     "00576224",
+     "007bbfb7",
+     "0520fde7",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "281123b4",
+     "3428a4f5",
+     "34b99a2b",
+     "3af2c5a8",
+     "46442a0e",
+     "4c4377d9",
+     "506d28a5",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "68b67ca3",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7fe24cdd",
+     "833dafe3",
+     "8be77c9e",
+     "8d5021e8",
+     "9172f3a0",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a68b268e",
+     "bc4146bd",
+     "be94b721",
+     "c48954c1",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d10ecb37",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e98196ab",
+     "e99362f0",
+     "ed98d772",
+     "f2829549"
+    ],
+    "loo_lost": [
+     "00576224",
+     "007bbfb7",
+     "0520fde7",
+     "0c786b71",
+     "0c9aba6e",
+     "195ba7dc",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "281123b4",
+     "3428a4f5",
+     "34b99a2b",
+     "3af2c5a8",
+     "46442a0e",
+     "4c4377d9",
+     "506d28a5",
+     "5614dbcf",
+     "59341089",
+     "5b6cbef5",
+     "5bd6f4ac",
+     "5d2a5c43",
+     "60c09cac",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "68b67ca3",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "73ccf9c2",
+     "7468f01a",
+     "7953d61e",
+     "7fe24cdd",
+     "833dafe3",
+     "8be77c9e",
+     "8d5021e8",
+     "9172f3a0",
+     "99b1bc43",
+     "9a4bb226",
+     "a416b8f3",
+     "a68b268e",
+     "bc4146bd",
+     "be94b721",
+     "c48954c1",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "cd3c21df",
+     "ce4f8723",
+     "cf5fd0ad",
+     "cf98881b",
+     "d10ecb37",
+     "d56f2372",
+     "e133d23d",
+     "e57337a4",
+     "e98196ab",
+     "e99362f0",
+     "ed98d772",
+     "f2829549"
+    ],
+    "loo_gained": [],
+    "in_full_top": 59
+   },
+   "association": {
+    "alone_solved": 2,
+    "unique": [
+     "2a5f8217",
+     "845d6e51"
+    ],
+    "loo_lost": [
+     "2a5f8217",
+     "845d6e51"
+    ],
+    "loo_gained": [],
+    "in_full_top": 2
+   },
+   "pattern": {
+    "alone_solved": 24,
+    "unique": [
+     "00dbd492",
+     "4612dd53",
+     "50cb2852",
+     "54d9e175",
+     "67385a82",
+     "7e02026e",
+     "ae58858e",
+     "b1948b0a",
+     "bb43febb",
+     "c8f0f002",
+     "d4a91cb9",
+     "d90796e8",
+     "dc1df850",
+     "e0fb7511",
+     "e88171ec",
+     "f1bcbc2c"
+    ],
+    "loo_lost": [
+     "00dbd492",
+     "4612dd53",
+     "50cb2852",
+     "67385a82",
+     "7e02026e",
+     "ae58858e",
+     "b1948b0a",
+     "bb43febb",
+     "c8f0f002",
+     "d4a91cb9",
+     "d90796e8",
+     "dc1df850",
+     "e0fb7511",
+     "e88171ec",
+     "f1bcbc2c"
+    ],
+    "loo_gained": [],
+    "in_full_top": 23
+   },
+   "field": {
+    "alone_solved": 1,
+    "unique": [
+     "aaef0977"
+    ],
+    "loo_lost": [
+     "aaef0977"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   }
+  },
+  "calibration": {
+   "full": {
+    "1.0": [
+     92,
+     88.0
+    ],
+    "[0.5,1)": [
+     31,
+     22.0
+    ],
+    "(0,0.5)": [
+     4,
+     0.0
+    ],
+    "0": [
+     89,
+     9.0
+    ]
+   },
+   "self-model": {
+    "1.0": [
+     3,
+     3.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "periodic": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     3,
+     3.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "behavior": {
+    "1.0": [
+     16,
+     13.0
+    ],
+    "[0.5,1)": [
+     16,
+     10.0
+    ],
+    "(0,0.5)": [
+     4,
+     0.0
+    ],
+    "0": [
+     76,
+     6.0
+    ]
+   },
+   "dynamics": {
+    "1.0": [
+     10,
+     10.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "composition": {
+    "1.0": [
+     56,
+     55.0
+    ],
+    "[0.5,1)": [
+     4,
+     3.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "association": {
+    "1.0": [
+     2,
+     2.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "pattern": {
+    "1.0": [
+     10,
+     9.0
+    ],
+    "[0.5,1)": [
+     14,
+     10.0
+    ],
+    "(0,0.5)": [
+     2,
+     1.0
+    ],
+    "0": [
+     26,
+     4.0
+    ]
+   },
+   "field": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "full_by_voter": {
+    "self-model": {
+     "1.0": [
+      3,
+      3.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "periodic": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      3,
+      3.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "behavior": {
+     "1.0": [
+      17,
+      14.0
+     ],
+     "[0.5,1)": [
+      15,
+      10.0
+     ],
+     "(0,0.5)": [
+      3,
+      0.0
+     ],
+     "0": [
+      71,
+      5.0
+     ]
+    },
+    "dynamics": {
+     "1.0": [
+      9,
+      9.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "composition": {
+     "1.0": [
+      56,
+      55.0
+     ],
+     "[0.5,1)": [
+      4,
+      3.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "association": {
+     "1.0": [
+      2,
+      2.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "pattern": {
+     "1.0": [
+      12,
+      12.0
+     ],
+     "[0.5,1)": [
+      10,
+      7.0
+     ],
+     "(0,0.5)": [
+      1,
+      0.0
+     ],
+     "0": [
+      18,
+      4.0
+     ]
+    },
+    "field": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ncand_mean": {
+   "self-model": 0.01,
+   "periodic": 0.0,
+   "behavior": 4.17,
+   "dynamics": 0.03,
+   "composition": 0.13,
+   "association": 0.0,
+   "pattern": 0.07,
+   "field": 0.0
+  }
+ },
+ "agi1-train": {
+  "n": 400,
+  "subsets": {
+   "full": {
+    "pass2": 80.0,
+    "pass2_pct": 20.0,
+    "pass1": 78.0,
+    "tasks_solved": 80,
+    "answered": 119,
+    "confident": 59,
+    "confident_correct": 58.0,
+    "precision": 0.9831,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "29ec7d0e",
+     "3345333e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "50cb2852",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc0a314f",
+     "dc1df850",
+     "ded97339",
+     "e8593010",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-self-model": {
+    "pass2": 75.0,
+    "pass2_pct": 18.75,
+    "pass1": 73.0,
+    "tasks_solved": 75,
+    "answered": 114,
+    "confident": 54,
+    "confident_correct": 53.0,
+    "precision": 0.9815,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "29ec7d0e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "50cb2852",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc1df850",
+     "ded97339",
+     "e8593010",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549"
+    ]
+   },
+   "-periodic": {
+    "pass2": 76.0,
+    "pass2_pct": 19.0,
+    "pass1": 74.0,
+    "tasks_solved": 76,
+    "answered": 117,
+    "confident": 57,
+    "confident_correct": 56.0,
+    "precision": 0.9825,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "3345333e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "4c4377d9",
+     "50cb2852",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc0a314f",
+     "dc1df850",
+     "ded97339",
+     "e8593010",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-behavior": {
+    "pass2": 68.0,
+    "pass2_pct": 17.0,
+    "pass1": 68.0,
+    "tasks_solved": 68,
+    "answered": 78,
+    "confident": 55,
+    "confident_correct": 54.0,
+    "precision": 0.9818,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0dfd9992",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "29ec7d0e",
+     "3345333e",
+     "3428a4f5",
+     "3af2c5a8",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "50cb2852",
+     "54d9e175",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d4a91cb9",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc0a314f",
+     "dc1df850",
+     "ded97339",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-dynamics": {
+    "pass2": 73.0,
+    "pass2_pct": 18.25,
+    "pass1": 72.0,
+    "tasks_solved": 73,
+    "answered": 116,
+    "confident": 52,
+    "confident_correct": 50.0,
+    "precision": 0.9615,
+    "solved": [
+     "007bbfb7",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "29ec7d0e",
+     "3345333e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "50cb2852",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dc0a314f",
+     "dc1df850",
+     "e8593010",
+     "e98196ab",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-composition": {
+    "pass2": 46.0,
+    "pass2_pct": 11.5,
+    "pass1": 44.0,
+    "tasks_solved": 46,
+    "answered": 85,
+    "confident": 28,
+    "confident_correct": 27.0,
+    "precision": 0.9643,
+    "solved": [
+     "00d62c1b",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1e0a9b12",
+     "253bf280",
+     "29ec7d0e",
+     "3345333e",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "484b58aa",
+     "50cb2852",
+     "5168d44c",
+     "623ea044",
+     "67385a82",
+     "6c434453",
+     "8403a5d5",
+     "913fb3ed",
+     "95990924",
+     "9ecd008a",
+     "a5313dff",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "c0f76784",
+     "c3f564a4",
+     "c8f0f002",
+     "ce22a75a",
+     "d037b0a7",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc0a314f",
+     "dc1df850",
+     "ded97339",
+     "e8593010",
+     "ea786f4a",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-association": {
+    "pass2": 80.0,
+    "pass2_pct": 20.0,
+    "pass1": 78.0,
+    "tasks_solved": 80,
+    "answered": 119,
+    "confident": 59,
+    "confident_correct": 58.0,
+    "precision": 0.9831,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "29ec7d0e",
+     "3345333e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "50cb2852",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc0a314f",
+     "dc1df850",
+     "ded97339",
+     "e8593010",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-pattern": {
+    "pass2": 71.0,
+    "pass2_pct": 17.75,
+    "pass1": 69.0,
+    "tasks_solved": 71,
+    "answered": 108,
+    "confident": 57,
+    "confident_correct": 56.0,
+    "precision": 0.9825,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "29ec7d0e",
+     "3345333e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b27ca6d3",
+     "b60334d2",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4f3cd78",
+     "dbc1a6ce",
+     "dc0a314f",
+     "ded97339",
+     "e8593010",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "-field": {
+    "pass2": 80.0,
+    "pass2_pct": 20.0,
+    "pass1": 78.0,
+    "tasks_solved": 80,
+    "answered": 119,
+    "confident": 59,
+    "confident_correct": 58.0,
+    "precision": 0.9831,
+    "solved": [
+     "007bbfb7",
+     "00d62c1b",
+     "0520fde7",
+     "0962bcdd",
+     "0ca9ddb6",
+     "0dfd9992",
+     "1b2d62fb",
+     "1e0a9b12",
+     "1f85a75f",
+     "23b5c85d",
+     "253bf280",
+     "29ec7d0e",
+     "3345333e",
+     "3428a4f5",
+     "3618c87e",
+     "3aa6fb7a",
+     "3af2c5a8",
+     "3bdb4ada",
+     "4258a5f9",
+     "4612dd53",
+     "46442a0e",
+     "484b58aa",
+     "4c4377d9",
+     "50cb2852",
+     "5168d44c",
+     "5614dbcf",
+     "5bd6f4ac",
+     "623ea044",
+     "62c24649",
+     "6430c8c4",
+     "67385a82",
+     "67e8384a",
+     "6c434453",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8403a5d5",
+     "8be77c9e",
+     "8d5021e8",
+     "913fb3ed",
+     "9172f3a0",
+     "95990924",
+     "99b1bc43",
+     "9ecd008a",
+     "a416b8f3",
+     "a5313dff",
+     "a68b268e",
+     "a9f96cdd",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "be94b721",
+     "c0f76784",
+     "c3f564a4",
+     "c59eb873",
+     "c8f0f002",
+     "c909285e",
+     "c9e6f938",
+     "ce22a75a",
+     "ce4f8723",
+     "cf98881b",
+     "d037b0a7",
+     "d10ecb37",
+     "d364b489",
+     "d4a91cb9",
+     "d4f3cd78",
+     "d90796e8",
+     "dbc1a6ce",
+     "dc0a314f",
+     "dc1df850",
+     "ded97339",
+     "e8593010",
+     "e98196ab",
+     "ea786f4a",
+     "f2829549",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "self-model alone": {
+    "pass2": 5.0,
+    "pass2_pct": 1.25,
+    "pass1": 5.0,
+    "tasks_solved": 5,
+    "answered": 5,
+    "confident": 5,
+    "confident_correct": 5.0,
+    "precision": 1.0,
+    "solved": [
+     "3345333e",
+     "9ecd008a",
+     "dc0a314f",
+     "f9012d9b",
+     "ff805c23"
+    ]
+   },
+   "periodic alone": {
+    "pass2": 4.0,
+    "pass2_pct": 1.0,
+    "pass1": 4.0,
+    "tasks_solved": 4,
+    "answered": 4,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "0dfd9992",
+     "29ec7d0e",
+     "484b58aa",
+     "c3f564a4"
+    ]
+   },
+   "behavior alone": {
+    "pass2": 20.0,
+    "pass2_pct": 5.0,
+    "pass1": 19.0,
+    "tasks_solved": 20,
+    "answered": 61,
+    "confident": 12,
+    "confident_correct": 10.0,
+    "precision": 0.8333,
+    "solved": [
+     "0962bcdd",
+     "0ca9ddb6",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "4258a5f9",
+     "5168d44c",
+     "6c434453",
+     "8403a5d5",
+     "913fb3ed",
+     "95990924",
+     "a9f96cdd",
+     "b27ca6d3",
+     "b60334d2",
+     "c0f76784",
+     "ce22a75a",
+     "d037b0a7",
+     "d364b489",
+     "d4f3cd78",
+     "e8593010"
+    ]
+   },
+   "dynamics alone": {
+    "pass2": 9.0,
+    "pass2_pct": 2.25,
+    "pass1": 9.0,
+    "tasks_solved": 9,
+    "answered": 9,
+    "confident": 9,
+    "confident_correct": 9.0,
+    "precision": 1.0,
+    "solved": [
+     "00d62c1b",
+     "1e0a9b12",
+     "253bf280",
+     "623ea044",
+     "a5313dff",
+     "d037b0a7",
+     "dbc1a6ce",
+     "ded97339",
+     "ea786f4a"
+    ]
+   },
+   "composition alone": {
+    "pass2": 34.0,
+    "pass2_pct": 8.5,
+    "pass1": 34.0,
+    "tasks_solved": 34,
+    "answered": 34,
+    "confident": 31,
+    "confident_correct": 31.0,
+    "precision": 1.0,
+    "solved": [
+     "007bbfb7",
+     "0520fde7",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "3428a4f5",
+     "3af2c5a8",
+     "46442a0e",
+     "4c4377d9",
+     "5614dbcf",
+     "5bd6f4ac",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8be77c9e",
+     "8d5021e8",
+     "9172f3a0",
+     "99b1bc43",
+     "a416b8f3",
+     "a68b268e",
+     "be94b721",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "ce4f8723",
+     "cf98881b",
+     "d10ecb37",
+     "e98196ab",
+     "f2829549"
+    ]
+   },
+   "association alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "pattern alone": {
+    "pass2": 17.0,
+    "pass2_pct": 4.25,
+    "pass1": 17.0,
+    "tasks_solved": 17,
+    "answered": 29,
+    "confident": 8,
+    "confident_correct": 7.0,
+    "precision": 0.875,
+    "solved": [
+     "4258a5f9",
+     "4612dd53",
+     "50cb2852",
+     "54d9e175",
+     "67385a82",
+     "6c434453",
+     "913fb3ed",
+     "a5313dff",
+     "b1948b0a",
+     "b27ca6d3",
+     "b60334d2",
+     "bb43febb",
+     "c0f76784",
+     "c8f0f002",
+     "d4a91cb9",
+     "d90796e8",
+     "dc1df850"
+    ]
+   },
+   "field alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   }
+  },
+  "timing": {
+   "self-model": {
+    "wall_mean": 0.029,
+    "wall_median": 0.008,
+    "wall_p90": 0.071,
+    "wall_max": 0.58,
+    "cpu_mean": 0.029,
+    "cpu_p90": 0.071,
+    "cpu_max": 0.58,
+    "cpu_total": 11.6
+   },
+   "periodic": {
+    "wall_mean": 0.011,
+    "wall_median": 0.005,
+    "wall_p90": 0.029,
+    "wall_max": 0.15,
+    "cpu_mean": 0.011,
+    "cpu_p90": 0.028,
+    "cpu_max": 0.15,
+    "cpu_total": 4.3
+   },
+   "behavior": {
+    "wall_mean": 0.064,
+    "wall_median": 0.023,
+    "wall_p90": 0.157,
+    "wall_max": 1.07,
+    "cpu_mean": 0.064,
+    "cpu_p90": 0.157,
+    "cpu_max": 1.07,
+    "cpu_total": 25.4
+   },
+   "dynamics": {
+    "wall_mean": 0.562,
+    "wall_median": 0.057,
+    "wall_p90": 0.654,
+    "wall_max": 34.85,
+    "cpu_mean": 0.56,
+    "cpu_p90": 0.647,
+    "cpu_max": 34.78,
+    "cpu_total": 224.1
+   },
+   "composition": {
+    "wall_mean": 0.24,
+    "wall_median": 0.0,
+    "wall_p90": 0.615,
+    "wall_max": 10.63,
+    "cpu_mean": 0.24,
+    "cpu_p90": 0.613,
+    "cpu_max": 10.62,
+    "cpu_total": 95.8
+   },
+   "association": {
+    "wall_mean": 0.006,
+    "wall_median": 0.002,
+    "wall_p90": 0.01,
+    "wall_max": 0.21,
+    "cpu_mean": 0.006,
+    "cpu_p90": 0.01,
+    "cpu_max": 0.21,
+    "cpu_total": 2.4
+   },
+   "pattern": {
+    "wall_mean": 0.004,
+    "wall_median": 0.001,
+    "wall_p90": 0.011,
+    "wall_max": 0.05,
+    "cpu_mean": 0.004,
+    "cpu_p90": 0.011,
+    "cpu_max": 0.05,
+    "cpu_total": 1.4
+   },
+   "field": {
+    "wall_mean": 0.005,
+    "wall_median": 0.004,
+    "wall_p90": 0.012,
+    "wall_max": 0.05,
+    "cpu_mean": 0.005,
+    "cpu_p90": 0.012,
+    "cpu_max": 0.05,
+    "cpu_total": 2.1
+   },
+   "total": {
+    "wall_mean": 0.92,
+    "wall_median": 0.332,
+    "wall_p90": 1.166,
+    "wall_max": 35.5,
+    "cpu_mean": 0.918,
+    "cpu_max": 35.43,
+    "over_60s": [],
+    "over_120s": []
+   }
+  },
+  "errors": {},
+  "full_vs_union_alone": {
+   "full": 80,
+   "union_alone": 81,
+   "lost_by_vote": [
+    "54d9e175"
+   ],
+   "gained_by_vote": []
+  },
+  "modules": {
+   "self-model": {
+    "alone_solved": 5,
+    "unique": [
+     "3345333e",
+     "9ecd008a",
+     "dc0a314f",
+     "f9012d9b",
+     "ff805c23"
+    ],
+    "loo_lost": [
+     "3345333e",
+     "9ecd008a",
+     "dc0a314f",
+     "f9012d9b",
+     "ff805c23"
+    ],
+    "loo_gained": [],
+    "in_full_top": 5
+   },
+   "periodic": {
+    "alone_solved": 4,
+    "unique": [
+     "0dfd9992",
+     "29ec7d0e",
+     "484b58aa",
+     "c3f564a4"
+    ],
+    "loo_lost": [
+     "0dfd9992",
+     "29ec7d0e",
+     "484b58aa",
+     "c3f564a4"
+    ],
+    "loo_gained": [],
+    "in_full_top": 4
+   },
+   "behavior": {
+    "alone_solved": 20,
+    "unique": [
+     "0962bcdd",
+     "0ca9ddb6",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "5168d44c",
+     "8403a5d5",
+     "95990924",
+     "a9f96cdd",
+     "ce22a75a",
+     "d364b489",
+     "d4f3cd78",
+     "e8593010"
+    ],
+    "loo_lost": [
+     "0962bcdd",
+     "0ca9ddb6",
+     "3618c87e",
+     "3aa6fb7a",
+     "3bdb4ada",
+     "5168d44c",
+     "8403a5d5",
+     "95990924",
+     "a9f96cdd",
+     "ce22a75a",
+     "d364b489",
+     "d4f3cd78",
+     "e8593010"
+    ],
+    "loo_gained": [
+     "54d9e175"
+    ],
+    "in_full_top": 21
+   },
+   "dynamics": {
+    "alone_solved": 9,
+    "unique": [
+     "00d62c1b",
+     "1e0a9b12",
+     "253bf280",
+     "623ea044",
+     "dbc1a6ce",
+     "ded97339",
+     "ea786f4a"
+    ],
+    "loo_lost": [
+     "00d62c1b",
+     "1e0a9b12",
+     "253bf280",
+     "623ea044",
+     "dbc1a6ce",
+     "ded97339",
+     "ea786f4a"
+    ],
+    "loo_gained": [],
+    "in_full_top": 8
+   },
+   "composition": {
+    "alone_solved": 34,
+    "unique": [
+     "007bbfb7",
+     "0520fde7",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "3428a4f5",
+     "3af2c5a8",
+     "46442a0e",
+     "4c4377d9",
+     "5614dbcf",
+     "5bd6f4ac",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8be77c9e",
+     "8d5021e8",
+     "9172f3a0",
+     "99b1bc43",
+     "a416b8f3",
+     "a68b268e",
+     "be94b721",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "ce4f8723",
+     "cf98881b",
+     "d10ecb37",
+     "e98196ab",
+     "f2829549"
+    ],
+    "loo_lost": [
+     "007bbfb7",
+     "0520fde7",
+     "1b2d62fb",
+     "1f85a75f",
+     "23b5c85d",
+     "3428a4f5",
+     "3af2c5a8",
+     "46442a0e",
+     "4c4377d9",
+     "5614dbcf",
+     "5bd6f4ac",
+     "62c24649",
+     "6430c8c4",
+     "67e8384a",
+     "6d0aefbc",
+     "6fa7a44f",
+     "72ca375d",
+     "7468f01a",
+     "7fe24cdd",
+     "8be77c9e",
+     "8d5021e8",
+     "9172f3a0",
+     "99b1bc43",
+     "a416b8f3",
+     "a68b268e",
+     "be94b721",
+     "c59eb873",
+     "c909285e",
+     "c9e6f938",
+     "ce4f8723",
+     "cf98881b",
+     "d10ecb37",
+     "e98196ab",
+     "f2829549"
+    ],
+    "loo_gained": [],
+    "in_full_top": 34
+   },
+   "association": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "pattern": {
+    "alone_solved": 17,
+    "unique": [
+     "4612dd53",
+     "50cb2852",
+     "54d9e175",
+     "67385a82",
+     "b1948b0a",
+     "bb43febb",
+     "c8f0f002",
+     "d4a91cb9",
+     "d90796e8",
+     "dc1df850"
+    ],
+    "loo_lost": [
+     "4612dd53",
+     "50cb2852",
+     "67385a82",
+     "b1948b0a",
+     "bb43febb",
+     "c8f0f002",
+     "d4a91cb9",
+     "d90796e8",
+     "dc1df850"
+    ],
+    "loo_gained": [],
+    "in_full_top": 16
+   },
+   "field": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   }
+  },
+  "calibration": {
+   "full": {
+    "1.0": [
+     64,
+     61.0
+    ],
+    "[0.5,1)": [
+     18,
+     12.0
+    ],
+    "(0,0.5)": [
+     2,
+     0.0
+    ],
+    "0": [
+     35,
+     5.0
+    ]
+   },
+   "self-model": {
+    "1.0": [
+     5,
+     5.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "periodic": {
+    "1.0": [
+     2,
+     2.0
+    ],
+    "[0.5,1)": [
+     2,
+     2.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "behavior": {
+    "1.0": [
+     13,
+     10.0
+    ],
+    "[0.5,1)": [
+     11,
+     6.0
+    ],
+    "(0,0.5)": [
+     3,
+     0.0
+    ],
+    "0": [
+     34,
+     3.0
+    ]
+   },
+   "dynamics": {
+    "1.0": [
+     9,
+     9.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "composition": {
+    "1.0": [
+     33,
+     33.0
+    ],
+    "[0.5,1)": [
+     1,
+     1.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "association": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "pattern": {
+    "1.0": [
+     8,
+     7.0
+    ],
+    "[0.5,1)": [
+     9,
+     7.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     12,
+     3.0
+    ]
+   },
+   "field": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "full_by_voter": {
+    "self-model": {
+     "1.0": [
+      5,
+      5.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "periodic": {
+     "1.0": [
+      2,
+      2.0
+     ],
+     "[0.5,1)": [
+      2,
+      2.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "behavior": {
+     "1.0": [
+      14,
+      11.0
+     ],
+     "[0.5,1)": [
+      11,
+      6.0
+     ],
+     "(0,0.5)": [
+      2,
+      0.0
+     ],
+     "0": [
+      28,
+      2.0
+     ]
+    },
+    "dynamics": {
+     "1.0": [
+      8,
+      8.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "composition": {
+     "1.0": [
+      33,
+      33.0
+     ],
+     "[0.5,1)": [
+      1,
+      1.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "association": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "pattern": {
+     "1.0": [
+      9,
+      9.0
+     ],
+     "[0.5,1)": [
+      5,
+      4.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      7,
+      3.0
+     ]
+    },
+    "field": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ncand_mean": {
+   "self-model": 0.04,
+   "periodic": 0.01,
+   "behavior": 7.36,
+   "dynamics": 0.07,
+   "composition": 0.18,
+   "association": 0.0,
+   "pattern": 0.1,
+   "field": 0.0
+  }
+ },
+ "new233": {
+  "n": 233,
+  "subsets": {
+   "full": {
+    "pass2": 9.0,
+    "pass2_pct": 3.86,
+    "pass1": 8.0,
+    "tasks_solved": 9,
+    "answered": 29,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "-self-model": {
+    "pass2": 9.0,
+    "pass2_pct": 3.86,
+    "pass1": 8.0,
+    "tasks_solved": 9,
+    "answered": 29,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "-periodic": {
+    "pass2": 9.0,
+    "pass2_pct": 3.86,
+    "pass1": 8.0,
+    "tasks_solved": 9,
+    "answered": 29,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "-behavior": {
+    "pass2": 3.0,
+    "pass2_pct": 1.29,
+    "pass1": 3.0,
+    "tasks_solved": 3,
+    "answered": 4,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "aaef0977",
+     "cf5fd0ad",
+     "f1bcbc2c"
+    ]
+   },
+   "-dynamics": {
+    "pass2": 9.0,
+    "pass2_pct": 3.86,
+    "pass1": 8.0,
+    "tasks_solved": 9,
+    "answered": 29,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "-composition": {
+    "pass2": 8.0,
+    "pass2_pct": 3.43,
+    "pass1": 7.0,
+    "tasks_solved": 8,
+    "answered": 28,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "-association": {
+    "pass2": 9.0,
+    "pass2_pct": 3.86,
+    "pass1": 8.0,
+    "tasks_solved": 9,
+    "answered": 29,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "-pattern": {
+    "pass2": 8.0,
+    "pass2_pct": 3.43,
+    "pass1": 7.0,
+    "tasks_solved": 8,
+    "answered": 27,
+    "confident": 3,
+    "confident_correct": 3.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "aaef0977",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "fd02da9e"
+    ]
+   },
+   "-field": {
+    "pass2": 8.0,
+    "pass2_pct": 3.43,
+    "pass1": 7.0,
+    "tasks_solved": 8,
+    "answered": 28,
+    "confident": 2,
+    "confident_correct": 2.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "ad38a9d0",
+     "cf5fd0ad",
+     "f1bcbc2c",
+     "fd02da9e"
+    ]
+   },
+   "self-model alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "periodic alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "behavior alone": {
+    "pass2": 6.0,
+    "pass2_pct": 2.58,
+    "pass1": 5.0,
+    "tasks_solved": 6,
+    "answered": 25,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "ad38a9d0",
+     "fd02da9e"
+    ]
+   },
+   "dynamics alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "composition alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.43,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "cf5fd0ad"
+    ]
+   },
+   "association alone": {
+    "pass2": 0.0,
+    "pass2_pct": 0.0,
+    "pass1": 0.0,
+    "tasks_solved": 0,
+    "answered": 0,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": []
+   },
+   "pattern alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.43,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 2,
+    "confident": 0,
+    "confident_correct": 0,
+    "precision": null,
+    "solved": [
+     "f1bcbc2c"
+    ]
+   },
+   "field alone": {
+    "pass2": 1.0,
+    "pass2_pct": 0.43,
+    "pass1": 1.0,
+    "tasks_solved": 1,
+    "answered": 1,
+    "confident": 1,
+    "confident_correct": 1.0,
+    "precision": 1.0,
+    "solved": [
+     "aaef0977"
+    ]
+   }
+  },
+  "timing": {
+   "self-model": {
+    "wall_mean": 0.052,
+    "wall_median": 0.022,
+    "wall_p90": 0.128,
+    "wall_max": 0.98,
+    "cpu_mean": 0.052,
+    "cpu_p90": 0.128,
+    "cpu_max": 0.97,
+    "cpu_total": 12.2
+   },
+   "periodic": {
+    "wall_mean": 0.018,
+    "wall_median": 0.01,
+    "wall_p90": 0.038,
+    "wall_max": 0.32,
+    "cpu_mean": 0.018,
+    "cpu_p90": 0.038,
+    "cpu_max": 0.32,
+    "cpu_total": 4.1
+   },
+   "behavior": {
+    "wall_mean": 0.074,
+    "wall_median": 0.046,
+    "wall_p90": 0.197,
+    "wall_max": 0.63,
+    "cpu_mean": 0.074,
+    "cpu_p90": 0.196,
+    "cpu_max": 0.62,
+    "cpu_total": 17.2
+   },
+   "dynamics": {
+    "wall_mean": 0.632,
+    "wall_median": 0.221,
+    "wall_p90": 1.419,
+    "wall_max": 19.12,
+    "cpu_mean": 0.628,
+    "cpu_p90": 1.411,
+    "cpu_max": 19.0,
+    "cpu_total": 146.4
+   },
+   "composition": {
+    "wall_mean": 0.322,
+    "wall_median": 0.0,
+    "wall_p90": 0.783,
+    "wall_max": 11.84,
+    "cpu_mean": 0.32,
+    "cpu_p90": 0.778,
+    "cpu_max": 11.75,
+    "cpu_total": 74.5
+   },
+   "association": {
+    "wall_mean": 0.007,
+    "wall_median": 0.004,
+    "wall_p90": 0.017,
+    "wall_max": 0.13,
+    "cpu_mean": 0.007,
+    "cpu_p90": 0.017,
+    "cpu_max": 0.13,
+    "cpu_total": 1.7
+   },
+   "pattern": {
+    "wall_mean": 0.003,
+    "wall_median": 0.001,
+    "wall_p90": 0.009,
+    "wall_max": 0.05,
+    "cpu_mean": 0.003,
+    "cpu_p90": 0.008,
+    "cpu_max": 0.05,
+    "cpu_total": 0.7
+   },
+   "field": {
+    "wall_mean": 0.007,
+    "wall_median": 0.006,
+    "wall_p90": 0.014,
+    "wall_max": 0.06,
+    "cpu_mean": 0.007,
+    "cpu_p90": 0.014,
+    "cpu_max": 0.06,
+    "cpu_total": 1.6
+   },
+   "total": {
+    "wall_mean": 1.115,
+    "wall_median": 0.624,
+    "wall_p90": 2.234,
+    "wall_max": 19.39,
+    "cpu_mean": 1.109,
+    "cpu_max": 19.26,
+    "over_60s": [],
+    "over_120s": []
+   }
+  },
+  "errors": {},
+  "full_vs_union_alone": {
+   "full": 9,
+   "union_alone": 9,
+   "lost_by_vote": [],
+   "gained_by_vote": []
+  },
+  "modules": {
+   "self-model": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "periodic": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "behavior": {
+    "alone_solved": 6,
+    "unique": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "ad38a9d0",
+     "fd02da9e"
+    ],
+    "loo_lost": [
+     "1d61978c",
+     "342dd610",
+     "52364a65",
+     "a834deea",
+     "ad38a9d0",
+     "fd02da9e"
+    ],
+    "loo_gained": [],
+    "in_full_top": 6
+   },
+   "dynamics": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "composition": {
+    "alone_solved": 1,
+    "unique": [
+     "cf5fd0ad"
+    ],
+    "loo_lost": [
+     "cf5fd0ad"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "association": {
+    "alone_solved": 0,
+    "unique": [],
+    "loo_lost": [],
+    "loo_gained": [],
+    "in_full_top": 0
+   },
+   "pattern": {
+    "alone_solved": 1,
+    "unique": [
+     "f1bcbc2c"
+    ],
+    "loo_lost": [
+     "f1bcbc2c"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   },
+   "field": {
+    "alone_solved": 1,
+    "unique": [
+     "aaef0977"
+    ],
+    "loo_lost": [
+     "aaef0977"
+    ],
+    "loo_gained": [],
+    "in_full_top": 1
+   }
+  },
+  "calibration": {
+   "full": {
+    "1.0": [
+     3,
+     3.0
+    ],
+    "[0.5,1)": [
+     2,
+     2.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     24,
+     3.0
+    ]
+   },
+   "self-model": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "periodic": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "behavior": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     2,
+     2.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     22,
+     2.0
+    ]
+   },
+   "dynamics": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "composition": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "association": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "pattern": {
+    "1.0": [
+     0,
+     0.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     2,
+     1.0
+    ]
+   },
+   "field": {
+    "1.0": [
+     1,
+     1.0
+    ],
+    "[0.5,1)": [
+     0,
+     0.0
+    ],
+    "(0,0.5)": [
+     0,
+     0.0
+    ],
+    "0": [
+     0,
+     0.0
+    ]
+   },
+   "full_by_voter": {
+    "self-model": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "periodic": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "behavior": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      2,
+      2.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      22,
+      2.0
+     ]
+    },
+    "dynamics": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "composition": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "association": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    },
+    "pattern": {
+     "1.0": [
+      0,
+      0.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      2,
+      1.0
+     ]
+    },
+    "field": {
+     "1.0": [
+      1,
+      1.0
+     ],
+     "[0.5,1)": [
+      0,
+      0.0
+     ],
+     "(0,0.5)": [
+      0,
+      0.0
+     ],
+     "0": [
+      0,
+      0.0
+     ]
+    }
+   }
+  },
+  "ncand_mean": {
+   "self-model": 0.0,
+   "periodic": 0.0,
+   "behavior": 2.53,
+   "dynamics": 0.0,
+   "composition": 0.0,
+   "association": 0.0,
+   "pattern": 0.01,
+   "field": 0.01
+  }
+ }
+}

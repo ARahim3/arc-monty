@@ -1,0 +1,12 @@
+arc-prize-2026-arc-agi-2-publicleaderboard-2026-10-30T21:11:03.csv
+  teams 3541 ; distinct TeamId 3541
+  top 88.06 ; median 29.31
+  scoring 28 to 34 inclusive 2010
+  own team 'Abdur Rahim': Rank column 252, score 32.64; teams strictly above 202; tied at 32.64: 54 teams, Rank column 203-256
+  Rank column is 1..n in file order: False
+arc-prize-2026-arc-agi-2-publicleaderboard-2026-11-07T12:23:22.csv
+  teams 3544 ; distinct TeamId 3544
+  top 88.06 ; median 29.31
+  scoring 28 to 34 inclusive 1997
+  own team 'Abdur Rahim': Rank column 265, score 32.64; teams strictly above 219; tied at 32.64: 59 teams, Rank column 220-278
+  Rank column is 1..n in file order: False

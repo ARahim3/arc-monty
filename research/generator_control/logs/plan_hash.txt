@@ -1,0 +1,4 @@
+2026-11-01 14:10:12 UTC
+5eda96f7568caf064b8e222c0e1c388bc10b94a759129c266455f65b64b6c112  research/generator_control.md
+2ea02282dcf0e2b9a64a75202f3a1582dad3d9567192479dc7cfca45c38ec0a7  research/generator_control.md
+5e6611797c9642078885857f5715a6e239eeac5ac06ecb7cb68d44485dc19e9c  research/generator_control.md

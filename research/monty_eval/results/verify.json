@@ -1,0 +1,109 @@
+{
+ "agi2-eval": {
+  "full": {
+   "match": 120,
+   "n": 120,
+   "mismatched": []
+  },
+  "-behavior": {
+   "match": 120,
+   "n": 120,
+   "mismatched": []
+  },
+  "-composition": {
+   "match": 120,
+   "n": 120,
+   "mismatched": []
+  },
+  "behavior alone": {
+   "match": 120,
+   "n": 120,
+   "mismatched": []
+  },
+  "self-model+periodic+association": {
+   "match": 120,
+   "n": 120,
+   "mismatched": []
+  }
+ },
+ "agi1-eval": {
+  "full": {
+   "match": 400,
+   "n": 400,
+   "mismatched": []
+  },
+  "-behavior": {
+   "match": 400,
+   "n": 400,
+   "mismatched": []
+  },
+  "-composition": {
+   "match": 400,
+   "n": 400,
+   "mismatched": []
+  },
+  "behavior alone": {
+   "match": 400,
+   "n": 400,
+   "mismatched": []
+  },
+  "self-model+periodic+association": {
+   "match": 400,
+   "n": 400,
+   "mismatched": []
+  }
+ },
+ "new233": {
+  "full": {
+   "match": 233,
+   "n": 233,
+   "mismatched": []
+  },
+  "-behavior": {
+   "match": 233,
+   "n": 233,
+   "mismatched": []
+  },
+  "-composition": {
+   "match": 233,
+   "n": 233,
+   "mismatched": []
+  },
+  "behavior alone": {
+   "match": 233,
+   "n": 233,
+   "mismatched": []
+  },
+  "self-model+periodic+association": {
+   "match": 233,
+   "n": 233,
+   "mismatched": []
+  }
+ },
+ "vs_report_v1e": {
+  "agi2-eval": {
+   "offline": 4,
+   "report": 4,
+   "only_offline": [],
+   "only_report": []
+  },
+  "agi1-eval": {
+   "offline": 46,
+   "report": 46,
+   "only_offline": [],
+   "only_report": []
+  },
+  "agi2-train": {
+   "offline": 123,
+   "report": 123,
+   "only_offline": [],
+   "only_report": []
+  },
+  "agi1-train": {
+   "offline": 80,
+   "report": 80,
+   "only_offline": [],
+   "only_report": []
+  }
+ }
+}

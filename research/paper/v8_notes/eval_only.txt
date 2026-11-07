@@ -1,0 +1,160 @@
+splits Counter({'agi1-train': 400, 'agi1-eval': 400, 'new233': 233, 'agi2-eval': 114})
+
+=== public eval, ARC-AGI-1 eval + ARC-AGI-2 eval (distinct): 514 tasks; mean 1/(n+1) = 0.2424; multi-test tasks = 64
+FA-LOO+(c)       41/42 = 97.6% [92.1, 100.0] cov 8.2% tasks_answered 42 tasks_wrong 1
+FA-LOO (a)+(b)   41/42 = 97.6% [92.1, 100.0] cov 8.2% tasks_answered 42 tasks_wrong 1
+(a) only         41/42 = 97.6% [92.1, 100.0] cov 8.2% tasks_answered 42 tasks_wrong 1
+v5               35/36 = 97.2% [90.6, 100.0] cov 7.0% tasks_answered 36 tasks_wrong 1
+v5 top           35/36 = 97.2% [90.6, 100.0] cov 7.0% tasks_answered 36 tasks_wrong 1
+fit              43/65 = 66.2% [54.2, 77.4] cov 12.6% tasks_answered 65 tasks_wrong 22
+fit top          43/65 = 66.2% [54.2, 77.4] cov 12.6% tasks_answered 65 tasks_wrong 22
+P4               35/36 = 97.2% [90.6, 100.0] cov 7.0% tasks_answered 36 tasks_wrong 1
+pass@2 49.0 9.5% any candidate 91
+joint P(answer and wrong) FA-LOO+(c) 1.0 0.19%
+v5 minus fit: +31.1 pts [+20.1, +42.9] separates
+fc minus fit: +31.5 pts [+20.6, +43.1] separates
+a minus fit: +31.5 pts [+20.6, +43.1] separates
+fc minus v5: +0.4 pts [+0.0, +1.6] does not separate
+fc minus a: +0.0 pts [+0.0, +0.0] does not separate
+evidence >=0.99 minus below: +75.1 pts [+62.0, +87.0] separates 36/37 = 97.3% [90.9, 100.0] 12/54 = 22.2% [11.4, 34.0]
+AUROC 0.963 [0.916, 0.997] n 91
+ bucket 1.0 36/37 = 97.3% [90.9, 100.0]
+ bucket [0.5,1) 11/14 = 78.6% [54.5, 100.0]
+ bucket (0,0.5) 0/2 = 0.0% [0.0, 0.0]
+ bucket 0 1/38 = 2.6% [0.0, 8.9]
+modules: full 49 union alone 49 exactly one 48 lost by vote [] gained []
+  self-model   alone   4 lost   4 unique   4 evidence>=.99 4/4
+  periodic     alone   6 lost   6 unique   6 evidence>=.99 2/2
+  behavior     alone   5 lost   4 unique   4 evidence>=.99 2/2
+  dynamics     alone   1 lost   1 unique   1 evidence>=.99 1/1
+  composition  alone  24 lost  24 unique  24 evidence>=.99 21/22
+  association  alone   3 lost   3 unique   3 evidence>=.99 3/3
+  pattern      alone   7 lost   6 unique   6 evidence>=.99 3/3
+  field        alone   0 lost   0 unique   0 evidence>=.99 0/0
+pool vs no-vote: pool 36/37 = 97.3% [90.9, 100.0] novote 36/37 = 97.3% [90.9, 100.0] +0.0 pts [+0.0, +0.0] does not separate | p2 49 vs 49: +0 [+0, +0]; tasks 0:0 does not separate
+2+ modules 1/1 = 100.0% [100.0, 100.0] 1 module 47/90 = 52.2% [41.8, 62.6]
+ beh canon   p2     5 >=.99 2/2 v5 2/2 fc 2/2
+ beh abs     p2     3 >=.99 1/1 v5 1/1 fc 1/1
+ beh both    p2     5 >=.99 2/2 v5 2/2 fc 2/2
+ beh global  p2     1 >=.99 1/1 v5 1/1 fc 1/1
+ beh canon minus abs: 5 vs 3: +2 [+0, +5]; tasks 2:0, sign p = 0.500 does not separate
+ beh both minus canon: 5 vs 5: +0 [+0, +0]; tasks 0:0 does not separate
+ beh canon minus global: 5 vs 1: +4 [+1, +8]; tasks 4:0, sign p = 0.125 separates
+ beh abs minus global: 3 vs 1: +2 [+0, +5]; tasks 2:0, sign p = 0.500 does not separate
+ sys canon   p2    49 >=.99 36/37 v5 35/36 fc 41/42
+ sys abs     p2    48 >=.99 35/36 v5 34/35 fc 40/41
+ sys both    p2    49 >=.99 36/37 v5 35/36 fc 41/42
+ sys global  p2    46 >=.99 35/36 v5 34/35 fc 40/41
+ sys none    p2    45 >=.99 34/35 v5 33/34 fc 39/40
+ sys canon minus abs: 49 vs 48: +1 [+0, +3]; tasks 1:0, sign p = 1.000 does not separate
+ sys both minus canon: 49 vs 49: +0 [+0, +0]; tasks 0:0 does not separate
+ sys canon minus global: 49 vs 46: +3 [+0, +7]; tasks 3:0, sign p = 0.250 does not separate
+ sys abs minus global: 48 vs 46: +2 [+0, +5]; tasks 2:0, sign p = 0.500 does not separate
+
+=== ARC-AGI-2 public eval, 114 not in ARC-AGI-1: 114 tasks; mean 1/(n+1) = 0.2618; multi-test tasks = 45
+FA-LOO+(c)       3/3 = 100.0% [100.0, 100.0] cov 2.6% tasks_answered 3 tasks_wrong 0
+FA-LOO (a)+(b)   3/3 = 100.0% [100.0, 100.0] cov 2.6% tasks_answered 3 tasks_wrong 0
+(a) only         3/3 = 100.0% [100.0, 100.0] cov 2.6% tasks_answered 3 tasks_wrong 0
+v5               2/2 = 100.0% [100.0, 100.0] cov 1.8% tasks_answered 2 tasks_wrong 0
+v5 top           2/2 = 100.0% [100.0, 100.0] cov 1.8% tasks_answered 2 tasks_wrong 0
+fit              2/4 = 50.0% [0.0, 100.0] cov 3.5% tasks_answered 4 tasks_wrong 2
+fit top          2/4 = 50.0% [0.0, 100.0] cov 3.5% tasks_answered 4 tasks_wrong 2
+P4               2/2 = 100.0% [100.0, 100.0] cov 1.8% tasks_answered 2 tasks_wrong 0
+pass@2 3.0 2.6% any candidate 8
+joint P(answer and wrong) FA-LOO+(c) 0.0 0.00%
+v5 minus fit: +50.0 pts [+0.0, +80.0] does not separate
+fc minus fit: +50.0 pts [+0.0, +100.0] does not separate
+a minus fit: +50.0 pts [+0.0, +100.0] does not separate
+fc minus v5: +0.0 pts [+0.0, +0.0] does not separate
+fc minus a: +0.0 pts [+0.0, +0.0] does not separate
+evidence >=0.99 minus below: +100.0 pts [+100.0, +100.0] separates 3/3 = 100.0% [100.0, 100.0] 0/5 = 0.0% [0.0, 0.0]
+AUROC 1.0 [1.0, 1.0] n 8
+ bucket 1.0 3/3 = 100.0% [100.0, 100.0]
+ bucket [0.5,1) 0/0
+ bucket (0,0.5) 0/0
+ bucket 0 0/5 = 0.0% [0.0, 0.0]
+modules: full 3 union alone 3 exactly one 3 lost by vote [] gained []
+  self-model   alone   0 lost   0 unique   0 evidence>=.99 0/0
+  periodic     alone   1 lost   1 unique   1 evidence>=.99 1/1
+  behavior     alone   0 lost   0 unique   0 evidence>=.99 0/0
+  dynamics     alone   0 lost   0 unique   0 evidence>=.99 0/0
+  composition  alone   0 lost   0 unique   0 evidence>=.99 0/0
+  association  alone   1 lost   1 unique   1 evidence>=.99 1/1
+  pattern      alone   1 lost   1 unique   1 evidence>=.99 1/1
+  field        alone   0 lost   0 unique   0 evidence>=.99 0/0
+pool vs no-vote: pool 3/3 = 100.0% [100.0, 100.0] novote 3/3 = 100.0% [100.0, 100.0] +0.0 pts [+0.0, +0.0] does not separate | p2 3 vs 3: +0 [+0, +0]; tasks 0:0 does not separate
+2+ modules 0/0 1 module 3/8 = 37.5% [0.0, 75.0]
+ beh canon   p2     0 >=.99 0/0 v5 0/0 fc 0/0
+ beh abs     p2     0 >=.99 0/0 v5 0/0 fc 0/0
+ beh both    p2     0 >=.99 0/0 v5 0/0 fc 0/0
+ beh global  p2     0 >=.99 0/0 v5 0/0 fc 0/0
+ beh canon minus abs: 0 vs 0: +0 [+0, +0]; tasks 0:0 does not separate
+ beh both minus canon: 0 vs 0: +0 [+0, +0]; tasks 0:0 does not separate
+ beh canon minus global: 0 vs 0: +0 [+0, +0]; tasks 0:0 does not separate
+ beh abs minus global: 0 vs 0: +0 [+0, +0]; tasks 0:0 does not separate
+ sys canon   p2     3 >=.99 3/3 v5 2/2 fc 3/3
+ sys abs     p2     3 >=.99 3/3 v5 2/2 fc 3/3
+ sys both    p2     3 >=.99 3/3 v5 2/2 fc 3/3
+ sys global  p2     3 >=.99 3/3 v5 2/2 fc 3/3
+ sys none    p2     3 >=.99 3/3 v5 2/2 fc 3/3
+ sys canon minus abs: 3 vs 3: +0 [+0, +0]; tasks 0:0 does not separate
+ sys both minus canon: 3 vs 3: +0 [+0, +0]; tasks 0:0 does not separate
+ sys canon minus global: 3 vs 3: +0 [+0, +0]; tasks 0:0 does not separate
+ sys abs minus global: 3 vs 3: +0 [+0, +0]; tasks 0:0 does not separate
+
+=== ARC-AGI-1 eval: 400 tasks; mean 1/(n+1) = 0.2369; multi-test tasks = 19
+FA-LOO+(c)       38/39 = 97.4% [91.2, 100.0] cov 9.8% tasks_answered 39 tasks_wrong 1
+FA-LOO (a)+(b)   38/39 = 97.4% [91.2, 100.0] cov 9.8% tasks_answered 39 tasks_wrong 1
+(a) only         38/39 = 97.4% [91.2, 100.0] cov 9.8% tasks_answered 39 tasks_wrong 1
+v5               33/34 = 97.1% [89.7, 100.0] cov 8.5% tasks_answered 34 tasks_wrong 1
+v5 top           33/34 = 97.1% [89.7, 100.0] cov 8.5% tasks_answered 34 tasks_wrong 1
+fit              41/61 = 67.2% [54.8, 78.8] cov 15.2% tasks_answered 61 tasks_wrong 20
+fit top          41/61 = 67.2% [54.8, 78.8] cov 15.2% tasks_answered 61 tasks_wrong 20
+P4               33/34 = 97.1% [89.7, 100.0] cov 8.5% tasks_answered 34 tasks_wrong 1
+pass@2 46.0 11.5% any candidate 83
+joint P(answer and wrong) FA-LOO+(c) 1.0 0.25%
+v5 minus fit: +29.8 pts [+18.3, +41.8] separates
+fc minus fit: +30.2 pts [+18.9, +42.1] separates
+a minus fit: +30.2 pts [+18.9, +42.1] separates
+fc minus v5: +0.4 pts [+0.0, +1.7] does not separate
+fc minus a: +0.0 pts [+0.0, +0.0] does not separate
+evidence >=0.99 minus below: +72.6 pts [+58.1, +85.4] separates 33/34 = 97.1% [89.7, 100.0] 12/49 = 24.5% [12.8, 37.5]
+AUROC 0.958 [0.905, 0.996] n 83
+ bucket 1.0 33/34 = 97.1% [89.7, 100.0]
+ bucket [0.5,1) 11/14 = 78.6% [54.5, 100.0]
+ bucket (0,0.5) 0/2 = 0.0% [0.0, 0.0]
+ bucket 0 1/33 = 3.0% [0.0, 10.0]
+modules: full 46 union alone 46 exactly one 45 lost by vote [] gained []
+  self-model   alone   4 lost   4 unique   4 evidence>=.99 4/4
+  periodic     alone   5 lost   5 unique   5 evidence>=.99 1/1
+  behavior     alone   5 lost   4 unique   4 evidence>=.99 2/2
+  dynamics     alone   1 lost   1 unique   1 evidence>=.99 1/1
+  composition  alone  24 lost  24 unique  24 evidence>=.99 21/22
+  association  alone   2 lost   2 unique   2 evidence>=.99 2/2
+  pattern      alone   6 lost   5 unique   5 evidence>=.99 2/2
+  field        alone   0 lost   0 unique   0 evidence>=.99 0/0
+pool vs no-vote: pool 33/34 = 97.1% [89.7, 100.0] novote 33/34 = 97.1% [89.7, 100.0] +0.0 pts [+0.0, +0.0] does not separate | p2 46 vs 46: +0 [+0, +0]; tasks 0:0 does not separate
+2+ modules 1/1 = 100.0% [100.0, 100.0] 1 module 44/82 = 53.7% [42.9, 64.5]
+ beh canon   p2     5 >=.99 2/2 v5 2/2 fc 2/2
+ beh abs     p2     3 >=.99 1/1 v5 1/1 fc 1/1
+ beh both    p2     5 >=.99 2/2 v5 2/2 fc 2/2
+ beh global  p2     1 >=.99 1/1 v5 1/1 fc 1/1
+ beh canon minus abs: 5 vs 3: +2 [+0, +5]; tasks 2:0, sign p = 0.500 does not separate
+ beh both minus canon: 5 vs 5: +0 [+0, +0]; tasks 0:0 does not separate
+ beh canon minus global: 5 vs 1: +4 [+1, +8]; tasks 4:0, sign p = 0.125 separates
+ beh abs minus global: 3 vs 1: +2 [+0, +5]; tasks 2:0, sign p = 0.500 does not separate
+ sys canon   p2    46 >=.99 33/34 v5 33/34 fc 38/39
+ sys abs     p2    45 >=.99 32/33 v5 32/33 fc 37/38
+ sys both    p2    46 >=.99 33/34 v5 33/34 fc 38/39
+ sys global  p2    43 >=.99 32/33 v5 32/33 fc 37/38
+ sys none    p2    42 >=.99 31/32 v5 31/32 fc 36/37
+ sys canon minus abs: 46 vs 45: +1 [+0, +3]; tasks 1:0, sign p = 1.000 does not separate
+ sys both minus canon: 46 vs 46: +0 [+0, +0]; tasks 0:0 does not separate
+ sys canon minus global: 46 vs 43: +3 [+0, +7]; tasks 3:0, sign p = 0.250 does not separate
+ sys abs minus global: 45 vs 43: +2 [+0, +5]; tasks 2:0, sign p = 0.500 does not separate
+
+=== rotation, rotate_distinct.jsonl: 1147 tasks; splits Counter({'agi2-train': 624, 'agi1-eval': 394, 'agi2-eval': 120, 'agi1-train': 9})
+all 1,147 {"tasks": 1147, "with_event": 17, "two_plus": 0, "share": 0.014821272885789015, "mean_bound": 0.2473585651005006, "real": "101/102", "demo": "350/365", "demo_roles": 3687, "role_joint": 0.0033420517291485033, "role_answer": 0.09142691078174948, "role_precision": 0.963445645263827, "event_times_bound": 0.0035600116245277542}
+public eval {"tasks": 514, "with_event": 5, "two_plus": 0, "share": 0.009727626459143969, "mean_bound": 0.24243098017417083, "real": "41/42", "demo": "144/148", "demo_roles": 1703, "role_joint": 0.0022373540856031127, "role_answer": 0.08057717250324253, "role_precision": 0.9722334004024145, "event_times_bound": 0.0022373540856031127}
+agi2 eval {"tasks": 120, "with_event": 0, "two_plus": 0, "share": 0.0, "mean_bound": 0.2610515873015873, "real": "4/4", "demo": "10/10", "demo_roles": 359, "role_joint": 0.0, "role_answer": 0.027777777777777776, "role_precision": 1.0, "event_times_bound": 0.0}
+query-order symmetry 8266 0

@@ -1,0 +1,53 @@
+ARC-AGI-2 records Counter({'fold': 359, 'full': 120}) duplicates 0 errors 0
+plain records Counter({'plain': 360}) duplicates 0 errors 0
+ConceptARC records Counter({'fold': 427, 'full': 160}) duplicates 0 errors 0
+
+=== ARC-AGI-2: tasks 120, pairs 167, folds 359, mean 1/(n+1) 26.11%
+  harness 'correct' field disagrees with my comparison on 0 outputs
+  verified 45: right 32.67 = 72.6%, Wilson on rounded count (59.0, 84.0); (a)+(b) 9, right 9.00; (a)+(b)+(c) 7, right 7.00, Wilson (64.6, 100.0), coverage 5.8%
+  verified not fully right 14; kept 0; fully right 31, rejected 24; random subset avoids all wrong p = 0.0579
+  stops among verified-but-wrong: (a) 12, (b) 2, (c) 0
+  AUROC 0.705 [0.52, 0.87], exact one-sided p 0.0130; verified at rate 1.0: 11, wrong 2
+  Table 5: verified fold programs 146 in 70 tasks; predict 99: 83.3%; miss 47: 17.4%; difference +66.0 [+53.8, +78.0]
+  WITHIN task, verified fold programs: +37.5 [+11.3, +62.5] over 17 tasks; 10:1 (ties 6), sign p 0.0117
+  Table 4: folds 359; held 118 = 32.9%; test 100.17 = 27.9%; diff +5.0 [+1.4, +8.6]; held only 28.50, test only 10.67; tasks 22:9, sign p 0.0294
+  pairs 167: one attempt 45 = 26.9%; fit 42/60 = 70.0%; (a) 10/14 = 71.4%; (a)+(b) 10/10; FA-LOO 7/7, coverage 4.2%, joint 0; tasks 7, CP lower 59.0
+  mean worst case per pair 25.94%; floor -518.8%
+
+=== ConceptARC: tasks 160, pairs 480, folds 427, mean 1/(n+1) 28.32%
+  harness 'correct' field disagrees with my comparison on 0 outputs
+  verified 150: right 139.00 = 92.7%, Wilson on rounded count (87.3, 95.9); (a)+(b) 70, right 69.67; (a)+(b)+(c) 65, right 65.00, Wilson (94.4, 100.0), coverage 40.6%
+  verified not fully right 22; kept 0; fully right 128, rejected 63; random subset avoids all wrong p = 9.59e-07
+  stops among verified-but-wrong: (a) 11, (b) 7, (c) 4
+  AUROC 0.584 [0.45, 0.72], exact one-sided p 0.0828; verified at rate 1.0: 87, wrong 11
+  Table 5: verified fold programs 409 in 159 tasks; predict 321: 94.5%; miss 88: 45.8%; difference +48.7 [+40.9, +56.4]
+  WITHIN task, verified fold programs: +36.7 [+26.9, +46.9] over 49 tasks; 34:3 (ties 12), sign p 0.0000
+  Table 4: folds 427; held 325 = 76.1%; test 346.67 = 81.2%; diff -5.1 [-8.1, -2.1]; held only 18.67, test only 40.33; tasks 29:46, sign p 0.0639
+  pairs 480: one attempt 421 = 87.7%; fit 417/450 = 92.7%; (a) 249/264 = 94.3%; (a)+(b) 239/240; FA-LOO 232/232, coverage 48.3%, joint 0; tasks 86, CP lower 95.8
+  mean worst case per pair 28.32%; floor 41.4%
+  both answer 23: Qwen right 23, Monty right 18
+
+greedy records Counter({'fold': 359, 'full': 120, 'rev': 20, 'rep': 20}) duplicates 0 errors 0
+
+=== ARC-AGI-2 greedy 16k: tasks 120, pairs 167, folds 359, mean 1/(n+1) 26.11%
+  harness 'correct' field disagrees with my comparison on 0 outputs
+  verified 20: right 15.50 = 77.5%, Wilson on rounded count (58.4, 91.9); (a)+(b) 5, right 5.00; (a)+(b)+(c) 5, right 5.00, Wilson (56.6, 100.0), coverage 4.2%
+  verified not fully right 5; kept 0; fully right 15, rejected 10; random subset avoids all wrong p = 0.194
+  stops among verified-but-wrong: (a) 5, (b) 0, (c) 0
+  AUROC 0.913 [0.78, 1.00], exact one-sided p 0.0023; verified at rate 1.0: 6, wrong 0
+  Table 5: verified fold programs 86 in 54 tasks; predict 57: 78.1%; miss 29: 7.5%; difference +70.6 [+55.8, +84.9]
+  WITHIN task, verified fold programs: +36.9 [+8.3, +70.3] over 7 tasks; 4:0 (ties 3), sign p 0.1250
+  Table 4: folds 359; held 71 = 19.8%; test 52.17 = 14.5%; diff +5.2 [+2.1, +8.7]; held only 23.00, test only 4.17; tasks 17:4, sign p 0.0072
+  pairs 167: one attempt 22 = 13.2%; fit 19/26 = 73.1%; (a) 6/7 = 85.7%; (a)+(b) 5/5; FA-LOO 5/5, coverage 3.0%, joint 0; tasks 5, CP lower 47.8
+  mean worst case per pair 25.94%; floor -766.4%
+
+=== P3, per run, yield, cost, replay (ARC-AGI-2)
+  cap 2: plain 47.00, fold 45.50, fold minus plain -1.50 [-5.5, +2.5]; three tiers 45.50; tokens 14.5M / 14.6M
+  cap 3: plain 55.00, fold 52.00, fold minus plain -3.00 [-9.5, +3.5]; three tiers 53.00; tokens 22.0M / 21.7M
+  cap 4: plain 55.00, fold 53.50, fold minus plain -1.50 [-9.0, +6.0]; three tiers 56.00; tokens 27.4M / 26.8M
+  per run: plain verified 131.67/175 = 75.2% [66.2, 83.5]; fold verified and held 82.50/99 = 83.3% [75.0, 90.8]; difference +8.1 [+0.5, +15.9]
+  first sample unverified 75 tasks: plain runs 225, verified 33, right 22.0; folds 226, pass 24, right 19.5; per run -0.011 [-0.041, +0.018]
+  cost: full 7.38M, folds 21.45M: 3.91x; verified tasks 45 = v 0.375, folds 133: 1.94x; early exit 91 folds: 1.61x; 1+vn with mean n on verified 2.11
+  replay i ({32: 15.67, 64: 34.67, 96: 42.5, 128: 49.0, 160: 53.5, 192: 55.0, 224: 55.0}, 55.0, 246, 0)
+  replay ii ({32: 15.67, 64: 34.67, 96: 40.17, 128: 47.17, 160: 48.17}, 48.17, 174, 65)
+  replay iii ({32: 15.67, 64: 35.67, 96: 40.5, 128: 46.5, 160: 50.0, 192: 52.0, 224: 51.0, 256: 54.5, 288: 56.5, 320: 59.0}, 60.5, 359, 7)

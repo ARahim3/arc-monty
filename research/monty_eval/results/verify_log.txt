@@ -1,0 +1,7 @@
+agi2-eval {'full': '120/120', '-behavior': '120/120', '-composition': '120/120', 'behavior alone': '120/120', 'self-model+periodic+association': '120/120'}
+agi1-eval {'full': '400/400', '-behavior': '400/400', '-composition': '400/400', 'behavior alone': '400/400', 'self-model+periodic+association': '400/400'}
+new233 {'full': '233/233', '-behavior': '233/233', '-composition': '233/233', 'behavior alone': '233/233', 'self-model+periodic+association': '233/233'}
+vs report_v1e agi2-eval {'offline': 4, 'report': 4, 'only_offline': [], 'only_report': []}
+vs report_v1e agi1-eval {'offline': 46, 'report': 46, 'only_offline': [], 'only_report': []}
+vs report_v1e agi2-train {'offline': 123, 'report': 123, 'only_offline': [], 'only_report': []}
+vs report_v1e agi1-train {'offline': 80, 'report': 80, 'only_offline': [], 'only_report': []}
